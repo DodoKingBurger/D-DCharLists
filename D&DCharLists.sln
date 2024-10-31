@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D&DCharLists", "D&DCharLists.csproj", "{68BEBF76-23A0-442B-A5C6-1348D2F72023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D&DLibs", "..\D&DLibs\D&DLibs.csproj", "{50A3DBBA-3499-4ADB-AA54-E8A71EB15692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68BEBF76-23A0-442B-A5C6-1348D2F72023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BEBF76-23A0-442B-A5C6-1348D2F72023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BEBF76-23A0-442B-A5C6-1348D2F72023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BEBF76-23A0-442B-A5C6-1348D2F72023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A3DBBA-3499-4ADB-AA54-E8A71EB15692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A3DBBA-3499-4ADB-AA54-E8A71EB15692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A3DBBA-3499-4ADB-AA54-E8A71EB15692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A3DBBA-3499-4ADB-AA54-E8A71EB15692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D5AB8D5-C441-4F9E-A1E6-B0FD7E2648D0}
+	EndGlobalSection
+EndGlobal
