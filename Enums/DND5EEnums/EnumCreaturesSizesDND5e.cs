@@ -1,0 +1,38 @@
+namespace D_Dlib
+{
+	/// <summary>
+	/// Размеры существ.
+	/// </summary>
+	public enum EnumCreaturesSizesDND5e
+	{
+		/// <summary>
+		/// Крошечный.
+		/// </summary>
+		Tiny,
+
+		/// <summary>
+		/// Маленький.
+		/// </summary>
+		Small,
+
+		/// <summary>
+		/// Средний.
+		/// </summary>
+		Medium,
+
+		/// <summary>
+		/// Большой.
+		/// </summary>
+		Large,
+
+		/// <summary>
+		/// Огромный.
+		/// </summary>
+		Huge,
+
+		/// <summary>
+		/// Гиганский.
+		/// </summary>
+		Gargantuan
+	}
+}
