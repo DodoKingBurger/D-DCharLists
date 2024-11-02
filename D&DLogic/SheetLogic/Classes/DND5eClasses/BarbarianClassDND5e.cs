@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Варвар.
+	/// Р’Р°СЂРІР°СЂ. 
 	/// </summary>
 	public class BarbarianClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает варвара.
+		/// РЎРѕР·РґР°РµС‚ РІР°СЂРІР°СЂР°.
 		/// </summary>
 		public BarbarianClassDND5e()
 		{

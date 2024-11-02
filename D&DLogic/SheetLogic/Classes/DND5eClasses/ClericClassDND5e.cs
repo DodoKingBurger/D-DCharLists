@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Жрец.
+	/// Р–СЂРµС†. 
 	/// </summary>
 	public class ClericClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает жреца.
+		/// РЎРѕР·РґР°РµС‚ Р¶СЂРµС†Р°.
 		/// </summary>
 		public ClericClassDND5e()
 		{

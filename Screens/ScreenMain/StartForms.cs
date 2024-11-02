@@ -6,10 +6,10 @@ namespace D_DCharLists
 	{
 		CreateChar createChar;
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Вызывает окно создания персонажа
+		/// Р’С‹Р·С‹РІР°РµС‚ РѕРєРЅРѕ СЃРѕР·РґР°РЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -21,7 +21,7 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструкторы
+		#region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 		public StartForms()
 		{

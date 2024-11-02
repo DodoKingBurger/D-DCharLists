@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Колдун.
+	/// РљРѕР»РґСѓРЅ.
 	/// </summary>
 	public class SorcererClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Созадет колдуна.
+		/// РЎРѕР·Р°РґРµС‚ РєРѕР»РґСѓРЅР°. 
 		/// </summary>
 		public SorcererClassDND5e()
 		{

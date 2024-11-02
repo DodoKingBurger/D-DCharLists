@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Монах.
+	/// РњРѕРЅР°С…. 
 	/// </summary>
 	public class MonkClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает монаха.
+		/// РЎРѕР·РґР°РµС‚ РјРѕРЅР°С…Р°.
 		/// </summary>
 		public MonkClassDND5e()
 		{

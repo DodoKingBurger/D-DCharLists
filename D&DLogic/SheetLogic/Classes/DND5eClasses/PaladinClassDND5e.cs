@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Паладин.
+	/// РџР°Р»Р°РґРёРЅ.
 	/// </summary>
 	public class PaladinClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает паладина.
+		/// РЎРѕР·РґР°РµС‚ РїР°Р»Р°РґРёРЅР°. 
 		/// </summary>
 		public PaladinClassDND5e()
 		{

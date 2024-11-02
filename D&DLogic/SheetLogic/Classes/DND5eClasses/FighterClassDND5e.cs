@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Боец.
+	/// Р‘РѕРµС†. 
 	/// </summary>
 	public class FighterClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает бойца.
+		/// РЎРѕР·РґР°РµС‚ Р±РѕР№С†Р°.
 		/// </summary>
 		public FighterClassDND5e()
 		{

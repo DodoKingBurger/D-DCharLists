@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Чернокижник.
+	/// Р§РµСЂРЅРѕРєРёР¶РЅРёРє.
 	/// </summary>
 	public class WarlockClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает чернокнижника.
+		/// РЎРѕР·РґР°РµС‚ С‡РµСЂРЅРѕРєРЅРёР¶РЅРёРєР°. 
 		/// </summary>
 		public WarlockClassDND5e()
 		{

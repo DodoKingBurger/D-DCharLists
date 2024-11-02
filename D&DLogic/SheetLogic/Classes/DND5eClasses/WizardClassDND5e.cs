@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Волшебник.
+	/// Р’РѕР»С€РµР±РЅРёРє.
 	/// </summary>
 	public class WizardClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает волшебника.
+		/// РЎРѕР·РґР°РµС‚ РІРѕР»С€РµР±РЅРёРєР°. 
 		/// </summary>
 		public WizardClassDND5e()
 		{

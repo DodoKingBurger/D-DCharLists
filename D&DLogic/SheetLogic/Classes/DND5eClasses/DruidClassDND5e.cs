@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Друид.
+	/// Р”СЂСѓРёРґ. 
 	/// </summary>
 	public class DruidClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает друида.
+		/// РЎРѕР·РґР°РµС‚ РґСЂСѓРёРґР°.
 		/// </summary>
 		public DruidClassDND5e()
 		{

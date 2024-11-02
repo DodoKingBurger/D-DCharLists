@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Ренджер.
+	/// Р РµРЅРґР¶РµСЂ. 
 	/// </summary>
 	public class RangerClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Создает ренджера.
+		/// РЎРѕР·РґР°РµС‚ СЂРµРЅРґР¶РµСЂР°.
 		/// </summary>
 		public RangerClassDND5e()
 		{

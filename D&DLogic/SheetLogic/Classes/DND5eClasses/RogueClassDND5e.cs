@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Разбойник.
+	/// Р Р°Р·Р±РѕР№РЅРёРє.
 	/// </summary>
 	public class RogueClassDND5e : SheetClassBase
-	{
+	{ 
 		/// <summary>
-		/// Создает разбойника.
+		/// РЎРѕР·РґР°РµС‚ СЂР°Р·Р±РѕР№РЅРёРєР°.
 		/// </summary>
 		public RogueClassDND5e()
 		{

@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Версии D&D
+	/// Р’РµСЂСЃРёРё D&D
 	/// </summary>
 	public enum EnumEditions
 	{

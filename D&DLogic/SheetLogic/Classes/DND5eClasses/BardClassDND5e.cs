@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Бард.
+	/// Р‘Р°СЂРґ. 
 	/// </summary>
 	public class BardClassDND5e : SheetClassBase
 	{
 		/// <summary>
-		/// Созадет барда.
+		/// РЎРѕР·Р°РґРµС‚ Р±Р°СЂРґР°.
 		/// </summary>
 		public BardClassDND5e()
 		{

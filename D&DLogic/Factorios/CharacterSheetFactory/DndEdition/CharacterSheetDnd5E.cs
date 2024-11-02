@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Лист персонажа.
+	/// Р›РёСЃС‚ РїРµСЂСЃРѕРЅР°Р¶Р°. 
 	/// </summary>
 	public class CharacterSheetDnd5E : CharacterSheetBase
 	{
@@ -12,7 +12,7 @@ namespace D_DCharLists
 		}
 
 		/// <summary>
-		/// Создаем лист персонажа.
+		/// РЎРѕР·РґР°РµРј Р»РёСЃС‚ РїРµСЂСЃРѕРЅР°Р¶Р°.
 		/// </summary>
 		public CharacterSheetDnd5E()
 		{

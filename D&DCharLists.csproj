@@ -12,6 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="E:\Project DataBase\DND\Попытка смены кодировки\Program.cs" Link="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="photo_2024-09-16_22-51-37.ico" />
   </ItemGroup>
 

@@ -4,24 +4,24 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность класса.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ РєР»Р°СЃСЃР°. 
 	/// </summary>
 	public abstract class SheetClassBase
 	{
 		/// <summary>
-		/// Название класса.
+		/// РќР°Р·РІР°РЅРёРµ РєР»Р°СЃСЃР°. 
 		/// </summary>
 		[JsonProperty("Name")]
 		public EnumClassesDnd5E Name { get; set; }
 
 		/// <summary>
-		/// Кость хитов.
+		/// РљРѕСЃС‚СЊ С…РёС‚РѕРІ. 
 		/// </summary>
 		[JsonProperty("HitDice")]
 		public EnumDices HitDice {  get; set; }
 
 		/// <summary>
-		/// Список основных характеристик.
+		/// РЎРїРёСЃРѕРє РѕСЃРЅРѕРІРЅС‹С… С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє. 
 		/// </summary>
 		[JsonProperty("SaveThrows")]
 		public List<EnumAbilitiesDnd5E> SaveThrows {  get; set; }

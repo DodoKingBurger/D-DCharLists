@@ -4,116 +4,116 @@ using System.Xml.Linq;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность листа персонажа.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ Р»РёСЃС‚Р° РїРµСЂСЃРѕРЅР°Р¶Р°. 
 	/// </summary>
 	public abstract class CharacterSheetBase
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		/// <summary>
-		/// Имя.
+		/// РРјСЏ.
 		/// </summary>
 		public string Name { get; set; }
 
 		/// <summary>
-		/// Издание.
+		/// РР·РґР°РЅРёРµ.
 		/// </summary>
 		public EnumEditions Edition { get; set; }
 
 		/// <summary>
-		/// Расса.
+		/// Р Р°СЃСЃР°.
 		/// </summary>
 		public SheetRaceBase SheetRace { get; set; }
 
 		/// <summary>
-		/// Классс.
+		/// РљР»Р°СЃСЃСЃ.
 		/// </summary>
 		public SheetClassBase SheetClass { get; set; }
 
 		/// <summary>
-		/// Способности.
+		/// РЎРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 		/// </summary>
 		public SheetAbilities SheetAbilities { get; set; }
 
 		/// <summary>
-		/// Навыки.
+		/// РќР°РІС‹РєРё.
 		/// </summary>
 		public SheetSkills SheetSkills { get; set; }
 
 		/// <summary>
-		/// Прогрессия.
+		/// РџСЂРѕРіСЂРµСЃСЃРёСЏ.
 		/// </summary>
 		public SheetProgression SheetProgression { get; set; }
 
 		/// <summary>
-		/// Список основных характеристик.
+		/// РЎРїРёСЃРѕРє РѕСЃРЅРѕРІРЅС‹С… С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє.
 		/// </summary>
 		public SheetSaveThrows SheetSaveThrows { get; set; }
 
 		/// <summary>
-		/// Личность.
+		/// Р›РёС‡РЅРѕСЃС‚СЊ.
 		/// </summary>
 		public SheetPersonality SheetPersonality { get; set; }
 
 		/// <summary>
-		/// Боевые способности.
+		/// Р‘РѕРµРІС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 		/// </summary>
 		public SheetCombatAbilities SheetCombatAbilities { get; set; }
 
 		/// <summary>
-		/// Профессиональные навыки.
+		/// РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Рµ РЅР°РІС‹РєРё.
 		/// </summary>
 		public SheetProficiencies SheetProficiencies { get; set; }
 
 		/// <summary>
-		/// Инвентарь.
+		/// РРЅРІРµРЅС‚Р°СЂСЊ.
 		/// </summary>
 		public SheetInventory SheetInventory { get; set; }
 
 		/// <summary>
-		/// Список талантов героя.
+		/// РЎРїРёСЃРѕРє С‚Р°Р»Р°РЅС‚РѕРІ РіРµСЂРѕСЏ.
 		/// </summary>
 		public TraitsListBase TraitsList { get; set; }
 
 		/// <summary>
-		/// Заклинания.
+		/// Р—Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		public SheetSpellsBase SheetSpells {  get; set; }
 
 		/// <summary>
-		/// Слоты снаряжения.
+		/// РЎР»РѕС‚С‹ СЃРЅР°СЂСЏР¶РµРЅРёСЏ.
 		/// </summary>
 		public BaseEquipmentSystem SheetEquipmentSlots {  get; set; }
 
 		/// <summary>
-		/// Вдохновение.
+		/// Р’РґРѕС…РЅРѕРІРµРЅРёРµ.
 		/// </summary>
 		public bool Inspiration {  get; set; }
 
 		#endregion
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Установка рассы.
+		/// РЈСЃС‚Р°РЅРѕРІРєР° СЂР°СЃСЃС‹.
 		/// </summary>
-		/// <param name="sheetRace">Присваемымывая расса.</param>
+		/// <param name="sheetRace">РџСЂРёСЃРІР°РµРјС‹РјС‹РІР°СЏ СЂР°СЃСЃР°.</param>
 		public void SetUpRace(SheetRaceBase sheetRace)
 		{
 			SheetRace = sheetRace;
 		}
 
 		/// <summary>
-		/// Установка класса.
+		/// РЈСЃС‚Р°РЅРѕРІРєР° РєР»Р°СЃСЃР°.
 		/// </summary>
-		/// <param name="sheetClass">Присваемымывый класс.</param>
+		/// <param name="sheetClass">РџСЂРёСЃРІР°РµРјС‹РјС‹РІС‹Р№ РєР»Р°СЃСЃ.</param>
 		public void SetUpClass(SheetClassBase sheetClass)
 		{
 			SheetClass = sheetClass;
 		}
 
 		/// <summary>
-		/// Изменение вдохновения.
+		/// РР·РјРµРЅРµРЅРёРµ РІРґРѕС…РЅРѕРІРµРЅРёСЏ.
 		/// </summary>
 		public abstract void ChangeInspiration();
 
