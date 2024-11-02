@@ -1,10 +1,13 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Æנוצ.
 	/// </summary>
 	public class ClericClassDND5e : SheetClassBase
 	{
+		/// <summary>
+		/// Ñמחהאוע זנוצא.
+		/// </summary>
 		public ClericClassDND5e()
 		{
 			Name = EnumClassesDnd5E.Cleric;

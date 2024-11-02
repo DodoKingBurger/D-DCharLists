@@ -2,44 +2,44 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
-namespace D_Dlib
+namespace D_DCharLists
 {
-    public class SpellsSpecifiedConcreteClassConverter : DefaultContractResolver
-    {
-        protected override JsonConverter ResolveContractConverter(Type objectType)
-        {
-            if (typeof(SpellBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
-            {
-                return null;
-            }
+	public class SpellsSpecifiedConcreteClassConverter : DefaultContractResolver
+	{
+		protected override JsonConverter ResolveContractConverter(Type objectType)
+		{
+			if (typeof(SpellBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
+			{
+				return null;
+			}
 
-            return base.ResolveContractConverter(objectType);
-        }
-    }
-    
-    public class SpellsConvertorJson : JsonConverter
-    {
-        static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
+			return base.ResolveContractConverter(objectType);
+		}
+	}
 
-        public override bool CanConvert(Type objectType)
-        {
-            return (objectType == typeof(SpellBase));
-        }
+	public class SpellsConvertorJson : JsonConverter
+	{
+		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
 
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-        {
-            JObject jo = JObject.Load(reader);
-            return JsonConvert.DeserializeObject<SpellDND5e>(jo.ToString(), SpecifiedSubclassConversion);
-        }
+		public override bool CanConvert(Type objectType)
+		{
+			return (objectType == typeof(SpellBase));
+		}
 
-        public override bool CanWrite
-        {
-            get { return false; }
-        }
+		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+		{
+			JObject jo = JObject.Load(reader);
+			return JsonConvert.DeserializeObject<SpellDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+		}
 
-        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		public override bool CanWrite
+		{
+			get { return false; }
+		}
+
+		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

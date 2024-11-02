@@ -1,10 +1,13 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Разбойник.
 	/// </summary>
 	public class RogueClassDND5e : SheetClassBase
 	{
+		/// <summary>
+		/// Создает разбойника.
+		/// </summary>
 		public RogueClassDND5e()
 		{
 			Name = EnumClassesDnd5E.Rogue;

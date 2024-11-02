@@ -1,5 +1,5 @@
 ﻿using D_DCharList.Modules;
-using D_Dlib;
+using D_DCharLists;
 using System;
 using System.Collections.Generic;
 using System.Linq;

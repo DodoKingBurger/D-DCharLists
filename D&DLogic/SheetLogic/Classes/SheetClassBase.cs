@@ -1,7 +1,7 @@
 
 using Newtonsoft.Json;
 
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Сущность класса.

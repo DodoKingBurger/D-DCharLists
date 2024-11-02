@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
-namespace D_Dlib
+namespace D_DCharLists
 {
 	public class ClassSpecifiedConcreteClassConverter : DefaultContractResolver
 	{

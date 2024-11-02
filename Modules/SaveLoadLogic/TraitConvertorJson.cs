@@ -2,44 +2,44 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
-namespace D_Dlib
+namespace D_DCharLists
 {
-    public class TraitSpecifiedConcreteClassConverter : DefaultContractResolver
-    {
-        protected override JsonConverter ResolveContractConverter(Type objectType)
-        {
-            if (typeof(TraitBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
-            {
-                return null;
-            }
+	public class TraitSpecifiedConcreteClassConverter : DefaultContractResolver
+	{
+		protected override JsonConverter ResolveContractConverter(Type objectType)
+		{
+			if (typeof(TraitBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
+			{
+				return null;
+			}
 
-            return base.ResolveContractConverter(objectType);
-        }
-    }
-    
-    public class TraitConvertorJson : JsonConverter
-    {
-        static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new TraitSpecifiedConcreteClassConverter() };
+			return base.ResolveContractConverter(objectType);
+		}
+	}
 
-        public override bool CanConvert(Type objectType)
-        {
-            return (objectType == typeof(TraitBase));
-        }
+	public class TraitConvertorJson : JsonConverter
+	{
+		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new TraitSpecifiedConcreteClassConverter() };
 
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-        {
-            JObject jo = JObject.Load(reader);
-            return JsonConvert.DeserializeObject<TraitDND5e>(jo.ToString(), SpecifiedSubclassConversion);
-        }
+		public override bool CanConvert(Type objectType)
+		{
+			return (objectType == typeof(TraitBase));
+		}
 
-        public override bool CanWrite
-        {
-            get { return false; }
-        }
+		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+		{
+			JObject jo = JObject.Load(reader);
+			return JsonConvert.DeserializeObject<TraitDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+		}
 
-        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		public override bool CanWrite
+		{
+			get { return false; }
+		}
+
+		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

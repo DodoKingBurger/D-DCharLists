@@ -1,10 +1,13 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Друид.
 	/// </summary>
 	public class DruidClassDND5e : SheetClassBase
 	{
+		/// <summary>
+		/// Создает друида.
+		/// </summary>
 		public DruidClassDND5e()
 		{
 			Name = EnumClassesDnd5E.Druid;

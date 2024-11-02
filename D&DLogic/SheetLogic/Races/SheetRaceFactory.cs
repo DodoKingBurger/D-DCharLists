@@ -1,4 +1,4 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Фабрика по инициализации расс.
@@ -46,6 +46,54 @@ namespace D_Dlib
 			}
 
 			return new DragonbornRaceDND5e();
+		}
+
+		/// <summary>
+		/// Инициализирует по переданному строке с названием рассы.
+		/// </summary>
+		/// <param name="sheetRace">Название рассы.</param>
+		/// <returns>Инициализрованную сущность рассы.</returns>
+		/// <exception cref="NotImplementedException">В списке такой рассы нету.</exception>
+		public SheetRaceBase CreateSheetRace(string sheetRace)
+		{
+			if (Enum.TryParse<EnumClassesDnd5E>(sheetRace, out EnumClassesDnd5E result))
+			{
+				switch (sheetRace)
+				{
+					case "Dragonborn":
+						return new DragonbornRaceDND5e();
+
+					case "Dwarf":
+						return new DwarfRaceDND5e();
+
+					case "Elf":
+						return new ElfRaceDND5e();
+
+					case "Gnome":
+						return new GnomeRaceDND5e();
+
+					case "Halfelf":
+						return new HalfelfRaceDND5e();
+
+					case "Halfling":
+						return new HalflingRaceDND5e();
+
+					case "Halforc":
+						return new HalforcRaceDND5e();
+
+					case "Human":
+						return new HumanRaceDND5e();
+
+					case "Tiefling":
+						return new TieflingRaceDND5e();
+					default:
+						throw new NotImplementedException("Попытка создания не описанной рассы.");
+				}
+			}
+			else
+			{
+				throw new NotImplementedException("Попытка создания не описанной рассы.");
+			}
 		}
 	}
 }

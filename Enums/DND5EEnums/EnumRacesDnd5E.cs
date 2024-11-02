@@ -1,4 +1,4 @@
-﻿namespace D_Dlib
+﻿namespace D_DCharLists
 {
 	/// <summary>
 	/// Рассы.

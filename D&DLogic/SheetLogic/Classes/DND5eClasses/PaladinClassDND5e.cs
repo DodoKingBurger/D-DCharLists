@@ -1,10 +1,13 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Паладин.
 	/// </summary>
 	public class PaladinClassDND5e : SheetClassBase
 	{
+		/// <summary>
+		/// Создает паладина.
+		/// </summary>
 		public PaladinClassDND5e()
 		{
 			Name = EnumClassesDnd5E.Paladin;

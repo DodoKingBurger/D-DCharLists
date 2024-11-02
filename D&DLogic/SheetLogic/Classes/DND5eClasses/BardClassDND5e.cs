@@ -1,10 +1,13 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Бард.
 	/// </summary>
 	public class BardClassDND5e : SheetClassBase
 	{
+		/// <summary>
+		/// Созадет барда.
+		/// </summary>
 		public BardClassDND5e()
 		{
 			Name = EnumClassesDnd5E.Bard;

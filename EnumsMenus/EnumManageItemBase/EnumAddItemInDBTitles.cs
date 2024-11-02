@@ -1,4 +1,4 @@
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Добавить предмет в БД.

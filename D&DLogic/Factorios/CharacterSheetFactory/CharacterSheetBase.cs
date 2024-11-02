@@ -1,7 +1,7 @@
 
 using System.Xml.Linq;
 
-namespace D_Dlib
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Сущность листа персонажа.
