@@ -32,8 +32,8 @@ namespace D_DCharLists
 		/// <summary>
 		/// Возвращает характеристики от которых завист скилл.
 		/// </summary>
-		/// <param name="skill"></param>
-		/// <returns></returns>
+		/// <param name="skill">Скилл.</param>
+		/// <returns>Возвращает характеристики от которых завист скилл, иначе вернет характеристику силы.</returns>
 		public override EnumAbilitiesDnd5E SkillAbilityName(EnumSkillsDnd5E skill)
 		{
 			switch (skill)
@@ -71,6 +71,11 @@ namespace D_DCharLists
 			}
 		}
 
+		/// <summary>
+		/// Удаляет скилл из списка скилов.
+		/// </summary>
+		/// <param name="skill">Скилл</param>
+		/// <exception cref="ArgumentException">Скилл в списке отсутствет.</exception>
 		public override void RemoveSkill(EnumSkillsDnd5E skill)
 		{
 			if (Skills.Contains(skill))

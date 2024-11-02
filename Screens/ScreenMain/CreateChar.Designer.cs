@@ -65,6 +65,9 @@
 			panel_ChoiceSkill = new Panel();
 			checkedListBox_Skills = new CheckedListBox();
 			button_Save_Char = new Button();
+			tabPage_Abilities = new TabPage();
+			panel_Abilities = new Panel();
+			label_Abilities_Abilities = new Label();
 			tabControlCreateChar.SuspendLayout();
 			tabPage_Name.SuspendLayout();
 			tabPage_Race.SuspendLayout();
@@ -73,6 +76,7 @@
 			panel_ChoiceClass.SuspendLayout();
 			tabPage_Skill.SuspendLayout();
 			panel_ChoiceSkill.SuspendLayout();
+			tabPage_Abilities.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControlCreateChar
@@ -81,6 +85,7 @@
 			tabControlCreateChar.Controls.Add(tabPage_Race);
 			tabControlCreateChar.Controls.Add(tabPage_Class);
 			tabControlCreateChar.Controls.Add(tabPage_Skill);
+			tabControlCreateChar.Controls.Add(tabPage_Abilities);
 			tabControlCreateChar.Dock = DockStyle.Top;
 			tabControlCreateChar.Location = new Point(0, 0);
 			tabControlCreateChar.Name = "tabControlCreateChar";
@@ -530,6 +535,35 @@
 			button_Save_Char.UseVisualStyleBackColor = true;
 			button_Save_Char.Click += button_Save_Char_Click;
 			// 
+			// tabPage_Abilities
+			// 
+			tabPage_Abilities.Controls.Add(label_Abilities_Abilities);
+			tabPage_Abilities.Controls.Add(panel_Abilities);
+			tabPage_Abilities.Location = new Point(4, 34);
+			tabPage_Abilities.Name = "tabPage_Abilities";
+			tabPage_Abilities.Size = new Size(612, 878);
+			tabPage_Abilities.TabIndex = 4;
+			tabPage_Abilities.Text = "Характеристики";
+			tabPage_Abilities.UseVisualStyleBackColor = true;
+			// 
+			// panel_Abilities
+			// 
+			panel_Abilities.Dock = DockStyle.Bottom;
+			panel_Abilities.Location = new Point(0, 76);
+			panel_Abilities.Name = "panel_Abilities";
+			panel_Abilities.Size = new Size(612, 802);
+			panel_Abilities.TabIndex = 0;
+			// 
+			// label_Abilities_Abilities
+			// 
+			label_Abilities_Abilities.AutoSize = true;
+			label_Abilities_Abilities.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label_Abilities_Abilities.Location = new Point(8, 11);
+			label_Abilities_Abilities.Name = "label_Abilities_Abilities";
+			label_Abilities_Abilities.Size = new Size(415, 48);
+			label_Abilities_Abilities.TabIndex = 15;
+			label_Abilities_Abilities.Text = "Укажите характеристки:";
+			// 
 			// CreateChar
 			// 
 			AutoScaleDimensions = new SizeF(10F, 25F);
@@ -556,6 +590,8 @@
 			tabPage_Skill.ResumeLayout(false);
 			tabPage_Skill.PerformLayout();
 			panel_ChoiceSkill.ResumeLayout(false);
+			tabPage_Abilities.ResumeLayout(false);
+			tabPage_Abilities.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -597,5 +633,8 @@
 		private Label label_Skill_Skill;
 		private Panel panel_ChoiceSkill;
 		private CheckedListBox checkedListBox_Skills;
+		private TabPage tabPage_Abilities;
+		private Label label_Abilities_Abilities;
+		private Panel panel_Abilities;
 	}
 }

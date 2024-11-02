@@ -65,7 +65,24 @@ namespace D_DCharLists.Screens.ScreenMain
 			sheetClassFactory.CreateSheetClass(radioButton.Text));
 		}
 
-
+		/// <summary>
+		/// Сохранение скилов у персонажа.
+		/// </summary>
+		/// <param name="sender">Кто создал событие.</param>
+		/// <param name="e">Событие.</param>
+		private void checkedListBox_Skills_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			CheckedListBox checkedListBox = (CheckedListBox)sender;
+			if (checkedListBox.CheckedItems.Count >= 0)
+			{
+				CurrentHeroSheet.HeroSheet.SheetSkills.Skills.Clear();
+				for (int i = 0; i < checkedListBox.CheckedItems.Count; i++)
+				{
+					EnumSkillsDnd5E skill = (EnumSkillsDnd5E)Enum.Parse(typeof(EnumSkillsDnd5E), checkedListBox.CheckedItems[i].ToString());
+					CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+				}
+			}
+		}
 
 		/// <summary>
 		/// Сохранить созданного персонажа.
@@ -98,19 +115,5 @@ namespace D_DCharLists.Screens.ScreenMain
 		}
 
 		#endregion
-
-		private void checkedListBox_Skills_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			CheckedListBox checkedListBox = (CheckedListBox)sender;
-			if (checkedListBox.CheckedItems.Count > 0)
-			{						
-				foreach (var item in checkedListBox.CheckedItems)
-				{
-					EnumSkillsDnd5E skill = (EnumSkillsDnd5E)Enum.Parse(typeof(EnumSkillsDnd5E), item.ToString());
-					if(!CurrentHeroSheet.HeroSheet.SheetSkills.CheckSkill(skill))
-					CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
-				}
-			}
-		}
 	}
 }
