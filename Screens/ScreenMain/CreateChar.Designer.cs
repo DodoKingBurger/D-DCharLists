@@ -48,6 +48,9 @@
 			tabPage_Class = new TabPage();
 			label_Class_Class = new Label();
 			panel_ChoiceClass = new Panel();
+			radioButton_Wizard = new RadioButton();
+			radioButton_Warlock = new RadioButton();
+			radioButton_Sorcerer = new RadioButton();
 			radioButton_Rogue = new RadioButton();
 			radioButton_Monk = new RadioButton();
 			radioButton_Paladin = new RadioButton();
@@ -57,16 +60,19 @@
 			radioButton_Cleric = new RadioButton();
 			radioButton_Bard = new RadioButton();
 			radioButton_Barbarian = new RadioButton();
+			tabPage_Skill = new TabPage();
+			label_Skill_Skill = new Label();
+			panel_ChoiceSkill = new Panel();
+			checkedListBox_Skills = new CheckedListBox();
 			button_Save_Char = new Button();
-			radioButton_Sorcerer = new RadioButton();
-			radioButton_Warlock = new RadioButton();
-			radioButton_Wizard = new RadioButton();
 			tabControlCreateChar.SuspendLayout();
 			tabPage_Name.SuspendLayout();
 			tabPage_Race.SuspendLayout();
 			panel_ChoiceRace.SuspendLayout();
 			tabPage_Class.SuspendLayout();
 			panel_ChoiceClass.SuspendLayout();
+			tabPage_Skill.SuspendLayout();
+			panel_ChoiceSkill.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControlCreateChar
@@ -74,6 +80,7 @@
 			tabControlCreateChar.Controls.Add(tabPage_Name);
 			tabControlCreateChar.Controls.Add(tabPage_Race);
 			tabControlCreateChar.Controls.Add(tabPage_Class);
+			tabControlCreateChar.Controls.Add(tabPage_Skill);
 			tabControlCreateChar.Dock = DockStyle.Top;
 			tabControlCreateChar.Location = new Point(0, 0);
 			tabControlCreateChar.Name = "tabControlCreateChar";
@@ -312,6 +319,45 @@
 			panel_ChoiceClass.Size = new Size(612, 810);
 			panel_ChoiceClass.TabIndex = 11;
 			// 
+			// radioButton_Wizard
+			// 
+			radioButton_Wizard.AutoSize = true;
+			radioButton_Wizard.Font = new Font("Segoe UI", 18F);
+			radioButton_Wizard.Location = new Point(23, 667);
+			radioButton_Wizard.Name = "radioButton_Wizard";
+			radioButton_Wizard.Size = new Size(156, 52);
+			radioButton_Wizard.TabIndex = 20;
+			radioButton_Wizard.TabStop = true;
+			radioButton_Wizard.Text = "Wizard";
+			radioButton_Wizard.UseVisualStyleBackColor = true;
+			radioButton_Wizard.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
+			// 
+			// radioButton_Warlock
+			// 
+			radioButton_Warlock.AutoSize = true;
+			radioButton_Warlock.Font = new Font("Segoe UI", 18F);
+			radioButton_Warlock.Location = new Point(23, 609);
+			radioButton_Warlock.Name = "radioButton_Warlock";
+			radioButton_Warlock.Size = new Size(174, 52);
+			radioButton_Warlock.TabIndex = 19;
+			radioButton_Warlock.TabStop = true;
+			radioButton_Warlock.Text = "Warlock";
+			radioButton_Warlock.UseVisualStyleBackColor = true;
+			radioButton_Warlock.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
+			// 
+			// radioButton_Sorcerer
+			// 
+			radioButton_Sorcerer.AutoSize = true;
+			radioButton_Sorcerer.Font = new Font("Segoe UI", 18F);
+			radioButton_Sorcerer.Location = new Point(23, 551);
+			radioButton_Sorcerer.Name = "radioButton_Sorcerer";
+			radioButton_Sorcerer.Size = new Size(179, 52);
+			radioButton_Sorcerer.TabIndex = 18;
+			radioButton_Sorcerer.TabStop = true;
+			radioButton_Sorcerer.Text = "Sorcerer";
+			radioButton_Sorcerer.UseVisualStyleBackColor = true;
+			radioButton_Sorcerer.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
+			// 
 			// radioButton_Rogue
 			// 
 			radioButton_Rogue.AutoSize = true;
@@ -429,6 +475,49 @@
 			radioButton_Barbarian.UseVisualStyleBackColor = true;
 			radioButton_Barbarian.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
 			// 
+			// tabPage_Skill
+			// 
+			tabPage_Skill.Controls.Add(label_Skill_Skill);
+			tabPage_Skill.Controls.Add(panel_ChoiceSkill);
+			tabPage_Skill.Location = new Point(4, 34);
+			tabPage_Skill.Name = "tabPage_Skill";
+			tabPage_Skill.Size = new Size(612, 878);
+			tabPage_Skill.TabIndex = 3;
+			tabPage_Skill.Text = "Скилы";
+			tabPage_Skill.UseVisualStyleBackColor = true;
+			// 
+			// label_Skill_Skill
+			// 
+			label_Skill_Skill.AutoSize = true;
+			label_Skill_Skill.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label_Skill_Skill.Location = new Point(8, 9);
+			label_Skill_Skill.Name = "label_Skill_Skill";
+			label_Skill_Skill.Size = new Size(493, 48);
+			label_Skill_Skill.TabIndex = 14;
+			label_Skill_Skill.Text = "Выберите навыки из списка:";
+			// 
+			// panel_ChoiceSkill
+			// 
+			panel_ChoiceSkill.Controls.Add(checkedListBox_Skills);
+			panel_ChoiceSkill.Dock = DockStyle.Bottom;
+			panel_ChoiceSkill.Location = new Point(0, 68);
+			panel_ChoiceSkill.Name = "panel_ChoiceSkill";
+			panel_ChoiceSkill.Size = new Size(612, 810);
+			panel_ChoiceSkill.TabIndex = 13;
+			// 
+			// checkedListBox_Skills
+			// 
+			checkedListBox_Skills.CheckOnClick = true;
+			checkedListBox_Skills.Dock = DockStyle.Fill;
+			checkedListBox_Skills.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			checkedListBox_Skills.FormattingEnabled = true;
+			checkedListBox_Skills.Items.AddRange(new object[] { "Athletics", "Acrobatics", "Agulity", "Stealth", "Arcana", "History", "Investigation", "Nature", "Religion", "Animal", "Insight", "Medicine", "Perception", "Surival", "Deception", "Intimidation", "Perfomance", "Persuasion" });
+			checkedListBox_Skills.Location = new Point(0, 0);
+			checkedListBox_Skills.Name = "checkedListBox_Skills";
+			checkedListBox_Skills.Size = new Size(612, 810);
+			checkedListBox_Skills.TabIndex = 0;
+			checkedListBox_Skills.SelectedIndexChanged += checkedListBox_Skills_SelectedIndexChanged;
+			// 
 			// button_Save_Char
 			// 
 			button_Save_Char.Dock = DockStyle.Bottom;
@@ -440,45 +529,6 @@
 			button_Save_Char.Text = "Сохранить персонажа";
 			button_Save_Char.UseVisualStyleBackColor = true;
 			button_Save_Char.Click += button_Save_Char_Click;
-			// 
-			// radioButton_Sorcerer
-			// 
-			radioButton_Sorcerer.AutoSize = true;
-			radioButton_Sorcerer.Font = new Font("Segoe UI", 18F);
-			radioButton_Sorcerer.Location = new Point(23, 551);
-			radioButton_Sorcerer.Name = "radioButton_Sorcerer";
-			radioButton_Sorcerer.Size = new Size(179, 52);
-			radioButton_Sorcerer.TabIndex = 18;
-			radioButton_Sorcerer.TabStop = true;
-			radioButton_Sorcerer.Text = "Sorcerer";
-			radioButton_Sorcerer.UseVisualStyleBackColor = true;
-			radioButton_Sorcerer.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
-			// 
-			// radioButton_Warlock
-			// 
-			radioButton_Warlock.AutoSize = true;
-			radioButton_Warlock.Font = new Font("Segoe UI", 18F);
-			radioButton_Warlock.Location = new Point(23, 609);
-			radioButton_Warlock.Name = "radioButton_Warlock";
-			radioButton_Warlock.Size = new Size(174, 52);
-			radioButton_Warlock.TabIndex = 19;
-			radioButton_Warlock.TabStop = true;
-			radioButton_Warlock.Text = "Warlock";
-			radioButton_Warlock.UseVisualStyleBackColor = true;
-			radioButton_Warlock.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
-			// 
-			// radioButton_Wizard
-			// 
-			radioButton_Wizard.AutoSize = true;
-			radioButton_Wizard.Font = new Font("Segoe UI", 18F);
-			radioButton_Wizard.Location = new Point(23, 667);
-			radioButton_Wizard.Name = "radioButton_Wizard";
-			radioButton_Wizard.Size = new Size(156, 52);
-			radioButton_Wizard.TabIndex = 20;
-			radioButton_Wizard.TabStop = true;
-			radioButton_Wizard.Text = "Wizard";
-			radioButton_Wizard.UseVisualStyleBackColor = true;
-			radioButton_Wizard.CheckedChanged += radioButton_ChoiceClass_CheckedChanged;
 			// 
 			// CreateChar
 			// 
@@ -503,6 +553,9 @@
 			tabPage_Class.PerformLayout();
 			panel_ChoiceClass.ResumeLayout(false);
 			panel_ChoiceClass.PerformLayout();
+			tabPage_Skill.ResumeLayout(false);
+			tabPage_Skill.PerformLayout();
+			panel_ChoiceSkill.ResumeLayout(false);
 			ResumeLayout(false);
 		}
 
@@ -540,5 +593,9 @@
 		private RadioButton radioButton_Sorcerer;
 		private RadioButton radioButton_Wizard;
 		private RadioButton radioButton_Warlock;
+		private TabPage tabPage_Skill;
+		private Label label_Skill_Skill;
+		private Panel panel_ChoiceSkill;
+		private CheckedListBox checkedListBox_Skills;
 	}
 }

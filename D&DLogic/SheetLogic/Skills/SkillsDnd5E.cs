@@ -7,11 +7,20 @@ namespace D_DCharLists
 	{
 		#region Методы
 
+		/// <summary>
+		/// Записан ли уже этот навык.
+		/// </summary>
+		/// <param name="skill">Скилл.</param>
+		/// <returns>True, если уже записан в список скилов, в противном случае false.</returns>
 		public override bool CheckSkill(EnumSkillsDnd5E skill)
 		{
 			return Skills.Contains(skill);
 		}
 
+		/// <summary>
+		/// Добавить скилл в список.
+		/// </summary>
+		/// <param name="skill">Скилл.</param>
 		public override void AddSkill(EnumSkillsDnd5E skill)
 		{
 			if (!Skills.Contains(skill))
@@ -20,6 +29,11 @@ namespace D_DCharLists
 			}
 		}
 
+		/// <summary>
+		/// Возвращает характеристики от которых завист скилл.
+		/// </summary>
+		/// <param name="skill"></param>
+		/// <returns></returns>
 		public override EnumAbilitiesDnd5E SkillAbilityName(EnumSkillsDnd5E skill)
 		{
 			switch (skill)

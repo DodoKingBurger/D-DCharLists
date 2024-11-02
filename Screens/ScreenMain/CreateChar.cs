@@ -65,6 +65,8 @@ namespace D_DCharLists.Screens.ScreenMain
 			sheetClassFactory.CreateSheetClass(radioButton.Text));
 		}
 
+
+
 		/// <summary>
 		/// Сохранить созданного персонажа.
 		/// </summary>
@@ -96,5 +98,19 @@ namespace D_DCharLists.Screens.ScreenMain
 		}
 
 		#endregion
+
+		private void checkedListBox_Skills_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			CheckedListBox checkedListBox = (CheckedListBox)sender;
+			if (checkedListBox.CheckedItems.Count > 0)
+			{						
+				foreach (var item in checkedListBox.CheckedItems)
+				{
+					EnumSkillsDnd5E skill = (EnumSkillsDnd5E)Enum.Parse(typeof(EnumSkillsDnd5E), item.ToString());
+					if(!CurrentHeroSheet.HeroSheet.SheetSkills.CheckSkill(skill))
+					CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+				}
+			}
+		}
 	}
 }
