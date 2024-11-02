@@ -1,11 +1,11 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Характеристики.
+	/// РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё. 
 	/// </summary>
 	public class AbilitiesDnd5E : SheetAbilities
 	{
-		#region Базовый класс
+		#region Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 		public override int GetAbilityModificator(EnumAbilitiesDnd5E ability)
 		{
 			return AbilityBonus(GetAbilityScore(ability));
@@ -49,11 +49,11 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструкторы
+		#region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Создает список характеристик.
-		/// Сила, ловкость и т.д.
+		/// РЎРѕР·РґР°РµС‚ СЃРїРёСЃРѕРє С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє.
+		/// РЎРёР»Р°, Р»РѕРІРєРѕСЃС‚СЊ Рё С‚.Рґ.
 		/// </summary>
 		public AbilitiesDnd5E()
 		{
