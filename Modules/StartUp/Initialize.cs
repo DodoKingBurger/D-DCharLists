@@ -1,4 +1,5 @@
-﻿using D_DCharLists;
+﻿using D_DCharList.Modules;
+using D_DCharLists;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace D_DCharList.Modules.StartUp
+namespace D_DCharList
 {
 	public class Initialize
 	{
@@ -15,27 +16,27 @@ namespace D_DCharList.Modules.StartUp
 		/// <summary>
 		/// Путь для содании папки.
 		/// </summary>
-		private string _programmFolder;
+		private string programmFolder;
 
 		/// <summary>
 		/// Создан ли папка Data.
 		/// </summary>
-		private bool _isDataExist;
+		private bool isDataExist;
 
 		/// <summary>
 		/// Есть ли папка с ранее созданными персонажами.
 		/// </summary>
-		private bool _isCharacterSheetsExist;
+		private bool isCharacterSheetsExist;
 
 		/// <summary>
 		/// Есть ли папка с БД предметов.
 		/// </summary>
-		private bool _isDataBasesExist;
+		private bool isDataBasesExist;
 
 		/// <summary>
 		/// Путь к директории.
 		/// </summary>
-		private DirectoryInfo _folderInfo;
+		private DirectoryInfo folderInfo;
 
 		#endregion
 
@@ -47,28 +48,28 @@ namespace D_DCharList.Modules.StartUp
 		/// <exception cref="ArgumentException"></exception>
 		private void CheckAndCreateFolders()
 		{
-			foreach (var itemX in _folderInfo.GetDirectories())
+			foreach (var itemX in folderInfo.GetDirectories())
 			{
 				if (itemX.Name == "Data")
 				{
-					_isDataExist = true;
-					_folderInfo = new DirectoryInfo(_programmFolder + @"\Data");
+					isDataExist = true;
+					folderInfo = new DirectoryInfo(programmFolder + @"\Data");
 
-					foreach (var itemY in _folderInfo.GetDirectories())
+					foreach (var itemY in folderInfo.GetDirectories())
 					{
 						if (itemY.Name == "DND5E")
 						{
-							_folderInfo = new DirectoryInfo(_programmFolder + @"\Data\DND5E");
+							folderInfo = new DirectoryInfo(programmFolder + @"\Data\DND5E");
 
-							foreach (var itemZ in _folderInfo.GetDirectories())
+							foreach (var itemZ in folderInfo.GetDirectories())
 							{
-								if (itemY.Name == "CharacterSheets")
+								if (itemZ.Name == "CharacterSheets")
 								{
-									_isCharacterSheetsExist = true;
+									isCharacterSheetsExist = true;
 								}
-								else if (itemY.Name == "DataBases")
+								else if (itemZ.Name == "DataBases")
 								{
-									_isDataBasesExist = true;
+									isDataBasesExist = true;
 								}
 							}
 						}
@@ -76,28 +77,28 @@ namespace D_DCharList.Modules.StartUp
 				}
 			}
 
-			if (_isDataExist == false)
+			if (isDataExist == false)
 			{
-				Directory.SetCurrentDirectory(_programmFolder);
+				Directory.SetCurrentDirectory(programmFolder);
 				Directory.CreateDirectory("Data");
-				Directory.SetCurrentDirectory(_programmFolder + @"\Data");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data");
 				Directory.CreateDirectory("DND5E");
-				Directory.SetCurrentDirectory(_programmFolder + @"\Data\DND5E");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
 				Directory.CreateDirectory("CharacterSheets");
 				Directory.CreateDirectory("DataBases");
 			}
-			else if (_isCharacterSheetsExist == false)
+			else if (isCharacterSheetsExist == false)
 			{
-				Directory.SetCurrentDirectory(_programmFolder + @"\Data\DND5E");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
 				Directory.CreateDirectory("CharacterSheets");
 			}
-			else if (_isDataBasesExist == false)
+			else if (isDataBasesExist == false)
 			{
-				Directory.SetCurrentDirectory(_programmFolder + @"\Data\DND5E");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
 				Directory.CreateDirectory("DataBases");
 			}
 
-			Directory.SetCurrentDirectory(_programmFolder);
+			Directory.SetCurrentDirectory(programmFolder);
 		}
 
 		/// <summary>
@@ -135,11 +136,12 @@ namespace D_DCharList.Modules.StartUp
 
 		public Initialize()
 		{
-			_isDataExist = false;
-			_isCharacterSheetsExist = false;
-			_isDataBasesExist = false;
-			_programmFolder = Directory.GetCurrentDirectory();
-			_folderInfo = new DirectoryInfo(_programmFolder);
+			isDataExist = false;
+			isCharacterSheetsExist = false;
+			isDataBasesExist = false;
+			string[] stringsPath = AppDomain.CurrentDomain.BaseDirectory.Split('\\');
+			programmFolder = String.Join("\\", stringsPath[0..(stringsPath.Count() - 4)]);
+			folderInfo = new DirectoryInfo(programmFolder);
 		}
 
 		#endregion

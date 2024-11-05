@@ -4,6 +4,9 @@ using Newtonsoft.Json.Serialization;
 
 namespace D_DCharLists
 {
+	/// <summary>
+	/// Распознователь контракта заклинания для сериализации.
+	/// </summary>
 	public class SpellsSpecifiedConcreteClassConverter : DefaultContractResolver
 	{
 		protected override JsonConverter ResolveContractConverter(Type objectType)
@@ -17,8 +20,13 @@ namespace D_DCharLists
 		}
 	}
 
+	/// <summary>
+	/// Конвектер для заклинаний.
+	/// </summary>
 	public class SpellsConvertorJson : JsonConverter
 	{
+		#region Базовый класс
+
 		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
 
 		public override bool CanConvert(Type objectType)
@@ -41,5 +49,7 @@ namespace D_DCharLists
 		{
 			throw new NotImplementedException();
 		}
+
+		#endregion
 	}
 }

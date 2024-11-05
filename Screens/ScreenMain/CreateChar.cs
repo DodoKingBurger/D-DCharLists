@@ -91,7 +91,7 @@ namespace D_DCharLists.Screens.ScreenMain
 		/// <param name="e">Событие.</param>
 		private void numericUpDown_ValueChanged(object sender, EventArgs e)
 		{
-			if(sender.GetType() == typeof(NumericUpDown))
+			if (sender.GetType() == typeof(NumericUpDown))
 			{
 				Dictionary<Enum, int> ListAbilities = new Dictionary<Enum, int>()
 				{
@@ -111,13 +111,150 @@ namespace D_DCharLists.Screens.ScreenMain
 		}
 
 		/// <summary>
+		/// Добавления навыков персонажа.
+		/// </summary>
+		/// <param name="sender">Список с навыками персонажа.</param>
+		/// <param name="e">Событие.</param>
+		private void checkedListBox_Proficiencies_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			List<string> checkedListBox = new List<string>();
+			CurrentHeroSheet.HeroSheet.SheetProficiencies.Proficiencies.Clear();
+			foreach (object item in checkedListBox_ArmorProficiencies.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+			foreach (object item in checkedListBox_WeaponsProficiencies.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+			foreach (object item in checkedListBox_WeaponsGroups.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+			foreach (object item in checkedListBox_MusicalInstrumentProficiencies.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+			foreach (object item in checkedListBox_GamingSetProficiencies.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+			foreach (object item in checkedListBox_InstrumentsProficiencies.CheckedItems)
+			{
+				if (item != null)
+					checkedListBox.Add(item.ToString());
+			}
+
+			if (checkedListBox.Count >= 0)
+			{
+				foreach (var str in checkedListBox)
+				{
+					EnumAllDND5eProficiencies Proficiencies = (EnumAllDND5eProficiencies)Enum.Parse(typeof(EnumAllDND5eProficiencies), str);
+					CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(Proficiencies);
+				}
+			}
+		}
+
+		/// <summary>
+		/// Проверка на ввод числа.
+		/// </summary>
+		/// <param name="sender">Текст бокс с текстом.</param>
+		/// <param name="e">События ввод в страку.</param>
+		private void textBox_Validation_TextChanged(object sender, EventArgs e)
+		{
+			TextBox textBox = (TextBox)sender;
+			if (!int.TryParse(textBox.Text, out int age) || age < 0)
+			{
+				MessageBox.Show("Это поле должно быть в введен в формате - \"12\".");
+			}
+		}
+
+		/// <summary>
 		/// Сохранить созданного персонажа.
 		/// </summary>
 		/// <param name="sender">Кнопка сохранить.</param>
 		/// <param name="e">Событие.</param>
 		private void button_Save_Char_Click(object sender, EventArgs e)
 		{
+			if(CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilitiesDnd5E.Physique, out int Physique)&& 
+				CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilitiesDnd5E.Agility, out int Agility) && CurrentHeroSheet.HeroSheet.SheetClass!= null)
+			{
+				foreach (var item in Enum.GetNames(typeof(EnumPersonalitiesDND5E)))
+				{
+					if (Enum.TryParse<EnumPersonalitiesDND5E>(item, out EnumPersonalitiesDND5E result))
+					{
+						string value = string.Empty;
+						switch (result)
+						{
+							case EnumPersonalitiesDND5E.Background:
+								value = textBox_Background.Text;
+								break;
+							case EnumPersonalitiesDND5E.Alignment:
+								value = textBox_Alignment.Text;
+								break;
+							case EnumPersonalitiesDND5E.PersonalityTraits:
+								value = textBox_PersonalityTraits.Text;
+								break;
+							case EnumPersonalitiesDND5E.Ideals:
+								value = textBox_Ideals.Text;
+								break;
+							case EnumPersonalitiesDND5E.Bonds:
+								value = textBox_Bonds.Text;
+								break;
+							case EnumPersonalitiesDND5E.Flaws:
+								value = textBox_Flaws.Text;
+								break;
+							case EnumPersonalitiesDND5E.Age:
+								value = textBox_Age.Text;
+								break;
+							case EnumPersonalitiesDND5E.Height:
+								value = textBox_Height.Text;
+								break;
+							case EnumPersonalitiesDND5E.Weight:
+								value = textBox_Weight.Text;
+								break;
+							case EnumPersonalitiesDND5E.Eyes:
+								value = textBox_Eyes.Text;
+								break;
+							case EnumPersonalitiesDND5E.Skin:
+								value = textBox_Skin.Text;
+								break;
+							case EnumPersonalitiesDND5E.Hair:
+								value = textBox_Hair.Text;
+								break;
+						}
+						CurrentHeroSheet.HeroSheet.SheetPersonality.AddPersonality(result, value);
+					}
+				}
 
+				//Указание HP
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.MaximumHP, 
+					((int)CurrentHeroSheet.HeroSheet.SheetClass.HitDice + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilitiesDnd5E.Physique)));
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.CurrentHP, 
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.MaximumHP]);
+
+				//Указание базового КД (без брони)
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.ArmorClass, 
+					10 + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilitiesDnd5E.Agility));
+
+				//Указание кости хитов
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.CurrentHitDices, 
+					CurrentHeroSheet.HeroSheet.SheetProgression.Level);
+
+				//Указание спасбросков
+				CurrentHeroSheet.HeroSheet.SheetSaveThrows.SetSaveTrows(CurrentHeroSheet.HeroSheet.SheetClass.Name);
+
+				CurrentHeroSheet.SaveSheet();
+			}
+			else
+			{
+				MessageBox.Show("Лист персонаа не заполнен!");
+			}
 		}
 
 		/// <summary>
@@ -141,6 +278,5 @@ namespace D_DCharLists.Screens.ScreenMain
 		}
 
 		#endregion
-
 	}
 }

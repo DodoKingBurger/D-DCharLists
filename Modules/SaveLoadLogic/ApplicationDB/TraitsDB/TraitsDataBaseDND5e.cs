@@ -11,11 +11,14 @@ namespace D_DCharLists
 		/// Список талантов.
 		/// </summary>
 		public static Dictionary<int, TraitBase> TraitsDB = new Dictionary<int, TraitBase>();
-		
+
 		/// <summary>
-		/// Путь к БД.
+		/// Информация о папке.
 		/// </summary>
-		private static DirectoryInfo folderInfo = new DirectoryInfo(@"Data\DND5E\DataBases");
+		private static DirectoryInfo folderInfo = new DirectoryInfo(String.Join("\\",
+			AppDomain.CurrentDomain.BaseDirectory.Split('\\')
+			[0..(AppDomain.CurrentDomain.BaseDirectory.Split('\\').Count() - 4)])
+			+ "\\Data\\DND5E\\DataBases");
 
 		#endregion
 

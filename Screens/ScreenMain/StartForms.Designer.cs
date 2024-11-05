@@ -65,6 +65,7 @@
 			Icon = (Icon)resources.GetObject("$this.Icon");
 			Name = "StartForms";
 			Text = "D&DCharList";
+			Load += StartForms_Load;
 			groupBoxMenu.ResumeLayout(false);
 			ResumeLayout(false);
 		}

@@ -23,7 +23,7 @@ namespace D_DCharList.Screens
 
 		}
 
-		public void ShowScreen(EnumMainMenuTitles List)
+		public void ShowScreen()
 		{
 
 

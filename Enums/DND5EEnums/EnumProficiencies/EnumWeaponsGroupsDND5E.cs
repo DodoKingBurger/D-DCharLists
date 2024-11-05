@@ -23,6 +23,6 @@ namespace D_DCharLists
 		/// <summary>
 		/// Боевой дальний бой.
 		/// </summary>
-		MartialRanged,
+		MartialRanged
 	}
 }

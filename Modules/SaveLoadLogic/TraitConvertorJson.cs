@@ -4,6 +4,9 @@ using Newtonsoft.Json.Serialization;
 
 namespace D_DCharLists
 {
+	/// <summary>
+	/// Распознователь контракта талантов для сериализации.
+	/// </summary>
 	public class TraitSpecifiedConcreteClassConverter : DefaultContractResolver
 	{
 		protected override JsonConverter ResolveContractConverter(Type objectType)
@@ -17,8 +20,13 @@ namespace D_DCharLists
 		}
 	}
 
+	/// <summary>
+	/// Конвектор для талантов.
+	/// </summary>
 	public class TraitConvertorJson : JsonConverter
 	{
+		#region Базвый класс
+
 		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new TraitSpecifiedConcreteClassConverter() };
 
 		public override bool CanConvert(Type objectType)
@@ -41,5 +49,7 @@ namespace D_DCharLists
 		{
 			throw new NotImplementedException();
 		}
+
+		#endregion
 	}
 }

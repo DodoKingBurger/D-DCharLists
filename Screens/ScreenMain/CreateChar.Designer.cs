@@ -43,7 +43,7 @@
 			radioButton_Halforc = new RadioButton();
 			radioButton_Dragonborn = new RadioButton();
 			radioButton_Dwarf = new RadioButton();
-			radioButton_Gnom = new RadioButton();
+			radioButton_Gnome = new RadioButton();
 			label_Race_Race = new Label();
 			tabPage_Class = new TabPage();
 			label_Class_Class = new Label();
@@ -79,6 +79,44 @@
 			label_Physique = new Label();
 			label_Agility = new Label();
 			label_Strength = new Label();
+			tabPage_SkillsPossession = new TabPage();
+			groupBox_MusicalInstrumentProficiencies = new GroupBox();
+			checkedListBox_MusicalInstrumentProficiencies = new CheckedListBox();
+			groupBox_GamingSetProficiencies = new GroupBox();
+			checkedListBox_GamingSetProficiencies = new CheckedListBox();
+			groupBox_InstrumentsProficiencies = new GroupBox();
+			checkedListBox_InstrumentsProficiencies = new CheckedListBox();
+			groupBox_WeaponsGroups = new GroupBox();
+			checkedListBox_WeaponsGroups = new CheckedListBox();
+			groupBox_WeaponsProficiencies = new GroupBox();
+			checkedListBox_WeaponsProficiencies = new CheckedListBox();
+			groupBox_ArmorProficiencies = new GroupBox();
+			checkedListBox_ArmorProficiencies = new CheckedListBox();
+			tabPage_Characters = new TabPage();
+			textBox_Bonds = new TextBox();
+			textBox_Flaws = new TextBox();
+			textBox_Ideals = new TextBox();
+			label_Flaws = new Label();
+			label_Bonds = new Label();
+			label_Ideals = new Label();
+			textBox_PersonalityTraits = new TextBox();
+			textBox_Alignment = new TextBox();
+			label_PersonalityTraits = new Label();
+			label_Alignment = new Label();
+			label_Background = new Label();
+			textBox_Background = new TextBox();
+			textBox_Weight = new TextBox();
+			label_Weight = new Label();
+			textBox_Hair = new TextBox();
+			textBox_Skin = new TextBox();
+			textBox_Eyes = new TextBox();
+			textBox_Height = new TextBox();
+			textBox_Age = new TextBox();
+			label_Hair = new Label();
+			label_Skin = new Label();
+			label_Eyes = new Label();
+			label_Height = new Label();
+			label_Age = new Label();
 			button_Save_Char = new Button();
 			tabControlCreateChar.SuspendLayout();
 			tabPage_Name.SuspendLayout();
@@ -96,6 +134,14 @@
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Agility).BeginInit();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Physique).BeginInit();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Strength).BeginInit();
+			tabPage_SkillsPossession.SuspendLayout();
+			groupBox_MusicalInstrumentProficiencies.SuspendLayout();
+			groupBox_GamingSetProficiencies.SuspendLayout();
+			groupBox_InstrumentsProficiencies.SuspendLayout();
+			groupBox_WeaponsGroups.SuspendLayout();
+			groupBox_WeaponsProficiencies.SuspendLayout();
+			groupBox_ArmorProficiencies.SuspendLayout();
+			tabPage_Characters.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControlCreateChar
@@ -105,12 +151,13 @@
 			tabControlCreateChar.Controls.Add(tabPage_Class);
 			tabControlCreateChar.Controls.Add(tabPage_Skill);
 			tabControlCreateChar.Controls.Add(tabPage_Abilities);
+			tabControlCreateChar.Controls.Add(tabPage_SkillsPossession);
+			tabControlCreateChar.Controls.Add(tabPage_Characters);
 			tabControlCreateChar.Dock = DockStyle.Top;
 			tabControlCreateChar.Location = new Point(0, 0);
-			tabControlCreateChar.Margin = new Padding(2);
 			tabControlCreateChar.Name = "tabControlCreateChar";
 			tabControlCreateChar.SelectedIndex = 0;
-			tabControlCreateChar.Size = new Size(434, 550);
+			tabControlCreateChar.Size = new Size(704, 917);
 			tabControlCreateChar.TabIndex = 0;
 			// 
 			// tabPage_Name
@@ -119,11 +166,10 @@
 			tabPage_Name.Controls.Add(label_Name_Name);
 			tabPage_Name.Controls.Add(textBox_NameChar);
 			tabPage_Name.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			tabPage_Name.Location = new Point(4, 24);
-			tabPage_Name.Margin = new Padding(2);
+			tabPage_Name.Location = new Point(4, 34);
 			tabPage_Name.Name = "tabPage_Name";
-			tabPage_Name.Padding = new Padding(2);
-			tabPage_Name.Size = new Size(426, 522);
+			tabPage_Name.Padding = new Padding(3);
+			tabPage_Name.Size = new Size(696, 879);
 			tabPage_Name.TabIndex = 0;
 			tabPage_Name.Text = "Имя";
 			tabPage_Name.UseVisualStyleBackColor = true;
@@ -131,20 +177,18 @@
 			// label_Name_Name
 			// 
 			label_Name_Name.AutoSize = true;
-			label_Name_Name.Location = new Point(12, 10);
-			label_Name_Name.Margin = new Padding(2, 0, 2, 0);
+			label_Name_Name.Location = new Point(17, 17);
 			label_Name_Name.Name = "label_Name_Name";
-			label_Name_Name.Size = new Size(288, 32);
+			label_Name_Name.Size = new Size(429, 48);
 			label_Name_Name.TabIndex = 1;
 			label_Name_Name.Text = "Введите имя персонажа:";
 			// 
 			// textBox_NameChar
 			// 
 			textBox_NameChar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			textBox_NameChar.Location = new Point(12, 46);
-			textBox_NameChar.Margin = new Padding(2);
+			textBox_NameChar.Location = new Point(17, 77);
 			textBox_NameChar.Name = "textBox_NameChar";
-			textBox_NameChar.Size = new Size(302, 39);
+			textBox_NameChar.Size = new Size(430, 55);
 			textBox_NameChar.TabIndex = 0;
 			textBox_NameChar.TextChanged += textBox_NameChar_TextChanged;
 			// 
@@ -153,11 +197,10 @@
 			tabPage_Race.BackgroundImageLayout = ImageLayout.Center;
 			tabPage_Race.Controls.Add(panel_ChoiceRace);
 			tabPage_Race.Controls.Add(label_Race_Race);
-			tabPage_Race.Location = new Point(4, 24);
-			tabPage_Race.Margin = new Padding(2);
+			tabPage_Race.Location = new Point(4, 34);
 			tabPage_Race.Name = "tabPage_Race";
-			tabPage_Race.Padding = new Padding(2);
-			tabPage_Race.Size = new Size(426, 522);
+			tabPage_Race.Padding = new Padding(3);
+			tabPage_Race.Size = new Size(696, 879);
 			tabPage_Race.TabIndex = 1;
 			tabPage_Race.Text = "Расса";
 			tabPage_Race.UseVisualStyleBackColor = true;
@@ -172,22 +215,20 @@
 			panel_ChoiceRace.Controls.Add(radioButton_Halforc);
 			panel_ChoiceRace.Controls.Add(radioButton_Dragonborn);
 			panel_ChoiceRace.Controls.Add(radioButton_Dwarf);
-			panel_ChoiceRace.Controls.Add(radioButton_Gnom);
+			panel_ChoiceRace.Controls.Add(radioButton_Gnome);
 			panel_ChoiceRace.Dock = DockStyle.Bottom;
-			panel_ChoiceRace.Location = new Point(2, 39);
-			panel_ChoiceRace.Margin = new Padding(2);
+			panel_ChoiceRace.Location = new Point(3, 74);
 			panel_ChoiceRace.Name = "panel_ChoiceRace";
-			panel_ChoiceRace.Size = new Size(422, 481);
+			panel_ChoiceRace.Size = new Size(690, 802);
 			panel_ChoiceRace.TabIndex = 10;
 			// 
 			// radioButton_Elf
 			// 
 			radioButton_Elf.AutoSize = true;
 			radioButton_Elf.Font = new Font("Segoe UI", 18F);
-			radioButton_Elf.Location = new Point(16, 296);
-			radioButton_Elf.Margin = new Padding(2);
+			radioButton_Elf.Location = new Point(23, 493);
 			radioButton_Elf.Name = "radioButton_Elf";
-			radioButton_Elf.Size = new Size(58, 36);
+			radioButton_Elf.Size = new Size(83, 52);
 			radioButton_Elf.TabIndex = 17;
 			radioButton_Elf.TabStop = true;
 			radioButton_Elf.Text = "Elf";
@@ -198,10 +239,9 @@
 			// 
 			radioButton_HalfElf.AutoSize = true;
 			radioButton_HalfElf.Font = new Font("Segoe UI", 18F);
-			radioButton_HalfElf.Location = new Point(16, 191);
-			radioButton_HalfElf.Margin = new Padding(2);
+			radioButton_HalfElf.Location = new Point(23, 318);
 			radioButton_HalfElf.Name = "radioButton_HalfElf";
-			radioButton_HalfElf.Size = new Size(102, 36);
+			radioButton_HalfElf.Size = new Size(148, 52);
 			radioButton_HalfElf.TabIndex = 16;
 			radioButton_HalfElf.TabStop = true;
 			radioButton_HalfElf.Text = "Halfelf";
@@ -212,10 +252,9 @@
 			// 
 			radioButton_Tiefling.AutoSize = true;
 			radioButton_Tiefling.Font = new Font("Segoe UI", 18F);
-			radioButton_Tiefling.Location = new Point(16, 226);
-			radioButton_Tiefling.Margin = new Padding(2);
+			radioButton_Tiefling.Location = new Point(23, 377);
 			radioButton_Tiefling.Name = "radioButton_Tiefling";
-			radioButton_Tiefling.Size = new Size(112, 36);
+			radioButton_Tiefling.Size = new Size(162, 52);
 			radioButton_Tiefling.TabIndex = 15;
 			radioButton_Tiefling.TabStop = true;
 			radioButton_Tiefling.Text = "Tiefling";
@@ -226,10 +265,9 @@
 			// 
 			radioButton_Halfling.AutoSize = true;
 			radioButton_Halfling.Font = new Font("Segoe UI", 18F);
-			radioButton_Halfling.Location = new Point(16, 154);
-			radioButton_Halfling.Margin = new Padding(2);
+			radioButton_Halfling.Location = new Point(23, 257);
 			radioButton_Halfling.Name = "radioButton_Halfling";
-			radioButton_Halfling.Size = new Size(115, 36);
+			radioButton_Halfling.Size = new Size(168, 52);
 			radioButton_Halfling.TabIndex = 14;
 			radioButton_Halfling.TabStop = true;
 			radioButton_Halfling.Text = "Halfling";
@@ -240,10 +278,9 @@
 			// 
 			radioButton_Human.AutoSize = true;
 			radioButton_Human.Font = new Font("Segoe UI", 18F);
-			radioButton_Human.Location = new Point(16, 261);
-			radioButton_Human.Margin = new Padding(2);
+			radioButton_Human.Location = new Point(23, 435);
 			radioButton_Human.Name = "radioButton_Human";
-			radioButton_Human.Size = new Size(110, 36);
+			radioButton_Human.Size = new Size(160, 52);
 			radioButton_Human.TabIndex = 13;
 			radioButton_Human.TabStop = true;
 			radioButton_Human.Text = "Human";
@@ -254,10 +291,9 @@
 			// 
 			radioButton_Halforc.AutoSize = true;
 			radioButton_Halforc.Font = new Font("Segoe UI", 18F);
-			radioButton_Halforc.Location = new Point(16, 119);
-			radioButton_Halforc.Margin = new Padding(2);
+			radioButton_Halforc.Location = new Point(23, 198);
 			radioButton_Halforc.Name = "radioButton_Halforc";
-			radioButton_Halforc.Size = new Size(108, 36);
+			radioButton_Halforc.Size = new Size(160, 52);
 			radioButton_Halforc.TabIndex = 12;
 			radioButton_Halforc.TabStop = true;
 			radioButton_Halforc.Text = "Halforc";
@@ -268,10 +304,9 @@
 			// 
 			radioButton_Dragonborn.AutoSize = true;
 			radioButton_Dragonborn.Font = new Font("Segoe UI", 18F);
-			radioButton_Dragonborn.Location = new Point(16, 85);
-			radioButton_Dragonborn.Margin = new Padding(2);
+			radioButton_Dragonborn.Location = new Point(23, 142);
 			radioButton_Dragonborn.Name = "radioButton_Dragonborn";
-			radioButton_Dragonborn.Size = new Size(161, 36);
+			radioButton_Dragonborn.Size = new Size(238, 52);
 			radioButton_Dragonborn.TabIndex = 11;
 			radioButton_Dragonborn.TabStop = true;
 			radioButton_Dragonborn.Text = "Dragonborn";
@@ -282,38 +317,35 @@
 			// 
 			radioButton_Dwarf.AutoSize = true;
 			radioButton_Dwarf.Font = new Font("Segoe UI", 18F);
-			radioButton_Dwarf.Location = new Point(16, 50);
-			radioButton_Dwarf.Margin = new Padding(2);
+			radioButton_Dwarf.Location = new Point(23, 83);
 			radioButton_Dwarf.Name = "radioButton_Dwarf";
-			radioButton_Dwarf.Size = new Size(94, 36);
+			radioButton_Dwarf.Size = new Size(138, 52);
 			radioButton_Dwarf.TabIndex = 10;
 			radioButton_Dwarf.TabStop = true;
 			radioButton_Dwarf.Text = "Dwarf";
 			radioButton_Dwarf.UseVisualStyleBackColor = true;
 			radioButton_Dwarf.CheckedChanged += radioButton_ChoiceRace_CheckedChanged;
 			// 
-			// radioButton_Gnom
+			// radioButton_Gnome
 			// 
-			radioButton_Gnom.AutoSize = true;
-			radioButton_Gnom.Font = new Font("Segoe UI", 18F);
-			radioButton_Gnom.Location = new Point(16, 15);
-			radioButton_Gnom.Margin = new Padding(2);
-			radioButton_Gnom.Name = "radioButton_Gnom";
-			radioButton_Gnom.Size = new Size(97, 36);
-			radioButton_Gnom.TabIndex = 9;
-			radioButton_Gnom.TabStop = true;
-			radioButton_Gnom.Text = "Gnom";
-			radioButton_Gnom.UseVisualStyleBackColor = true;
-			radioButton_Gnom.CheckedChanged += radioButton_ChoiceRace_CheckedChanged;
+			radioButton_Gnome.AutoSize = true;
+			radioButton_Gnome.Font = new Font("Segoe UI", 18F);
+			radioButton_Gnome.Location = new Point(23, 25);
+			radioButton_Gnome.Name = "radioButton_Gnome";
+			radioButton_Gnome.Size = new Size(161, 52);
+			radioButton_Gnome.TabIndex = 9;
+			radioButton_Gnome.TabStop = true;
+			radioButton_Gnome.Text = "Gnome";
+			radioButton_Gnome.UseVisualStyleBackColor = true;
+			radioButton_Gnome.CheckedChanged += radioButton_ChoiceRace_CheckedChanged;
 			// 
 			// label_Race_Race
 			// 
 			label_Race_Race.AutoSize = true;
 			label_Race_Race.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Race_Race.Location = new Point(6, 13);
-			label_Race_Race.Margin = new Padding(2, 0, 2, 0);
+			label_Race_Race.Location = new Point(9, 22);
 			label_Race_Race.Name = "label_Race_Race";
-			label_Race_Race.Size = new Size(308, 32);
+			label_Race_Race.Size = new Size(460, 48);
 			label_Race_Race.TabIndex = 9;
 			label_Race_Race.Text = "Выберите рассу из списка:";
 			// 
@@ -322,10 +354,9 @@
 			tabPage_Class.BackgroundImageLayout = ImageLayout.Center;
 			tabPage_Class.Controls.Add(label_Class_Class);
 			tabPage_Class.Controls.Add(panel_ChoiceClass);
-			tabPage_Class.Location = new Point(4, 24);
-			tabPage_Class.Margin = new Padding(2);
+			tabPage_Class.Location = new Point(4, 34);
 			tabPage_Class.Name = "tabPage_Class";
-			tabPage_Class.Size = new Size(426, 522);
+			tabPage_Class.Size = new Size(696, 879);
 			tabPage_Class.TabIndex = 2;
 			tabPage_Class.Text = "Класс";
 			tabPage_Class.UseVisualStyleBackColor = true;
@@ -334,10 +365,9 @@
 			// 
 			label_Class_Class.AutoSize = true;
 			label_Class_Class.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Class_Class.Location = new Point(6, 10);
-			label_Class_Class.Margin = new Padding(2, 0, 2, 0);
+			label_Class_Class.Location = new Point(9, 17);
 			label_Class_Class.Name = "label_Class_Class";
-			label_Class_Class.Size = new Size(307, 32);
+			label_Class_Class.Size = new Size(459, 48);
 			label_Class_Class.TabIndex = 12;
 			label_Class_Class.Text = "Выберите класс из списка:";
 			// 
@@ -356,20 +386,18 @@
 			panel_ChoiceClass.Controls.Add(radioButton_Bard);
 			panel_ChoiceClass.Controls.Add(radioButton_Barbarian);
 			panel_ChoiceClass.Dock = DockStyle.Bottom;
-			panel_ChoiceClass.Location = new Point(0, 36);
-			panel_ChoiceClass.Margin = new Padding(2);
+			panel_ChoiceClass.Location = new Point(0, 69);
 			panel_ChoiceClass.Name = "panel_ChoiceClass";
-			panel_ChoiceClass.Size = new Size(426, 486);
+			panel_ChoiceClass.Size = new Size(696, 810);
 			panel_ChoiceClass.TabIndex = 11;
 			// 
 			// radioButton_Wizard
 			// 
 			radioButton_Wizard.AutoSize = true;
 			radioButton_Wizard.Font = new Font("Segoe UI", 18F);
-			radioButton_Wizard.Location = new Point(16, 400);
-			radioButton_Wizard.Margin = new Padding(2);
+			radioButton_Wizard.Location = new Point(23, 667);
 			radioButton_Wizard.Name = "radioButton_Wizard";
-			radioButton_Wizard.Size = new Size(105, 36);
+			radioButton_Wizard.Size = new Size(156, 52);
 			radioButton_Wizard.TabIndex = 20;
 			radioButton_Wizard.TabStop = true;
 			radioButton_Wizard.Text = "Wizard";
@@ -380,10 +408,9 @@
 			// 
 			radioButton_Warlock.AutoSize = true;
 			radioButton_Warlock.Font = new Font("Segoe UI", 18F);
-			radioButton_Warlock.Location = new Point(16, 365);
-			radioButton_Warlock.Margin = new Padding(2);
+			radioButton_Warlock.Location = new Point(23, 608);
 			radioButton_Warlock.Name = "radioButton_Warlock";
-			radioButton_Warlock.Size = new Size(116, 36);
+			radioButton_Warlock.Size = new Size(174, 52);
 			radioButton_Warlock.TabIndex = 19;
 			radioButton_Warlock.TabStop = true;
 			radioButton_Warlock.Text = "Warlock";
@@ -394,10 +421,9 @@
 			// 
 			radioButton_Sorcerer.AutoSize = true;
 			radioButton_Sorcerer.Font = new Font("Segoe UI", 18F);
-			radioButton_Sorcerer.Location = new Point(16, 331);
-			radioButton_Sorcerer.Margin = new Padding(2);
+			radioButton_Sorcerer.Location = new Point(23, 552);
 			radioButton_Sorcerer.Name = "radioButton_Sorcerer";
-			radioButton_Sorcerer.Size = new Size(120, 36);
+			radioButton_Sorcerer.Size = new Size(179, 52);
 			radioButton_Sorcerer.TabIndex = 18;
 			radioButton_Sorcerer.TabStop = true;
 			radioButton_Sorcerer.Text = "Sorcerer";
@@ -408,10 +434,9 @@
 			// 
 			radioButton_Rogue.AutoSize = true;
 			radioButton_Rogue.Font = new Font("Segoe UI", 18F);
-			radioButton_Rogue.Location = new Point(16, 296);
-			radioButton_Rogue.Margin = new Padding(2);
+			radioButton_Rogue.Location = new Point(23, 493);
 			radioButton_Rogue.Name = "radioButton_Rogue";
-			radioButton_Rogue.Size = new Size(100, 36);
+			radioButton_Rogue.Size = new Size(147, 52);
 			radioButton_Rogue.TabIndex = 17;
 			radioButton_Rogue.TabStop = true;
 			radioButton_Rogue.Text = "Rogue";
@@ -422,10 +447,9 @@
 			// 
 			radioButton_Monk.AutoSize = true;
 			radioButton_Monk.Font = new Font("Segoe UI", 18F);
-			radioButton_Monk.Location = new Point(16, 191);
-			radioButton_Monk.Margin = new Padding(2);
+			radioButton_Monk.Location = new Point(23, 318);
 			radioButton_Monk.Name = "radioButton_Monk";
-			radioButton_Monk.Size = new Size(94, 36);
+			radioButton_Monk.Size = new Size(136, 52);
 			radioButton_Monk.TabIndex = 16;
 			radioButton_Monk.TabStop = true;
 			radioButton_Monk.Text = "Monk";
@@ -436,10 +460,9 @@
 			// 
 			radioButton_Paladin.AutoSize = true;
 			radioButton_Paladin.Font = new Font("Segoe UI", 18F);
-			radioButton_Paladin.Location = new Point(16, 226);
-			radioButton_Paladin.Margin = new Padding(2);
+			radioButton_Paladin.Location = new Point(23, 377);
 			radioButton_Paladin.Name = "radioButton_Paladin";
-			radioButton_Paladin.Size = new Size(108, 36);
+			radioButton_Paladin.Size = new Size(159, 52);
 			radioButton_Paladin.TabIndex = 15;
 			radioButton_Paladin.TabStop = true;
 			radioButton_Paladin.Text = "Paladin";
@@ -450,10 +473,9 @@
 			// 
 			radioButton_Fighter.AutoSize = true;
 			radioButton_Fighter.Font = new Font("Segoe UI", 18F);
-			radioButton_Fighter.Location = new Point(16, 154);
-			radioButton_Fighter.Margin = new Padding(2);
+			radioButton_Fighter.Location = new Point(23, 257);
 			radioButton_Fighter.Name = "radioButton_Fighter";
-			radioButton_Fighter.Size = new Size(107, 36);
+			radioButton_Fighter.Size = new Size(157, 52);
 			radioButton_Fighter.TabIndex = 14;
 			radioButton_Fighter.TabStop = true;
 			radioButton_Fighter.Text = "Fighter";
@@ -464,10 +486,9 @@
 			// 
 			radioButton_Ranger.AutoSize = true;
 			radioButton_Ranger.Font = new Font("Segoe UI", 18F);
-			radioButton_Ranger.Location = new Point(16, 261);
-			radioButton_Ranger.Margin = new Padding(2);
+			radioButton_Ranger.Location = new Point(23, 435);
 			radioButton_Ranger.Name = "radioButton_Ranger";
-			radioButton_Ranger.Size = new Size(107, 36);
+			radioButton_Ranger.Size = new Size(158, 52);
 			radioButton_Ranger.TabIndex = 13;
 			radioButton_Ranger.TabStop = true;
 			radioButton_Ranger.Text = "Ranger";
@@ -478,10 +499,9 @@
 			// 
 			radioButton_Druid.AutoSize = true;
 			radioButton_Druid.Font = new Font("Segoe UI", 18F);
-			radioButton_Druid.Location = new Point(16, 119);
-			radioButton_Druid.Margin = new Padding(2);
+			radioButton_Druid.Location = new Point(23, 198);
 			radioButton_Druid.Name = "radioButton_Druid";
-			radioButton_Druid.Size = new Size(91, 36);
+			radioButton_Druid.Size = new Size(133, 52);
 			radioButton_Druid.TabIndex = 12;
 			radioButton_Druid.TabStop = true;
 			radioButton_Druid.Text = "Druid";
@@ -492,10 +512,9 @@
 			// 
 			radioButton_Cleric.AutoSize = true;
 			radioButton_Cleric.Font = new Font("Segoe UI", 18F);
-			radioButton_Cleric.Location = new Point(16, 85);
-			radioButton_Cleric.Margin = new Padding(2);
+			radioButton_Cleric.Location = new Point(23, 142);
 			radioButton_Cleric.Name = "radioButton_Cleric";
-			radioButton_Cleric.Size = new Size(91, 36);
+			radioButton_Cleric.Size = new Size(134, 52);
 			radioButton_Cleric.TabIndex = 11;
 			radioButton_Cleric.TabStop = true;
 			radioButton_Cleric.Text = "Cleric";
@@ -506,10 +525,9 @@
 			// 
 			radioButton_Bard.AutoSize = true;
 			radioButton_Bard.Font = new Font("Segoe UI", 18F);
-			radioButton_Bard.Location = new Point(16, 50);
-			radioButton_Bard.Margin = new Padding(2);
+			radioButton_Bard.Location = new Point(23, 83);
 			radioButton_Bard.Name = "radioButton_Bard";
-			radioButton_Bard.Size = new Size(80, 36);
+			radioButton_Bard.Size = new Size(118, 52);
 			radioButton_Bard.TabIndex = 10;
 			radioButton_Bard.TabStop = true;
 			radioButton_Bard.Text = "Bard";
@@ -520,10 +538,9 @@
 			// 
 			radioButton_Barbarian.AutoSize = true;
 			radioButton_Barbarian.Font = new Font("Segoe UI", 18F);
-			radioButton_Barbarian.Location = new Point(16, 15);
-			radioButton_Barbarian.Margin = new Padding(2);
+			radioButton_Barbarian.Location = new Point(23, 25);
 			radioButton_Barbarian.Name = "radioButton_Barbarian";
-			radioButton_Barbarian.Size = new Size(132, 36);
+			radioButton_Barbarian.Size = new Size(196, 52);
 			radioButton_Barbarian.TabIndex = 9;
 			radioButton_Barbarian.TabStop = true;
 			radioButton_Barbarian.Text = "Barbarian";
@@ -534,10 +551,9 @@
 			// 
 			tabPage_Skill.Controls.Add(label_Skill_Skill);
 			tabPage_Skill.Controls.Add(panel_ChoiceSkill);
-			tabPage_Skill.Location = new Point(4, 24);
-			tabPage_Skill.Margin = new Padding(2);
+			tabPage_Skill.Location = new Point(4, 34);
 			tabPage_Skill.Name = "tabPage_Skill";
-			tabPage_Skill.Size = new Size(426, 522);
+			tabPage_Skill.Size = new Size(696, 879);
 			tabPage_Skill.TabIndex = 3;
 			tabPage_Skill.Text = "Скилы";
 			tabPage_Skill.UseVisualStyleBackColor = true;
@@ -546,10 +562,9 @@
 			// 
 			label_Skill_Skill.AutoSize = true;
 			label_Skill_Skill.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Skill_Skill.Location = new Point(6, 5);
-			label_Skill_Skill.Margin = new Padding(2, 0, 2, 0);
+			label_Skill_Skill.Location = new Point(9, 8);
 			label_Skill_Skill.Name = "label_Skill_Skill";
-			label_Skill_Skill.Size = new Size(330, 32);
+			label_Skill_Skill.Size = new Size(493, 48);
 			label_Skill_Skill.TabIndex = 14;
 			label_Skill_Skill.Text = "Выберите навыки из списка:";
 			// 
@@ -557,10 +572,9 @@
 			// 
 			panel_ChoiceSkill.Controls.Add(checkedListBox_Skills);
 			panel_ChoiceSkill.Dock = DockStyle.Bottom;
-			panel_ChoiceSkill.Location = new Point(0, 36);
-			panel_ChoiceSkill.Margin = new Padding(2);
+			panel_ChoiceSkill.Location = new Point(0, 69);
 			panel_ChoiceSkill.Name = "panel_ChoiceSkill";
-			panel_ChoiceSkill.Size = new Size(426, 486);
+			panel_ChoiceSkill.Size = new Size(696, 810);
 			panel_ChoiceSkill.TabIndex = 13;
 			// 
 			// checkedListBox_Skills
@@ -571,9 +585,8 @@
 			checkedListBox_Skills.FormattingEnabled = true;
 			checkedListBox_Skills.Items.AddRange(new object[] { "Athletics", "Acrobatics", "Agulity", "Stealth", "Arcana", "History", "Investigation", "Nature", "Religion", "Animal", "Insight", "Medicine", "Perception", "Surival", "Deception", "Intimidation", "Perfomance", "Persuasion" });
 			checkedListBox_Skills.Location = new Point(0, 0);
-			checkedListBox_Skills.Margin = new Padding(2);
 			checkedListBox_Skills.Name = "checkedListBox_Skills";
-			checkedListBox_Skills.Size = new Size(426, 486);
+			checkedListBox_Skills.Size = new Size(696, 810);
 			checkedListBox_Skills.TabIndex = 0;
 			checkedListBox_Skills.SelectedIndexChanged += checkedListBox_Skills_SelectedIndexChanged;
 			// 
@@ -581,10 +594,9 @@
 			// 
 			tabPage_Abilities.Controls.Add(label_Abilities_Abilities);
 			tabPage_Abilities.Controls.Add(panel_Abilities);
-			tabPage_Abilities.Location = new Point(4, 24);
-			tabPage_Abilities.Margin = new Padding(2);
+			tabPage_Abilities.Location = new Point(4, 34);
 			tabPage_Abilities.Name = "tabPage_Abilities";
-			tabPage_Abilities.Size = new Size(426, 522);
+			tabPage_Abilities.Size = new Size(696, 879);
 			tabPage_Abilities.TabIndex = 4;
 			tabPage_Abilities.Text = "Характеристики";
 			tabPage_Abilities.UseVisualStyleBackColor = true;
@@ -593,10 +605,9 @@
 			// 
 			label_Abilities_Abilities.AutoSize = true;
 			label_Abilities_Abilities.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Abilities_Abilities.Location = new Point(6, 7);
-			label_Abilities_Abilities.Margin = new Padding(2, 0, 2, 0);
+			label_Abilities_Abilities.Location = new Point(9, 12);
 			label_Abilities_Abilities.Name = "label_Abilities_Abilities";
-			label_Abilities_Abilities.Size = new Size(278, 32);
+			label_Abilities_Abilities.Size = new Size(415, 48);
 			label_Abilities_Abilities.TabIndex = 15;
 			label_Abilities_Abilities.Text = "Укажите характеристки:";
 			// 
@@ -615,75 +626,68 @@
 			panel_Abilities.Controls.Add(label_Agility);
 			panel_Abilities.Controls.Add(label_Strength);
 			panel_Abilities.Dock = DockStyle.Bottom;
-			panel_Abilities.Location = new Point(0, 41);
-			panel_Abilities.Margin = new Padding(2);
+			panel_Abilities.Location = new Point(0, 77);
 			panel_Abilities.Name = "panel_Abilities";
-			panel_Abilities.Size = new Size(426, 481);
+			panel_Abilities.Size = new Size(696, 802);
 			panel_Abilities.TabIndex = 0;
 			// 
 			// numericUpDown_Charisma
 			// 
 			numericUpDown_Charisma.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Charisma.Location = new Point(144, 318);
-			numericUpDown_Charisma.Margin = new Padding(2);
+			numericUpDown_Charisma.Location = new Point(206, 530);
 			numericUpDown_Charisma.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Charisma.Name = "numericUpDown_Charisma";
-			numericUpDown_Charisma.Size = new Size(45, 33);
+			numericUpDown_Charisma.Size = new Size(64, 45);
 			numericUpDown_Charisma.TabIndex = 17;
 			numericUpDown_Charisma.ValueChanged += numericUpDown_ValueChanged;
 			// 
 			// numericUpDown_Wisdom
 			// 
 			numericUpDown_Wisdom.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Wisdom.Location = new Point(144, 253);
-			numericUpDown_Wisdom.Margin = new Padding(2);
+			numericUpDown_Wisdom.Location = new Point(206, 422);
 			numericUpDown_Wisdom.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Wisdom.Name = "numericUpDown_Wisdom";
-			numericUpDown_Wisdom.Size = new Size(45, 33);
+			numericUpDown_Wisdom.Size = new Size(64, 45);
 			numericUpDown_Wisdom.TabIndex = 16;
 			numericUpDown_Wisdom.ValueChanged += numericUpDown_ValueChanged;
 			// 
 			// numericUpDown_Intelligence
 			// 
 			numericUpDown_Intelligence.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Intelligence.Location = new Point(144, 187);
-			numericUpDown_Intelligence.Margin = new Padding(2);
+			numericUpDown_Intelligence.Location = new Point(206, 312);
 			numericUpDown_Intelligence.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Intelligence.Name = "numericUpDown_Intelligence";
-			numericUpDown_Intelligence.Size = new Size(45, 33);
+			numericUpDown_Intelligence.Size = new Size(64, 45);
 			numericUpDown_Intelligence.TabIndex = 15;
 			numericUpDown_Intelligence.ValueChanged += numericUpDown_ValueChanged;
 			// 
 			// numericUpDown_Agility
 			// 
 			numericUpDown_Agility.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Agility.Location = new Point(144, 71);
-			numericUpDown_Agility.Margin = new Padding(2);
+			numericUpDown_Agility.Location = new Point(206, 118);
 			numericUpDown_Agility.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Agility.Name = "numericUpDown_Agility";
-			numericUpDown_Agility.Size = new Size(45, 33);
+			numericUpDown_Agility.Size = new Size(64, 45);
 			numericUpDown_Agility.TabIndex = 14;
 			numericUpDown_Agility.ValueChanged += numericUpDown_ValueChanged;
 			// 
 			// numericUpDown_Physique
 			// 
 			numericUpDown_Physique.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Physique.Location = new Point(144, 127);
-			numericUpDown_Physique.Margin = new Padding(2);
+			numericUpDown_Physique.Location = new Point(206, 212);
 			numericUpDown_Physique.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Physique.Name = "numericUpDown_Physique";
-			numericUpDown_Physique.Size = new Size(45, 33);
+			numericUpDown_Physique.Size = new Size(64, 45);
 			numericUpDown_Physique.TabIndex = 13;
 			numericUpDown_Physique.ValueChanged += numericUpDown_ValueChanged;
 			// 
 			// numericUpDown_Strength
 			// 
 			numericUpDown_Strength.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			numericUpDown_Strength.Location = new Point(144, 21);
-			numericUpDown_Strength.Margin = new Padding(2);
+			numericUpDown_Strength.Location = new Point(206, 35);
 			numericUpDown_Strength.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
 			numericUpDown_Strength.Name = "numericUpDown_Strength";
-			numericUpDown_Strength.Size = new Size(45, 33);
+			numericUpDown_Strength.Size = new Size(64, 45);
 			numericUpDown_Strength.TabIndex = 12;
 			numericUpDown_Strength.ValueChanged += numericUpDown_ValueChanged;
 			// 
@@ -691,9 +695,10 @@
 			// 
 			label_Charisma.AutoSize = true;
 			label_Charisma.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Charisma.Location = new Point(28, 320);
+			label_Charisma.Location = new Point(40, 533);
+			label_Charisma.Margin = new Padding(4, 0, 4, 0);
 			label_Charisma.Name = "label_Charisma";
-			label_Charisma.Size = new Size(91, 25);
+			label_Charisma.Size = new Size(135, 40);
 			label_Charisma.TabIndex = 11;
 			label_Charisma.Text = "Charisma";
 			// 
@@ -701,9 +706,10 @@
 			// 
 			label_Wisdom.AutoSize = true;
 			label_Wisdom.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Wisdom.Location = new Point(28, 255);
+			label_Wisdom.Location = new Point(40, 425);
+			label_Wisdom.Margin = new Padding(4, 0, 4, 0);
 			label_Wisdom.Name = "label_Wisdom";
-			label_Wisdom.Size = new Size(81, 25);
+			label_Wisdom.Size = new Size(122, 40);
 			label_Wisdom.TabIndex = 10;
 			label_Wisdom.Text = "Wisdom";
 			// 
@@ -711,9 +717,10 @@
 			// 
 			label_Intelligence.AutoSize = true;
 			label_Intelligence.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Intelligence.Location = new Point(28, 189);
+			label_Intelligence.Location = new Point(40, 315);
+			label_Intelligence.Margin = new Padding(4, 0, 4, 0);
 			label_Intelligence.Name = "label_Intelligence";
-			label_Intelligence.Size = new Size(110, 25);
+			label_Intelligence.Size = new Size(163, 40);
 			label_Intelligence.TabIndex = 9;
 			label_Intelligence.Text = "Intelligence";
 			// 
@@ -721,9 +728,10 @@
 			// 
 			label_Physique.AutoSize = true;
 			label_Physique.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Physique.Location = new Point(28, 129);
+			label_Physique.Location = new Point(40, 215);
+			label_Physique.Margin = new Padding(4, 0, 4, 0);
 			label_Physique.Name = "label_Physique";
-			label_Physique.Size = new Size(88, 25);
+			label_Physique.Size = new Size(130, 40);
 			label_Physique.TabIndex = 8;
 			label_Physique.Text = "Physique";
 			// 
@@ -731,9 +739,10 @@
 			// 
 			label_Agility.AutoSize = true;
 			label_Agility.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Agility.Location = new Point(28, 73);
+			label_Agility.Location = new Point(40, 122);
+			label_Agility.Margin = new Padding(4, 0, 4, 0);
 			label_Agility.Name = "label_Agility";
-			label_Agility.Size = new Size(65, 25);
+			label_Agility.Size = new Size(98, 40);
 			label_Agility.TabIndex = 7;
 			label_Agility.Text = "Agility";
 			// 
@@ -741,20 +750,427 @@
 			// 
 			label_Strength.AutoSize = true;
 			label_Strength.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label_Strength.Location = new Point(28, 23);
+			label_Strength.Location = new Point(40, 38);
+			label_Strength.Margin = new Padding(4, 0, 4, 0);
 			label_Strength.Name = "label_Strength";
-			label_Strength.Size = new Size(83, 25);
+			label_Strength.Size = new Size(125, 40);
 			label_Strength.TabIndex = 6;
 			label_Strength.Text = "Strength";
+			// 
+			// tabPage_SkillsPossession
+			// 
+			tabPage_SkillsPossession.Controls.Add(groupBox_MusicalInstrumentProficiencies);
+			tabPage_SkillsPossession.Controls.Add(groupBox_GamingSetProficiencies);
+			tabPage_SkillsPossession.Controls.Add(groupBox_InstrumentsProficiencies);
+			tabPage_SkillsPossession.Controls.Add(groupBox_WeaponsGroups);
+			tabPage_SkillsPossession.Controls.Add(groupBox_WeaponsProficiencies);
+			tabPage_SkillsPossession.Controls.Add(groupBox_ArmorProficiencies);
+			tabPage_SkillsPossession.Location = new Point(4, 34);
+			tabPage_SkillsPossession.Name = "tabPage_SkillsPossession";
+			tabPage_SkillsPossession.Padding = new Padding(3);
+			tabPage_SkillsPossession.Size = new Size(696, 879);
+			tabPage_SkillsPossession.TabIndex = 5;
+			tabPage_SkillsPossession.Text = "Навыки Владения";
+			tabPage_SkillsPossession.UseVisualStyleBackColor = true;
+			// 
+			// groupBox_MusicalInstrumentProficiencies
+			// 
+			groupBox_MusicalInstrumentProficiencies.Controls.Add(checkedListBox_MusicalInstrumentProficiencies);
+			groupBox_MusicalInstrumentProficiencies.Location = new Point(3, 382);
+			groupBox_MusicalInstrumentProficiencies.Name = "groupBox_MusicalInstrumentProficiencies";
+			groupBox_MusicalInstrumentProficiencies.Size = new Size(304, 241);
+			groupBox_MusicalInstrumentProficiencies.TabIndex = 7;
+			groupBox_MusicalInstrumentProficiencies.TabStop = false;
+			groupBox_MusicalInstrumentProficiencies.Text = "Musical Instrument Proficiencies";
+			// 
+			// checkedListBox_MusicalInstrumentProficiencies
+			// 
+			checkedListBox_MusicalInstrumentProficiencies.CheckOnClick = true;
+			checkedListBox_MusicalInstrumentProficiencies.Dock = DockStyle.Fill;
+			checkedListBox_MusicalInstrumentProficiencies.FormattingEnabled = true;
+			checkedListBox_MusicalInstrumentProficiencies.Items.AddRange(new object[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "PanFlute", "Shawm", "Viol" });
+			checkedListBox_MusicalInstrumentProficiencies.Location = new Point(3, 27);
+			checkedListBox_MusicalInstrumentProficiencies.Name = "checkedListBox_MusicalInstrumentProficiencies";
+			checkedListBox_MusicalInstrumentProficiencies.Size = new Size(298, 211);
+			checkedListBox_MusicalInstrumentProficiencies.TabIndex = 0;
+			checkedListBox_MusicalInstrumentProficiencies.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// groupBox_GamingSetProficiencies
+			// 
+			groupBox_GamingSetProficiencies.Controls.Add(checkedListBox_GamingSetProficiencies);
+			groupBox_GamingSetProficiencies.Location = new Point(3, 629);
+			groupBox_GamingSetProficiencies.Name = "groupBox_GamingSetProficiencies";
+			groupBox_GamingSetProficiencies.Size = new Size(304, 241);
+			groupBox_GamingSetProficiencies.TabIndex = 7;
+			groupBox_GamingSetProficiencies.TabStop = false;
+			groupBox_GamingSetProficiencies.Text = "Gaming Set Proficiencies";
+			// 
+			// checkedListBox_GamingSetProficiencies
+			// 
+			checkedListBox_GamingSetProficiencies.CheckOnClick = true;
+			checkedListBox_GamingSetProficiencies.Dock = DockStyle.Fill;
+			checkedListBox_GamingSetProficiencies.FormattingEnabled = true;
+			checkedListBox_GamingSetProficiencies.Items.AddRange(new object[] { "DiceSet", "DragonchessSet", "PlayingCardSet", "ThreeDragonAnteSet" });
+			checkedListBox_GamingSetProficiencies.Location = new Point(3, 27);
+			checkedListBox_GamingSetProficiencies.Name = "checkedListBox_GamingSetProficiencies";
+			checkedListBox_GamingSetProficiencies.Size = new Size(298, 211);
+			checkedListBox_GamingSetProficiencies.TabIndex = 0;
+			checkedListBox_GamingSetProficiencies.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// groupBox_InstrumentsProficiencies
+			// 
+			groupBox_InstrumentsProficiencies.Controls.Add(checkedListBox_InstrumentsProficiencies);
+			groupBox_InstrumentsProficiencies.Location = new Point(313, 451);
+			groupBox_InstrumentsProficiencies.Name = "groupBox_InstrumentsProficiencies";
+			groupBox_InstrumentsProficiencies.Size = new Size(372, 419);
+			groupBox_InstrumentsProficiencies.TabIndex = 6;
+			groupBox_InstrumentsProficiencies.TabStop = false;
+			groupBox_InstrumentsProficiencies.Text = "Instruments Proficiencies";
+			// 
+			// checkedListBox_InstrumentsProficiencies
+			// 
+			checkedListBox_InstrumentsProficiencies.CheckOnClick = true;
+			checkedListBox_InstrumentsProficiencies.Dock = DockStyle.Fill;
+			checkedListBox_InstrumentsProficiencies.FormattingEnabled = true;
+			checkedListBox_InstrumentsProficiencies.Items.AddRange(new object[] { "AlchemistsSupplies", "BrewersSupplies", "CalligraphersSupplies", "CarpentersTools", "CartographersTools", "CobblersTools", "CooksUtensils", "GlassblowersTools", "JewelersTools", "LeatherworkersTools", "MasonsTools", "PaintersSupplies", "PottersTools", "SmithsTools", "TinkersTools", "WeaversTools", "WoodcarversTools", "NavigatorsTools", "PoisonersKit", "ThievesTools", "DisguiseKit", "ForgeryKit", "Herbalism" });
+			checkedListBox_InstrumentsProficiencies.Location = new Point(3, 27);
+			checkedListBox_InstrumentsProficiencies.Name = "checkedListBox_InstrumentsProficiencies";
+			checkedListBox_InstrumentsProficiencies.Size = new Size(366, 389);
+			checkedListBox_InstrumentsProficiencies.TabIndex = 4;
+			checkedListBox_InstrumentsProficiencies.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// groupBox_WeaponsGroups
+			// 
+			groupBox_WeaponsGroups.Controls.Add(checkedListBox_WeaponsGroups);
+			groupBox_WeaponsGroups.Location = new Point(3, 187);
+			groupBox_WeaponsGroups.Name = "groupBox_WeaponsGroups";
+			groupBox_WeaponsGroups.Size = new Size(304, 189);
+			groupBox_WeaponsGroups.TabIndex = 6;
+			groupBox_WeaponsGroups.TabStop = false;
+			groupBox_WeaponsGroups.Text = "Weapons Groups";
+			// 
+			// checkedListBox_WeaponsGroups
+			// 
+			checkedListBox_WeaponsGroups.CheckOnClick = true;
+			checkedListBox_WeaponsGroups.Dock = DockStyle.Fill;
+			checkedListBox_WeaponsGroups.FormattingEnabled = true;
+			checkedListBox_WeaponsGroups.Items.AddRange(new object[] { "SimpleMelee", "SimpleRanged", "MartialMelee", "MartialRanged" });
+			checkedListBox_WeaponsGroups.Location = new Point(3, 27);
+			checkedListBox_WeaponsGroups.Name = "checkedListBox_WeaponsGroups";
+			checkedListBox_WeaponsGroups.Size = new Size(298, 159);
+			checkedListBox_WeaponsGroups.TabIndex = 0;
+			checkedListBox_WeaponsGroups.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// groupBox_WeaponsProficiencies
+			// 
+			groupBox_WeaponsProficiencies.Controls.Add(checkedListBox_WeaponsProficiencies);
+			groupBox_WeaponsProficiencies.Location = new Point(313, 6);
+			groupBox_WeaponsProficiencies.Name = "groupBox_WeaponsProficiencies";
+			groupBox_WeaponsProficiencies.Size = new Size(375, 441);
+			groupBox_WeaponsProficiencies.TabIndex = 5;
+			groupBox_WeaponsProficiencies.TabStop = false;
+			groupBox_WeaponsProficiencies.Text = "Weapons Proficiencies";
+			// 
+			// checkedListBox_WeaponsProficiencies
+			// 
+			checkedListBox_WeaponsProficiencies.CheckOnClick = true;
+			checkedListBox_WeaponsProficiencies.Dock = DockStyle.Fill;
+			checkedListBox_WeaponsProficiencies.FormattingEnabled = true;
+			checkedListBox_WeaponsProficiencies.Items.AddRange(new object[] { "Club", "Dagger", "Greatclub", "Handaxe", "Javelin", "LightHammer", "Mace", "Quarterstaff", "Sickle", "Spear", "Crossbow", "Dart", "Shortbow", "Sling", "Battleaxe", "Flail", "Glaive", "Greataxe", "Greatsword", "Halberd", "Lance", "Longsword", "Maul,", "Morningstar,", "Pike,", "Rapier,", "Scimitar,", "Shortsword,", "Trident", "WarPick", "Warhammer", "Whip", "Blowgun", "CrossbowHand", "CrossbowHeavy", "Longbow", "Net" });
+			checkedListBox_WeaponsProficiencies.Location = new Point(3, 27);
+			checkedListBox_WeaponsProficiencies.Name = "checkedListBox_WeaponsProficiencies";
+			checkedListBox_WeaponsProficiencies.Size = new Size(369, 411);
+			checkedListBox_WeaponsProficiencies.TabIndex = 4;
+			checkedListBox_WeaponsProficiencies.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// groupBox_ArmorProficiencies
+			// 
+			groupBox_ArmorProficiencies.Controls.Add(checkedListBox_ArmorProficiencies);
+			groupBox_ArmorProficiencies.Location = new Point(3, 6);
+			groupBox_ArmorProficiencies.Name = "groupBox_ArmorProficiencies";
+			groupBox_ArmorProficiencies.Size = new Size(304, 175);
+			groupBox_ArmorProficiencies.TabIndex = 0;
+			groupBox_ArmorProficiencies.TabStop = false;
+			groupBox_ArmorProficiencies.Text = "Armor Proficiencies";
+			// 
+			// checkedListBox_ArmorProficiencies
+			// 
+			checkedListBox_ArmorProficiencies.CheckOnClick = true;
+			checkedListBox_ArmorProficiencies.Dock = DockStyle.Fill;
+			checkedListBox_ArmorProficiencies.FormattingEnabled = true;
+			checkedListBox_ArmorProficiencies.Items.AddRange(new object[] { "LightArmor", "MediumArmor", "HeavyArmor", "Shield" });
+			checkedListBox_ArmorProficiencies.Location = new Point(3, 27);
+			checkedListBox_ArmorProficiencies.Name = "checkedListBox_ArmorProficiencies";
+			checkedListBox_ArmorProficiencies.Size = new Size(298, 145);
+			checkedListBox_ArmorProficiencies.TabIndex = 5;
+			checkedListBox_ArmorProficiencies.SelectedIndexChanged += checkedListBox_Proficiencies_SelectedIndexChanged;
+			// 
+			// tabPage_Characters
+			// 
+			tabPage_Characters.Controls.Add(textBox_Bonds);
+			tabPage_Characters.Controls.Add(textBox_Flaws);
+			tabPage_Characters.Controls.Add(textBox_Ideals);
+			tabPage_Characters.Controls.Add(label_Flaws);
+			tabPage_Characters.Controls.Add(label_Bonds);
+			tabPage_Characters.Controls.Add(label_Ideals);
+			tabPage_Characters.Controls.Add(textBox_PersonalityTraits);
+			tabPage_Characters.Controls.Add(textBox_Alignment);
+			tabPage_Characters.Controls.Add(label_PersonalityTraits);
+			tabPage_Characters.Controls.Add(label_Alignment);
+			tabPage_Characters.Controls.Add(label_Background);
+			tabPage_Characters.Controls.Add(textBox_Background);
+			tabPage_Characters.Controls.Add(textBox_Weight);
+			tabPage_Characters.Controls.Add(label_Weight);
+			tabPage_Characters.Controls.Add(textBox_Hair);
+			tabPage_Characters.Controls.Add(textBox_Skin);
+			tabPage_Characters.Controls.Add(textBox_Eyes);
+			tabPage_Characters.Controls.Add(textBox_Height);
+			tabPage_Characters.Controls.Add(textBox_Age);
+			tabPage_Characters.Controls.Add(label_Hair);
+			tabPage_Characters.Controls.Add(label_Skin);
+			tabPage_Characters.Controls.Add(label_Eyes);
+			tabPage_Characters.Controls.Add(label_Height);
+			tabPage_Characters.Controls.Add(label_Age);
+			tabPage_Characters.Location = new Point(4, 34);
+			tabPage_Characters.Name = "tabPage_Characters";
+			tabPage_Characters.Padding = new Padding(3);
+			tabPage_Characters.Size = new Size(696, 879);
+			tabPage_Characters.TabIndex = 6;
+			tabPage_Characters.Text = "Характер";
+			tabPage_Characters.UseVisualStyleBackColor = true;
+			// 
+			// textBox_Bonds
+			// 
+			textBox_Bonds.Font = new Font("Segoe UI", 12F);
+			textBox_Bonds.Location = new Point(8, 574);
+			textBox_Bonds.Multiline = true;
+			textBox_Bonds.Name = "textBox_Bonds";
+			textBox_Bonds.Size = new Size(680, 123);
+			textBox_Bonds.TabIndex = 25;
+			// 
+			// textBox_Flaws
+			// 
+			textBox_Flaws.Font = new Font("Segoe UI", 12F);
+			textBox_Flaws.Location = new Point(460, 365);
+			textBox_Flaws.Multiline = true;
+			textBox_Flaws.Name = "textBox_Flaws";
+			textBox_Flaws.Size = new Size(228, 158);
+			textBox_Flaws.TabIndex = 24;
+			// 
+			// textBox_Ideals
+			// 
+			textBox_Ideals.Font = new Font("Segoe UI", 12F);
+			textBox_Ideals.Location = new Point(114, 365);
+			textBox_Ideals.Multiline = true;
+			textBox_Ideals.Name = "textBox_Ideals";
+			textBox_Ideals.Size = new Size(228, 158);
+			textBox_Ideals.TabIndex = 24;
+			// 
+			// label_Flaws
+			// 
+			label_Flaws.AutoSize = true;
+			label_Flaws.Font = new Font("Segoe UI", 9F);
+			label_Flaws.Location = new Point(349, 374);
+			label_Flaws.Name = "label_Flaws";
+			label_Flaws.Size = new Size(105, 25);
+			label_Flaws.TabIndex = 22;
+			label_Flaws.Text = "Недостатки";
+			// 
+			// label_Bonds
+			// 
+			label_Bonds.AutoSize = true;
+			label_Bonds.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label_Bonds.Location = new Point(16, 539);
+			label_Bonds.Name = "label_Bonds";
+			label_Bonds.Size = new Size(79, 32);
+			label_Bonds.TabIndex = 23;
+			label_Bonds.Text = "Связи";
+			// 
+			// label_Ideals
+			// 
+			label_Ideals.AutoSize = true;
+			label_Ideals.Font = new Font("Segoe UI", 9F);
+			label_Ideals.Location = new Point(16, 365);
+			label_Ideals.Name = "label_Ideals";
+			label_Ideals.Size = new Size(75, 25);
+			label_Ideals.TabIndex = 22;
+			label_Ideals.Text = "Идеалы";
+			// 
+			// textBox_PersonalityTraits
+			// 
+			textBox_PersonalityTraits.Font = new Font("Segoe UI", 12F);
+			textBox_PersonalityTraits.Location = new Point(460, 201);
+			textBox_PersonalityTraits.Multiline = true;
+			textBox_PersonalityTraits.Name = "textBox_PersonalityTraits";
+			textBox_PersonalityTraits.Size = new Size(228, 158);
+			textBox_PersonalityTraits.TabIndex = 21;
+			// 
+			// textBox_Alignment
+			// 
+			textBox_Alignment.Font = new Font("Segoe UI", 12F);
+			textBox_Alignment.Location = new Point(114, 201);
+			textBox_Alignment.Multiline = true;
+			textBox_Alignment.Name = "textBox_Alignment";
+			textBox_Alignment.Size = new Size(228, 158);
+			textBox_Alignment.TabIndex = 20;
+			// 
+			// label_PersonalityTraits
+			// 
+			label_PersonalityTraits.AutoSize = true;
+			label_PersonalityTraits.Font = new Font("Segoe UI", 9F);
+			label_PersonalityTraits.Location = new Point(376, 201);
+			label_PersonalityTraits.Name = "label_PersonalityTraits";
+			label_PersonalityTraits.Size = new Size(90, 50);
+			label_PersonalityTraits.TabIndex = 15;
+			label_PersonalityTraits.Text = "Черты\r\nЛичности";
+			// 
+			// label_Alignment
+			// 
+			label_Alignment.AutoSize = true;
+			label_Alignment.Font = new Font("Segoe UI", 9F);
+			label_Alignment.Location = new Point(16, 201);
+			label_Alignment.Name = "label_Alignment";
+			label_Alignment.Size = new Size(85, 50);
+			label_Alignment.TabIndex = 14;
+			label_Alignment.Text = "Мирвоз-\r\nзрение";
+			// 
+			// label_Background
+			// 
+			label_Background.AutoSize = true;
+			label_Background.Font = new Font("Segoe UI", 12F);
+			label_Background.Location = new Point(8, 690);
+			label_Background.Name = "label_Background";
+			label_Background.Size = new Size(168, 32);
+			label_Background.TabIndex = 13;
+			label_Background.Text = "Предыстория:";
+			// 
+			// textBox_Background
+			// 
+			textBox_Background.Font = new Font("Segoe UI", 12F);
+			textBox_Background.Location = new Point(8, 725);
+			textBox_Background.Multiline = true;
+			textBox_Background.Name = "textBox_Background";
+			textBox_Background.Size = new Size(680, 148);
+			textBox_Background.TabIndex = 12;
+			// 
+			// textBox_Weight
+			// 
+			textBox_Weight.Font = new Font("Segoe UI", 12F);
+			textBox_Weight.Location = new Point(114, 122);
+			textBox_Weight.Name = "textBox_Weight";
+			textBox_Weight.Size = new Size(107, 39);
+			textBox_Weight.TabIndex = 11;
+			textBox_Weight.TextChanged += textBox_Validation_TextChanged;
+			// 
+			// label_Weight
+			// 
+			label_Weight.AutoSize = true;
+			label_Weight.Font = new Font("Segoe UI", 12F);
+			label_Weight.Location = new Point(8, 125);
+			label_Weight.Name = "label_Weight";
+			label_Weight.Size = new Size(57, 32);
+			label_Weight.TabIndex = 10;
+			label_Weight.Text = "Вес:";
+			// 
+			// textBox_Hair
+			// 
+			textBox_Hair.Font = new Font("Segoe UI", 12F);
+			textBox_Hair.Location = new Point(357, 122);
+			textBox_Hair.Name = "textBox_Hair";
+			textBox_Hair.Size = new Size(331, 39);
+			textBox_Hair.TabIndex = 9;
+			// 
+			// textBox_Skin
+			// 
+			textBox_Skin.Font = new Font("Segoe UI", 12F);
+			textBox_Skin.Location = new Point(357, 67);
+			textBox_Skin.Name = "textBox_Skin";
+			textBox_Skin.Size = new Size(331, 39);
+			textBox_Skin.TabIndex = 8;
+			// 
+			// textBox_Eyes
+			// 
+			textBox_Eyes.Font = new Font("Segoe UI", 12F);
+			textBox_Eyes.Location = new Point(357, 14);
+			textBox_Eyes.Name = "textBox_Eyes";
+			textBox_Eyes.Size = new Size(331, 39);
+			textBox_Eyes.TabIndex = 7;
+			// 
+			// textBox_Height
+			// 
+			textBox_Height.Font = new Font("Segoe UI", 12F);
+			textBox_Height.Location = new Point(114, 67);
+			textBox_Height.Name = "textBox_Height";
+			textBox_Height.Size = new Size(107, 39);
+			textBox_Height.TabIndex = 6;
+			textBox_Height.TextChanged += textBox_Validation_TextChanged;
+			// 
+			// textBox_Age
+			// 
+			textBox_Age.Font = new Font("Segoe UI", 12F);
+			textBox_Age.Location = new Point(114, 14);
+			textBox_Age.Name = "textBox_Age";
+			textBox_Age.Size = new Size(107, 39);
+			textBox_Age.TabIndex = 5;
+			textBox_Age.TextChanged += textBox_Validation_TextChanged;
+			// 
+			// label_Hair
+			// 
+			label_Hair.AutoSize = true;
+			label_Hair.Font = new Font("Segoe UI", 12F);
+			label_Hair.Location = new Point(255, 125);
+			label_Hair.Name = "label_Hair";
+			label_Hair.Size = new Size(102, 32);
+			label_Hair.TabIndex = 4;
+			label_Hair.Text = "Волосы:";
+			// 
+			// label_Skin
+			// 
+			label_Skin.AutoSize = true;
+			label_Skin.Font = new Font("Segoe UI", 12F);
+			label_Skin.Location = new Point(256, 70);
+			label_Skin.Name = "label_Skin";
+			label_Skin.Size = new Size(77, 32);
+			label_Skin.TabIndex = 3;
+			label_Skin.Text = "Кожа:";
+			// 
+			// label_Eyes
+			// 
+			label_Eyes.AutoSize = true;
+			label_Eyes.Font = new Font("Segoe UI", 12F);
+			label_Eyes.Location = new Point(255, 17);
+			label_Eyes.Name = "label_Eyes";
+			label_Eyes.Size = new Size(78, 32);
+			label_Eyes.TabIndex = 2;
+			label_Eyes.Text = "Глаза:";
+			// 
+			// label_Height
+			// 
+			label_Height.AutoSize = true;
+			label_Height.Font = new Font("Segoe UI", 12F);
+			label_Height.Location = new Point(8, 70);
+			label_Height.Name = "label_Height";
+			label_Height.Size = new Size(67, 32);
+			label_Height.TabIndex = 1;
+			label_Height.Text = "Рост:";
+			// 
+			// label_Age
+			// 
+			label_Age.AutoSize = true;
+			label_Age.Font = new Font("Segoe UI", 12F);
+			label_Age.Location = new Point(8, 17);
+			label_Age.Name = "label_Age";
+			label_Age.Size = new Size(105, 32);
+			label_Age.TabIndex = 0;
+			label_Age.Text = "Возраст:";
 			// 
 			// button_Save_Char
 			// 
 			button_Save_Char.Dock = DockStyle.Bottom;
 			button_Save_Char.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			button_Save_Char.Location = new Point(0, 551);
-			button_Save_Char.Margin = new Padding(2);
+			button_Save_Char.Location = new Point(0, 919);
 			button_Save_Char.Name = "button_Save_Char";
-			button_Save_Char.Size = new Size(434, 32);
+			button_Save_Char.Size = new Size(704, 53);
 			button_Save_Char.TabIndex = 1;
 			button_Save_Char.Text = "Сохранить персонажа";
 			button_Save_Char.UseVisualStyleBackColor = true;
@@ -762,14 +1178,13 @@
 			// 
 			// CreateChar
 			// 
-			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleDimensions = new SizeF(10F, 25F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(434, 583);
+			ClientSize = new Size(704, 972);
 			Controls.Add(button_Save_Char);
 			Controls.Add(tabControlCreateChar);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			Icon = (Icon)resources.GetObject("$this.Icon");
-			Margin = new Padding(2);
 			Name = "CreateChar";
 			Text = "CreateChar";
 			Load += CreateChar_Load;
@@ -797,6 +1212,15 @@
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Agility).EndInit();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Physique).EndInit();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Strength).EndInit();
+			tabPage_SkillsPossession.ResumeLayout(false);
+			groupBox_MusicalInstrumentProficiencies.ResumeLayout(false);
+			groupBox_GamingSetProficiencies.ResumeLayout(false);
+			groupBox_InstrumentsProficiencies.ResumeLayout(false);
+			groupBox_WeaponsGroups.ResumeLayout(false);
+			groupBox_WeaponsProficiencies.ResumeLayout(false);
+			groupBox_ArmorProficiencies.ResumeLayout(false);
+			tabPage_Characters.ResumeLayout(false);
+			tabPage_Characters.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -818,7 +1242,7 @@
 		private RadioButton radioButton_Halforc;
 		private RadioButton radioButton_Dragonborn;
 		private RadioButton radioButton_Dwarf;
-		private RadioButton radioButton_Gnom;
+		private RadioButton radioButton_Gnome;
 		private Label label_Race_Race;
 		private Label label_Class_Class;
 		private Panel panel_ChoiceClass;
@@ -853,5 +1277,43 @@
 		private NumericUpDown numericUpDown_Agility;
 		private NumericUpDown numericUpDown_Physique;
 		private NumericUpDown numericUpDown_Strength;
+		private TabPage tabPage_SkillsPossession;
+		private GroupBox groupBox_ArmorProficiencies;
+		private CheckedListBox checkedListBox_WeaponsProficiencies;
+		private CheckedListBox checkedListBox_ArmorProficiencies;
+		private GroupBox groupBox_WeaponsGroups;
+		private GroupBox groupBox_WeaponsProficiencies;
+		private CheckedListBox checkedListBox_WeaponsGroups;
+		private GroupBox groupBox_InstrumentsProficiencies;
+		private CheckedListBox checkedListBox_InstrumentsProficiencies;
+		private GroupBox groupBox_MusicalInstrumentProficiencies;
+		private CheckedListBox checkedListBox_MusicalInstrumentProficiencies;
+		private GroupBox groupBox_GamingSetProficiencies;
+		private CheckedListBox checkedListBox_GamingSetProficiencies;
+		private TabPage tabPage_Characters;
+		private Label label_Eyes;
+		private Label label_Height;
+		private Label label_Age;
+		private TextBox textBox_Skin;
+		private TextBox textBox_Eyes;
+		private TextBox textBox_Height;
+		private TextBox textBox_Age;
+		private Label label_Hair;
+		private Label label_Skin;
+		private TextBox textBox_Weight;
+		private Label label_Weight;
+		private TextBox textBox_Hair;
+		private TextBox textBox_Background;
+		private Label label_Background;
+		private TextBox textBox_Bonds;
+		private TextBox textBox_Flaws;
+		private TextBox textBox_Ideals;
+		private Label label_Flaws;
+		private Label label_Bonds;
+		private Label label_Ideals;
+		private TextBox textBox_PersonalityTraits;
+		private TextBox textBox_Alignment;
+		private Label label_PersonalityTraits;
+		private Label label_Alignment;
 	}
 }

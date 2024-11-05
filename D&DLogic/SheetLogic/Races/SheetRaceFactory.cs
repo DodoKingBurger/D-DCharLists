@@ -56,7 +56,7 @@ namespace D_DCharLists
 		/// <exception cref="NotImplementedException">В списке такой рассы нету.</exception>
 		public SheetRaceBase CreateSheetRace(string sheetRace)
 		{
-			if (Enum.TryParse<EnumClassesDnd5E>(sheetRace, out EnumClassesDnd5E result))
+			if (Enum.TryParse<EnumRacesDnd5E>(sheetRace, out EnumRacesDnd5E result))
 			{
 				switch (sheetRace)
 				{

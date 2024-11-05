@@ -7,11 +7,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>photo_2024-09-16_22-51-37.ico</ApplicationIcon>
+    <ApplicationIcon>Image\WhooshKitty.ico</ApplicationIcon>
     <PackageIcon></PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="photo_2024-09-16_22-51-37.ico" />
+    <Content Include="Image\WhooshKitty.ico" />
   </ItemGroup>
 
   <ItemGroup>

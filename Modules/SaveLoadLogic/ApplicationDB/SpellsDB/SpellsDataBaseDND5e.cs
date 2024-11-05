@@ -13,9 +13,12 @@ namespace D_DCharLists
 		public static Dictionary<int, SpellBase> SpellsDB = new Dictionary<int, SpellBase>();
 
 		/// <summary>
-		/// Путь к БД.
+		/// Информация о папке.
 		/// </summary>
-		private static DirectoryInfo folderInfo = new DirectoryInfo(@"Data\DND5E\DataBases");
+		private static DirectoryInfo folderInfo = new DirectoryInfo(String.Join("\\",
+			AppDomain.CurrentDomain.BaseDirectory.Split('\\')
+			[0..(AppDomain.CurrentDomain.BaseDirectory.Split('\\').Count() - 4)])
+			+ "\\Data\\DND5E\\DataBases");
 
 		#endregion
 

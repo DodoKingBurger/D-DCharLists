@@ -4,6 +4,9 @@ using Newtonsoft.Json.Serialization;
 
 namespace D_DCharLists
 {
+	/// <summary>
+	/// Распознователь контракта рассы для сериализации.
+	/// </summary>
 	public class RaceSpecifiedConcreteClassConverter : DefaultContractResolver
 	{
 		protected override JsonConverter ResolveContractConverter(Type objectType)
@@ -17,8 +20,13 @@ namespace D_DCharLists
 		}
 	}
 
+	/// <summary>
+	/// Конвектер для расс.
+	/// </summary>
 	public class RaceConvertorJson : JsonConverter
 	{
+		#region Базовый класс
+
 		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new RaceSpecifiedConcreteClassConverter() };
 
 		public override bool CanConvert(Type objectType)
@@ -73,5 +81,7 @@ namespace D_DCharLists
 		{
 			throw new NotImplementedException();
 		}
+
+		#endregion
 	}
 }

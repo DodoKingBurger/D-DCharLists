@@ -16,8 +16,10 @@ namespace D_DCharLists
 		/// <summary>
 		/// Информация о папке.
 		/// </summary>
-		private static DirectoryInfo _folderInfo = new DirectoryInfo(@"Data\DND5E\DataBases");
-
+		private static DirectoryInfo folderInfo = new DirectoryInfo(String.Join("\\", 
+			AppDomain.CurrentDomain.BaseDirectory.Split('\\')
+			[0..(AppDomain.CurrentDomain.BaseDirectory.Split('\\').Count() - 4)]) 
+			+ "\\Data\\DND5E\\DataBases");
 		#endregion
 
 		#region Методы
@@ -27,7 +29,7 @@ namespace D_DCharLists
 		/// </summary>
 		public static void LoadItemsBase()
 		{
-			foreach (var item in _folderInfo.GetFiles())
+			foreach (var item in folderInfo.GetFiles())
 			{
 				if (item.Name == "DND5eItemsDB.json")
 				{
