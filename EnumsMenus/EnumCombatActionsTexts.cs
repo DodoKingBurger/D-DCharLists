@@ -6,17 +6,17 @@ namespace D_DCharLists
 	public enum EnumCombatActionsTexts
 	{
 		/// <summary>
-		/// Инициатива +.
+		/// Раунд +.
 		/// </summary>
 		RoundPlus,
 
 		/// <summary>
-		/// Инициатива -.
+		/// Раунд -.
 		/// </summary>
 		RoundMinus,
 
 		/// <summary>
-		/// Обновить инициативу.
+		/// Обновить колличество раундов.
 		/// </summary>
 		RoundRestore,
 

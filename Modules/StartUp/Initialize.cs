@@ -43,7 +43,7 @@ namespace D_DCharList
 		#region Методы
 
 		/// <summary>
-		/// Проверка есть ли уже созданные персонажы, и проверяет есть ли база данных предметов.
+		/// Проверка есть ли уже созданные папки для БД.
 		/// </summary>
 		/// <exception cref="ArgumentException"></exception>
 		private void CheckAndCreateFolders()

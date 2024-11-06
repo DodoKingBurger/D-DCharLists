@@ -8,7 +8,7 @@ namespace D_DCharLists
 	public partial class StartForms : Form
 	{
 		#region Поля и свойства
-		
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -23,12 +23,21 @@ namespace D_DCharLists
 
 		#region Методы
 
+		/// <summary>
+		/// Момент загрузки формы.
+		/// </summary>
+		/// <param name="sender">Форма.</param>
+		/// <param name="e">Событие загрузки.</param>
 		private void StartForms_Load(object sender, EventArgs e)
 		{
+
 			initialize = new Initialize();
 			initialize.Start();
 		}
+		private void groupBox_CharList_Enter(object sender, EventArgs e)
+		{
 
+		}
 		/// <summary>
 		/// Вызывает окно создания персонажа
 		/// </summary>
@@ -40,6 +49,10 @@ namespace D_DCharLists
 			createChar.ShowDialog();
 		}
 
+		private void bt_SaveChar_Click(object sender, EventArgs e)
+		{
+			CurrentHeroSheet.SaveSheet();
+		}
 		#endregion
 
 		#region Конструкторы
@@ -50,5 +63,7 @@ namespace D_DCharLists
 		}
 
 		#endregion
+
+
 	}
 }

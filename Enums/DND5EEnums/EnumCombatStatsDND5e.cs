@@ -41,7 +41,7 @@ namespace D_DCharLists
 		DeathFailure,
 
 		/// <summary>
-		/// Инициатива.
+		/// Раунд.
 		/// </summary>
 		Round
 	}

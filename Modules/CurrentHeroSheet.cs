@@ -21,7 +21,7 @@ namespace D_DCharList.Modules
 		/// <summary>
 		/// Выьор редакции D&D
 		/// </summary>
-		/// <param name="edition"></param>
+		/// <param name="edition">Какая версия D&D листа созадеться</param>
 		public static void SetSheetEdition(EnumEditions edition)
 		{
 			switch (edition)

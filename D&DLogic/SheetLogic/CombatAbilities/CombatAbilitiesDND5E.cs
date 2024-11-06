@@ -41,7 +41,7 @@ namespace D_DCharLists
 				[EnumCombatStatsDND5e.DeathSucces] = 0,
 				[EnumCombatStatsDND5e.MaximumHP] = 1,
 				[EnumCombatStatsDND5e.TemporaryHP] = 0,
-				[EnumCombatStatsDND5e.Round] = 1
+				[EnumCombatStatsDND5e.Round] = 1,
 			};
 		}
 
