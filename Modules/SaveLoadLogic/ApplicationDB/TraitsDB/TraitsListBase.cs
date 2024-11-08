@@ -27,7 +27,7 @@ namespace D_DCharLists
 		{
 			if (!TraitsList.ContainsKey(traitId))
 			{
-				TraitsList[traitId] = TraitsDataBaseDND5e.TraitsDB[traitId].LevelGained;
+				TraitsList[traitId] = TraitsDataBase.TraitsDB[traitId].LevelGained;
 			}
 			else
 			{

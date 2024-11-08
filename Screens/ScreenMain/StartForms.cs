@@ -56,32 +56,32 @@ namespace D_DCharLists
 				label_Char_Name.Text = CurrentHeroSheet.HeroSheet.Name;
 				label_Char_Race.Text = CurrentHeroSheet.HeroSheet.SheetRace.Name.ToString();
 				label_Char_Class.Text = CurrentHeroSheet.HeroSheet.SheetClass.Name.ToString();
-				label_Char_Background.Text = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[EnumPersonalitiesDND5E.Background];
-				label_Char_Alignment.Text = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[EnumPersonalitiesDND5E.Alignment];
+				label_Char_Background.Text = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[EnumPersonalities.Background];
+				label_Char_Alignment.Text = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[EnumPersonalities.Alignment];
 				//Прогрессия
 				numericUpDown_Char_Level.Value = CurrentHeroSheet.HeroSheet.SheetProgression.Level;
 				label_Char_Exp.Text = $"{CurrentHeroSheet.HeroSheet.SheetProgression.Expirience}";
 				label_Char_ProficiencyBonus.Text = $"{CurrentHeroSheet.HeroSheet.SheetProgression.GetProficiencyBonus}";
 				checkBox_Inspiration.Checked = CurrentHeroSheet.HeroSheet.Inspiration;
 				//Боевые харктеристики
-				numericUpDown_Char_MaxHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.MaximumHP];
-				numericUpDown_Char_NowHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.CurrentHP];
-				numericUpDown_Char_TempHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.TemporaryHP];
+				numericUpDown_Char_MaxHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.MaximumHP];
+				numericUpDown_Char_NowHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.CurrentHP];
+				numericUpDown_Char_TempHP.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.TemporaryHP];
 				label_Char_Speed.Text = $"{CurrentHeroSheet.HeroSheet.SheetRace.Speed}";
-				numericUpDown_Char_ArmorClass.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.ArmorClass];
+				numericUpDown_Char_ArmorClass.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.ArmorClass];
 				//Кости хитов.
 				label_Char_HitDice.Text = $"{CurrentHeroSheet.HeroSheet.SheetClass.HitDice}";
-				numericUpDown_Char_HowHitDice.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.CurrentHitDices];
+				numericUpDown_Char_HowHitDice.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.CurrentHitDices];
 				//Характеристики.
-				numericUpDown_Char_Strength.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Strength];
-				numericUpDown_Char_Agility.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Agility];
-				numericUpDown_Char_Physique.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Physique];
-				numericUpDown_Char_Intelligence.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Intelligence];
-				numericUpDown_Char_Wisdom.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Wisdom];
-				numericUpDown_Char_Charisma.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilitiesDnd5E.Charisma];
+				numericUpDown_Char_Strength.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Strength];
+				numericUpDown_Char_Agility.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Agility];
+				numericUpDown_Char_Physique.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Physique];
+				numericUpDown_Char_Intelligence.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Intelligence];
+				numericUpDown_Char_Wisdom.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Wisdom];
+				numericUpDown_Char_Charisma.Value = CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities[EnumAbilities.Charisma];
 				//Спасброски
-				trackBar_Char_DeathSucces.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.DeathSucces];
-				trackBar_Char_DeathFailure.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.DeathFailure];
+				trackBar_Char_DeathSucces.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.DeathSucces];
+				trackBar_Char_DeathFailure.Value = CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.DeathFailure];
 			}
 			else
 			{

@@ -57,9 +57,9 @@ namespace D_DCharList
 
 					foreach (var itemY in folderInfo.GetDirectories())
 					{
-						if (itemY.Name == "DND5E")
+						if (itemY.Name == "DND")
 						{
-							folderInfo = new DirectoryInfo(programmFolder + @"\Data\DND5E");
+							folderInfo = new DirectoryInfo(programmFolder + @"\Data\DND");
 
 							foreach (var itemZ in folderInfo.GetDirectories())
 							{
@@ -82,32 +82,23 @@ namespace D_DCharList
 				Directory.SetCurrentDirectory(programmFolder);
 				Directory.CreateDirectory("Data");
 				Directory.SetCurrentDirectory(programmFolder + @"\Data");
-				Directory.CreateDirectory("DND5E");
-				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
+				Directory.CreateDirectory("DND");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND");
 				Directory.CreateDirectory("CharacterSheets");
 				Directory.CreateDirectory("DataBases");
 			}
 			else if (isCharacterSheetsExist == false)
 			{
-				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND");
 				Directory.CreateDirectory("CharacterSheets");
 			}
 			else if (isDataBasesExist == false)
 			{
-				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND5E");
+				Directory.SetCurrentDirectory(programmFolder + @"\Data\DND");
 				Directory.CreateDirectory("DataBases");
 			}
 
 			Directory.SetCurrentDirectory(programmFolder);
-		}
-
-		/// <summary>
-		/// Загрузка текущий версии.
-		/// </summary>
-		/// <param name="edition"></param>
-		private void LoadEditionDND(EnumEditions edition)
-		{
-			CurrentHeroSheet.SetSheetEdition(edition);
 		}
 
 		/// <summary>
@@ -117,7 +108,6 @@ namespace D_DCharList
 		{
 			CheckAndCreateFolders();
 			LoadDataBases();
-			LoadEditionDND(EnumEditions.DND5E);
 		}
 
 		/// <summary>
@@ -125,9 +115,9 @@ namespace D_DCharList
 		/// </summary>
 		static private void LoadDataBases()
 		{
-			ItemsDataBaseDND5e.LoadItemsBase();
-			SpellsDataBaseDND5e.LoadDB();
-			TraitsDataBaseDND5e.LoadDB();
+			ItemsDataBase.LoadItemsBase();
+			SpellsDataBase.LoadDB();
+			TraitsDataBase.LoadDB();
 		}
 
 		#endregion

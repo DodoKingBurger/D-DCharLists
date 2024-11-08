@@ -40,31 +40,31 @@ namespace D_DCharLists
 			switch (jo["Name"].Value<int>())
 			{
 				case 0:
-					return JsonConvert.DeserializeObject<GnomeRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<GnomeRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 1:
-					return JsonConvert.DeserializeObject<DwarfRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<DwarfRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 2:
-					return JsonConvert.DeserializeObject<DragonbornRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<DragonbornRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 3:
-					return JsonConvert.DeserializeObject<HalforcRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<HalforcRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 4:
-					return JsonConvert.DeserializeObject<HalflingRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<HalflingRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 5:
-					return JsonConvert.DeserializeObject<HalfelfRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<HalfelfRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 6:
-					return JsonConvert.DeserializeObject<TieflingRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<TieflingRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 7:
-					return JsonConvert.DeserializeObject<HumanRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<HumanRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 8:
-					return JsonConvert.DeserializeObject<ElfRaceDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ElfRace>(jo.ToString(), SpecifiedSubclassConversion);
 
 				default:
 					throw new Exception();

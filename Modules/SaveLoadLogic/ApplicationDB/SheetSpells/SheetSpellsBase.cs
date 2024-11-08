@@ -26,7 +26,7 @@ namespace D_DCharLists
 		{
 			if (!SheetSpells.ContainsKey(id))
 			{
-				SheetSpells[id] = SpellsDataBaseDND5e.SpellsDB[id].Level;
+				SheetSpells[id] = SpellsDataBase.SpellsDB[id].Level;
 			}
 			else
 			{

@@ -12,7 +12,7 @@ namespace D_DCharLists
 		/// Название класса. 
 		/// </summary>
 		[JsonProperty("Name")]
-		public EnumClassesDnd5E Name { get; set; }
+		public EnumClasses Name { get; set; }
 
 		/// <summary>
 		/// Кость хитов. 
@@ -24,6 +24,6 @@ namespace D_DCharLists
 		/// Список основных характеристик. 
 		/// </summary>
 		[JsonProperty("SaveThrows")]
-		public List<EnumAbilitiesDnd5E> SaveThrows {  get; set; }
+		public List<EnumAbilities> SaveThrows {  get; set; }
 	}
 }

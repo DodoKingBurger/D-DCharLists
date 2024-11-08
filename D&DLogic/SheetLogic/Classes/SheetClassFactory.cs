@@ -12,48 +12,48 @@ namespace D_DCharLists
 		/// <returns>Сзданный дата щит запрошенного класса, если название отправленно неизвестное создает Варвара по дефолту.</returns>
 		public SheetClassBase CreateSheetClass(Enum sheetClass)
 		{
-			if (Enum.TryParse<EnumClassesDnd5E>(sheetClass.ToString(), out EnumClassesDnd5E result))
+			if (Enum.TryParse<EnumClasses>(sheetClass.ToString(), out EnumClasses result))
 			{
 				switch (result)
 				{
-					case EnumClassesDnd5E.Barbarian:
-						return new BarbarianClassDND5e();
+					case EnumClasses.Barbarian:
+						return new BarbarianClass();
 
-					case EnumClassesDnd5E.Bard:
-						return new BardClassDND5e();
+					case EnumClasses.Bard:
+						return new BardClass();
 
-					case EnumClassesDnd5E.Cleric:
-						return new ClericClassDND5e();
+					case EnumClasses.Cleric:
+						return new ClericClass();
 
-					case EnumClassesDnd5E.Druid:
-						return new DruidClassDND5e();
+					case EnumClasses.Druid:
+						return new DruidClass();
 
-					case EnumClassesDnd5E.Fighter:
-						return new FighterClassDND5e();
+					case EnumClasses.Fighter:
+						return new FighterClass();
 
-					case EnumClassesDnd5E.Monk:
-						return new MonkClassDND5e();
+					case EnumClasses.Monk:
+						return new MonkClass();
 
-					case EnumClassesDnd5E.Paladin:
-						return new PaladinClassDND5e();
+					case EnumClasses.Paladin:
+						return new PaladinClass();
 
-					case EnumClassesDnd5E.Ranger:
-						return new RangerClassDND5e();
+					case EnumClasses.Ranger:
+						return new RangerClass();
 
-					case EnumClassesDnd5E.Rogue:
-						return new RogueClassDND5e();
+					case EnumClasses.Rogue:
+						return new RogueClass();
 
-					case EnumClassesDnd5E.Sorcerer:
-						return new SorcererClassDND5e();
+					case EnumClasses.Sorcerer:
+						return new SorcererClass();
 
-					case EnumClassesDnd5E.Warlock:
-						return new WarlockClassDND5e();
+					case EnumClasses.Warlock:
+						return new WarlockClass();
 
-					case EnumClassesDnd5E.Wizard:
-						return new WizardClassDND5e();
+					case EnumClasses.Wizard:
+						return new WizardClass();
 				}
 			}
-			return new BarbarianClassDND5e();
+			return new BarbarianClass();
 		}
 
 		/// <summary>
@@ -63,48 +63,48 @@ namespace D_DCharLists
 		/// <returns>Сзданный дата щит запрошенного класса, если название отправленно неизвестное создает Варвара по дефолту.</returns>
 		public SheetClassBase CreateSheetClass(string sheetClass)
 		{
-			if (Enum.TryParse<EnumClassesDnd5E>(sheetClass, out EnumClassesDnd5E result))
+			if (Enum.TryParse<EnumClasses>(sheetClass, out EnumClasses result))
 			{
 				switch (result)
 				{
-					case EnumClassesDnd5E.Barbarian:
-						return new BarbarianClassDND5e();
+					case EnumClasses.Barbarian:
+						return new BarbarianClass();
 
-					case EnumClassesDnd5E.Bard:
-						return new BardClassDND5e();
+					case EnumClasses.Bard:
+						return new BardClass();
 
-					case EnumClassesDnd5E.Cleric:
-						return new ClericClassDND5e();
+					case EnumClasses.Cleric:
+						return new ClericClass();
 
-					case EnumClassesDnd5E.Druid:
-						return new DruidClassDND5e();
+					case EnumClasses.Druid:
+						return new DruidClass();
 
-					case EnumClassesDnd5E.Fighter:
-						return new FighterClassDND5e();
+					case EnumClasses.Fighter:
+						return new FighterClass();
 
-					case EnumClassesDnd5E.Monk:
-						return new MonkClassDND5e();
+					case EnumClasses.Monk:
+						return new MonkClass();
 
-					case EnumClassesDnd5E.Paladin:
-						return new PaladinClassDND5e();
+					case EnumClasses.Paladin:
+						return new PaladinClass();
 
-					case EnumClassesDnd5E.Ranger:
-						return new RangerClassDND5e();
+					case EnumClasses.Ranger:
+						return new RangerClass();
 
-					case EnumClassesDnd5E.Rogue:
-						return new RogueClassDND5e();
+					case EnumClasses.Rogue:
+						return new RogueClass();
 
-					case EnumClassesDnd5E.Sorcerer:
-						return new SorcererClassDND5e();
+					case EnumClasses.Sorcerer:
+						return new SorcererClass();
 
-					case EnumClassesDnd5E.Warlock:
-						return new WarlockClassDND5e();
+					case EnumClasses.Warlock:
+						return new WarlockClass();
 
-					case EnumClassesDnd5E.Wizard:
-						return new WizardClassDND5e();
+					case EnumClasses.Wizard:
+						return new WizardClass();
 				}
 			}
-			return new BarbarianClassDND5e();
+			return new BarbarianClass();
 		}
 	}
 }

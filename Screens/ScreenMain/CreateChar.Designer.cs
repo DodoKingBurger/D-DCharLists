@@ -154,7 +154,7 @@
 			tabControlCreateChar.Controls.Add(tabPage_SkillsPossession);
 			tabControlCreateChar.Controls.Add(tabPage_Characters);
 			tabControlCreateChar.Dock = DockStyle.Top;
-			tabControlCreateChar.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic, GraphicsUnit.Point, 204);
+			tabControlCreateChar.Font = new Font("Monotype Corsiva", 11F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			tabControlCreateChar.Location = new Point(0, 0);
 			tabControlCreateChar.Name = "tabControlCreateChar";
 			tabControlCreateChar.SelectedIndex = 0;
@@ -952,10 +952,10 @@
 			tabPage_Characters.Controls.Add(label_Height);
 			tabPage_Characters.Controls.Add(label_Age);
 			tabPage_Characters.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			tabPage_Characters.Location = new Point(4, 33);
+			tabPage_Characters.Location = new Point(4, 35);
 			tabPage_Characters.Name = "tabPage_Characters";
 			tabPage_Characters.Padding = new Padding(3);
-			tabPage_Characters.Size = new Size(696, 880);
+			tabPage_Characters.Size = new Size(696, 878);
 			tabPage_Characters.TabIndex = 6;
 			tabPage_Characters.Text = "Характер";
 			tabPage_Characters.UseVisualStyleBackColor = true;

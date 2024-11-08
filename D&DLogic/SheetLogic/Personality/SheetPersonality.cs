@@ -11,13 +11,13 @@ namespace D_DCharLists
 		/// Информация о личности.
 		/// </summary>
 		[JsonProperty("PersonalityList")]
-		public Dictionary<EnumPersonalitiesDND5E, string> PersonalityList { get; protected set; }
+		public Dictionary<EnumPersonalities, string> PersonalityList { get; protected set; }
 
 		/// <summary>
 		/// Изменить информацию о личности.
 		/// </summary>
 		/// <param name="personality">Какую часть личности хотим изменить.</param>
 		/// <param name="value">Новая информация.</param>
-		public abstract void AddPersonality(EnumPersonalitiesDND5E personality, string value);
+		public abstract void AddPersonality(EnumPersonalities personality, string value);
 	}
 }

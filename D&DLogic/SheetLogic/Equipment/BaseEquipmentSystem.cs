@@ -13,7 +13,7 @@ namespace D_DCharLists
 		/// Список слотов и экипировка приписанная к ним.
 		/// </summary>
 		[JsonProperty("EquipmentSlots")]
-		public Dictionary<EnumEquipmentSlotsDND5e, ItemBaseDND5e> EquipmentSlots {  get; set; }
+		public Dictionary<EnumEquipmentSlots, ItemBase> EquipmentSlots {  get; set; }
 
 		#endregion
 
@@ -24,7 +24,7 @@ namespace D_DCharLists
 		/// </summary>
 		/// <param name="slot">Ячейка слота.</param>
 		/// <param name="item">Новый предмет.</param>
-		public void EquipItem(EnumEquipmentSlotsDND5e slot, ItemBaseDND5e item)
+		public void EquipItem(EnumEquipmentSlots slot, ItemBase item)
 		{
 			EquipmentSlots[slot] = item;
 		}
@@ -33,7 +33,7 @@ namespace D_DCharLists
 		/// Удаление экипировки из слота.
 		/// </summary>
 		/// <param name="slot">Ячейка слота.</param>
-		public void UnEquipSlot(EnumEquipmentSlotsDND5e slot)
+		public void UnEquipSlot(EnumEquipmentSlots slot)
 		{
 			if (EquipmentSlots.ContainsKey(slot))
 			{

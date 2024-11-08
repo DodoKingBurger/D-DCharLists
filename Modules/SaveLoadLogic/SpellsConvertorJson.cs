@@ -37,7 +37,7 @@ namespace D_DCharLists
 		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
 		{
 			JObject jo = JObject.Load(reader);
-			return JsonConvert.DeserializeObject<SpellDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+			return JsonConvert.DeserializeObject<Spell>(jo.ToString(), SpecifiedSubclassConversion);
 		}
 
 		public override bool CanWrite

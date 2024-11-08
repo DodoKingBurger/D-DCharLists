@@ -15,7 +15,7 @@ namespace D_DCharLists
 		/// Список характеристик.
 		/// </summary>
 		[JsonProperty("Abilities")]
-		public Dictionary<EnumAbilitiesDnd5E, int> Abilities { get; set; }
+		public Dictionary<EnumAbilities, int> Abilities { get; set; }
 
 		#endregion
 
@@ -26,14 +26,14 @@ namespace D_DCharLists
 		/// </summary>
 		/// <param name="ability">Способность.</param>
 		/// <returns>Значения модификатор</returns>
-		public abstract int GetAbilityModificator(EnumAbilitiesDnd5E ability);
+		public abstract int GetAbilityModificator(EnumAbilities ability);
 
 		/// <summary>
 		/// Получить значение значения характеристик.
 		/// </summary>
 		/// <param name="ability">Название способности.</param>
 		/// <returns>Значение модификатора.</returns>
-		public abstract int GetAbilityScore(EnumAbilitiesDnd5E ability);
+		public abstract int GetAbilityScore(EnumAbilities ability);
 
 		/// <summary>
 		/// Рассчитать модификатор характеристики.
@@ -52,13 +52,13 @@ namespace D_DCharLists
 		/// Повышение характеристики +1.
 		/// </summary>
 		/// <param name="abilityName">Название характеристики.</param>
-		public abstract void RaiseAbilityScore(EnumAbilitiesDnd5E abilityName);
+		public abstract void RaiseAbilityScore(EnumAbilities abilityName);
 
 		/// <summary>
 		/// Понижение характеристик -1.
 		/// </summary>
 		/// <param name="abilityName">Название характеристики.</param>
-		public abstract void LowerAbilityScore(EnumAbilitiesDnd5E abilityName);
+		public abstract void LowerAbilityScore(EnumAbilities abilityName);
 
 		#endregion
 

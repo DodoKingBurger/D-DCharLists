@@ -14,7 +14,7 @@ namespace D_DCharLists
 		/// Статистика боевых параметров.
 		/// </summary>
 		[JsonProperty("CombatStats")]
-		public Dictionary<EnumCombatStatsDND5e, int> CombatStats {  get; set; }
+		public Dictionary<EnumCombatStats, int> CombatStats {  get; set; }
 
 		#endregion 
 

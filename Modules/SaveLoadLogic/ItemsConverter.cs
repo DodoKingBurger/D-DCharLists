@@ -11,7 +11,7 @@ namespace D_DCharLists
 	{
 		protected override JsonConverter ResolveContractConverter(Type objectType)
 		{
-			if (typeof(ItemBaseDND5e).IsAssignableFrom(objectType) && !objectType.IsAbstract)
+			if (typeof(ItemBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
 			{
 				return null;
 			}
@@ -31,7 +31,7 @@ namespace D_DCharLists
 
 		public override bool CanConvert(Type objectType)
 		{
-			return (objectType == typeof(ItemBaseDND5e));
+			return (objectType == typeof(ItemBase));
 		}
 
 		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
@@ -40,16 +40,16 @@ namespace D_DCharLists
 			switch (jo["ItemType"].Value<int>())
 			{
 				case 0:
-					return JsonConvert.DeserializeObject<ItemArmorDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ItemArmor>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 1:
-					return JsonConvert.DeserializeObject<ItemWeaponDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ItemWeapon>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 2:
-					return JsonConvert.DeserializeObject<ItemRegularDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ItemRegular>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 3:
-					return JsonConvert.DeserializeObject<ItemCoinDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ItemCoin>(jo.ToString(), SpecifiedSubclassConversion);
 
 				default:
 					throw new Exception();

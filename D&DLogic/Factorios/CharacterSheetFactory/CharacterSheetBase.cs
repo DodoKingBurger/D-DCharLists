@@ -16,11 +16,6 @@ namespace D_DCharLists
 		public string Name { get; set; }
 
 		/// <summary>
-		/// Издание.
-		/// </summary>
-		public EnumEditions Edition { get; set; }
-
-		/// <summary>
 		/// Расса.
 		/// </summary>
 		public SheetRaceBase SheetRace { get; set; }

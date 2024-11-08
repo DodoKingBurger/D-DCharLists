@@ -12,40 +12,40 @@ namespace D_DCharLists
 		/// <returns>Инициализрованную сущность, если переданный список не подходт под рассовый, то создаст Драконорожденного.</returns>
 		public SheetRaceBase CreateSheetRace(Enum sheetRace)
 		{
-			if (Enum.TryParse<EnumRacesDnd5E>(sheetRace.ToString(), out EnumRacesDnd5E result))
+			if (Enum.TryParse<EnumRaces>(sheetRace.ToString(), out EnumRaces result))
 			{
 				switch (result)
 				{
-					case EnumRacesDnd5E.Dragonborn:
-						return new DragonbornRaceDND5e();
+					case EnumRaces.Dragonborn:
+						return new DragonbornRace();
 
-					case EnumRacesDnd5E.Dwarf:
-						return new DwarfRaceDND5e();
+					case EnumRaces.Dwarf:
+						return new DwarfRace();
 
-					case EnumRacesDnd5E.Elf:
-						return new ElfRaceDND5e();
+					case EnumRaces.Elf:
+						return new ElfRace();
 
-					case EnumRacesDnd5E.Gnome:
-						return new GnomeRaceDND5e();
+					case EnumRaces.Gnome:
+						return new GnomeRace();
 
-					case EnumRacesDnd5E.Halfelf:
-						return new HalfelfRaceDND5e();
+					case EnumRaces.Halfelf:
+						return new HalfelfRace();
 
-					case EnumRacesDnd5E.Halfling:
-						return new HalflingRaceDND5e();
+					case EnumRaces.Halfling:
+						return new HalflingRace();
 
-					case EnumRacesDnd5E.Halforc:
-						return new HalforcRaceDND5e();
+					case EnumRaces.Halforc:
+						return new HalforcRace();
 
-					case EnumRacesDnd5E.Human:
-						return new HumanRaceDND5e();
+					case EnumRaces.Human:
+						return new HumanRace();
 
-					case EnumRacesDnd5E.Tiefling:
-						return new TieflingRaceDND5e();
+					case EnumRaces.Tiefling:
+						return new TieflingRace();
 				}
 			}
 
-			return new DragonbornRaceDND5e();
+			return new DragonbornRace();
 		}
 
 		/// <summary>
@@ -56,36 +56,36 @@ namespace D_DCharLists
 		/// <exception cref="NotImplementedException">В списке такой рассы нету.</exception>
 		public SheetRaceBase CreateSheetRace(string sheetRace)
 		{
-			if (Enum.TryParse<EnumRacesDnd5E>(sheetRace, out EnumRacesDnd5E result))
+			if (Enum.TryParse<EnumRaces>(sheetRace, out EnumRaces result))
 			{
 				switch (sheetRace)
 				{
 					case "Dragonborn":
-						return new DragonbornRaceDND5e();
+						return new DragonbornRace();
 
 					case "Dwarf":
-						return new DwarfRaceDND5e();
+						return new DwarfRace();
 
 					case "Elf":
-						return new ElfRaceDND5e();
+						return new ElfRace();
 
 					case "Gnome":
-						return new GnomeRaceDND5e();
+						return new GnomeRace();
 
 					case "Halfelf":
-						return new HalfelfRaceDND5e();
+						return new HalfelfRace();
 
 					case "Halfling":
-						return new HalflingRaceDND5e();
+						return new HalflingRace();
 
 					case "Halforc":
-						return new HalforcRaceDND5e();
+						return new HalforcRace();
 
 					case "Human":
-						return new HumanRaceDND5e();
+						return new HumanRace();
 
 					case "Tiefling":
-						return new TieflingRaceDND5e();
+						return new TieflingRace();
 					default:
 						throw new NotImplementedException("Попытка создания не описанной рассы.");
 				}

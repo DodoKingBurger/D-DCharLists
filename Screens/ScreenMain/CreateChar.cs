@@ -78,7 +78,7 @@ namespace D_DCharLists.Screens.ScreenMain
 				CurrentHeroSheet.HeroSheet.SheetSkills.Skills.Clear();
 				for (int i = 0; i < checkedListBox.CheckedItems.Count; i++)
 				{
-					EnumSkillsDnd5E skill = (EnumSkillsDnd5E)Enum.Parse(typeof(EnumSkillsDnd5E), checkedListBox.CheckedItems[i].ToString());
+					EnumSkills skill = (EnumSkills)Enum.Parse(typeof(EnumSkills), checkedListBox.CheckedItems[i].ToString());
 					CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
 				}
 			}
@@ -95,12 +95,12 @@ namespace D_DCharLists.Screens.ScreenMain
 			{
 				Dictionary<Enum, int> ListAbilities = new Dictionary<Enum, int>()
 				{
-					{ EnumAbilitiesDnd5E.Strength, (int)numericUpDown_Strength.Value },
-					{ EnumAbilitiesDnd5E.Agility, (int)numericUpDown_Agility.Value  },
-					{ EnumAbilitiesDnd5E.Physique, (int)numericUpDown_Physique.Value },
-					{ EnumAbilitiesDnd5E.Intelligence, (int)numericUpDown_Intelligence.Value  },
-					{ EnumAbilitiesDnd5E.Wisdom, (int)numericUpDown_Wisdom.Value },
-					{ EnumAbilitiesDnd5E.Charisma, (int)numericUpDown_Charisma.Value  },
+					{ EnumAbilities.Strength, (int)numericUpDown_Strength.Value },
+					{ EnumAbilities.Agility, (int)numericUpDown_Agility.Value  },
+					{ EnumAbilities.Physique, (int)numericUpDown_Physique.Value },
+					{ EnumAbilities.Intelligence, (int)numericUpDown_Intelligence.Value  },
+					{ EnumAbilities.Wisdom, (int)numericUpDown_Wisdom.Value },
+					{ EnumAbilities.Charisma, (int)numericUpDown_Charisma.Value  },
 				};
 				CurrentHeroSheet.HeroSheet.SheetAbilities.SetAbilities(ListAbilities);
 			}
@@ -154,7 +154,7 @@ namespace D_DCharLists.Screens.ScreenMain
 			{
 				foreach (var str in checkedListBox)
 				{
-					EnumAllDND5eProficiencies Proficiencies = (EnumAllDND5eProficiencies)Enum.Parse(typeof(EnumAllDND5eProficiencies), str);
+					EnumAllProficiencies Proficiencies = (EnumAllProficiencies)Enum.Parse(typeof(EnumAllProficiencies), str);
 					CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(Proficiencies);
 				}
 			}
@@ -181,50 +181,50 @@ namespace D_DCharLists.Screens.ScreenMain
 		/// <param name="e">Событие.</param>
 		private void button_Save_Char_Click(object sender, EventArgs e)
 		{
-			if(CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilitiesDnd5E.Physique, out int Physique)&& 
-				CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilitiesDnd5E.Agility, out int Agility) && CurrentHeroSheet.HeroSheet.SheetClass!= null)
+			if(CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Physique, out int Physique)&& 
+				CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Agility, out int Agility) && CurrentHeroSheet.HeroSheet.SheetClass!= null)
 			{
-				foreach (var item in Enum.GetNames(typeof(EnumPersonalitiesDND5E)))
+				foreach (var item in Enum.GetNames(typeof(EnumPersonalities)))
 				{
-					if (Enum.TryParse<EnumPersonalitiesDND5E>(item, out EnumPersonalitiesDND5E result))
+					if (Enum.TryParse<EnumPersonalities>(item, out EnumPersonalities result))
 					{
 						string value = string.Empty;
 						switch (result)
 						{
-							case EnumPersonalitiesDND5E.Background:
+							case EnumPersonalities.Background:
 								value = textBox_Background.Text;
 								break;
-							case EnumPersonalitiesDND5E.Alignment:
+							case EnumPersonalities.Alignment:
 								value = textBox_Alignment.Text;
 								break;
-							case EnumPersonalitiesDND5E.PersonalityTraits:
+							case EnumPersonalities.PersonalityTraits:
 								value = textBox_PersonalityTraits.Text;
 								break;
-							case EnumPersonalitiesDND5E.Ideals:
+							case EnumPersonalities.Ideals:
 								value = textBox_Ideals.Text;
 								break;
-							case EnumPersonalitiesDND5E.Bonds:
+							case EnumPersonalities.Bonds:
 								value = textBox_Bonds.Text;
 								break;
-							case EnumPersonalitiesDND5E.Flaws:
+							case EnumPersonalities.Flaws:
 								value = textBox_Flaws.Text;
 								break;
-							case EnumPersonalitiesDND5E.Age:
+							case EnumPersonalities.Age:
 								value = textBox_Age.Text;
 								break;
-							case EnumPersonalitiesDND5E.Height:
+							case EnumPersonalities.Height:
 								value = textBox_Height.Text;
 								break;
-							case EnumPersonalitiesDND5E.Weight:
+							case EnumPersonalities.Weight:
 								value = textBox_Weight.Text;
 								break;
-							case EnumPersonalitiesDND5E.Eyes:
+							case EnumPersonalities.Eyes:
 								value = textBox_Eyes.Text;
 								break;
-							case EnumPersonalitiesDND5E.Skin:
+							case EnumPersonalities.Skin:
 								value = textBox_Skin.Text;
 								break;
-							case EnumPersonalitiesDND5E.Hair:
+							case EnumPersonalities.Hair:
 								value = textBox_Hair.Text;
 								break;
 						}
@@ -233,17 +233,17 @@ namespace D_DCharLists.Screens.ScreenMain
 				}
 
 				//Указание HP
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.MaximumHP, 
-					((int)CurrentHeroSheet.HeroSheet.SheetClass.HitDice + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilitiesDnd5E.Physique)));
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.CurrentHP, 
-					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStatsDND5e.MaximumHP]);
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.MaximumHP, 
+					((int)CurrentHeroSheet.HeroSheet.SheetClass.HitDice + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Physique)));
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHP, 
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.MaximumHP]);
 
 				//Указание базового КД (без брони)
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.ArmorClass, 
-					10 + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilitiesDnd5E.Agility));
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.ArmorClass, 
+					10 + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Agility));
 
 				//Указание кости хитов
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStatsDND5e.CurrentHitDices, 
+				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHitDices, 
 					CurrentHeroSheet.HeroSheet.SheetProgression.Level);
 
 				//Указание спасбросков

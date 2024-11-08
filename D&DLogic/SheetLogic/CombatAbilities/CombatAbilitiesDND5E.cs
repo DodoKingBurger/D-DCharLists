@@ -10,7 +10,7 @@ namespace D_DCharLists
 
 		public override void ChangeStat(Enum stat, int value)
 		{
-			if (Enum.TryParse<EnumCombatStatsDND5e>(stat.ToString(), out EnumCombatStatsDND5e result))
+			if (Enum.TryParse<EnumCombatStats>(stat.ToString(), out EnumCombatStats result))
 			{
 				CombatStats[result] = value;
 			}
@@ -18,8 +18,8 @@ namespace D_DCharLists
 
 		public override void ResetDeathSaves()
 		{
-			CombatStats[EnumCombatStatsDND5e.DeathFailure] = 0;
-			CombatStats[EnumCombatStatsDND5e.DeathSucces] = 0;
+			CombatStats[EnumCombatStats.DeathFailure] = 0;
+			CombatStats[EnumCombatStats.DeathSucces] = 0;
 		}
 
 		#endregion
@@ -32,16 +32,16 @@ namespace D_DCharLists
 		/// </summary>
 		public CombatAbilitiesDND5E()
 		{
-			CombatStats = new Dictionary<EnumCombatStatsDND5e, int>()
+			CombatStats = new Dictionary<EnumCombatStats, int>()
 			{
-				[EnumCombatStatsDND5e.ArmorClass] = 0,
-				[EnumCombatStatsDND5e.CurrentHitDices] = 1,
-				[EnumCombatStatsDND5e.CurrentHP] = 1,
-				[EnumCombatStatsDND5e.DeathFailure] = 0,
-				[EnumCombatStatsDND5e.DeathSucces] = 0,
-				[EnumCombatStatsDND5e.MaximumHP] = 1,
-				[EnumCombatStatsDND5e.TemporaryHP] = 0,
-				[EnumCombatStatsDND5e.Round] = 1,
+				[EnumCombatStats.ArmorClass] = 0,
+				[EnumCombatStats.CurrentHitDices] = 1,
+				[EnumCombatStats.CurrentHP] = 1,
+				[EnumCombatStats.DeathFailure] = 0,
+				[EnumCombatStats.DeathSucces] = 0,
+				[EnumCombatStats.MaximumHP] = 1,
+				[EnumCombatStats.TemporaryHP] = 0,
+				[EnumCombatStats.Round] = 1,
 			};
 		}
 

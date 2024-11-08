@@ -6,12 +6,12 @@ namespace D_DCharLists
 	public class AbilitiesDnd5E : SheetAbilities
 	{
 		#region Базовый класс
-		public override int GetAbilityModificator(EnumAbilitiesDnd5E ability)
+		public override int GetAbilityModificator(EnumAbilities ability)
 		{
 			return AbilityBonus(GetAbilityScore(ability));
 		}
 
-		public override int GetAbilityScore(EnumAbilitiesDnd5E ability)
+		public override int GetAbilityScore(EnumAbilities ability)
 		{
 			return Abilities[ability];
 		}
@@ -25,21 +25,21 @@ namespace D_DCharLists
 		{
 			foreach (var item in abilities)
 			{
-				if (Enum.TryParse<EnumAbilitiesDnd5E>(item.Key.ToString(), out EnumAbilitiesDnd5E result))
+				if (Enum.TryParse<EnumAbilities>(item.Key.ToString(), out EnumAbilities result))
 				{
 					Abilities[result] = item.Value;
 				}
 			}
 		}
 
-		public override void RaiseAbilityScore(EnumAbilitiesDnd5E abilityName)
+		public override void RaiseAbilityScore(EnumAbilities abilityName)
 		{
 			if (Abilities[abilityName] + 1 <= 30)
 			{
 				Abilities[abilityName]++;
 			}
 		}
-		public override void LowerAbilityScore(EnumAbilitiesDnd5E abilityName)
+		public override void LowerAbilityScore(EnumAbilities abilityName)
 		{
 			if (Abilities[abilityName] - 1 >= 1)
 			{
@@ -57,14 +57,14 @@ namespace D_DCharLists
 		/// </summary>
 		public AbilitiesDnd5E()
 		{
-			Abilities = new Dictionary<EnumAbilitiesDnd5E, int>()
+			Abilities = new Dictionary<EnumAbilities, int>()
 			{
-				[EnumAbilitiesDnd5E.Strength] = 1,
-				[EnumAbilitiesDnd5E.Agility] = 1,
-				[EnumAbilitiesDnd5E.Physique] = 1,
-				[EnumAbilitiesDnd5E.Intelligence] = 1,
-				[EnumAbilitiesDnd5E.Wisdom] = 1,
-				[EnumAbilitiesDnd5E.Charisma] = 1
+				[EnumAbilities.Strength] = 1,
+				[EnumAbilities.Agility] = 1,
+				[EnumAbilities.Physique] = 1,
+				[EnumAbilities.Intelligence] = 1,
+				[EnumAbilities.Wisdom] = 1,
+				[EnumAbilities.Charisma] = 1
 			};
 		}
 

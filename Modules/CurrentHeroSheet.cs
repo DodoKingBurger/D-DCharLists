@@ -16,21 +16,7 @@ namespace D_DCharList.Modules
 		/// <summary>
 		/// Текущий персонаж.
 		/// </summary>
-		public static CharacterSheetBase HeroSheet = new CharacterSheetDnd5E();
-
-		/// <summary>
-		/// Выьор редакции D&D
-		/// </summary>
-		/// <param name="edition">Какая версия D&D листа созадеться</param>
-		public static void SetSheetEdition(EnumEditions edition)
-		{
-			switch (edition)
-			{
-				case EnumEditions.DND5E:
-					HeroSheet = new CharacterSheetDnd5E();
-					break;
-			}
-		}
+		public static CharacterSheetBase HeroSheet = new CharacterSheet();
 
 		/// <summary>
 		/// Сохраняем текущий лист персонажа.

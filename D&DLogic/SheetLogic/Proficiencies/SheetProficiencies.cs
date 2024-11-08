@@ -13,7 +13,7 @@ namespace D_DCharLists
 		/// Список навыков.
 		/// </summary>
 		[JsonProperty("Proficiencies")]
-		public List<EnumAllDND5eProficiencies> Proficiencies {  get; set; }
+		public List<EnumAllProficiencies> Proficiencies {  get; set; }
 
 		#endregion
 

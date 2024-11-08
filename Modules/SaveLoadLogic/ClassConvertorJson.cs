@@ -40,40 +40,40 @@ namespace D_DCharLists
 			switch (jo["Name"].Value<int>())
 			{
 				case 0:
-					return JsonConvert.DeserializeObject<BardClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<BardClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 1:
-					return JsonConvert.DeserializeObject<BarbarianClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<BarbarianClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 2:
-					return JsonConvert.DeserializeObject<FighterClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<FighterClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 3:
-					return JsonConvert.DeserializeObject<WizardClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<WizardClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 4:
-					return JsonConvert.DeserializeObject<DruidClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<DruidClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 5:
-					return JsonConvert.DeserializeObject<ClericClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<ClericClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 6:
-					return JsonConvert.DeserializeObject<WarlockClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<WarlockClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 7:
-					return JsonConvert.DeserializeObject<MonkClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<MonkClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 8:
-					return JsonConvert.DeserializeObject<PaladinClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<PaladinClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 9:
-					return JsonConvert.DeserializeObject<RogueClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<RogueClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 10:
-					return JsonConvert.DeserializeObject<RangerClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<RangerClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				case 11:
-					return JsonConvert.DeserializeObject<SorcererClassDND5e>(jo.ToString(), SpecifiedSubclassConversion);
+					return JsonConvert.DeserializeObject<SorcererClass>(jo.ToString(), SpecifiedSubclassConversion);
 
 				default:
 					throw new Exception();

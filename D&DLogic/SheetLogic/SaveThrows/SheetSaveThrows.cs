@@ -13,7 +13,7 @@ namespace D_DCharLists
 		/// Сохраненные характеристики.
 		/// </summary>
 		[JsonProperty("SaveThrows")]
-		public List<EnumAbilitiesDnd5E> SaveThrows { get; protected set; }
+		public List<EnumAbilities> SaveThrows { get; protected set; }
 
 		#endregion
 
@@ -23,7 +23,7 @@ namespace D_DCharLists
 		/// Установка списка основных характеристик.
 		/// </summary>
 		/// <param name="className">Класс.</param>
-		public abstract void SetSaveTrows(EnumClassesDnd5E className);
+		public abstract void SetSaveTrows(EnumClasses className);
 
 
 		/// <summary>
@@ -31,7 +31,7 @@ namespace D_DCharLists
 		/// </summary>
 		/// <param name="saveTrow">Список характеристик.</param>
 		/// <returns></returns>
-		public abstract bool CheckSaveThrow(EnumAbilitiesDnd5E saveTrow);
+		public abstract bool CheckSaveThrow(EnumAbilities saveTrow);
 
 		#endregion
 	}

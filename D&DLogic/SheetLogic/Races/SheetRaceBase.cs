@@ -13,7 +13,7 @@ namespace D_DCharLists
 		/// Название рассы.
 		/// </summary>
 		[JsonProperty("Name")]
-		public EnumRacesDnd5E Name { get; protected set; }
+		public EnumRaces Name { get; protected set; }
 
 		/// <summary>
 		/// Скорость рассы.
@@ -25,7 +25,7 @@ namespace D_DCharLists
 		/// Средние размеры рассы.
 		/// </summary>
 		[JsonProperty("Size")]
-		public EnumCreaturesSizesDND5e Size { get; protected set; }
+		public EnumCreaturesSizes Size { get; protected set; }
 
 		#endregion
 	}
