@@ -62,7 +62,7 @@ namespace D_DCharLists
 				throw new ArgumentException("Каталог с персонажами пуст!");
 			foreach (var item in folderInfo.GetFiles())
 			{
-				if (item.Name == nameHero)
+				if (item.Name == nameHero+".json")
 				{
 					var tempSheet = new CharacterSheet();
 						JsonSaveLoad.JsonLoad(@$"Data\DND\DataBases\{nameHero}", ref tempSheet);
