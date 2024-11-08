@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace D_DCharList
 {
+	/// <summary>
+	/// Класс для инициализации приложения.
+	/// </summary>
 	public class Initialize
 	{
 		#region Поля и свойства

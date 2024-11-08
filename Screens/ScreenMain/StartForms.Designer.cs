@@ -192,6 +192,7 @@
 			comboBox_Loading_Char.Name = "comboBox_Loading_Char";
 			comboBox_Loading_Char.Size = new Size(302, 42);
 			comboBox_Loading_Char.TabIndex = 3;
+			comboBox_Loading_Char.Click += comboBox_Loading_Char_Click;
 			// 
 			// bt_Load_Char
 			// 
@@ -201,6 +202,7 @@
 			bt_Load_Char.TabIndex = 2;
 			bt_Load_Char.Text = "Загрузить выбранного пресонажа";
 			bt_Load_Char.UseVisualStyleBackColor = true;
+			bt_Load_Char.Click += bt_Load_Char_Click;
 			// 
 			// bt_Save_Char
 			// 

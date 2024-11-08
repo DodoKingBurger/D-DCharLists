@@ -23,7 +23,7 @@ namespace D_DCharList.Modules
 		/// </summary>
 		public static void SaveSheet()
 		{
-			JsonSaveLoad.JsonSave(HeroSheet.Name, HeroSheet, $@"Data\DND5E\CharacterSheets\");
+			JsonSaveLoad.JsonSave(HeroSheet.Name, HeroSheet, $@"Data\DND\CharacterSheets\");
 		}
 	}
 }

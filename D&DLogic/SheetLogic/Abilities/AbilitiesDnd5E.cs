@@ -18,7 +18,10 @@ namespace D_DCharLists
 
 		public override int AbilityBonus(int score)
 		{
-			return score / 2 - 5;
+			if(score>0)
+				return score / 2 - 5;
+			else
+				return 0;
 		}
 
 		public override void SetAbilities(Dictionary<Enum, int> abilities)

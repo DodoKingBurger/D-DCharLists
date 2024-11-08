@@ -1,0 +1,92 @@
+{
+  "Name": "534",
+  "SheetRace": {
+    "Name": 0,
+    "Speed": 25,
+    "Size": 1
+  },
+  "SheetClass": {
+    "Name": 0,
+    "HitDice": 8,
+    "SaveThrows": [
+      1,
+      5
+    ]
+  },
+  "SheetAbilities": {
+    "Abilities": {
+      "Strength": 1,
+      "Agility": 1,
+      "Physique": 1,
+      "Intelligence": 1,
+      "Wisdom": 1,
+      "Charisma": 1
+    }
+  },
+  "SheetSkills": {
+    "Skills": [
+      0
+    ]
+  },
+  "SheetProgression": {
+    "Expirience": 0,
+    "Level": 1
+  },
+  "SheetSaveThrows": {
+    "SaveThrows": [
+      1,
+      5
+    ]
+  },
+  "SheetPersonality": {
+    "PersonalityList": {
+      "Background": "34",
+      "Alignment": "34",
+      "PersonalityTraits": "34",
+      "Ideals": "43",
+      "Bonds": "43",
+      "Flaws": "34",
+      "Age": "34",
+      "Height": "34",
+      "Weight": "34",
+      "Eyes": "34",
+      "Skin": "34",
+      "Hair": "34"
+    }
+  },
+  "SheetCombatAbilities": {
+    "CombatStats": {
+      "ArmorClass": 5,
+      "CurrentHitDices": 1,
+      "CurrentHP": 3,
+      "DeathFailure": 0,
+      "DeathSucces": 0,
+      "MaximumHP": 3,
+      "TemporaryHP": 0,
+      "Round": 1
+    }
+  },
+  "SheetProficiencies": {
+    "Proficiencies": [
+      0,
+      47,
+      41,
+      34,
+      6,
+      9
+    ]
+  },
+  "SheetInventory": {
+    "Inventory": {}
+  },
+  "TraitsList": {
+    "TraitsList": {}
+  },
+  "SheetSpells": {
+    "SheetSpells": {}
+  },
+  "SheetEquipmentSlots": {
+    "EquipmentSlots": {}
+  },
+  "Inspiration": false
+}

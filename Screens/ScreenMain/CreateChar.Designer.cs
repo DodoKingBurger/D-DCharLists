@@ -118,6 +118,7 @@
 			label_Height = new Label();
 			label_Age = new Label();
 			button_Save_Char = new Button();
+			colorDialog1 = new ColorDialog();
 			tabControlCreateChar.SuspendLayout();
 			tabPage_Name.SuspendLayout();
 			tabPage_Race.SuspendLayout();
@@ -158,7 +159,7 @@
 			tabControlCreateChar.Location = new Point(0, 0);
 			tabControlCreateChar.Name = "tabControlCreateChar";
 			tabControlCreateChar.SelectedIndex = 0;
-			tabControlCreateChar.Size = new Size(704, 917);
+			tabControlCreateChar.Size = new Size(704, 913);
 			tabControlCreateChar.TabIndex = 0;
 			// 
 			// tabPage_Name
@@ -167,10 +168,10 @@
 			tabPage_Name.Controls.Add(label_Name_Name);
 			tabPage_Name.Controls.Add(textBox_NameChar);
 			tabPage_Name.Font = new Font("Monotype Corsiva", 18F);
-			tabPage_Name.Location = new Point(4, 33);
+			tabPage_Name.Location = new Point(4, 35);
 			tabPage_Name.Name = "tabPage_Name";
 			tabPage_Name.Padding = new Padding(3);
-			tabPage_Name.Size = new Size(696, 880);
+			tabPage_Name.Size = new Size(696, 874);
 			tabPage_Name.TabIndex = 0;
 			tabPage_Name.Text = "Имя";
 			tabPage_Name.UseVisualStyleBackColor = true;
@@ -200,10 +201,10 @@
 			tabPage_Race.Controls.Add(panel_ChoiceRace);
 			tabPage_Race.Controls.Add(label_Race_Race);
 			tabPage_Race.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic);
-			tabPage_Race.Location = new Point(4, 33);
+			tabPage_Race.Location = new Point(4, 35);
 			tabPage_Race.Name = "tabPage_Race";
 			tabPage_Race.Padding = new Padding(3);
-			tabPage_Race.Size = new Size(696, 880);
+			tabPage_Race.Size = new Size(696, 874);
 			tabPage_Race.TabIndex = 1;
 			tabPage_Race.Text = "Раса";
 			tabPage_Race.UseVisualStyleBackColor = true;
@@ -220,7 +221,7 @@
 			panel_ChoiceRace.Controls.Add(radioButton_Dwarf);
 			panel_ChoiceRace.Controls.Add(radioButton_Gnome);
 			panel_ChoiceRace.Dock = DockStyle.Bottom;
-			panel_ChoiceRace.Location = new Point(3, 75);
+			panel_ChoiceRace.Location = new Point(3, 69);
 			panel_ChoiceRace.Name = "panel_ChoiceRace";
 			panel_ChoiceRace.Size = new Size(690, 802);
 			panel_ChoiceRace.TabIndex = 10;
@@ -358,9 +359,9 @@
 			tabPage_Class.Controls.Add(label_Class_Class);
 			tabPage_Class.Controls.Add(panel_ChoiceClass);
 			tabPage_Class.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic);
-			tabPage_Class.Location = new Point(4, 33);
+			tabPage_Class.Location = new Point(4, 35);
 			tabPage_Class.Name = "tabPage_Class";
-			tabPage_Class.Size = new Size(696, 880);
+			tabPage_Class.Size = new Size(696, 874);
 			tabPage_Class.TabIndex = 2;
 			tabPage_Class.Text = "Класс";
 			tabPage_Class.UseVisualStyleBackColor = true;
@@ -390,7 +391,7 @@
 			panel_ChoiceClass.Controls.Add(radioButton_Bard);
 			panel_ChoiceClass.Controls.Add(radioButton_Barbarian);
 			panel_ChoiceClass.Dock = DockStyle.Bottom;
-			panel_ChoiceClass.Location = new Point(0, 70);
+			panel_ChoiceClass.Location = new Point(0, 64);
 			panel_ChoiceClass.Name = "panel_ChoiceClass";
 			panel_ChoiceClass.Size = new Size(696, 810);
 			panel_ChoiceClass.TabIndex = 11;
@@ -556,9 +557,9 @@
 			tabPage_Skill.Controls.Add(label_Skill_Skill);
 			tabPage_Skill.Controls.Add(panel_ChoiceSkill);
 			tabPage_Skill.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic);
-			tabPage_Skill.Location = new Point(4, 33);
+			tabPage_Skill.Location = new Point(4, 35);
 			tabPage_Skill.Name = "tabPage_Skill";
-			tabPage_Skill.Size = new Size(696, 880);
+			tabPage_Skill.Size = new Size(696, 874);
 			tabPage_Skill.TabIndex = 3;
 			tabPage_Skill.Text = "Умения";
 			tabPage_Skill.UseVisualStyleBackColor = true;
@@ -577,7 +578,7 @@
 			// 
 			panel_ChoiceSkill.Controls.Add(checkedListBox_Skills);
 			panel_ChoiceSkill.Dock = DockStyle.Bottom;
-			panel_ChoiceSkill.Location = new Point(0, 70);
+			panel_ChoiceSkill.Location = new Point(0, 64);
 			panel_ChoiceSkill.Name = "panel_ChoiceSkill";
 			panel_ChoiceSkill.Size = new Size(696, 810);
 			panel_ChoiceSkill.TabIndex = 13;
@@ -600,9 +601,9 @@
 			tabPage_Abilities.Controls.Add(label_Abilities_Abilities);
 			tabPage_Abilities.Controls.Add(panel_Abilities);
 			tabPage_Abilities.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic);
-			tabPage_Abilities.Location = new Point(4, 33);
+			tabPage_Abilities.Location = new Point(4, 35);
 			tabPage_Abilities.Name = "tabPage_Abilities";
-			tabPage_Abilities.Size = new Size(696, 880);
+			tabPage_Abilities.Size = new Size(696, 874);
 			tabPage_Abilities.TabIndex = 4;
 			tabPage_Abilities.Text = "Характеристики";
 			tabPage_Abilities.UseVisualStyleBackColor = true;
@@ -633,7 +634,7 @@
 			panel_Abilities.Controls.Add(label_Strength);
 			panel_Abilities.Dock = DockStyle.Bottom;
 			panel_Abilities.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 0);
-			panel_Abilities.Location = new Point(0, 78);
+			panel_Abilities.Location = new Point(0, 72);
 			panel_Abilities.Name = "panel_Abilities";
 			panel_Abilities.Size = new Size(696, 802);
 			panel_Abilities.TabIndex = 0;
@@ -773,10 +774,10 @@
 			tabPage_SkillsPossession.Controls.Add(groupBox_WeaponsProficiencies);
 			tabPage_SkillsPossession.Controls.Add(groupBox_ArmorProficiencies);
 			tabPage_SkillsPossession.Font = new Font("Monotype Corsiva", 10F, FontStyle.Italic);
-			tabPage_SkillsPossession.Location = new Point(4, 33);
+			tabPage_SkillsPossession.Location = new Point(4, 35);
 			tabPage_SkillsPossession.Name = "tabPage_SkillsPossession";
 			tabPage_SkillsPossession.Padding = new Padding(3);
-			tabPage_SkillsPossession.Size = new Size(696, 880);
+			tabPage_SkillsPossession.Size = new Size(696, 874);
 			tabPage_SkillsPossession.TabIndex = 5;
 			tabPage_SkillsPossession.Text = "Навыки Владения";
 			tabPage_SkillsPossession.UseVisualStyleBackColor = true;
@@ -955,7 +956,7 @@
 			tabPage_Characters.Location = new Point(4, 35);
 			tabPage_Characters.Name = "tabPage_Characters";
 			tabPage_Characters.Padding = new Padding(3);
-			tabPage_Characters.Size = new Size(696, 878);
+			tabPage_Characters.Size = new Size(696, 874);
 			tabPage_Characters.TabIndex = 6;
 			tabPage_Characters.Text = "Характер";
 			tabPage_Characters.UseVisualStyleBackColor = true;
@@ -1185,15 +1186,18 @@
 			// 
 			// button_Save_Char
 			// 
-			button_Save_Char.Dock = DockStyle.Bottom;
 			button_Save_Char.Font = new Font("Monotype Corsiva", 22F, FontStyle.Italic, GraphicsUnit.Point, 0);
-			button_Save_Char.Location = new Point(0, 919);
+			button_Save_Char.Location = new Point(0, 906);
 			button_Save_Char.Name = "button_Save_Char";
-			button_Save_Char.Size = new Size(704, 53);
+			button_Save_Char.Size = new Size(700, 63);
 			button_Save_Char.TabIndex = 1;
 			button_Save_Char.Text = "Сохранить персонажа";
 			button_Save_Char.UseVisualStyleBackColor = true;
 			button_Save_Char.Click += button_Save_Char_Click;
+			// 
+			// colorDialog1
+			// 
+			colorDialog1.Color = Color.Green;
 			// 
 			// CreateChar
 			// 
@@ -1334,5 +1338,6 @@
 		private TextBox textBox_Alignment;
 		private Label label_PersonalityTraits;
 		private Label label_Alignment;
+		private ColorDialog colorDialog1;
 	}
 }

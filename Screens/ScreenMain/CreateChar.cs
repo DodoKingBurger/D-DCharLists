@@ -12,6 +12,9 @@ using D_DCharLists;
 
 namespace D_DCharLists.Screens.ScreenMain
 {
+	/// <summary>
+	/// Форма для создания персонажа.
+	/// </summary>
 	public partial class CreateChar : Form
 	{
 		#region Поля и свойства
@@ -181,79 +184,87 @@ namespace D_DCharLists.Screens.ScreenMain
 		/// <param name="e">Событие.</param>
 		private void button_Save_Char_Click(object sender, EventArgs e)
 		{
-			if(CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Physique, out int Physique)&& 
-				CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Agility, out int Agility) && CurrentHeroSheet.HeroSheet.SheetClass!= null)
+			try
 			{
-				foreach (var item in Enum.GetNames(typeof(EnumPersonalities)))
+				if (CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Physique, out int Physique) &&
+					CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.TryGetValue(EnumAbilities.Agility, out int Agility) && CurrentHeroSheet.HeroSheet.SheetClass != null)
 				{
-					if (Enum.TryParse<EnumPersonalities>(item, out EnumPersonalities result))
+					foreach (var item in Enum.GetNames(typeof(EnumPersonalities)))
 					{
-						string value = string.Empty;
-						switch (result)
+						if (Enum.TryParse<EnumPersonalities>(item, out EnumPersonalities result))
 						{
-							case EnumPersonalities.Background:
-								value = textBox_Background.Text;
-								break;
-							case EnumPersonalities.Alignment:
-								value = textBox_Alignment.Text;
-								break;
-							case EnumPersonalities.PersonalityTraits:
-								value = textBox_PersonalityTraits.Text;
-								break;
-							case EnumPersonalities.Ideals:
-								value = textBox_Ideals.Text;
-								break;
-							case EnumPersonalities.Bonds:
-								value = textBox_Bonds.Text;
-								break;
-							case EnumPersonalities.Flaws:
-								value = textBox_Flaws.Text;
-								break;
-							case EnumPersonalities.Age:
-								value = textBox_Age.Text;
-								break;
-							case EnumPersonalities.Height:
-								value = textBox_Height.Text;
-								break;
-							case EnumPersonalities.Weight:
-								value = textBox_Weight.Text;
-								break;
-							case EnumPersonalities.Eyes:
-								value = textBox_Eyes.Text;
-								break;
-							case EnumPersonalities.Skin:
-								value = textBox_Skin.Text;
-								break;
-							case EnumPersonalities.Hair:
-								value = textBox_Hair.Text;
-								break;
+							string value = string.Empty;
+							switch (result)
+							{
+								case EnumPersonalities.Background:
+									value = textBox_Background.Text;
+									break;
+								case EnumPersonalities.Alignment:
+									value = textBox_Alignment.Text;
+									break;
+								case EnumPersonalities.PersonalityTraits:
+									value = textBox_PersonalityTraits.Text;
+									break;
+								case EnumPersonalities.Ideals:
+									value = textBox_Ideals.Text;
+									break;
+								case EnumPersonalities.Bonds:
+									value = textBox_Bonds.Text;
+									break;
+								case EnumPersonalities.Flaws:
+									value = textBox_Flaws.Text;
+									break;
+								case EnumPersonalities.Age:
+									value = textBox_Age.Text;
+									break;
+								case EnumPersonalities.Height:
+									value = textBox_Height.Text;
+									break;
+								case EnumPersonalities.Weight:
+									value = textBox_Weight.Text;
+									break;
+								case EnumPersonalities.Eyes:
+									value = textBox_Eyes.Text;
+									break;
+								case EnumPersonalities.Skin:
+									value = textBox_Skin.Text;
+									break;
+								case EnumPersonalities.Hair:
+									value = textBox_Hair.Text;
+									break;
+							}
+							CurrentHeroSheet.HeroSheet.SheetPersonality.AddPersonality(result, value);
 						}
-						CurrentHeroSheet.HeroSheet.SheetPersonality.AddPersonality(result, value);
 					}
+
+					//Указание HP
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.MaximumHP,
+						((int)CurrentHeroSheet.HeroSheet.SheetClass.HitDice + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Physique)));
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHP,
+						CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.MaximumHP]);
+
+					//Указание базового КД (без брони)
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.ArmorClass,
+						10 + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Agility));
+
+					//Указание кости хитов
+					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHitDices,
+						CurrentHeroSheet.HeroSheet.SheetProgression.Level);
+
+					//Указание спасбросков
+					CurrentHeroSheet.HeroSheet.SheetSaveThrows.SetSaveTrows(CurrentHeroSheet.HeroSheet.SheetClass.Name);
+
+					CurrentHeroSheet.SaveSheet();
+					MessageBox.Show($"Ура!!! {CurrentHeroSheet.HeroSheet.Name} прибыл познавать чудесный мир Подземелий и драконов!!!\n Удачи вам :-)", "Поздравляю", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
-
-				//Указание HP
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.MaximumHP, 
-					((int)CurrentHeroSheet.HeroSheet.SheetClass.HitDice + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Physique)));
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHP, 
-					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats[EnumCombatStats.MaximumHP]);
-
-				//Указание базового КД (без брони)
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.ArmorClass, 
-					10 + CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Agility));
-
-				//Указание кости хитов
-				CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(EnumCombatStats.CurrentHitDices, 
-					CurrentHeroSheet.HeroSheet.SheetProgression.Level);
-
-				//Указание спасбросков
-				CurrentHeroSheet.HeroSheet.SheetSaveThrows.SetSaveTrows(CurrentHeroSheet.HeroSheet.SheetClass.Name);
-
-				CurrentHeroSheet.SaveSheet();
+				else
+				{
+					MessageBox.Show("Лист персонаа не заполнен!");
+				}
 			}
-			else
+			catch (Exception ex) 
 			{
-				MessageBox.Show("Лист персонаа не заполнен!");
+				MessageBox.Show(ex.Message);
 			}
 		}
 
