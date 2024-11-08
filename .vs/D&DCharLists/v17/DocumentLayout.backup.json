@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Project DataBase\\D-DCharLists\\",
+  "WorkspaceRootPath": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|C:\\Users\\sarki\\source\\repos\\D-DCharLists\\screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,10 +35,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -54,10 +50,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
@@ -66,13 +58,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HeroDataBase.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
               "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
               "RelativeToolTip": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T10:59:05.789Z",
               "EditorCaption": ""
@@ -81,23 +73,21 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\CreateChar.cs",
               "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T05:29:04.431Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-11-08T05:29:04.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StartForms.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwEMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:54:16.046Z",
               "EditorCaption": ""
@@ -115,7 +105,7 @@
         "X": 115,
         "Y": 150,
         "Width": 1093,
-        "Height": 1197,
+        "Height": 977,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -125,11 +115,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:56:04.815Z",
