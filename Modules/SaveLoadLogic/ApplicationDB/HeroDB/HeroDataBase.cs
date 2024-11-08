@@ -48,7 +48,7 @@ namespace D_DCharLists
 			sheetInFolder = new List<string>();
 			foreach (var item in folderInfo.GetFiles())
 			{
-				sheetInFolder.Add(item.Name);
+				sheetInFolder.Add(item.Name.Split('.')[0]);
 			}
 			return sheetInFolder.ToArray();
 		}
