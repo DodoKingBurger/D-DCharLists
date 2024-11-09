@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Тифлинг.
+	/// РўРёС„Р»РёРЅРі.
 	/// </summary>
 	public class TieflingRace : SheetRaceBase
 	{

@@ -1,37 +1,37 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Редкость предмета.
+	/// РЎРїРёСЃРѕРє СЂРµРґРєРѕСЃС‚РµР№ РїСЂРµРґРјРµС‚РѕРІ.
 	/// </summary>
 	public enum EnumItemRarityTypes
 	{
 		/// <summary>
-		/// Обычный.
+		/// РћР±С‹С‡РЅС‹Р№.
 		/// </summary>
 		Usual,
 
 		/// <summary>
-		/// Необычный. 
+		/// РќРµРѕР±С‹С‡РЅС‹Р№. 
 		/// </summary>
 		Unusual,
 
 		/// <summary>
-		/// Редкий.
+		/// Р РµРґРєРёР№.
 		/// </summary>
 		Rare,
 
 		/// <summary>
-		/// Очень редкий.
+		/// РћС‡РµРЅСЊ СЂРµРґРєРёР№.
 		/// </summary>
 		VeryRare,
 
 		/// <summary>
-		/// Легенданый.
+		/// Р›РµРіРµРЅРґР°СЂРЅС‹Р№.
 		/// </summary>
 		Legendary,
 
 		/// <summary>
-		/// Артефакт.
+		/// РђСЂС‚РµС„Р°РєС‚.
 		/// </summary>
 		Artifact
 	}

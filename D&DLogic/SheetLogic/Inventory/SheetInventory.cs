@@ -4,38 +4,38 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность инвенторя.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ РёРЅРІРµРЅС‚Р°СЂСЏ.
 	/// </summary>
 	public abstract class SheetInventory
 	{
-		#region Поля и свойства 
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР° 
 
 		/// <summary>
-		///  Список инвенторя.
+		///  РЎРїРёСЃРѕРє РїСЂРµРґРјРµС‚РѕРІ.
 		/// </summary>
 		[JsonProperty("Inventory")]
 		public Dictionary<int, int> Inventory { get; set; }
 
 		#endregion
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Добавить колличество предмет.
+		/// Р”РѕР±Р°РІРёС‚СЊ РїСЂРµРґРјРµС‚ +1.
 		/// </summary>
-		/// <param name="item">ID предмета.</param>
+		/// <param name="item">ID РїСЂРµРґРјРµС‚Р°.</param>
 		public abstract void AddItem(int item);
 		
 		/// <summary>
-		/// Удалить предмет.
+		/// РЈРґР°Р»РёС‚СЊ РїСЂРµРґРјРµС‚.
 		/// </summary>
-		/// <param name="item">ID предмета.</param>
+		/// <param name="item">ID РїСЂРµРґРјРµС‚Р°.</param>
 		public abstract void RemoveItem(int item);
 		
 		/// <summary>
-		/// Уменьшить колличесвто предметов.
+		/// РЈРјРµРЅСЊС€РёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°.
 		/// </summary>
-		/// <param name="item"></param>
+		/// <param name="item">ID РїСЂРµРґРјРµС‚Р°.</param>
 		public abstract void DecreaseItem(int item);
 
 		#endregion

@@ -1,42 +1,42 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Список параметров для созданяи заклинания.
+	/// РЎРѕР·РґР°РЅРёСЏ РЅРѕРІРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 	/// </summary>
 	public enum EnumCreateNewSpell
 	{
 		/// <summary>
-		/// Название.
+		/// РќР°Р·РІР°РЅРёРµ.
 		/// </summary>
 		Name,
 
 		/// <summary>
-		/// Уровень.
+		/// РЈСЂРѕРІРµРЅСЊ.
 		/// </summary>
 		Level,
 
 		/// <summary>
-		/// Новое ли это заклинание.
+		/// РќРѕРІРѕРµ Р»Рё Р·Р°РєР»РёРЅР°РЅРёРµ.
 		/// </summary>
 		ThisIsNewSpell,
 
-		/// <summary>
-		/// Изменить название заклинания.
-		/// </summary>
-		WriteNewSpellName,
+    /// <summary>
+    /// РР·РјРµРЅРёС‚СЊ РЅР°Р·РІР°РЅРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    WriteNewSpellName,
+
+    /// <summary>
+    /// РР·РјРµРЅРёС‚СЊ СѓСЂРѕРІРµРЅСЊ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    WriteNewSpellLevel,
+
+    /// <summary>
+    /// РР·РјРµРЅРёС‚СЊ РѕРїРёСЃР°РЅРёСЏ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    NewSpellDescription,
 
 		/// <summary>
-		/// Изменить уровень заклинания.
-		/// </summary>
-		WriteNewSpellLevel,
-
-		/// <summary>
-		/// Изменить описания заклинания.
-		/// </summary>
-		NewSpellDescription,
-
-		/// <summary>
-		/// ID заклинания.
+		/// ID Р·Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		ID
 	}

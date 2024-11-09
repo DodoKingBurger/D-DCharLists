@@ -3,26 +3,26 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность рассы.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ СЂР°СЃС‹.
 	/// </summary>
 	public abstract class SheetRaceBase
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		/// <summary>
-		/// Название рассы.
+		/// Р Р°СЃР° РїРµСЂСЃРѕРЅР°Р¶Р°.
 		/// </summary>
 		[JsonProperty("Name")]
 		public EnumRaces Name { get; protected set; }
 
 		/// <summary>
-		/// Скорость рассы.
+		/// РЎРєРѕСЂРѕСЃС‚СЊ СЂР°СЃС‹.
 		/// </summary>
 		[JsonProperty("Speed")]
 		public int Speed { get; protected set; }
 
 		/// <summary>
-		/// Средние размеры рассы.
+		/// Р Р°Р·РјРµСЂС‹ СЂР°СЃС‹.
 		/// </summary>
 		[JsonProperty("Size")]
 		public EnumCreaturesSizes Size { get; protected set; }

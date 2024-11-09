@@ -1,11 +1,11 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Навыки персонажа.
+	/// РќР°РІС‹РєРё РІР»Р°РґРµРЅРёСЏ.
 	/// </summary>
 	public class Proficiencies : SheetProficiencies
 	{
-		#region Базовый класс
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		public override void AddProficiency(Enum prof)
 		{
@@ -45,10 +45,10 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Константы
+		#region РљРѕРЅСЃС‚СЂРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Навыки персонажа.
+		/// РЎРѕР·РґР°С‘С‚ РЅР°РІС‹РєРё РІР»Р°РґРµРЅРёСЏ.
 		/// </summary>
 		public Proficiencies()
 		{

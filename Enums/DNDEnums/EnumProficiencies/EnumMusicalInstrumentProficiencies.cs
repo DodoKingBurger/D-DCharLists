@@ -1,58 +1,58 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Владение музыкальными инструментами.
+	/// РЈРјРµРЅРёРµ РІР»Р°РґРµРЅРёРµРј РјСѓР·С‹РєР°Р»СЊРЅС‹С… РёРЅСЃС‚СЂСѓРјРµРЅС‚РѕРІ.
 	/// </summary>
 	public enum EnumMusicalInstrumentProficiencies
 	{
-		/// <summary>
-		/// Волынки.
-		/// </summary>
-		Bagpipes,
+    /// <summary>
+    /// Р’РѕР»С‹РЅРєРё.
+    /// </summary>
+    Bagpipes,
 
-		/// <summary>
-		/// Барабан.
-		/// </summary>
-		Drum,
+    /// <summary>
+    /// Р‘Р°СЂР°Р±Р°РЅ.
+    /// </summary>
+    Drum,
 
-		/// <summary>
-		/// Цимбалы.
-		/// </summary>
-		Dulcimer,
+    /// <summary>
+    /// Р¦РёРјР±Р°Р»С‹.
+    /// </summary>
+    Dulcimer,
 
-		/// <summary>
-		/// Флейта.
-		/// </summary>
-		Flute,
+    /// <summary>
+    /// Р¤Р»РµР№С‚Р°.
+    /// </summary>
+    Flute,
 
-		/// <summary>
-		/// Лютня.
-		/// </summary>
-		Lute,
+    /// <summary>
+    /// Р›СЋС‚РЅСЏ.
+    /// </summary>
+    Lute,
 
-		/// <summary>
-		/// Лира.
-		/// </summary>
-		Lyre,
+    /// <summary>
+    /// Р›РёСЂР°.
+    /// </summary>
+    Lyre,
 
-		/// <summary>
-		/// Рог.
-		/// </summary>
-		Horn,
+    /// <summary>
+    /// Р РѕРі.
+    /// </summary>
+    Horn,
 
-		/// <summary>
-		/// Многоствольная флейта.
-		/// </summary>
-		PanFlute,
+    /// <summary>
+    /// РџР°РЅР¤Р»РµР№С‚Р°.
+    /// </summary>
+    PanFlute,
 
-		/// <summary>
-		/// Шалмей.
-		/// </summary>
-		Shawm,
+    /// <summary>
+    /// РЁР°СѓРј.
+    /// </summary>
+    Shawm,
 
-		/// <summary>
-		/// Виола.
-		/// </summary>
-		Viol
-	}
+    /// <summary>
+    /// Р’РёРѕР»Р°.
+    /// </summary>
+    Viol
+  }
 }

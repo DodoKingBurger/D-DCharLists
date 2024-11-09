@@ -1,68 +1,68 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Таланты и возможные с ним действия. 
+  /// <summary>
+  /// РўР°Р»Р°РЅС‚С‹ Рё РІРѕР·РјРѕР¶РЅС‹Рµ СЃ РЅРёРј РґРµР№СЃС‚РІРёСЏ.
 	/// </summary>
-	public enum EnumTraitsText
+  public enum EnumTraitsText
 	{
-		/// <summary>
-		/// Список талантов.
-		/// </summary>
-		TraitsListSheet,
-		
-		/// <summary>
-		/// Описания таланта.
-		/// </summary>
-		TraitDescription,
+    /// <summary>
+    /// РЎРїРёСЃРѕРє С‚Р°Р»Р°РЅС‚РѕРІ.
+    /// </summary>
+    TraitsListSheet,
 
-		/// <summary>
-		/// Нет черт в листе.
-		/// </summary>
-		NoTraitsInSheet,
+    /// <summary>
+    /// РћРїРёСЃР°РЅРёСЏ С‚Р°Р»Р°РЅС‚Р°.
+    /// </summary>
+    TraitDescription,
 
-		/// <summary>
-		/// Выбрать имя.
-		/// </summary>
-		ChooseName,
+    /// <summary>
+    /// РќРµС‚ С‡РµСЂС‚ РІ Р»РёСЃС‚Рµ.
+    /// </summary>
+    NoTraitsInSheet,
 
-		/// <summary>
-		/// Выбрать источник.
-		/// </summary>
-		ChooseSource,
+    /// <summary>
+    /// Р’С‹Р±СЂР°С‚СЊ РёРјСЏ.
+    /// </summary>
+    ChooseName,
 
-		/// <summary>
-		/// Выберите уровень получения.
-		/// </summary>
-		ChooseLevelObtained,
+    /// <summary>
+    /// Р’С‹Р±СЂР°С‚СЊ РёСЃС‚РѕС‡РЅРёРє.
+    /// </summary>
+    ChooseSource,
 
-		/// <summary>
-		/// Изменить описания.
-		/// </summary>
-		ChooseDescription,
+    /// <summary>
+    /// Р’С‹Р±РµСЂРёС‚Рµ СѓСЂРѕРІРµРЅСЊ РїРѕР»СѓС‡РµРЅРёСЏ.
+    /// </summary>
+    ChooseLevelObtained,
 
-		/// <summary>
-		/// Новый талант.
-		/// </summary>
-		ThisIsNewTrait,
+    /// <summary>
+    /// РР·РјРµРЅРёС‚СЊ РѕРїРёСЃР°РЅРёСЏ.
+    /// </summary>
+    ChooseDescription,
 
-		/// <summary>
-		/// Новое ID для таланта.
-		/// </summary>
-		NewIdTrait,
+    /// <summary>
+    /// РќРѕРІС‹Р№ С‚Р°Р»Р°РЅС‚.
+    /// </summary>
+    ThisIsNewTrait,
 
-		/// <summary>
-		/// Источник.
-		/// </summary>
-		Source,
+    /// <summary>
+    /// РќРѕРІРѕРµ ID РґР»СЏ С‚Р°Р»Р°РЅС‚Р°.
+    /// </summary>
+    NewIdTrait,
 
-		/// <summary>
-		/// Такого таланта нету в БД.
-		/// </summary>
-		NoTraitsInDB,
+    /// <summary>
+    /// РСЃС‚РѕС‡РЅРёРє.
+    /// </summary>
+    Source,
 
-		/// <summary>
-		/// Список талантов в БД.
-		/// </summary>
-		TraitsListInDB
-	}
+    /// <summary>
+    /// РўР°РєРѕРіРѕ С‚Р°Р»Р°РЅС‚Р° РЅРµС‚Сѓ РІ Р‘Р”.
+    /// </summary>
+    NoTraitsInDB,
+
+    /// <summary>
+    /// РЎРїРёСЃРѕРє С‚Р°Р»Р°РЅС‚РѕРІ РІ Р‘Р”.
+    /// </summary>
+    TraitsListInDB
+  }
 }

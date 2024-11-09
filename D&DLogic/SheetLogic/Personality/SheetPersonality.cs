@@ -3,21 +3,21 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность личности.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ Р»РёС‡РЅС‹С… РєР°С‡РµСЃС‚РІ.
 	/// </summary>
 	public abstract class SheetPersonality
 	{
 		/// <summary>
-		/// Информация о личности.
+		/// РЎРїРёСЃРѕРє Р»РёС‡РЅС‹С… РєР°С‡РµСЃС‚РІ.
 		/// </summary>
 		[JsonProperty("PersonalityList")]
 		public Dictionary<EnumPersonalities, string> PersonalityList { get; protected set; }
 
 		/// <summary>
-		/// Изменить информацию о личности.
+		/// Р”РѕР±Р°РІР»СЏРµС‚ Р»РёС‡РЅС‹Рµ РєР°С‡РµСЃС‚РІР°.
 		/// </summary>
-		/// <param name="personality">Какую часть личности хотим изменить.</param>
-		/// <param name="value">Новая информация.</param>
+		/// <param name="personality">Р›РёС‡РЅРѕРµ РєР°С‡РµСЃС‚РІРѕ РёР· СЃРїРёСЃРєР°.</param>
+		/// <param name="value">РРЅС„РѕСЂРјР°С†РёСЏ.</param>
 		public abstract void AddPersonality(EnumPersonalities personality, string value);
 	}
 }

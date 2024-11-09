@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Личность.
+	/// РџРµСЂСЃРѕРЅР°Р»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.
 	/// </summary>
 	public class Personality : SheetPersonality
 	{
@@ -11,7 +11,7 @@ namespace D_DCharLists
 		}
 
 		/// <summary>
-		/// Созадет список с информации о личности, описания героя.
+		/// РЎРѕР·Р°РґРµС‚ СЃРїРёСЃРѕРє РїРµСЂСЃРѕРЅР°Р»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё.
 		/// </summary>
 		public Personality()
 		{

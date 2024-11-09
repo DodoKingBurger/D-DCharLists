@@ -1,108 +1,108 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Характеристики предмета.
+	/// РЎРїРёСЃРѕРє С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє РїСЂРµРґРјРµС‚Р°.
 	/// </summary>
 	public enum EnumItemStats
 	{
 		/// <summary>
-		/// Имя.
+		/// РќР°Р·РІР°РЅРёРµ.
 		/// </summary>
 		Name,
 
 		/// <summary>
-		/// Базовая стоймость.
+		/// РЎС‚РѕРёРјРѕСЃС‚СЊ.
 		/// </summary>
 		BaseCost,
 
 		/// <summary>
-		/// Вес.
+		/// Р’РµСЃ.
 		/// </summary>
 		Weight,
 
 		/// <summary>
-		/// Редкость.
+		/// Р РµРґРєРѕСЃС‚СЊ.
 		/// </summary>
 		Rarity,
 
 		/// <summary>
-		/// Описание.
+		/// РћРїРёСЃР°РЅРёРµ.
 		/// </summary>
 		Description,
 
 		/// <summary>
-		/// Он магический?
+		/// РњР°РіРёС‡РµСЃРєРёР№ Р»Рё РїСЂРµРґРјРµС‚?
 		/// </summary>
 		IsMagic,
 
 		/// <summary>
-		/// ID предмета.
+		/// ID РїСЂРµРґРјРµС‚Р°.
 		/// </summary>
 		ItemId,
 
 		/// <summary>
-		/// Тип предмета.
+		/// РўРёРї РїСЂРµРґРјРµС‚Р°.
 		/// </summary>
 		ItemType,
 
-		/// <summary>
-		/// Количество кубиков урона.
-		/// </summary>
-		DamageDiceCount,
+    /// <summary>
+    /// РљРѕР»РёС‡РµСЃС‚РІРѕ РєСѓР±РёРєРѕРІ СѓСЂРѕРЅР°.
+    /// </summary>
+    DamageDiceCount,
+
+    /// <summary>
+    /// Р—РЅР°С‡РµРЅРёРµ СѓСЂРѕРЅР° РІ РєСѓР±РёРєР°С….
+    /// </summary>
+    DamageDiceValue,
+
+    /// <summary>
+    /// РњРѕРґРёС„РёРєР°С‚РѕСЂ СѓСЂРѕРЅР°.
+    /// </summary>
+    DamageModificator,
 
 		/// <summary>
-		/// Значение урона в кубиках.
-		/// </summary>
-		DamageDiceValue,
-
-		/// <summary>
-		/// Модификаторы урона.
-		/// </summary>
-		DamageModificator,
-
-		/// <summary>
-		/// Тип урона.
+		/// РўРёРї СѓСЂРѕРЅР°.
 		/// </summary>
 		DamageType,
 
-		/// <summary>
-		/// Прочность.
-		/// </summary>
-		StrengthRequirement,
+    /// <summary>
+    /// РўСЂРµР±РѕРІР°РЅРёСЏ Рє СЃРёР»Рµ.
+    /// </summary>
+    StrengthRequirement,
+
+    /// <summary>
+    /// РљР»Р°СЃСЃ Р±СЂРѕРЅРё.
+    /// </summary>
+    ArmorClass,
+
+    /// <summary>
+    /// РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ Р±РѕРЅСѓСЃ Рє Р»РѕРІРєРѕСЃС‚Рё.
+    /// </summary>
+    MaxAgilityBonus,
+
+    /// <summary>
+    /// РЎРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ РѕСЂСѓР¶РёСЏ.
+    /// </summary>
+    WeaponProperty,
+
+    /// <summary>
+    /// РўРёРї Р±СЂРѕРЅРё.
+    /// </summary>
+    ArmorType,
 
 		/// <summary>
-		/// Класс брони.
-		/// </summary>
-		ArmorClass,
-
-		/// <summary>
-		/// Максимальный бонус к ловкости.
-		/// </summary>
-		MaxAgilityBonus,
-
-		/// <summary>
-		/// Собственность оружия.
-		/// </summary>
-		WeaponProperty,
-
-		/// <summary>
-		/// Тип брони.
-		/// </summary>
-		ArmorType,
-
-		/// <summary>
-		/// Навык владения оружием.
+		/// РќР°РІС‹Рє РІР»Р°РґРµРЅРёРµ РѕСЂСѓР¶РёРµРј.
 		/// </summary>
 		WeaponProficiencyConcrete,
 
-		/// <summary>
-		/// Группы оружия.
-		/// </summary>
-		WeaponProficiencyGroup,
+    /// <summary>
+    /// РќР°РІС‹Рє РІР»Р°РґРµРЅРёРµ РіСЂСѓРїРїС‹ РѕСЂСѓР¶РёСЏ.
+    /// </summary>
+    WeaponProficiencyGroup,
 
-		/// <summary>
-		/// Тип монеты.
-		/// </summary>
-		CoinType
-	}
+    /// <summary>
+    /// РўРёРї РјРѕРЅРµС‚С‹.
+    /// </summary>
+    CoinType
+  }
 }

@@ -3,47 +3,47 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность таланта.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ С‚Р°Р»Р°РЅС‚Р°.
 	/// </summary>
 	public abstract class TraitBase
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 		/// <summary>
-		/// Навзание.
+		/// РќР°Р·РІР°РЅРёСЏ.
 		/// </summary>
 		[JsonProperty("Name")]
 		public string Name { get; protected set; }
 
-		/// <summary>
-		/// Источник.
-		/// </summary>
-		[JsonProperty("Source")]
+    /// <summary>
+    /// РСЃС‚РѕС‡РЅРёРє.
+    /// </summary>
+    [JsonProperty("Source")]
 		public string Source { get; protected set; }
 
 		/// <summary>
-		/// Описание.
+		/// РћРїРёСЃР°РЅРёРµ.
 		/// </summary>
 		[JsonProperty("Description")]
 		public string Description { get; protected set; }
 
 		/// <summary>
-		/// ID черты.
+		/// ID С‚Р°Р»Р°РЅС‚Р°.
 		/// </summary>
 		[JsonProperty("Id")]
 		public int Id { get; protected set; }
 
-		/// <summary>
-		/// Уровень получения.
-		/// </summary>
-		[JsonProperty("LevelGained")]
+    /// <summary>
+    /// РЈСЂРѕРІРµРЅСЊ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ.
+    /// </summary>
+    [JsonProperty("LevelGained")]
 		public int LevelGained { get; protected set; }
 
 		#endregion
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Установить ID.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ ID.
 		/// </summary>
 		public void SetID()
 		{
@@ -51,36 +51,36 @@ namespace D_DCharLists
 		}
 
 		/// <summary>
-		/// Установить имя.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РёРјСЏ.
 		/// </summary>
-		/// <param name="name">Имя.</param>
+		/// <param name="name">РРјСЏ.</param>
 		public void SetName(string name)
 		{
 			this.Name = name;
 		}
 
 		/// <summary>
-		/// Установить описание.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РѕРїРёСЃР°РЅРёРµ С‚Р°Р»Р°РЅС‚Р°.
 		/// </summary>
-		/// <param name="description">текст описания.</param>
+		/// <param name="description">РћРїРёСЃР°РЅРёРµ С‚Р°Р»Р°РЅС‚Р°.</param>
 		public void SetDescription(string description)
 		{
 			this.Description = description;
 		}
 
 		/// <summary>
-		/// Установить источник таланта.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РёСЃС‚РѕС‡РЅРёРє С‚Р°Р»Р°РЅС‚Р°.
 		/// </summary>
-		/// <param name="source">Источник таланта.</param>
+		/// <param name="source">РСЃС‚РѕС‡РЅРёРє С‚Р°Р»Р°РЅС‚Р°.</param>
 		public void SetSource(string source)
 		{
 			this.Source = source;
 		}
 
 		/// <summary>
-		/// Установить уровень.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ СѓСЂРѕРІРµРЅСЊ РїРѕР»СѓС‡РµРЅРёСЏ.
 		/// </summary>
-		/// <param name="level">Новый уровень.</param>
+		/// <param name="level">РЈРІСЂРѕРµРЅСЊ РїРѕР»СѓС‡РµРЅРёСЏ.</param>
 		public void SetLevel(int level)
 		{
 			this.LevelGained = level;

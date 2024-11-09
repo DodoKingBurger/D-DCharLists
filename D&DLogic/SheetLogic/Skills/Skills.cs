@@ -1,26 +1,17 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Способности.
+	/// РЎРєРёР»С‹.
 	/// </summary>
 	public class Skills : SheetSkills
 	{
-		#region Методы
+		#region Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 
-		/// <summary>
-		/// Записан ли уже этот навык.
-		/// </summary>
-		/// <param name="skill">Скилл.</param>
-		/// <returns>True, если уже записан в список скилов, в противном случае false.</returns>
 		public override bool CheckSkill(EnumSkills skill)
 		{
 			return Skills.Contains(skill);
 		}
 
-		/// <summary>
-		/// Добавить скилл в список.
-		/// </summary>
-		/// <param name="skill">Скилл.</param>
 		public override void AddSkill(EnumSkills skill)
 		{
 			if (!Skills.Contains(skill))
@@ -29,11 +20,6 @@ namespace D_DCharLists
 			}
 		}
 
-		/// <summary>
-		/// Возвращает характеристики от которых завист скилл.
-		/// </summary>
-		/// <param name="skill">Скилл.</param>
-		/// <returns>Возвращает характеристики от которых завист скилл, иначе вернет характеристику силы.</returns>
 		public override EnumAbilities SkillAbilityName(EnumSkills skill)
 		{
 			switch (skill)
@@ -71,11 +57,6 @@ namespace D_DCharLists
 			}
 		}
 
-		/// <summary>
-		/// Удаляет скилл из списка скилов.
-		/// </summary>
-		/// <param name="skill">Скилл</param>
-		/// <exception cref="ArgumentException">Скилл в списке отсутствет.</exception>
 		public override void RemoveSkill(EnumSkills skill)
 		{
 			if (Skills.Contains(skill))
@@ -84,16 +65,16 @@ namespace D_DCharLists
 			}
 			else
 			{
-				throw new ArgumentException("Переданный навык отсутсвует в списке");
+				throw new ArgumentException("Р”Р°РЅРЅС‹Р№ РЅР°РІС‹Рє РЅРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅ РІ СЃРїРёСЃРєРµ.");
 			}
 		}
 
 		#endregion
 
-		#region Конструкторы
+		#region РљРѕРЅСЃС‚СѓСЂРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Создает список способностей.
+		/// РЎРѕР·РґР°РµС‚ СЃРїРёСЃРѕРє СЃРєРёР»РѕРІ.
 		/// </summary>
 		public Skills()
 		{

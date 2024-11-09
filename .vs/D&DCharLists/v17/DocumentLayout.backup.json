@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|C:\\Users\\sarki\\source\\repos\\D-DCharLists\\screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,64 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\CreateChar.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T05:29:04.431Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartForms.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAswHkAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T11:54:16.046Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "3281b8bc-5d21-45e3-91bc-2ac58663e2e9",
-        "Display": 0,
-        "X": 115,
-        "Y": 150,
-        "Width": 1093,
-        "Height": 977,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T11:56:04.815Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]
         }

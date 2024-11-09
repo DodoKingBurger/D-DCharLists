@@ -3,36 +3,36 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность экипировки. 
+	/// Р‘Р°Р·РѕРІР°СЏ СЃРёСЃС‚РµРјР° СЃРЅР°СЂСЏР¶РµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°. 
 	/// </summary>
 	public abstract class BaseEquipmentSystem
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		/// <summary>
-		/// Список слотов и экипировка приписанная к ним.
+		/// РЎР»РѕС‚С‹ Рё Р·Р°РїРѕР»РЅРµРЅРЅС‹Рµ РёРјРё СЃРЅР°СЂСЏР¶РµРЅРёСЏ.
 		/// </summary>
 		[JsonProperty("EquipmentSlots")]
 		public Dictionary<EnumEquipmentSlots, ItemBase> EquipmentSlots {  get; set; }
 
 		#endregion
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Запись экипировки в слот.
+		/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РІ СЃР»РѕС‚ РЅРѕРІРѕРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 		/// </summary>
-		/// <param name="slot">Ячейка слота.</param>
-		/// <param name="item">Новый предмет.</param>
+		/// <param name="slot">Р’ РєР°РєРѕР№ СЃР»РѕС‚ СЃРЅР°СЂСЏР¶РµРЅРёРµ Р±СѓРґРµС‚ РїРѕРјРµС‰РµРЅРѕ.</param>
+		/// <param name="item">РќРѕРІС‹Р№ РїСЂРµРґРјРµС‚.</param>
 		public void EquipItem(EnumEquipmentSlots slot, ItemBase item)
 		{
 			EquipmentSlots[slot] = item;
 		}
 
 		/// <summary>
-		/// Удаление экипировки из слота.
+		/// РћС‡РёС‰Р°РµС‚ РІС‹Р±СЂР°РЅРЅС‹Р№ СЃР»РѕС‚ РѕС‚ СЃРЅР°СЂСЏР¶РµРЅРёСЏ.
 		/// </summary>
-		/// <param name="slot">Ячейка слота.</param>
+		/// <param name="slot">РЎР»РѕС‚ СЃРЅР°СЂСЏР¶РµРЅРёСЏ РґР»СЏ РѕС‡РёСЃС‚РєРё.</param>
 		public void UnEquipSlot(EnumEquipmentSlots slot)
 		{
 			if (EquipmentSlots.ContainsKey(slot))

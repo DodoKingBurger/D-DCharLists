@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Äâîðô.
+	/// Ð”Ð²Ð¾Ñ€Ñ„.
 	/// </summary>
 	public class DwarfRace : SheetRaceBase
 	{

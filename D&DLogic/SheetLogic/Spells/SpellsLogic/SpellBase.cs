@@ -3,23 +3,23 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность заклинания.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ Р·Р°РєР»РёРЅР°РЅРёР№.
 	/// </summary>
 	public abstract class SpellBase
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		private string name;
 
 		/// <summary>
-		/// Название заклинания.
+		/// РќР°Р·РІР°РЅРёСЏ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		[JsonProperty("Name")]
 		public string Name { get { return this.name; } protected set { this.name = value; } }
 
 		private int level;
 		/// <summary>
-		/// Уровень заклинания.
+		/// РЈСЂРѕРІРµРЅСЊ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		[JsonProperty("Level")]
 		public int Level { get { return this.level; } protected set { this.level = value; } }
@@ -27,35 +27,35 @@ namespace D_DCharLists
 		private int id;
 
 		/// <summary>
-		/// ID Заклинания.
+		/// ID Р·Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		[JsonProperty("Id")]
 		public int Id { get { return this.id; } protected set { this.id = value; } }
 
-		#endregion
+    #endregion
 
-		#region Методы
+    #region РњРµС‚РѕРґС‹
 
-		/// <summary>
-		/// Установить новое название.
-		/// </summary>
-		/// <param name="name">Новое название.</param>
-		public void SetName(string name)
+    /// <summary>
+    /// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР°Р·РІР°РЅРёСЏ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    /// <param name="name">РќРѕРІРѕРµ РЅР°Р·РІР°РЅРёСЏ.</param>
+    public void SetName(string name)
 		{
 			this.name = name;
 		}
 
-		/// <summary>
-		/// Установить новый уровень.
-		/// </summary>
-		/// <param name="level">Новый уровень.</param>
-		public void SetLevel(int level)
+    /// <summary>
+    /// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ РґР»СЏ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    /// <param name="level">РќРѕРІС‹Р№ СѓСЂРѕРІРµРЅСЊ.</param>
+    public void SetLevel(int level)
 		{
 			this.level = level;
 		}
 
 		/// <summary>
-		/// Назначить ID.
+		/// РЈСЃС‚Р°РЅРѕРІРєР° ID РґР»СЏ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 		/// </summary>
 		public void SetID()
 		{

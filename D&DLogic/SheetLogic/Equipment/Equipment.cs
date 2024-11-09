@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Экипировка персонажа.
+	/// РЎРЅР°СЂСЏР¶РµРЅРёСЏ.
 	/// </summary>
 	public class Equipment : BaseEquipmentSystem
 	{
 		/// <summary>
-		/// Список чем снаряжон персонаж.
+		/// РЎРѕР·РґР°С‘С‚ СЃРїРёСЃРѕРє СЃР»РѕС‚РѕРІ РґР»СЏ СЃРЅР°СЂСЏР¶РµРЅРёСЏ.
 		/// </summary>
 		public Equipment()
 		{

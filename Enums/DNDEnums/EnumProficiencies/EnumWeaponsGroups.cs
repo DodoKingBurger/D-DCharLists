@@ -1,28 +1,28 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Навыки группы оружия.
+	/// Р’Р»Р°РґРµРЅРёРµ Р±РѕРµРІС‹РјРё РїР°СЂР°РјРµС‚СЂР°РјРё.
 	/// </summary>
 	public enum EnumWeaponsGroups
 	{
-		/// <summary>
-		/// Простой ближний бой.
-		/// </summary>
-		SimpleMelee,
+    /// <summary>
+    /// РџСЂРѕСЃС‚РѕР№ Р±Р»РёР¶РЅРёР№ Р±РѕР№.
+    /// </summary>
+    SimpleMelee,
 
-		/// <summary>
-		/// Простой дальний бой.
-		/// </summary>
-		SimpleRanged,
+    /// <summary>
+    /// РџСЂРѕСЃС‚РѕР№ РґР°Р»СЊРЅРёР№ Р±РѕР№.
+    /// </summary>
+    SimpleRanged,
 
-		/// <summary>
-		/// Боевой ближний бой.
-		/// </summary>
-		MartialMelee,
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ Р±Р»РёР¶РЅРёР№ Р±РѕР№.
+    /// </summary>
+    MartialMelee,
 
-		/// <summary>
-		/// Боевой дальний бой.
-		/// </summary>
-		MartialRanged
-	}
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ РґР°Р»СЊРЅРёР№ Р±РѕР№.
+    /// </summary>
+    MartialRanged
+  }
 }

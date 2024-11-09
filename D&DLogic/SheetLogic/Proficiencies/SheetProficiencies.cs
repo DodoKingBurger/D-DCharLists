@@ -2,40 +2,40 @@ using Newtonsoft.Json;
 
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Сущность навыков персонажа.
-	/// </summary>
-	public abstract class SheetProficiencies
+  /// <summary>
+  /// РЎСѓС‰РЅРѕСЃС‚СЊ РЅР°РІС‹РєРѕРІ РІР»Р°РґРµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°.
+  /// </summary>
+  public abstract class SheetProficiencies
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		/// <summary>
-		/// Список навыков.
+		///РЎРїРёСЃРѕРє РЅР°РІС‹РєРѕРІ РІР»Р°РґРµРЅРёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°.
 		/// </summary>
 		[JsonProperty("Proficiencies")]
 		public List<EnumAllProficiencies> Proficiencies {  get; set; }
 
 		#endregion
 
-		#region Методы
+		#region РњРµС‚РѕРґС‹
 
 		/// <summary>
-		/// Добавить навык.
+		/// Р”РѕР±Р°РІРёС‚СЊ СѓРјРµРЅРёСЏ РЅР°РІС‹РєРѕРј РІР»Р°РґРµРЅРёСЏ.
 		/// </summary>
-		/// <param name="prof">Навык.</param>
+		/// <param name="prof">РќР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ.</param>
 		public abstract void AddProficiency(Enum prof);
 
 		/// <summary>
-		/// Проверить есть ли уже такой навык.
+		/// Р•СЃС‚СЊ Р»Рё СѓР¶Рµ РІ СЃРїРёСЃРєРµ С‚Р°РєРѕР№ РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ.
 		/// </summary>
-		/// <param name="prof">Проверяймый навык.</param>
-		/// <returns>true, если он уже присвоен данном у персонажу, в противном случае false</returns>
+		/// <param name="prof">РќР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ.</param>
+		/// <returns>true, РµСЃР»Рё РїСЂРµРґСЃС‚Р°РІР»РµРЅ РІ СЃРїРёСЃРєРµ СѓР¶Рµ С‚Р°РєРѕР№ РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ, РІ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ false</returns>
 		public abstract bool CheckProficiency(Enum prof);
 
 		/// <summary>
-		/// Убрать навык.
+		/// РЈРґР°Р»СЏРµС‚ РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ РёР· СЃРїРёСЃРєР°.
 		/// </summary>
-		/// <param name="prof">Убираймый навык.</param>
+		/// <param name="prof">РќР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ.</param>
 		public abstract void RemoveProficiency(Enum prof);
 
 		#endregion

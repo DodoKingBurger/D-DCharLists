@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Полуорк.
+	/// РџРѕР»СѓРѕСЂРє.
 	/// </summary>
 	public class HalforcRace : SheetRaceBase
 	{

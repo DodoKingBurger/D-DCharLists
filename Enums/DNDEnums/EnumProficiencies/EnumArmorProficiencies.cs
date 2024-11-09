@@ -1,25 +1,28 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Навыки брони.
+	/// РќР°РІС‹РєРё СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ Р±СЂРѕРЅРµР№.
 	/// </summary>
 	public enum EnumArmorProficiencies
 	{
-		/// <summary>
-		/// Легкая броня.
-		/// </summary>
-		LightArmor,
-		/// <summary>
-		/// Средняя броня.
-		/// </summary>
-		MediumArmor,
-		/// <summary>
-		/// Тяжелая броня.
-		/// </summary>
-		HeavyArmor,
-		/// <summary>
-		/// Щит.
-		/// </summary>
-		Shield
-	}
+    /// <summary>
+    /// Р›С‘РіРєР°СЏ Р±СЂРѕРЅСЏ.
+    /// </summary>
+    LightArmor,
+
+    /// <summary>
+    /// РЎСЂРµРґРЅСЏСЏ Р±СЂРѕРЅСЏ.
+    /// </summary>
+    MediumArmor,
+
+    /// <summary>
+    /// РўСЏР¶С‘Р»Р°СЏ Р±СЂРѕРЅСЏ.
+    /// </summary>
+    HeavyArmor,
+
+    /// <summary>
+    /// Р©РёС‚.
+    /// </summary>
+    Shield
+  }
 }

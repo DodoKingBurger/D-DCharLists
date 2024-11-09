@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Грани дайсов.
+	/// Р“СЂР°РЅРё РєСѓР±РёРєРѕРІ С…РёС‚РѕРІ.
 	/// </summary>
 	public enum EnumDices
 	{

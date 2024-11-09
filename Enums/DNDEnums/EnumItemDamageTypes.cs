@@ -1,22 +1,22 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Тип урона.
+	/// РўРёРїС‹ СѓСЂРѕРЅР°.
 	/// </summary>
 	public enum EnumItemDamageTypes
 	{
 		/// <summary>
-		/// Тупой.
+		/// Р”СЂРѕР±СЏС‰РёР№.
 		/// </summary>
 		Bludgeoning,
 
 		/// <summary>
-		/// Пронзающий.
+		/// РџСЂРѕРЅР·Р°СЋС‰РёР№.
 		/// </summary>
 		Piercing,
 
 		/// <summary>
-		/// Рубящий.
+		/// Р РµР¶СѓС‰РёР№.
 		/// </summary>
 		Slashing
 	}

@@ -1,11 +1,11 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Прогрессия.
+	/// РџСЂРѕРіСЂРµСЃСЃРёСЏ.
 	/// </summary>
 	public class Progression : SheetProgression
 	{
-		#region Базовый класс
+		#region Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 
 		public override void GainExpirience(int exp)
 		{
@@ -87,11 +87,11 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструкторы
+		#region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Появляется прогрессия.
-		/// Уровень 1, Опыта 0
+		/// РЎРѕР·РґР°С‘С‚ СЃС‚Р°СЂС‚РѕРІСѓСЋ РїРѕР·РёС†РёСЋ РїРѕ РїСЂРѕРіСЂРµСЃСЃРёРё.
+		/// СѓСЂРѕРІРµРЅСЊ 1, РѕРїС‹С‚Р° 0
 		/// </summary>
 		public Progression()
 		{

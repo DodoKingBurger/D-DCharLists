@@ -4,31 +4,31 @@ using Newtonsoft.Json;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность боевых параметов.
+	/// РЎСѓС‰РЅРѕСЃС‚СЊ Р±РѕРµРІС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ.
 	/// </summary>
 	public abstract class SheetCombatAbilities
 	{
-		#region Поля и свойства
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		/// <summary>
-		/// Статистика боевых параметров.
+		/// РЎРїРёСЃРѕРє Р±РѕРµРІС‹С… С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє.
 		/// </summary>
 		[JsonProperty("CombatStats")]
 		public Dictionary<EnumCombatStats, int> CombatStats {  get; set; }
 
-		#endregion 
+    #endregion
 
-		#region Методы
+    #region РњРµС‚РѕРґС‹
 
-		/// <summary>
-		/// Изменить параметр.
-		/// </summary>
-		/// <param name="stat">Какой парамет.</param>
-		/// <param name="value">Новое значение.</param>
-		public abstract void ChangeStat(Enum stat, int value);
+    /// <summary>
+    /// РР·РјРµРЅРёС‚СЊ Р±РѕРµРІСѓСЋ С…Р°СЂРєС‚РµСЂРёСЃС‚РёРєРё.
+    /// </summary>
+    /// <param name="stat">РљР°РєР°СЏ Р±РѕРµРІР°СЏ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РёР·РјРµРЅРµРЅР°.</param>
+    /// <param name="value">РќРѕРІРѕРµ С‡РёСЃР»Рѕ РґР»СЏ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё.</param>
+    public abstract void ChangeStat(Enum stat, int value);
 		
 		/// <summary>
-		/// Сброс спасбросков.
+		/// РЎР±СЂРѕСЃРёС‚СЊ СЃРїР°СЃР±СЂРѕСЃРєРё.
 		/// </summary>
 		public abstract void ResetDeathSaves();
 

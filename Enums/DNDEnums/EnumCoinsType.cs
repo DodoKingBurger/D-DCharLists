@@ -1,32 +1,32 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Тип монеты.
+	/// РќР°РјРёРЅР°Р» РјРѕРЅРµС‚.
 	/// </summary>
 	public enum EnumCoinsType
 	{
 		/// <summary>
-		/// Бронзовая.
+		/// РњРµРґРЅР°СЏ.
 		/// </summary>
 		Copper,
 
 		/// <summary>
-		/// Серебрянная.
+		/// РЎРµСЂРµР±СЂСЏРЅРЅР°СЏ.
 		/// </summary>
 		Silver,
 
 		/// <summary>
-		/// Золотая.
+		/// Р—РѕР»РѕС‚Р°СЏ.
 		/// </summary>
 		Gold,
 
 		/// <summary>
-		/// Платинвая.
+		/// РџР»Р°С‚РёРЅРѕРІР°СЏ.
 		/// </summary>
 		Platinum,
 
 		/// <summary>
-		/// Электрум.
+		/// Р­Р»РµРєС‚СЂСѓРј.
 		/// </summary>
 		Electrum
 	}

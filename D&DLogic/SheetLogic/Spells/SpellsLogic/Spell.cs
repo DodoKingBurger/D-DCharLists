@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Базовый заклинание.
+	/// Р—Р°РєР»РёРЅР°РЅРёРµ.
 	/// </summary>
 	public class Spell : SpellBase
 	{

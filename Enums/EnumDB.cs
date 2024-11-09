@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Список баз данных в json.
+	/// РЎРїРёСЃРѕРє Р‘Р”.
 	/// </summary>
 	public enum EnumDB
 	{

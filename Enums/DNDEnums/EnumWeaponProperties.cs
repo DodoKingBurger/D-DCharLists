@@ -1,63 +1,63 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Свойства оружия.
-	/// </summary>
-	public enum EnumWeaponProperties
+  /// <summary>
+  /// РЎРІРѕР№СЃС‚РІР° РѕСЂСѓР¶РёСЏ.
+  /// </summary>
+  public enum EnumWeaponProperties
 	{
-		/// <summary>
-		/// Боеприпасы.
-		/// </summary>
-		Ammunition,
+    /// <summary>
+    /// Р‘РѕРµРїСЂРёРїР°СЃС‹.
+    /// </summary>
+    Ammunition,
 
-		/// <summary>
-		/// Изящность.
-		/// </summary>
-		Finesse,
+    /// <summary>
+    /// РР·СЏС‰РЅРѕСЃС‚СЊ.
+    /// </summary>
+    Finesse,
 
-		/// <summary>
-		/// Тяжелое.
-		/// </summary>
-		Heavy,
+    /// <summary>
+    /// РўСЏР¶РµР»РѕРµ.
+    /// </summary>
+    Heavy,
 
-		/// <summary>
-		/// Легкое.
-		/// </summary>
-		Light,
+    /// <summary>
+    /// Р›РµРіРєРѕРµ.
+    /// </summary>
+    Light,
 
-		/// <summary>
-		/// Перезарядка.
-		/// </summary>
-		Loading,
+    /// <summary>
+    /// РџРµСЂРµР·Р°СЂСЏРґРєР°.
+    /// </summary>
+    Loading,
 
-		/// <summary>
-		/// Дальность.
-		/// </summary>
-		Range,
+    /// <summary>
+    /// Р”Р°Р»СЊРЅРѕСЃС‚СЊ.
+    /// </summary>
+    Range,
 
-		/// <summary>
-		/// Досягаймость.
-		/// </summary>
-		Reach,
+    /// <summary>
+    /// Р”РѕСЃСЏРіР°Р№РјРѕСЃС‚СЊ.
+    /// </summary>
+    Reach,
 
-		/// <summary>
-		/// Специальный.
-		/// </summary>
-		Special,
+    /// <summary>
+    /// РЎРїРµС†РёР°Р»СЊРЅС‹Р№.
+    /// </summary>
+    Special,
 
-		/// <summary>
-		/// Метательный.
-		/// </summary>
-		Thrown,
+    /// <summary>
+    /// РњРµС‚Р°С‚РµР»СЊРЅС‹Р№.
+    /// </summary>
+    Thrown,
 
-		/// <summary>
-		/// Двуручный.
-		/// </summary>
-		TwoHanded,
+    /// <summary>
+    /// Р”РІСѓСЂСѓС‡РЅС‹Р№.
+    /// </summary>
+    TwoHanded,
 
-		/// <summary>
-		/// Универсальный.
-		/// </summary>
-		Versatile
-	}
+    /// <summary>
+    /// РЈРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№.
+    /// </summary>
+    Versatile
+  }
 }

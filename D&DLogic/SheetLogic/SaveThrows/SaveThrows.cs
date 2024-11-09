@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Îñíîâíûå õàðàêòåðèñòèêè çàâèùÿùèå îò êëàññà.
+	/// Характеристики базовые зависящие от класса.
 	/// </summary>
 	public class SaveThrows : SheetSaveThrows
 	{
@@ -58,14 +58,14 @@ namespace D_DCharLists
 			return SaveThrows.Contains(saveTrow);
 		}
 
-		#endregion
+    #endregion
 
-		#region Êîíñòðóêòîðû 
+    #region Конструкторы 
 
-		/// <summary>
-		/// Ñîçàäåò ñïèñîê îñíîâíûõ õàðàêòåðèñòèê, êîòîðûå çàâèÿñò îò êëàññà. 
-		/// </summary>
-		public SaveThrows()
+    /// <summary>
+    /// Создаёт список основных параметров. 
+    /// </summary>
+    public SaveThrows()
 		{
 			SaveThrows = new List<EnumAbilities>();
 		}

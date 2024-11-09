@@ -1,11 +1,11 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Инвентарь.
+	/// РРЅРІРµРЅС‚Р°СЂСЊ.
 	/// </summary>
 	public class Inventory : SheetInventory
 	{
-		#region Базовый класс.
+		#region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
 		public override void AddItem(int item)
 		{
@@ -44,10 +44,10 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструторы
+		#region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Создате инвернтарь героя.
+		/// РЎРѕР·РґР°С‘С‚ РёРЅРІРµРЅС‚Р°СЂСЊ.
 		/// </summary>
 		public Inventory()
 		{

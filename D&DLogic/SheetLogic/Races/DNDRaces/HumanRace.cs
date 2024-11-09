@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Человек.
+	/// Р§РµР»РѕРІРµРє.
 	/// </summary>
 	public class HumanRace : SheetRaceBase
 	{

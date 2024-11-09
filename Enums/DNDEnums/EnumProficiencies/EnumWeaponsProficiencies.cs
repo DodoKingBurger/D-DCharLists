@@ -1,193 +1,193 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Владение оружием.
+	/// РќР°РІС‹РєРё РІР»Р°РґРµРЅРёРµ РѕСЂСѓР¶РёРµРј.
 	/// </summary>
 	public enum EnumWeaponsProficiencies
 	{
-		/// <summary>
-		/// Дубина.
-		/// </summary>
-		Club,
+    /// <summary>
+    /// Р”СѓР±РёРЅР°.
+    /// </summary>
+    Club,
 
-		/// <summary>
-		/// Кинжал.
-		/// </summary>
-		Dagger,
+    /// <summary>
+    /// РљРёРЅР¶Р°Р».
+    /// </summary>
+    Dagger,
 
-		/// <summary>
-		/// Отличная дубина.
-		/// </summary>
-		Greatclub,
+    /// <summary>
+    /// Р‘РѕР»СЊС€Р°СЏ РґСѓР±РёРЅР°.
+    /// </summary>
+    Greatclub,
 
-		/// <summary>
-		/// Топор ручной.
-		/// </summary>
-		Handaxe,
+    /// <summary>
+    /// РўРѕРїРѕСЂ СЂСѓС‡РЅРѕР№.
+    /// </summary>
+    Handaxe,
 
-		/// <summary>
-		/// Метательно копье.
-		/// </summary>
-		Javelin,
+    /// <summary>
+    /// РњРµС‚Р°С‚РµР»СЊРЅРѕРµ РєРѕРїСЊРµ.
+    /// </summary>
+    Javelin,
 
-		/// <summary>
-		/// Легкий молоток.
-		/// </summary>
-		LightHammer,
+    /// <summary>
+    /// Р›РµРіРєРёР№ РјРѕР»РѕС‚.
+    /// </summary>
+    LightHammer,
 
-		/// <summary>
-		/// Булава.
-		/// </summary>
-		Mace,
+    /// <summary>
+    /// Р‘СѓР»Р°РІР°.
+    /// </summary>
+    Mace,
 
-		/// <summary>
-		/// Квартерстафф.
-		/// </summary>
-		Quarterstaff,
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ РїРѕСЃРѕС….
+    /// </summary>
+    Quarterstaff,
 
-		/// <summary>
-		/// Серп.
-		/// </summary>
-		Sickle,
+    /// <summary>
+    /// РЎРµСЂРї.
+    /// </summary>
+    Sickle,
 
-		/// <summary>
-		/// Лёгкое копьё.
-		/// </summary>
-		Spear,
+    /// <summary>
+    /// РљРѕРїСЊРµ.
+    /// </summary>
+    Spear,
 
-		/// <summary>
-		/// Арбалет.
-		/// </summary>
-		Crossbow,
+    /// <summary>
+    /// РђСЂР±Р°Р»РµС‚.
+    /// </summary>
+    Crossbow,
 
-		/// <summary>
-		/// Дарт.
-		/// </summary>
-		Dart,
+    /// <summary>
+    /// Р”СЂРѕС‚РёРє.
+    /// </summary>
+    Dart,
 
-		/// <summary>
-		/// Короткий лук.
-		/// </summary>
-		Shortbow,
+    /// <summary>
+    /// РљРѕСЂРѕС‚РєРёР№ Р»СѓРє.
+    /// </summary>
+    Shortbow,
 
-		/// <summary>
-		/// Слинг.
-		/// </summary>
-		Sling,
+    /// <summary>
+    /// РџСЂР°С‰Р°.
+    /// </summary>
+    Sling,
 
-		/// <summary>
-		/// Боевой топор.
-		/// </summary>
-		Battleaxe,
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ С‚РѕРїРѕСЂ.
+    /// </summary>
+    Battleaxe,
 
-		/// <summary>
-		/// Цеп.
-		/// </summary>
-		Flail,
+    /// <summary>
+    /// Р¦РµРї.
+    /// </summary>
+    Flail,
 
-		/// <summary>
-		/// Глефа.
-		/// </summary>
-		Glaive,
+    /// <summary>
+    /// Р“Р»РµС„Р°.
+    /// </summary>
+    Glaive,
 
-		/// <summary>
-		/// Большой топор.
-		/// </summary>
-		Greataxe,
+    /// <summary>
+    /// РЎРµРєРёСЂР°.
+    /// </summary>
+    Greataxe,
 
-		/// <summary>
-		/// Большой меч.
-		/// </summary>
-		Greatsword,
+    /// <summary>
+    /// Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡.
+    /// </summary>
+    Greatsword,
 
-		/// <summary>
-		/// Алебарда.
-		/// </summary>
-		Halberd,
+    /// <summary>
+    /// РђР»РµР±Р°СЂРґР°.
+    /// </summary>
+    Halberd,
 
-		/// <summary>
-		/// Тяжёлое копьё.
-		/// </summary>
-		Lance,
+    /// <summary>
+    /// Р”Р»РёРЅРЅРѕРµ РєРѕРїСЊРµ.
+    /// </summary>
+    Lance,
 
-		/// <summary>
-		/// Длинный меч.
-		/// </summary>
-		Longsword,
+    /// <summary>
+    /// Р”Р»РёРЅРЅС‹Р№ РјРµС‡.
+    /// </summary>
+    Longsword,
 
-		/// <summary>
-		/// Кувалда.
-		/// </summary>
-		Maul,
+    /// <summary>
+    /// РњРѕР»РѕС‚.
+    /// </summary>
+    Maul,
 
-		/// <summary>
-		/// Моргенштерн
-		/// </summary>
-		Morningstar,
+    /// <summary>
+    /// РњРѕСЂРіРµРЅС€С‚РµСЂРЅ.
+    /// </summary>
+    Morningstar,
 
-		/// <summary>
-		/// Пика.
-		/// </summary>
-		Pike,
+    /// <summary>
+    /// РџРёРєР°.
+    /// </summary>
+    Pike,
 
-		/// <summary>
-		/// Рапира.
-		/// </summary>
-		Rapier,
+    /// <summary>
+    /// Р Р°РїРёСЂР°.
+    /// </summary>
+    Rapier,
 
-		/// <summary>
-		/// Ятаган.
-		/// </summary>
-		Scimitar,
+    /// <summary>
+    /// РЎРєРёРјРёС‚Р°СЂ.
+    /// </summary>
+    Scimitar,
 
-		/// <summary>
-		/// Короткий меч.
-		/// </summary>
-		Shortsword,
+    /// <summary>
+    /// РљРѕСЂРѕС‚РєРёР№ РјРµС‡.
+    /// </summary>
+    Shortsword,
 
-		/// <summary>
-		/// Трезубец.
-		/// </summary>
-		Trident,
+    /// <summary>
+    /// РўСЂРµР·СѓР±РµС†.
+    /// </summary>
+    Trident,
 
-		/// <summary>
-		/// Военная кирка.
-		/// </summary>
-		WarPick,
+    /// <summary>
+    /// Р‘РѕРµРІР°СЏ РєРёСЂРєР°.
+    /// </summary>
+    WarPick,
 
-		/// <summary>
-		/// Боевой молот.
-		/// </summary>
-		Warhammer,
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ РјРѕР»РѕС‚.
+    /// </summary>
+    Warhammer,
 
-		/// <summary>
-		/// Хлыст.
-		/// </summary>
-		Whip,
+    /// <summary>
+    /// РљРЅСѓС‚.
+    /// </summary>
+    Whip,
 
-		/// <summary>
-		/// Духовая трубка.
-		/// </summary>
-		Blowgun,
+    /// <summary>
+    /// Р”СѓС…РѕРІР°СЏ С‚СЂСѓР±РєР°.
+    /// </summary>
+    Blowgun,
 
-		/// <summary>
-		/// Ручной арбалет.
-		/// </summary>
-		CrossbowHand,
+    /// <summary>
+    /// Р СѓС‡РЅРѕР№ Р°СЂР±Р°Р»РµС‚.
+    /// </summary>
+    CrossbowHand,
 
-		/// <summary>
-		/// Тяжелый арбалет.
-		/// </summary>
-		CrossbowHeavy,
+    /// <summary>
+    /// РўСЏР¶РµР»С‹Р№ Р°СЂР±Р°Р»РµС‚.
+    /// </summary>
+    CrossbowHeavy,
 
-		/// <summary>
-		/// Длинный лук.
-		/// </summary>
-		Longbow,
+    /// <summary>
+    /// Р”Р»РёРЅРЅС‹Р№ Р»СѓРє.
+    /// </summary>
+    Longbow,
 
-		/// <summary>
-		/// Нет.
-		/// </summary>
-		Net
-	}
+    /// <summary>
+    /// РќРµС‚.
+    /// </summary>
+    Net
+  }
 }

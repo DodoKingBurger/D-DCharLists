@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Полурослик.
+	/// РџРѕР»СѓСЂРѕСЃР»РёРє.
 	/// </summary>
 	public class HalflingRace : SheetRaceBase
 	{

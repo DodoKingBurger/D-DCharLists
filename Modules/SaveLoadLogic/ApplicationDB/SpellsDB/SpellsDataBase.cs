@@ -1,60 +1,60 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// БД заклинаний.
-	/// </summary>
-	public class SpellsDataBase
-	{
-		#region Поля и свойства
+  /// <summary>
+  /// Р‘Р” Р·Р°РєР»РёРЅР°РЅРёР№.
+  /// </summary>
+  public class SpellsDataBase
+  {
+    #region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
-		/// <summary>
-		/// Список заклинаний.
-		/// </summary>
-		public static Dictionary<int, SpellBase> SpellsDB = new Dictionary<int, SpellBase>();
+    /// <summary>
+    /// РЎРїРёСЃРѕРє Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    public static Dictionary<int, SpellBase> SpellsDB = new Dictionary<int, SpellBase>();
 
-		/// <summary>
-		/// Информация о папке.
-		/// </summary>
-		private static DirectoryInfo folderInfo = new DirectoryInfo(String.Join("\\",
-			AppDomain.CurrentDomain.BaseDirectory.Split('\\')
-			[0..(AppDomain.CurrentDomain.BaseDirectory.Split('\\').Count() - 4)])
-			+ "\\Data\\DND\\DataBases");
+    /// <summary>
+    /// РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїР°РїРєРµ.
+    /// </summary>
+    private static DirectoryInfo folderInfo = new DirectoryInfo(String.Join("\\",
+      AppDomain.CurrentDomain.BaseDirectory.Split('\\')
+      [0..(AppDomain.CurrentDomain.BaseDirectory.Split('\\').Count() - 4)])
+      + "\\Data\\DND\\DataBases");
 
-		#endregion
+    #endregion
 
-		#region Методы
+    #region РњРµС‚РѕРґС‹
 
-		/// <summary>
-		/// Загрузка БД.
-		/// </summary>
-		public static void LoadDB()
-		{
-			foreach (var item in folderInfo.GetFiles())
-			{
-				if (item.Name == "DNDSpellsDB.json")
-				{
-					JsonSaveLoad.JsonLoad(@"Data\DND\DataBases\DNDSpellsDB.json", ref SpellsDB);
-				}
-			}
-		}
+    /// <summary>
+    /// Р—Р°РіСЂСѓР·РєР° Р‘Р”.
+    /// </summary>
+    public static void LoadDB()
+    {
+      foreach (var item in folderInfo.GetFiles())
+      {
+        if (item.Name == "DNDSpellsDB.json")
+        {
+          JsonSaveLoad.JsonLoad(@"Data\DND\DataBases\DNDSpellsDB.json", ref SpellsDB);
+        }
+      }
+    }
 
-		/// <summary>
-		/// Добавить заклинания.
-		/// </summary>
-		/// <param name="spell">Добавляймое заклинания.</param>
-		public static void AddSpell(SpellBase spell)
-		{
-			SpellsDB[spell.Id] = spell;
-		}
+    /// <summary>
+    /// Р”РѕР±Р°РІРёС‚СЊ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    /// <param name="spell">Р”РѕР±Р°РІР»СЏР№РјРѕРµ Р·Р°РєР»РёРЅР°РЅРёСЏ.</param>
+    public static void AddSpell(SpellBase spell)
+    {
+      SpellsDB[spell.Id] = spell;
+    }
 
-		/// <summary>
-		/// Сохранить БД заклинаний.
-		/// </summary>
-		public static void SaveDB()
-		{
-			JsonSaveLoad.JsonSave("DNDSpellsDB", SpellsDB, @"Data\DND\DataBases\");
-		}
+    /// <summary>
+    /// РЎРѕС…СЂР°РЅРёС‚СЊ Р‘Р” Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    public static void SaveDB()
+    {
+      JsonSaveLoad.JsonSave("DNDSpellsDB", SpellsDB, @"Data\DND\DataBases\");
+    }
 
-		#endregion
-	}
+    #endregion
+  }
 }

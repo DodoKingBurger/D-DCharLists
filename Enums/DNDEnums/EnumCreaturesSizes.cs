@@ -1,37 +1,37 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Размеры существ.
+	/// РЎРїРёСЃРѕРє СЂР°Р·РјРµСЂРѕРІ СЃСѓС‰РµСЃС‚РІ.
 	/// </summary>
 	public enum EnumCreaturesSizes
 	{
 		/// <summary>
-		/// Крошечный.
+		/// РљСЂРѕС€РµС‡РЅС‹Р№.
 		/// </summary>
 		Tiny,
 
 		/// <summary>
-		/// Маленький.
+		/// РњР°Р»РµРЅСЊРєРёР№.
 		/// </summary>
 		Small,
 
 		/// <summary>
-		/// Средний.
+		/// РЎСЂРµРґРЅРёР№.
 		/// </summary>
 		Medium,
 
 		/// <summary>
-		/// Большой.
+		/// Р‘РѕР»СЊС€РѕР№.
 		/// </summary>
 		Large,
 
 		/// <summary>
-		/// Огромный.
+		/// РћРіСЂРѕРјРЅС‹Р№.
 		/// </summary>
 		Huge,
 
 		/// <summary>
-		/// Гиганский.
+		/// Р“РёРіР°РЅС‚СЃРєРёР№.
 		/// </summary>
 		Gargantuan
 	}

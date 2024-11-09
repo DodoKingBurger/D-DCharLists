@@ -1,123 +1,123 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Владение инструментами
+	/// РќР°РІС‹РєРё РІР»Р°РґРµРЅРёСЏ РїСЂРѕС„РµСЃСЃРёР№.
 	/// </summary>
 	public enum EnumInstrumentsProficiencies
 	{
-		/// <summary>
-		/// Товары для алхимиков.
-		/// </summary>
-		AlchemistsSupplies,
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё Р°Р»С…РёРјРёРєР°.
+    /// </summary>
+    AlchemistsSupplies,
 
-		/// <summary>
-		/// Товары пивоваров.
-		/// </summary>
-		BrewersSupplies,
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё РїРёРІРѕРІР°СЂР°.
+    /// </summary>
+    BrewersSupplies,
 
-		/// <summary>
-		/// Товары каллиграфов.
-		/// </summary>
-		CalligraphersSupplies,
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё РґР»СЏ РєР°Р»Р»РёРіСЂР°С„Р°.
+    /// </summary>
+    CalligraphersSupplies,
 
-		/// <summary>
-		/// Плотниковые инструменты.
-		/// </summary>
-		CarpentersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РїР»РѕС‚РЅРёРєР°.
+    /// </summary>
+    CarpentersTools,
 
-		/// <summary>
-		/// Инструменты картографов.
-		/// </summary>
-		CartographersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєР°СЂС‚РѕРіСЂР°С„Р°.
+    /// </summary>
+    CartographersTools,
 
-		/// <summary>
-		/// Инструменты сапожников.
-		/// </summary>
-		CobblersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ СЃР°РїРѕР¶РЅРёРєР°.
+    /// </summary>
+    CobblersTools,
 
-		/// <summary>
-		/// Поварская посуда.
-		/// </summary>
-		CooksUtensils,
+    /// <summary>
+    /// РљСѓС…РѕРЅРЅР°СЏ СѓС‚РІР°СЂСЊ.
+    /// </summary>
+    CooksUtensils,
 
-		/// <summary>
-		/// Инструменты стеклодувов.
-		/// </summary>
-		GlassblowersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ СЃС‚РµРєР»РѕРґСѓРІРѕРІ.
+    /// </summary>
+    GlassblowersTools,
 
-		/// <summary>
-		/// Инструменты ювелиров.
-		/// </summary>
-		JewelersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ СЋРІРµР»РёСЂРѕРІ.
+    /// </summary>
+    JewelersTools,
 
-		/// <summary>
-		/// Инструменты кожевника.
-		/// </summary>
-		LeatherworkersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєРѕР¶РµРІРЅРёРєР°.
+    /// </summary>
+    LeatherworkersTools,
 
-		/// <summary>
-		/// Инструменты каменщика.
-		/// </summary>
-		MasonsTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєР°РјРµРЅС‰РёРєР°.
+    /// </summary>
+    MasonsTools,
 
-		/// <summary>
-		/// Малярные принадлежности.
-		/// </summary>
-		PaintersSupplies,
+    /// <summary>
+    /// РњР°Р»СЏСЂРЅС‹Рµ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё.
+    /// </summary>
+    PaintersSupplies,
 
-		/// <summary>
-		/// Инструменты гончара.
-		/// </summary>
-		PottersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РіРѕРЅС‡Р°СЂР°.
+    /// </summary>
+    PottersTools,
 
-		/// <summary>
-		/// Инструменты кузнеца.
-		/// </summary>
-		SmithsTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєСѓР·РЅРµС†Р°.
+    /// </summary>
+    SmithsTools,
 
-		/// <summary>
-		/// Инструменты лудильщика.
-		/// </summary>
-		TinkersTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Р¶РµСЃС‚СЏРЅС‰РёРєР°.
+    /// </summary>
+    TinkersTools,
 
-		/// <summary>
-		/// Инструменты ткача.
-		/// </summary>
-		WeaversTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ С‚РєР°С‡Р°.
+    /// </summary>
+    WeaversTools,
 
-		/// <summary>
-		/// Инструменты для резьбы по дереву.
-		/// </summary>
-		WoodcarversTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ СЂРµР·СЊР±С‹ РїРѕ РґРµСЂРµРІСѓ.
+    /// </summary>
+    WoodcarversTools,
 
-		/// <summary>
-		/// Инструменты навигаторов.
-		/// </summary>
-		NavigatorsTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РЅР°РІРёРіР°С‚РѕСЂРѕРІ.
+    /// </summary>
+    NavigatorsTools,
 
-		/// <summary>
-		/// Набор ядов.
-		/// </summary>
-		PoisonersKit,
+    /// <summary>
+    /// РќР°Р±РѕСЂ СЏРґРѕРІ.
+    /// </summary>
+    PoisonersKit,
 
-		/// <summary>
-		/// Инструменты вора.
-		/// </summary>
-		ThievesTools,
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РІРѕСЂР°.
+    /// </summary>
+    ThievesTools,
 
-		/// <summary>
-		/// Комплект для маскировки.
-		/// </summary>
-		DisguiseKit,
+    /// <summary>
+    /// РљРѕРјРїР»РµРєС‚ РґР»СЏ РјР°СЃРєРёСЂРѕРІРєРё.
+    /// </summary>
+    DisguiseKit,
 
-		/// <summary>
-		/// Комплект для подделки.
-		/// </summary>
-		ForgeryKit,
+    /// <summary>
+    /// РљРѕРјРїР»РµРєС‚ РґР»СЏ РїРѕРґРґРµР»РєРё.
+    /// </summary>
+    ForgeryKit,
 
-		/// <summary>
-		/// Травничество.
-		/// </summary>
-		Herbalism
-	}
+    /// <summary>
+    /// РќР°Р±РѕСЂ С‚СЂР°РІРЅРёС‡РµСЃС‚РІР°.
+    /// </summary>
+    Herbalism
+  }
 }

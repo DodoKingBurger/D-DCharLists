@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Драконорожденный.
+	/// Р”СЂР°РєРѕРЅРѕСЂРѕР¶РґРµРЅРЅС‹Р№.
 	/// </summary>
 	public class DragonbornRace : SheetRaceBase
 	{

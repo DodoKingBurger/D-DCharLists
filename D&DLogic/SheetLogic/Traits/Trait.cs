@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Базовый талант.
+	/// РўР°Р»Р°РЅС‚.
 	/// </summary>
 	public class Trait : TraitBase
 	{

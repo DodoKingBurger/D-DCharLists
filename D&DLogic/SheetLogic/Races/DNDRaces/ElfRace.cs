@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// έλότ.
+	/// Π­Π»ΡΡ„.
 	/// </summary>
 	public class ElfRace : SheetRaceBase
 	{

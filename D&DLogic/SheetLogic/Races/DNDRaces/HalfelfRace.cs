@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Οξλσύλότ.
+	/// ΠΠΎΠ»ΡƒΡΠ»ΡΡ„.
 	/// </summary>
 	public class HalfelfRace : SheetRaceBase
 	{

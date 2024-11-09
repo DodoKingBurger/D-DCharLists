@@ -1,58 +1,58 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Действия с экипировкой.
-	/// </summary>
-	public enum EnumWorkWithEquipment
-	{
-		/// <summary>
-		/// Оборудования было изменено.
-		/// </summary>
-		EquipmentWasChange,
+  /// <summary>
+  /// Р”РµР№СЃС‚РІРёСЏ СЃ СЌРєРёРїРёСЂРѕРІРєРѕР№.
+  /// </summary>
+  public enum EnumWorkWithEquipment
+  {
+    /// <summary>
+    /// РћР±РѕСЂСѓРґРѕРІР°РЅРёСЏ Р±С‹Р»Рѕ РёР·РјРµРЅРµРЅРѕ.
+    /// </summary>
+    EquipmentWasChange,
 
-		/// <summary>
-		/// Выбрать броню.
-		/// </summary>
-		ChooseArmor,
+    /// <summary>
+    /// Р’С‹Р±СЂР°С‚СЊ Р±СЂРѕРЅСЋ.
+    /// </summary>
+    ChooseArmor,
 
-		/// <summary>
-		/// Выбрать что экипировано в руке.
-		/// </summary>
-		ChooseWhatEquipInHand,
+    /// <summary>
+    /// Р’С‹Р±СЂР°С‚СЊ С‡С‚Рѕ СЌРєРёРїРёСЂРѕРІР°РЅРѕ РІ СЂСѓРєРµ.
+    /// </summary>
+    ChooseWhatEquipInHand,
 
-		/// <summary>
-		/// Экипировка доспехи.
-		/// </summary>
-		ArmorEquip,
+    /// <summary>
+    /// Р­РєРёРїРёСЂРѕРІРєР° РґРѕСЃРїРµС…Рё.
+    /// </summary>
+    ArmorEquip,
 
-		/// <summary>
-		/// Экипировка в правой руке. 
-		/// </summary>
-		RightHandEquip,
+    /// <summary>
+    /// Р­РєРёРїРёСЂРѕРІРєР° РІ РїСЂР°РІРѕР№ СЂСѓРєРµ. 
+    /// </summary>
+    RightHandEquip,
 
-		/// <summary>
-		/// Экипировка в левой руке.
-		/// </summary>
-		LeftHandEquip,
+    /// <summary>
+    /// Р­РєРёРїРёСЂРѕРІРєР° РІ Р»РµРІРѕР№ СЂСѓРєРµ.
+    /// </summary>
+    LeftHandEquip,
 
-		/// <summary>
-		/// Доспех отсутствует.
-		/// </summary>
-		ArmorOff,
+    /// <summary>
+    /// Р”РѕСЃРїРµС… РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚.
+    /// </summary>
+    ArmorOff,
 
-		/// <summary>
-		/// Правая рука отключена.
-		/// </summary>
-		RightHandOff,
-		
-		/// <summary>
-		/// Левая рука отключена.
-		/// </summary>
-		LeftHandOff,
+    /// <summary>
+    /// РџСЂР°РІР°СЏ СЂСѓРєР° РѕС‚РєР»СЋС‡РµРЅР°.
+    /// </summary>
+    RightHandOff,
 
-		/// <summary>
-		/// Нет доспеха в инвентору.
-		/// </summary>
-		NoArmorInInventory
-	}
+    /// <summary>
+    /// Р›РµРІР°СЏ СЂСѓРєР° РѕС‚РєР»СЋС‡РµРЅР°.
+    /// </summary>
+    LeftHandOff,
+
+    /// <summary>
+    /// РќРµС‚ РґРѕСЃРїРµС…Р° РІ РёРЅРІРµРЅС‚Р°СЂРµ.
+    /// </summary>
+    NoArmorInInventory
+  }
 }

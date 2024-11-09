@@ -1,14 +1,14 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Лист талантов персонажа.
+	/// РЎРїРёСЃРѕРє С‚Р°Р»Р°РЅС‚РѕРІ.
 	/// </summary>
 	public class TraitsList : TraitsListBase
 	{
-		/// <summary>
-		/// Обозначает таланты героя.
-		/// </summary>
-		public TraitsList()
+    /// <summary>
+    /// РЎРѕР·РґР°С‘С‚ СЃРїРёСЃРѕРє С‚Р°Р»Р°РЅС‚РѕРІ.
+    /// </summary>
+    public TraitsList()
 		{
 			TraitsList = new Dictionary<int, int>();
 		}

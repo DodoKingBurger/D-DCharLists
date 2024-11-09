@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Боевые способности.
+	/// Р‘РѕРµРІС‹Рµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё.
 	/// </summary>
-	public class CombatAbilitiesDND5E : SheetCombatAbilities
+	public class CombatAbilities : SheetCombatAbilities
 	{
 
-		#region Базовый класс
+		#region РџРѕР»СЏ СЃРІРѕР№СЃС‚РІР°
 
 		public override void ChangeStat(Enum stat, int value)
 		{
@@ -24,13 +24,13 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструкторы
+		#region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 		/// <summary>
-		/// Создает список боевых параметров.
+		/// Р—Р°РїРѕР»РЅСЏРµС‚ СЃРїРёСЃРѕРє Р±РѕРµРІС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ.
 		/// HP, MAX HP...
 		/// </summary>
-		public CombatAbilitiesDND5E()
+		public CombatAbilities()
 		{
 			CombatStats = new Dictionary<EnumCombatStats, int>()
 			{

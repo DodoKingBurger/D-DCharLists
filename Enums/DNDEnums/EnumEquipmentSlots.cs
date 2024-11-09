@@ -1,22 +1,22 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Слоты.
+	/// РЎР»РѕС‚С‹ СЃРЅР°СЂСЏР¶РµРЅРёСЏ.
 	/// </summary>
 	public enum EnumEquipmentSlots
 	{
 		/// <summary>
-		/// Левая рука.
+		/// Р›РµРІР°СЏ СЂСѓРєР°.
 		/// </summary>
 		LeftHand,
 
 		/// <summary>
-		/// Правая рука.
+		/// РџСЂР°РІР°СЏ СЂСѓРєР°.
 		/// </summary>
 		RightHand,
 
 		/// <summary>
-		/// Доспех.
+		/// Р”РѕСЃРїРµС….
 		/// </summary>
 		BodyArmor
 	}

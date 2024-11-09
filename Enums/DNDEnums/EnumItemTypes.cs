@@ -1,27 +1,27 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Тип предмета.
+	/// РўРёРї РїСЂРµРґРјРµС‚Р°.
 	/// </summary>
 	public enum EnumItemTypes
 	{
 		/// <summary>
-		/// Доспех.
+		/// Р”РѕСЃРїРµС….
 		/// </summary>
 		Armor,
 
 		/// <summary>
-		/// Оружие.
+		/// РћСЂСѓР¶РёРµ.
 		/// </summary>
 		Weapon,
 
 		/// <summary>
-		/// Предмет.
+		/// РџСЂРµРґРјРµС‚.
 		/// </summary>
 		Item,
 
 		/// <summary>
-		/// Монета.
+		/// РњРѕРЅРµС‚Р°.
 		/// </summary>
 		Coin
 	}

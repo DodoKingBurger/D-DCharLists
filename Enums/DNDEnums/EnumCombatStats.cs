@@ -1,47 +1,47 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Статистика боя.
+	/// Р‘РѕРµРІС‹Рµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё.
 	/// </summary>
 	public enum EnumCombatStats
 	{
 		/// <summary>
-		/// Масимум HP.
+		/// РњР°РєСЃРёРјСѓРј HP.
 		/// </summary>
 		MaximumHP,
 
 		/// <summary>
-		/// Текущий HP.
+		/// РўРµРєСѓС‰РёРµ HP.
 		/// </summary>
 		CurrentHP,
 
 		/// <summary>
-		/// Временный HP.
+		/// Р’СЂРµРјРµРЅРЅС‹Рµ HP.
 		/// </summary>
 		TemporaryHP,
 
 		/// <summary>
-		/// Класс брони.
+		/// РљР»Р°СЃСЃ Р·Р°С‰РёС‚С‹.
 		/// </summary>
 		ArmorClass,
 
 		/// <summary>
-		/// Текущие кубики хитов.
+		/// РўРµРєСѓС‰РёРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕСЃС‚РµР№ С…РёС‚РѕРІ.
 		/// </summary>
 		CurrentHitDices,
 
 		/// <summary>
-		/// Спасброски от смерти успехи.
+		/// РЎРїР°СЃР±СЂРѕСЃРєРё СѓСЃРїРµС….
 		/// </summary>
 		DeathSucces,
 
 		/// <summary>
-		/// Спасброски от смерти провалы.
+		/// РЎРїР°СЃР±СЂРѕСЃРєРё РїСЂРѕРІР°Р».
 		/// </summary>
 		DeathFailure,
 
 		/// <summary>
-		/// Раунд.
+		/// Р Р°СѓРЅРґ.
 		/// </summary>
 		Round
 	}

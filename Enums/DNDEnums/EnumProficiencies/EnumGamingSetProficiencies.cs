@@ -1,28 +1,28 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Игровые навыки набора
+	/// Р’Р»Р°РґРµРЅРёСЏ РёРіСЂРѕРІС‹РјРё РЅР°Р±РѕСЂР°РјРё.
 	/// </summary>
 	public enum EnumGamingSetProficiencies
 	{
-		/// <summary>
-		/// Набор кубиков.
-		/// </summary>
-		DiceSet,
+    /// <summary>
+    /// РќР°Р±РѕСЂ РєСѓР±РёРєРѕРІ.
+    /// </summary>
+    DiceSet,
 
-		/// <summary>
-		/// Набор драконьих шахмат.
-		/// </summary>
-		DragonchessSet,
+    /// <summary>
+    /// РќР°Р±РѕСЂ В«Р”СЂР°РєРѕРЅСЊРёС… С€Р°С…РјР°С‚В».
+    /// </summary>
+    DragonchessSet,
 
-		/// <summary>
-		/// Набор игральных карт.
-		/// </summary>
-		PlayingCardSet,
+    /// <summary>
+    /// РќР°Р±РѕСЂ РёРіСЂР°Р»СЊРЅС‹С… РєР°СЂС‚.
+    /// </summary>
+    PlayingCardSet,
 
-		/// <summary>
-		/// Набор анте «Три дракона».
-		/// </summary>
-		ThreeDragonAnteSet
-	}
+    /// <summary>
+    /// РќР°Р±РѕСЂ РёР· С‚СЂРµС… РґСЂР°РєРѕРЅРѕРІ.
+    /// </summary>
+    ThreeDragonAnteSet
+  }
 }

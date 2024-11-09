@@ -1,28 +1,28 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Список действий по прогрессу.
-	/// </summary>
-	public enum EnumProgressionActions
+  /// <summary>
+  /// РЎРїРёСЃРѕРє РґРµР№СЃС‚РІРёР№ РїРѕ РїСЂРѕРіСЂРµСЃСЃСѓ.
+  /// </summary>
+  public enum EnumProgressionActions
 	{
-		/// <summary>
-		/// Получение опыта.
-		/// </summary>
-		ExpGained,
+    /// <summary>
+    /// РџРѕР»СѓС‡РµРЅРёРµ РѕРїС‹С‚Р°.
+    /// </summary>
+    ExpGained,
 
-		/// <summary>
-		/// Понижение опыта.
-		/// </summary>
-		ExpLowered,
+    /// <summary>
+    /// РџРѕРЅРёР¶РµРЅРёРµ РѕРїС‹С‚Р°.
+    /// </summary>
+    ExpLowered,
 
-		/// <summary>
-		/// Есть вдохновение.
-		/// </summary>
-		InspirationTrue,
+    /// <summary>
+    /// Р•СЃС‚СЊ РІРґРѕС…РЅРѕРІРµРЅРёРµ.
+    /// </summary>
+    InspirationTrue,
 
-		/// <summary>
-		/// Нет вдохновения.
-		/// </summary>
-		InspirationFalse
-	}
+    /// <summary>
+    /// РќРµС‚ РІРґРѕС…РЅРѕРІРµРЅРёСЏ.
+    /// </summary>
+    InspirationFalse
+  }
 }

@@ -21,7 +21,7 @@ namespace D_DCharLists
 			SheetSkills = new Skills();
 			SheetProgression = new Progression();
 			SheetPersonality = new Personality();
-			SheetCombatAbilities = new CombatAbilitiesDND5E();
+			SheetCombatAbilities = new CombatAbilities();
 			SheetProficiencies = new Proficiencies();
 			SheetInventory = new Inventory();
 			TraitsList = new TraitsList();

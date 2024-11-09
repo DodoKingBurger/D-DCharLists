@@ -4,52 +4,52 @@ using Newtonsoft.Json.Serialization;
 
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Распознователь контракта заклинания для сериализации.
-	/// </summary>
-	public class SpellsSpecifiedConcreteClassConverter : DefaultContractResolver
-	{
-		protected override JsonConverter ResolveContractConverter(Type objectType)
-		{
-			if (typeof(SpellBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
-			{
-				return null;
-			}
+  /// <summary>
+  /// Р Р°СЃРїРѕР·РЅРѕРІР°С‚РµР»СЊ РєРѕРЅС‚СЂР°РєС‚Р° Р·Р°РєР»РёРЅР°РЅРёСЏ РґР»СЏ СЃРµСЂРёР°Р»РёР·Р°С†РёРё.
+  /// </summary>
+  public class SpellsSpecifiedConcreteClassConverter : DefaultContractResolver
+  {
+    protected override JsonConverter ResolveContractConverter(Type objectType)
+    {
+      if (typeof(SpellBase).IsAssignableFrom(objectType) && !objectType.IsAbstract)
+      {
+        return null;
+      }
 
-			return base.ResolveContractConverter(objectType);
-		}
-	}
+      return base.ResolveContractConverter(objectType);
+    }
+  }
 
-	/// <summary>
-	/// Конвектер для заклинаний.
-	/// </summary>
-	public class SpellsConvertorJson : JsonConverter
-	{
-		#region Базовый класс
+  /// <summary>
+  /// РљРѕРЅРІРµРєС‚РµСЂ РґР»СЏ Р·Р°РєР»РёРЅР°РЅРёР№.
+  /// </summary>
+  public class SpellsConvertorJson : JsonConverter
+  {
+    #region Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 
-		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
+    static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
 
-		public override bool CanConvert(Type objectType)
-		{
-			return (objectType == typeof(SpellBase));
-		}
+    public override bool CanConvert(Type objectType)
+    {
+      return (objectType == typeof(SpellBase));
+    }
 
-		public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-		{
-			JObject jo = JObject.Load(reader);
-			return JsonConvert.DeserializeObject<Spell>(jo.ToString(), SpecifiedSubclassConversion);
-		}
+    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+    {
+      JObject jo = JObject.Load(reader);
+      return JsonConvert.DeserializeObject<Spell>(jo.ToString(), SpecifiedSubclassConversion);
+    }
 
-		public override bool CanWrite
-		{
-			get { return false; }
-		}
+    public override bool CanWrite
+    {
+      get { return false; }
+    }
 
-		public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-		{
-			throw new NotImplementedException();
-		}
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    {
+      throw new NotImplementedException();
+    }
 
-		#endregion
-	}
+    #endregion
+  }
 }

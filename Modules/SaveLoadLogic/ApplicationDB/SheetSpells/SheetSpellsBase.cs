@@ -2,50 +2,55 @@ using Newtonsoft.Json;
 
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Сущность списка заклинания.
-	/// </summary>
-	public abstract class SheetSpellsBase
-	{
-		#region Поля и свойства
+  /// <summary>
+  /// РЎСѓС‰РЅРѕСЃС‚СЊ СЃРїРёСЃРєР° Р·Р°РєР»РёРЅР°РЅРёСЏ.
+  /// </summary>
+  public abstract class SheetSpellsBase
+  {
+    #region РџРѕР»СЏ Рё СЃРІРѕР№СЃС‚РІР°
 
-		/// <summary>
-		/// Список заклинаний.
-		/// </summary>
-		[JsonProperty("SheetSpells")]
-		public Dictionary<int, int> SheetSpells {  get; protected set; }
+    /// <summary>
+    /// РЎРїРёСЃРѕРє Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    [JsonProperty("SheetSpells")]
+    public Dictionary<int, int> SheetSpells { get; protected set; }
 
-		#endregion
+    #endregion
 
-		#region Методы
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="id"></param>
-		public void AddSpell(int id)
-		{
-			if (!SheetSpells.ContainsKey(id))
-			{
-				SheetSpells[id] = SpellsDataBase.SpellsDB[id].Level;
-			}
-			else
-			{
-				throw new ArgumentException("Неизвестное заклинание");
-			}
-		}
+    #region РњРµС‚РѕРґС‹
+    /// <summary>
+    /// Р”РѕР±Р°РІРёС‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ РІ Р‘Р”.
+    /// </summary>
+    /// <param name="id"></param>
+    public void AddSpell(int id)
+    {
+      if (!SheetSpells.ContainsKey(id))
+      {
+        SheetSpells[id] = SpellsDataBase.SpellsDB[id].Level;
+      }
+      else
+      {
+        throw new ArgumentException("РќРµРёР·РІРµСЃС‚РЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ");
+      }
+    }
 
-		public void RemoveSpell(int id)
-		{
-			if (SheetSpells.ContainsKey(id))
-			{
-				SheetSpells.Remove(id);
-			}
-			else 
-			{
-				throw new ArgumentException("Попытка удалении не существуещего заклинания.");
-			}
-		}
+    /// <summary>
+    /// РЈРґР°Р»РёС‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ РёР· Р‘Р”.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <exception cref="ArgumentException"></exception>
+    public void RemoveSpell(int id)
+    {
+      if (SheetSpells.ContainsKey(id))
+      {
+        SheetSpells.Remove(id);
+      }
+      else
+      {
+        throw new ArgumentException("РџРѕРїС‹С‚РєР° СѓРґР°Р»РµРЅРёРё РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ.");
+      }
+    }
 
-		#endregion
-	}
+    #endregion
+  }
 }

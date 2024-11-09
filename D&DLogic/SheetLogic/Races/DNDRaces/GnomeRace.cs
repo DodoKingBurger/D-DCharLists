@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// ֳםמל.
+	/// ׀“׀½׀¾׀¼.
 	/// </summary>
 	public class GnomeRace : SheetRaceBase
 	{

@@ -1,67 +1,67 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Личность.
-	/// </summary>
-	public enum EnumPersonalities
+  /// <summary>
+  /// Р›РёС‡РЅРѕСЃС‚Рё.
+  /// </summary>
+  public enum EnumPersonalities
 	{
 		/// <summary>
-		/// Предистория.
+		/// РџСЂРµРґС‹СЃС‚РѕСЂРёСЏ.
 		/// </summary>
 		Background,
 	
 		/// <summary>
-		/// Мирвозрение.
+		/// РњРёСЂРІРѕР·СЂРµРЅРёРµ.
 		/// </summary>
 		Alignment,
 
-		/// <summary>
-		/// Черты характера.
-		/// </summary>
-		PersonalityTraits,
+    /// <summary>
+    /// Р§РµСЂС‚С‹ Р»РёС‡РЅРѕСЃС‚Рё.
+    /// </summary>
+    PersonalityTraits,
 
 		/// <summary>
-		/// Идеалы.
+		/// РРґРµР°Р»С‹.
 		/// </summary>
 		Ideals,
 
-		/// <summary>
-		/// Привязанности.
-		/// </summary>
-		Bonds,
+    /// <summary>
+    /// РџСЂРёРІСЏР·Р°РЅРЅРѕСЃС‚Рё.
+    /// </summary>
+    Bonds,
 
 		/// <summary>
-		/// Слабости.
+		/// РЎР»Р°Р±РѕСЃС‚Рё.
 		/// </summary>
 		Flaws,
 
 		/// <summary>
-		/// Возраст. 
+		/// Р’РѕР·СЂР°СЃС‚. 
 		/// </summary>
 		Age,
 
 		/// <summary>
-		/// Рост.
+		/// Р РѕСЃС‚.
 		/// </summary>
 		Height,
 		
 		/// <summary>
-		/// Вес.
+		/// Р’РµСЃ.
 		/// </summary>
 		Weight,
 
 		/// <summary>
-		/// Глаза.
+		/// Р“Р»Р°Р·Р°.
 		/// </summary>
 		Eyes,
 		
 		/// <summary>
-		/// Кожа.
+		/// РљРѕР¶Р°.
 		/// </summary>
 		Skin,
 
 		/// <summary>
-		/// Прическа.
+		/// РџСЂРёС‡РµСЃРєР°.
 		/// </summary>
 		Hair
 	}

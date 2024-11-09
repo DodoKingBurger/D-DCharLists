@@ -1,16 +1,16 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Фабрика по инициализации расс.
+	/// Р¤Р°Р±СЂРёРєР° РґР»СЏ СЂР°СЃС‹.
 	/// </summary>
 	public class SheetRaceFactory
 	{
-		/// <summary>
-		/// Инициализирует по переданному из списка названию рассу.
-		/// </summary>
-		/// <param name="sheetRace">Название рассы из списка.</param>
-		/// <returns>Инициализрованную сущность, если переданный список не подходт под рассовый, то создаст Драконорожденного.</returns>
-		public SheetRaceBase CreateSheetRace(Enum sheetRace)
+    /// <summary>
+    /// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ СЂР°СЃСѓ РїРѕ РѕС‚РїСЂР°РІР»РµРЅРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ РёР· СЃРїРёСЃРєР° РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅС‹С… СЂР°СЃ.
+    /// </summary>
+    /// <param name="sheetRace">РќР°Р·РІР°РЅРёРµ СЂР°СЃС‹.</param>
+    /// <returns>РЎРѕР·РґР°С‘С‚ Р·Р°РїСЂРѕС€РµРЅРЅСѓСЋ СЂР°СЃСѓ.</returns>
+    public SheetRaceBase CreateSheetRace(Enum sheetRace)
 		{
 			if (Enum.TryParse<EnumRaces>(sheetRace.ToString(), out EnumRaces result))
 			{
@@ -48,12 +48,12 @@ namespace D_DCharLists
 			return new DragonbornRace();
 		}
 
-		/// <summary>
-		/// Инициализирует по переданному строке с названием рассы.
-		/// </summary>
-		/// <param name="sheetRace">Название рассы.</param>
-		/// <returns>Инициализрованную сущность рассы.</returns>
-		/// <exception cref="NotImplementedException">В списке такой рассы нету.</exception>
+    /// <summary>
+    /// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ СЂР°СЃСѓ РїРѕ РѕС‚РїСЂР°РІР»РµРЅРЅРѕРјСѓ РЅР°Р·РІР°РЅРёСЋ РёР· СЃРїРёСЃРєР° РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅС‹С… СЂР°СЃ.
+    /// </summary>
+    /// <param name="sheetRace">РќР°Р·РІР°РЅРёРµ СЂР°СЃС‹.</param>
+    /// <returns>РЎРѕР·РґР°С‘С‚ Р·Р°РїСЂРѕС€РµРЅРЅСѓСЋ СЂР°СЃСѓ.</returns>
+		/// <exception cref="NotImplementedException">РќРµРёР·РІРµСЃС‚РЅР°СЏ РЅР°Р·РІР°РЅРёРµ СЂР°СЃС‹.</exception>
 		public SheetRaceBase CreateSheetRace(string sheetRace)
 		{
 			if (Enum.TryParse<EnumRaces>(sheetRace, out EnumRaces result))
@@ -87,12 +87,12 @@ namespace D_DCharLists
 					case "Tiefling":
 						return new TieflingRace();
 					default:
-						throw new NotImplementedException("Попытка создания не описанной рассы.");
+						throw new NotImplementedException("Р”Р°РЅРЅР°СЏ СЂР°СЃР° РЅРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅР° РІ СЃРїРёСЃРєРµ.");
 				}
 			}
 			else
 			{
-				throw new NotImplementedException("Попытка создания не описанной рассы.");
+				throw new NotImplementedException("РќРµ РІРѕР·РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РґР°РЅРЅСѓСЋ СЂР°СЃСѓ РІ Р·Р°РїРёСЃР°РЅРЅРѕРј СЃРїРёСЃРєРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёС… СЂР°СЃ.");
 			}
 		}
 	}

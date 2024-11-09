@@ -1,417 +1,417 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Навыки
+	/// Р’СЃРµ РЅР°РІС‹РєРё РІР»Р°РґРµРЅРёСЏ.
 	/// </summary>
 	public enum EnumAllProficiencies
 	{
 		/// <summary>
-		/// Легкая броня.
+		/// Р›С‘РіРєР°СЏ Р±СЂРѕРЅСЏ.
 		/// </summary>
 		LightArmor,
 
 		/// <summary>
-		/// Средняя броня.
+		/// РЎСЂРµРґРЅСЏСЏ Р±СЂРѕРЅСЏ.
 		/// </summary>
 		MediumArmor,
 
 		/// <summary>
-		/// Тяжелая броня.
+		/// РўСЏР¶С‘Р»Р°СЏ Р±СЂРѕРЅСЏ.
 		/// </summary>
 		HeavyArmor,
 
 		/// <summary>
-		/// Щит.
+		/// Р©РёС‚.
 		/// </summary>
 		Shield,
 
 		/// <summary>
-		/// Набор кубиков.
+		/// РќР°Р±РѕСЂ РєСѓР±РёРєРѕРІ.
 		/// </summary>
 		DiceSet,
 
-		/// <summary>
-		/// Набор драконьих шахмат.
-		/// </summary>
-		DragonchessSet,
+    /// <summary>
+    /// РќР°Р±РѕСЂ В«Р”СЂР°РєРѕРЅСЊРёС… С€Р°С…РјР°С‚В».
+    /// </summary>
+    DragonchessSet,
 
 		/// <summary>
-		/// Набор игральных карт.
+		/// РќР°Р±РѕСЂ РёРіСЂР°Р»СЊРЅС‹С… РєР°СЂС‚.
 		/// </summary>
 		PlayingCardSet,
 
-		/// <summary>
-		/// Набор анте «Три дракона».
-		/// </summary>
-		ThreeDragonAnteSet,
+    /// <summary>
+    /// РќР°Р±РѕСЂ РёР· С‚СЂРµС… РґСЂР°РєРѕРЅРѕРІ.
+    /// </summary>
+    ThreeDragonAnteSet,
+
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё Р°Р»С…РёРјРёРєР°.
+    /// </summary>
+    AlchemistsSupplies,
+
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё РїРёРІРѕРІР°СЂР°.
+    /// </summary>
+    BrewersSupplies,
+
+    /// <summary>
+    /// РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё РґР»СЏ РєР°Р»Р»РёРіСЂР°С„Р°.
+    /// </summary>
+    CalligraphersSupplies,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РїР»РѕС‚РЅРёРєР°.
+    /// </summary>
+    CarpentersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєР°СЂС‚РѕРіСЂР°С„Р°.
+    /// </summary>
+    CartographersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ СЃР°РїРѕР¶РЅРёРєР°.
+    /// </summary>
+    CobblersTools,
+
+    /// <summary>
+    /// РљСѓС…РѕРЅРЅР°СЏ СѓС‚РІР°СЂСЊ.
+    /// </summary>
+    CooksUtensils,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ СЃС‚РµРєР»РѕРґСѓРІРѕРІ.
+    /// </summary>
+    GlassblowersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ СЋРІРµР»РёСЂРѕРІ.
+    /// </summary>
+    JewelersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєРѕР¶РµРІРЅРёРєР°.
+    /// </summary>
+    LeatherworkersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєР°РјРµРЅС‰РёРєР°.
+    /// </summary>
+    MasonsTools,
+
+    /// <summary>
+    /// РњР°Р»СЏСЂРЅС‹Рµ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё.
+    /// </summary>
+    PaintersSupplies,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РіРѕРЅС‡Р°СЂР°.
+    /// </summary>
+    PottersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РєСѓР·РЅРµС†Р°.
+    /// </summary>
+    SmithsTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Р¶РµСЃС‚СЏРЅС‰РёРєР°.
+    /// </summary>
+    TinkersTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ С‚РєР°С‡Р°.
+    /// </summary>
+    WeaversTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ СЂРµР·СЊР±С‹ РїРѕ РґРµСЂРµРІСѓ.
+    /// </summary>
+    WoodcarversTools,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РЅР°РІРёРіР°С‚РѕСЂРѕРІ.
+    /// </summary>
+    NavigatorsTools,
+
+    /// <summary>
+    /// РќР°Р±РѕСЂ СЏРґРѕРІ.
+    /// </summary>
+    PoisonersKit,
+
+    /// <summary>
+    /// РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РІРѕСЂР°.
+    /// </summary>
+    ThievesTools,
+
+    /// <summary>
+    /// РљРѕРјРїР»РµРєС‚ РґР»СЏ РјР°СЃРєРёСЂРѕРІРєРё.
+    /// </summary>
+    DisguiseKit,
+
+    /// <summary>
+    /// РљРѕРјРїР»РµРєС‚ РґР»СЏ РїРѕРґРґРµР»РєРё.
+    /// </summary>
+    ForgeryKit,
+
+    /// <summary>
+    /// РўСЂР°РІРЅРёС‡РµСЃС‚РІРѕ.
+    /// </summary>
+    Herbalism,
+
+    /// <summary>
+    /// Р’РѕР»С‹РЅРєРё.
+    /// </summary>
+    Bagpipes,
+
+    /// <summary>
+    /// Р‘Р°СЂР°Р±Р°РЅ.
+    /// </summary>
+    Drum,
+
+    /// <summary>
+    /// Р¦РёРјР±Р°Р»С‹.
+    /// </summary>
+    Dulcimer,
+
+    /// <summary>
+    /// Р¤Р»РµР№С‚Р°.
+    /// </summary>
+    Flute,
+
+    /// <summary>
+    /// Р›СЋС‚РЅСЏ.
+    /// </summary>
+    Lute,
+
+    /// <summary>
+    /// Р›РёСЂР°.
+    /// </summary>
+    Lyre,
+
+    /// <summary>
+    /// Р РѕРі.
+    /// </summary>
+    Horn,
+
+    /// <summary>
+    /// РџР°РЅР¤Р»РµР№С‚Р°.
+    /// </summary>
+    PanFlute,
+
+    /// <summary>
+    /// РЁР°СѓРј.
+    /// </summary>
+    Shawm,
 
 		/// <summary>
-		/// Товары для алхимиков.
-		/// </summary>
-		AlchemistsSupplies,
-
-		/// <summary>
-		/// Товары пивоваров.
-		/// </summary>
-		BrewersSupplies,
-
-		/// <summary>
-		/// Товары каллиграфов.
-		/// </summary>
-		CalligraphersSupplies,
-
-		/// <summary>
-		/// Плотниковые инструменты.
-		/// </summary>
-		CarpentersTools,
-
-		/// <summary>
-		/// Инструменты картографов.
-		/// </summary>
-		CartographersTools,
-
-		/// <summary>
-		/// Инструменты сапожников.
-		/// </summary>
-		CobblersTools,
-
-		/// <summary>
-		/// Поварская посуда.
-		/// </summary>
-		CooksUtensils,
-
-		/// <summary>
-		/// Инструменты стеклодувов.
-		/// </summary>
-		GlassblowersTools,
-
-		/// <summary>
-		/// Инструменты ювелиров.
-		/// </summary>
-		JewelersTools,
-
-		/// <summary>
-		/// Инструменты кожевника.
-		/// </summary>
-		LeatherworkersTools,
-
-		/// <summary>
-		/// Инструменты каменщика.
-		/// </summary>
-		MasonsTools,
-
-		/// <summary>
-		/// Малярные принадлежности.
-		/// </summary>
-		PaintersSupplies,
-
-		/// <summary>
-		/// Инструменты гончара.
-		/// </summary>
-		PottersTools,
-
-		/// <summary>
-		/// Инструменты кузнеца.
-		/// </summary>
-		SmithsTools,
-
-		/// <summary>
-		/// Инструменты лудильщика.
-		/// </summary>
-		TinkersTools,
-
-		/// <summary>
-		/// Инструменты ткача.
-		/// </summary>
-		WeaversTools,
-
-		/// <summary>
-		/// Инструменты для резьбы по дереву.
-		/// </summary>
-		WoodcarversTools,
-
-		/// <summary>
-		/// Инструменты навигаторов.
-		/// </summary>
-		NavigatorsTools,
-
-		/// <summary>
-		/// Набор ядов.
-		/// </summary>
-		PoisonersKit,
-
-		/// <summary>
-		/// Инструменты вора.
-		/// </summary>
-		ThievesTools,
-
-		/// <summary>
-		/// Комплект для маскировки.
-		/// </summary>
-		DisguiseKit,
-
-		/// <summary>
-		/// Комплект для подделки.
-		/// </summary>
-		ForgeryKit,
-
-		/// <summary>
-		/// Травничество.
-		/// </summary>
-		Herbalism,
-
-		/// <summary>
-		/// Волынки.
-		/// </summary>
-		Bagpipes,
-
-		/// <summary>
-		/// Барабан.
-		/// </summary>
-		Drum,
-
-		/// <summary>
-		/// Цимбалы.
-		/// </summary>
-		Dulcimer,
-
-		/// <summary>
-		/// Флейта.
-		/// </summary>
-		Flute,
-
-		/// <summary>
-		/// Лютня.
-		/// </summary>
-		Lute,
-
-		/// <summary>
-		/// Лира.
-		/// </summary>
-		Lyre,
-		
-		/// <summary>
-		/// Рог.
-		/// </summary>
-		Horn,
-
-		/// <summary>
-		/// Многоствольная флейта.
-		/// </summary>
-		PanFlute,
-
-		/// <summary>
-		/// Шалмей.
-		/// </summary>
-		Shawm,
-
-		/// <summary>
-		/// Виола.
+		/// Р’РёРѕР»Р°.
 		/// </summary>
 		Viol,
 
-		/// <summary>
-		/// Простой ближний бой.
-		/// </summary>
-		SimpleMelee,
+    /// <summary>
+    /// РџСЂРѕСЃС‚РѕР№ Р±Р»РёР¶РЅРёР№ Р±РѕР№.
+    /// </summary>
+    SimpleMelee,
+
+    /// <summary>
+    /// РџСЂРѕСЃС‚РѕР№ РґР°Р»СЊРЅРёР№ Р±РѕР№.
+    /// </summary>
+    SimpleRanged,
+
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ Р±Р»РёР¶РЅРёР№ Р±РѕР№.
+    /// </summary>
+    MartialMelee,
+
+    /// <summary>
+    /// Р‘РѕРµРІРѕР№ РґР°Р»СЊРЅРёР№ Р±РѕР№.
+    /// </summary>
+    MartialRanged,
+
+    /// <summary>
+    /// Р”СѓР±РёРЅР°.
+    /// </summary>
+    Club,
+
+    /// <summary>
+    /// РљРёРЅР¶Р°Р».
+    /// </summary>
+    Dagger,
 
 		/// <summary>
-		/// Простой дальний бой.
-		/// </summary>
-		SimpleRanged,
-
-		/// <summary>
-		/// Боевой ближний бой.
-		/// </summary>
-		MartialMelee,
-
-		/// <summary>
-		/// Боевой дальний бой.
-		/// </summary>
-		MartialRanged,
-
-		/// <summary>
-		/// Дубина.
-		/// </summary>
-		Club,
-
-		/// <summary>
-		/// Кинжал.
-		/// </summary>
-		Dagger,
-
-		/// <summary>
-		/// Отличная дубина.
+		/// Р‘РѕР»СЊС€Р°СЏ РґСѓР±РёРЅР°.
 		/// </summary>
 		Greatclub,
 
-		/// <summary>
-		/// Топор ручной.
-		/// </summary>
-		Handaxe,
+    /// <summary>
+    /// РўРѕРїРѕСЂ СЂСѓС‡РЅРѕР№.
+    /// </summary>
+    Handaxe,
 
 		/// <summary>
-		/// Метательно копье.
+		/// РњРµС‚Р°С‚РµР»СЊРЅРѕРµ РєРѕРїСЊРµ.
 		/// </summary>
 		Javelin,
 
-		/// <summary>
-		/// Легкий молоток.
-		/// </summary>
-		LightHammer,
+    /// <summary>
+    /// Р›РµРіРєРёР№ РјРѕР»РѕС‚.
+    /// </summary>
+    LightHammer,
 
 		/// <summary>
-		/// Булава.
+		/// Р‘СѓР»Р°РІР°.
 		/// </summary>
 		Mace,
 
 		/// <summary>
-		/// Квартерстафф.
+		/// Р‘РѕРµРІРѕР№ РїРѕСЃРѕС….
 		/// </summary>
 		Quarterstaff,
 
 		/// <summary>
-		/// Серп.
+		/// РЎРµСЂРї.
 		/// </summary>
 		Sickle,
 
 		/// <summary>
-		/// Лёгкое копьё.
+		/// РљРѕРїСЊРµ.
 		/// </summary>
 		Spear,
 
-		/// <summary>
-		/// Арбалет.
-		/// </summary>
-		Crossbow,
+    /// <summary>
+    /// РђСЂР±Р°Р»РµС‚.
+    /// </summary>
+    Crossbow,
 
 		/// <summary>
-		/// Дарт.
+		/// Р”СЂРѕС‚РёРє.
 		/// </summary>
 		Dart,
 
-		/// <summary>
-		/// Короткий лук.
-		/// </summary>
-		Shortbow,
+    /// <summary>
+    /// РљРѕСЂРѕС‚РєРёР№ Р»СѓРє.
+    /// </summary>
+    Shortbow,
 
 		/// <summary>
-		/// Слинг.
+		/// РџСЂР°С‰Р°.
 		/// </summary>
 		Sling,
 
 		/// <summary>
-		/// Боевой топор.
+		/// Р‘РѕРµРІРѕР№ С‚РѕРїРѕСЂ.
 		/// </summary>
 		Battleaxe,
 
 		/// <summary>
-		/// Цеп.
+		/// Р¦РµРї.
 		/// </summary>
 		Flail,
 
 		/// <summary>
-		/// Глефа.
+		/// Р“Р»РµС„Р°.
 		/// </summary>
 		Glaive,
 
 		/// <summary>
-		/// Большой топор.
+		/// РЎРµРєРёСЂР°.
 		/// </summary>
 		Greataxe,
 
 		/// <summary>
-		/// Большой меч.
+		/// Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡.
 		/// </summary>
 		Greatsword,
 
 		/// <summary>
-		/// Алебарда.
+		/// РђР»РµР±Р°СЂРґР°.
 		/// </summary>
 		Halberd,
 
 		/// <summary>
-		/// Тяжёлое копьё.
+		/// Р”Р»РёРЅРЅРѕРµ РєРѕРїСЊРµ.
 		/// </summary>
 		Lance,
 
 		/// <summary>
-		/// Длинный меч.
+		/// Р”Р»РёРЅРЅС‹Р№ РјРµС‡.
 		/// </summary>
 		Longsword,
 
 		/// <summary>
-		/// Кувалда.
+		/// РњРѕР»РѕС‚.
 		/// </summary>
 		Maul,
 
 		/// <summary>
-		/// Моргенштерн
+		/// РњРѕСЂРіРµРЅС€С‚РµСЂРЅ.
 		/// </summary>
 		Morningstar,
 
 		/// <summary>
-		/// Пика.
+		/// РџРёРєР°.
 		/// </summary>
 		Pike,
 
 		/// <summary>
-		/// Рапира.
+		/// Р Р°РїРёСЂР°.
 		/// </summary>
 		Rapier,
 
 		/// <summary>
-		/// Ятаган.
+		/// РЎРєРёРјРёС‚Р°СЂ.
 		/// </summary>
 		Scimitar,
 
 		/// <summary>
-		/// Короткий меч.
+		/// РљРѕСЂРѕС‚РєРёР№ РјРµС‡.
 		/// </summary>
 		Shortsword,
 
 		/// <summary>
-		/// Трезубец.
+		/// РўСЂРµР·СѓР±РµС†.
 		/// </summary>
 		Trident,
 
 		/// <summary>
-		/// Военная кирка.
+		/// Р‘РѕРµРІР°СЏ РєРёСЂРєР°.
 		/// </summary>
 		WarPick,
 
 		/// <summary>
-		/// Боевой молот.
+		/// Р‘РѕРµРІРѕР№ РјРѕР»РѕС‚.
 		/// </summary>
 		Warhammer,
 
 		/// <summary>
-		/// Хлыст.
+		/// РљРЅСѓС‚.
 		/// </summary>
 		Whip,
 
 		/// <summary>
-		/// Духовая трубка.
+		/// Р”СѓС…РѕРІР°СЏ С‚СЂСѓР±РєР°.
 		/// </summary>
 		Blowgun,
 
 		/// <summary>
-		/// Ручной арбалет.
+		/// Р СѓС‡РЅРѕР№ Р°СЂР±Р°Р»РµС‚.
 		/// </summary>
 		CrossbowHand,
 		
 		/// <summary>
-		/// Тяжелый арбалет.
+		/// РўСЏР¶РµР»С‹Р№ Р°СЂР±Р°Р»РµС‚.
 		/// </summary>
 		CrossbowHeavy,
 
 		/// <summary>
-		/// Длинный лук.
+		/// Р”Р»РёРЅРЅС‹Р№ Р»СѓРє.
 		/// </summary>
 		Longbow,
 
 		/// <summary>
-		/// Нет.
+		/// РќРµС‚.
 		/// </summary>
 		Net
 	}

@@ -1,16 +1,16 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Çàêëèíàíèå.
-	/// </summary>
-	public class SheetSpells : SheetSpellsBase
-	{
-		/// <summary>
-		/// Ñïèñîê çàêëèíàíèé ãåðîÿ.
-		/// </summary>
-		public SheetSpells()
-		{
-			SheetSpells = new Dictionary<int, int>();
-		}
-	}
+  /// <summary>
+  /// Заклинание.
+  /// </summary>
+  public class SheetSpells : SheetSpellsBase
+  {
+    /// <summary>
+    /// Список заклинаний героя.
+    /// </summary>
+    public SheetSpells()
+    {
+      SheetSpells = new Dictionary<int, int>();
+    }
+  }
 }

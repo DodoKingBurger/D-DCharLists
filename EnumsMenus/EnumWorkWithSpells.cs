@@ -1,43 +1,43 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Список действий с заклинаниями.
-	/// </summary>
-	public enum EnumWorkWithSpells
-	{
-		/// <summary>
-		/// Список заклинаний.
-		/// </summary>
-		ListOfSpells,
+  /// <summary>
+  /// РЎРїРёСЃРѕРє РґРµР№СЃС‚РІРёР№ СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.
+  /// </summary>
+  public enum EnumWorkWithSpells
+  {
+    /// <summary>
+    /// РЎРїРёСЃРѕРє Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    ListOfSpells,
 
-		/// <summary>
-		/// Отсутсвует заклинания в листе.
-		/// </summary>
-		NoSpellsInSheet,
+    /// <summary>
+    /// РћС‚СЃСѓС‚СЃРІСѓРµС‚ Р·Р°РєР»РёРЅР°РЅРёСЏ РІ Р»РёСЃС‚Рµ.
+    /// </summary>
+    NoSpellsInSheet,
 
-		/// <summary>
-		/// Контроль.
-		/// </summary>
-		Control,
+    /// <summary>
+    /// РљРѕРЅС‚СЂРѕР»СЊ.
+    /// </summary>
+    Control,
 
-		/// <summary>
-		/// Описание заклинания.
-		/// </summary>
-		SpellDescription,
+    /// <summary>
+    /// РћРїРёСЃР°РЅРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+    /// </summary>
+    SpellDescription,
 
-		/// <summary>
-		/// Лист заклинаний.
-		/// </summary>
-		SpellsListSheet,
+    /// <summary>
+    /// Р›РёСЃС‚ Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    SpellsListSheet,
 
-		/// <summary>
-		/// БД заклинаний.
-		/// </summary>
-		SpellsListDB,
+    /// <summary>
+    /// Р‘Р” Р·Р°РєР»РёРЅР°РЅРёР№.
+    /// </summary>
+    SpellsListDB,
 
-		/// <summary>
-		/// Нет спылов в БД.
-		/// </summary>
-		NoSpellsInDB
-	}
+    /// <summary>
+    /// РќРµС‚ СЃРїС‹Р»РѕРІ РІ Р‘Р”.
+    /// </summary>
+    NoSpellsInDB
+  }
 }

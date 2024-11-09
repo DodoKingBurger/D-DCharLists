@@ -36,8 +36,6 @@ namespace D_DCharLists
 			jsonSerializerSettings.Converters.Add(new ItemsConverter());
 			jsonSerializerSettings.Converters.Add(new SpellsConvertorJson());
 			sheet = JsonConvert.DeserializeObject<T>(File.ReadAllText(pathLoad), jsonSerializerSettings);
-      //"C:\Users\sarki\source\repos\D-DCharLists\Data\DND\CharacterSheets\534.json"
-
     }
 	}
 }

@@ -3,7 +3,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Сущность характеристики завищящие от класса.
+	/// Сущность характеристики зависящие от класса.
 	/// </summary>
 	public abstract class SheetSaveThrows
 	{

@@ -1,23 +1,23 @@
 namespace D_DCharLists
 {
-	/// <summary>
-	/// Параметры для броска кубика.
-	/// </summary>
-	public enum EnumRollThrower
+  /// <summary>
+  /// РџР°СЂР°РјРµС‚СЂС‹ РґР»СЏ Р±СЂРѕСЃРєР° РєСѓР±РёРєР°.
+  /// </summary>
+  public enum EnumRollThrower
 	{
-		/// <summary>
-		/// Сколько кубиков?
-		/// </summary>
-		WhatCountOfDices,
+    /// <summary>
+    /// РЎРєРѕР»СЊРєРѕ РєСѓР±РёРєРѕРІ?
+    /// </summary>
+    WhatCountOfDices,
 
-		/// <summary>
-		/// Сколко граний.
-		/// </summary>
-		ChooseDice,
+    /// <summary>
+    /// РЎРєРѕР»РєРѕ РіСЂР°РЅРёР№.
+    /// </summary>
+    ChooseDice,
 
-		/// <summary>
-		/// Влияет ли модификаторы на бросок?
-		/// </summary>
-		WhatIsdiceModificator
-	}
+    /// <summary>
+    /// Р’Р»РёСЏРµС‚ Р»Рё РјРѕРґРёС„РёРєР°С‚РѕСЂС‹ РЅР° Р±СЂРѕСЃРѕРє?
+    /// </summary>
+    WhatIsdiceModificator
+  }
 }
