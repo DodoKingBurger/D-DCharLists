@@ -48,24 +48,24 @@ namespace D_DCharLists
 			sheetInFolder = new List<string>();
 			foreach (var item in folderInfo.GetFiles())
 			{
-				sheetInFolder.Add(Path.GetFileNameWithoutExtension(item.Name));
+				sheetInFolder.Add(item.Name);
 			}
 			return sheetInFolder.ToArray();
 		}
-
-		/// <summary>
-		/// Загрузить из базы данных персонажа.
-		/// </summary>
-		public static void LoadHerosBase(string nameHero)
+    //Path.GetFileNameWithoutExtension(
+    /// <summary>
+    /// Загрузить из базы данных персонажа.
+    /// </summary>
+    public static void LoadHerosBase(string nameHero)
 		{
 			if ((folderInfo.GetFiles().Length == 0))
 				throw new ArgumentException("Каталог с персонажами пуст!");
 			foreach (var item in folderInfo.GetFiles())
 			{
-				if (item.Name == nameHero+".json")
+				if (item.Name == nameHero)
 				{
 					var tempSheet = new CharacterSheet();
-						JsonSaveLoad.JsonLoad(@$"Data\DND\DataBases\{nameHero}", ref tempSheet);
+						JsonSaveLoad.JsonLoad(@$"Data\DND\CharacterSheets\{nameHero}", ref tempSheet);
 					CurrentHeroSheet.HeroSheet = tempSheet;
 					ShowHero();
 				}

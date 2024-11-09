@@ -67,7 +67,7 @@ namespace D_DCharLists
 		{
 			HeroDataBase.LoadHerosBase(comboBox_Loading_Char.SelectedItem.ToString());
 		}
-
+		 
 		/// <summary>
 		/// Вывод загруженного персонажа на UI.
 		/// </summary>
@@ -119,7 +119,7 @@ namespace D_DCharLists
 			{
 				numericUpDown_Char_Level.Value = CurrentHeroSheet.HeroSheet.SheetProgression.Level;
 				label_Char_Exp.Text = $"{CurrentHeroSheet.HeroSheet.SheetProgression.Expirience}";
-				label_Char_ProficiencyBonus.Text = $"{CurrentHeroSheet.HeroSheet.SheetProgression.GetProficiencyBonus}";
+				label_Char_ProficiencyBonus.Text = $"+{CurrentHeroSheet.HeroSheet.SheetProgression.GetProficiencyBonus}";
 				checkBox_Inspiration.Checked = CurrentHeroSheet.HeroSheet.Inspiration;
 			}
 			else
@@ -244,12 +244,12 @@ namespace D_DCharLists
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.Count != 0)
 			{
-				label_Char_Strength_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Strength)}";
-				label_Char_Agility_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Agility)}";
-				label_Char_Physique_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Physique)}";
-				label_Char_Intelligence_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Intelligence)}";
-				label_Char_Wisdom_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Wisdom)}";
-				label_Char_Charisma_Master.Text = $"+{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Charisma)}";
+				label_Char_Strength_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Strength)}";
+				label_Char_Agility_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Agility)}";
+				label_Char_Physique_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Physique)}";
+				label_Char_Intelligence_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Intelligence)}";
+				label_Char_Wisdom_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Wisdom)}";
+				label_Char_Charisma_Master.Text = $"{CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(EnumAbilities.Charisma)}";
 			}
 			else
 				throw new ArgumentException("Список Abilities пуст. Модификаторы получить не удалось.");

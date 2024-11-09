@@ -1,12 +1,12 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Заклинание.
+	/// Г‡Г ГЄГ«ГЁГ­Г Г­ГЁГҐ.
 	/// </summary>
 	public class SheetSpells : SheetSpellsBase
 	{
 		/// <summary>
-		/// Список заклинаний героя.
+		/// Г‘ГЇГЁГ±Г®ГЄ Г§Г ГЄГ«ГЁГ­Г Г­ГЁГ© ГЈГҐГ°Г®Гї.
 		/// </summary>
 		public SheetSpells()
 		{

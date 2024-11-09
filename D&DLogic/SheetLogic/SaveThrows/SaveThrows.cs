@@ -1,11 +1,11 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Основные характеристики завищящие от класса.
+	/// ГЋГ±Г­Г®ГўГ­Г»ГҐ ГµГ Г°Г ГЄГІГҐГ°ГЁГ±ГІГЁГЄГЁ Г§Г ГўГЁГ№ГїГ№ГЁГҐ Г®ГІ ГЄГ«Г Г±Г±Г .
 	/// </summary>
 	public class SaveThrows : SheetSaveThrows
 	{
-		#region Базовый класс
+		#region ГЃГ Г§Г®ГўГ»Г© ГЄГ«Г Г±Г±
 
 		public override void SetSaveTrows(EnumClasses className)
 		{
@@ -60,10 +60,10 @@ namespace D_DCharLists
 
 		#endregion
 
-		#region Конструкторы 
+		#region ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г» 
 
 		/// <summary>
-		/// Созадет список основных характеристик, которые завияст от класса.
+		/// Г‘Г®Г§Г Г¤ГҐГІ Г±ГЇГЁГ±Г®ГЄ Г®Г±Г­Г®ГўГ­Г»Гµ ГµГ Г°Г ГЄГІГҐГ°ГЁГ±ГІГЁГЄ, ГЄГ®ГІГ®Г°Г»ГҐ Г§Г ГўГЁГїГ±ГІ Г®ГІ ГЄГ«Г Г±Г±Г . 
 		/// </summary>
 		public SaveThrows()
 		{

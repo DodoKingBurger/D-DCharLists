@@ -1,18 +1,18 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Атакующая рука.
+	/// ГЂГІГ ГЄГіГѕГ№Г Гї Г°ГіГЄГ .
 	/// </summary>
 	public enum EnumAttackHandSystem
 	{
-		/// <summary>
-		/// Урон.
+		/// <summary> 
+		/// Г“Г°Г®Г­.
 		/// </summary>
 		Damage,
 		
 		/// <summary>
-		/// Урон.
-		/// </summary>
-		Attack
+		/// Г“Г°Г®Г­. 
+		/// </summary> 
+		Attack 
 	}
 }

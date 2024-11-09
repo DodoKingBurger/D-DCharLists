@@ -5,7 +5,7 @@ using Newtonsoft.Json.Serialization;
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Распознователь контракта на предмет для сериализации.
+	/// ГђГ Г±ГЇГ®Г§Г­Г®ГўГ ГІГҐГ«Гј ГЄГ®Г­ГІГ°Г ГЄГІГ  Г­Г  ГЇГ°ГҐГ¤Г¬ГҐГІ Г¤Г«Гї Г±ГҐГ°ГЁГ Г«ГЁГ§Г Г¶ГЁГЁ.
 	/// </summary>
 	public class ItemsSpecifiedConcreteClassConverter : DefaultContractResolver
 	{
@@ -21,11 +21,11 @@ namespace D_DCharLists
 	}
 
 	/// <summary>
-	/// Конвертер предметов.
+	/// ГЉГ®Г­ГўГҐГ°ГІГҐГ° ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў.
 	/// </summary>
 	public class ItemsConverter : JsonConverter
 	{
-		#region Базовый класс
+		#region ГЃГ Г§Г®ГўГ»Г© ГЄГ«Г Г±Г±
 
 		static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new ItemsSpecifiedConcreteClassConverter() };
 

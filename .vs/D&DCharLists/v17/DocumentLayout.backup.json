@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|C:\\Users\\sarki\\source\\repos\\D-DCharLists\\screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,19 +55,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HeroDataBase.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "RelativeToolTip": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwEUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T10:59:05.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CreateChar.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\CreateChar.cs",
@@ -89,7 +72,7 @@
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
               "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAvwEMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswHkAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:54:16.046Z",
               "EditorCaption": ""
@@ -117,7 +100,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
