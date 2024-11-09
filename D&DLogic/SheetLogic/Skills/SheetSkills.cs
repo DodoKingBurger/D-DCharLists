@@ -37,13 +37,13 @@ namespace D_DCharLists
 		/// </summary>
 		/// <param name="skill">Название скила.</param>
 		public abstract void RemoveSkill(EnumSkills skill);
-
-		/// <summary>
-		/// Определяет от какой характеристики зависит навык.
-		/// </summary>
-		/// <param name="skill">НАзвание способности.</param>
-		/// <returns>Характеристику, от которой зависит навык.</returns>
-		public abstract EnumAbilities SkillAbilityName(EnumSkills skill);
+   
+    /// <summary>
+    /// Определяет от какой характеристики зависит навык.
+    /// </summary>
+    /// <param name="skill">НАзвание способности.</param>
+    /// <returns>Характеристику, от которой зависит навык.</returns>
+    public abstract EnumAbilities SkillAbilityName(EnumSkills skill);
 
 		#endregion
 	}

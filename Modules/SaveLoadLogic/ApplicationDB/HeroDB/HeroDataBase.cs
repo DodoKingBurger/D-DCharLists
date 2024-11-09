@@ -29,19 +29,25 @@ namespace D_DCharLists
 		/// </summary>
 		public static List<string> sheetInFolder ;
 
-		#endregion
+    /// <summary>
+    /// Делагат для события вывода персонажа.
+    /// </summary>
+    public delegate void ShowLoadHero();
 
-		#region Методы
+    /// <summary>
+    /// Событие для вывода персонажа.
+    /// </summary>
+    public static event ShowLoadHero ShowHero;
 
-		public delegate void ShowLoadHero();
+    #endregion
 
-		public static event ShowLoadHero ShowHero;
+    #region Методы
 
-		/// <summary>
-		/// Смотрит список json файлов с персонажами
-		/// </summary>
-		/// <returns>Список имен доступных для загрузки персонажей.</returns>
-		public static string[] CharactersAvailableForDownload()
+    /// <summary>
+    /// Смотрит список json файлов с персонажами
+    /// </summary>
+    /// <returns>Список имен доступных для загрузки персонажей.</returns>
+    public static string[] CharactersAvailableForDownload()
 		{
 			if ((folderInfo.GetFiles().Length == 0))
 				throw new ArgumentException("Каталог с персонажами пуст!");

@@ -5,7 +5,7 @@ namespace D_DCharLists
 	/// </summary>
 	public class SaveThrows : SheetSaveThrows
 	{
-		#region Áàçîâûé êëàññ
+		#region Базовый класс
 
 		public override void SetSaveTrows(EnumClasses className)
 		{

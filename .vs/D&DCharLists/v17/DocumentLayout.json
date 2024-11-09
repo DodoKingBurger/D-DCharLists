@@ -7,20 +7,28 @@
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\createchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\monitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\monitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\enums\\dndenums\\enumcombatstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:enums\\dndenums\\enumcombatstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\modules\\startup\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\startup\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\abilities\\abilitiesdnd5e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\abilities\\abilitiesdnd5e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\modules\\currentherosheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\currentherosheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\skills\\sheetskills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\skills\\sheetskills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\skills\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\skills\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "DockedHeight": 341,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,67 +70,181 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AbilitiesDnd5E.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Abilities\\AbilitiesDnd5E.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Abilities\\AbilitiesDnd5E.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Abilities\\AbilitiesDnd5E.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Abilities\\AbilitiesDnd5E.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:06:27.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StartForms.cs",
               "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
               "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
               "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv4sAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T08:23:29.509Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "88dcc7a7-5b19-4c7c-8680-e8d791f4a53d",
+        "Display": 0,
+        "X": -257,
+        "Y": 242,
+        "Width": 1210,
+        "Height": 649,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SheetSkills.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Skills\\SheetSkills.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Skills\\SheetSkills.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Skills\\SheetSkills.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Skills\\SheetSkills.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T10:11:46.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "8f86ea0e-45eb-442d-ab34-ed0f7c92f258",
+        "Display": 0,
+        "X": 479,
+        "Y": 425,
+        "Width": 721,
+        "Height": 208,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Skills.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Skills\\Skills.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Skills\\Skills.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Skills\\Skills.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Skills\\Skills.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwEUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T10:14:11.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "ce4afa41-6aea-4154-8eb2-5d67e5ad291f",
+        "Display": 0,
+        "X": 306,
+        "Y": 224,
+        "Width": 721,
+        "Height": 631,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateChar.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\CreateChar.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\CreateChar.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\CreateChar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
+              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:23:26.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Monitor.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\Monitor.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\Monitor.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\Monitor.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\Monitor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:23:21.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Initialize.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\StartUp\\Initialize.cs",
-              "RelativeDocumentMoniker": "Modules\\StartUp\\Initialize.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\StartUp\\Initialize.cs",
-              "RelativeToolTip": "Modules\\StartUp\\Initialize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:23:09.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T13:49:01.562Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CurrentHeroSheet.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\CurrentHeroSheet.cs",
-              "RelativeDocumentMoniker": "Modules\\CurrentHeroSheet.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Modules\\CurrentHeroSheet.cs",
-              "RelativeToolTip": "Modules\\CurrentHeroSheet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "StartForms.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\Source\\Repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.Designer.cs",
+              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.Designer.cs",
+              "ToolTip": "C:\\Users\\sarki\\Source\\Repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.Designer.cs",
+              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.Designer.cs",
+              "ViewState": "AgIAAHsEAAAAAAAAAAAYwJEEAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:22:59.164Z",
+              "WhenOpened": "2024-11-09T13:47:33.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "703e17b3-4cf5-42b9-8944-6142b042743a",
+        "Display": 0,
+        "X": 284,
+        "Y": 268,
+        "Width": 1427,
+        "Height": 649,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnumCombatStats.cs",
+              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Enums\\DNDEnums\\EnumCombatStats.cs",
+              "RelativeDocumentMoniker": "Enums\\DNDEnums\\EnumCombatStats.cs",
+              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Enums\\DNDEnums\\EnumCombatStats.cs",
+              "RelativeToolTip": "Enums\\DNDEnums\\EnumCombatStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:18:54.045Z",
               "EditorCaption": ""
             }
           ]

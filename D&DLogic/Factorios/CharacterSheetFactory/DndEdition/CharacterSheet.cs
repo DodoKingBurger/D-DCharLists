@@ -8,7 +8,7 @@ namespace D_DCharLists
 
 		public override void ChangeInspiration()
 		{
-			Inspiration = !Inspiration;
+      this.Inspiration = !this.Inspiration;
 		}
 
 		/// <summary>
@@ -16,18 +16,18 @@ namespace D_DCharLists
 		/// </summary>
 		public CharacterSheet()
 		{
-			SheetAbilities = new AbilitiesDnd5E();
-			SheetSaveThrows = new SaveThrows();
-			SheetSkills = new Skills();
-			SheetProgression = new Progression();
-			SheetPersonality = new Personality();
-			SheetCombatAbilities = new CombatAbilities();
-			SheetProficiencies = new Proficiencies();
-			SheetInventory = new Inventory();
-			TraitsList = new TraitsList();
-			SheetSpells = new SheetSpells();
-			SheetEquipmentSlots = new Equipment();
-			Inspiration = false;
+      this.SheetAbilities = new AbilitiesDnd5E();
+      this.SheetSaveThrows = new SaveThrows();
+      this.SheetSkills = new Skills();
+      this.SheetProgression = new Progression();
+      this.SheetPersonality = new Personality();
+      this.SheetCombatAbilities = new CombatAbilities();
+      this.SheetProficiencies = new Proficiencies();
+      this.SheetInventory = new Inventory();
+      this.TraitsList = new TraitsList();
+      this.SheetSpells = new SheetSpells();
+      this.SheetEquipmentSlots = new Equipment();
+      this.Inspiration = false;
 		}
 	}
 }

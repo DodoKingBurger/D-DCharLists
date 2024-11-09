@@ -69,14 +69,14 @@ namespace D_DCharLists
 			}
 		}
 
-		#endregion
+    #endregion
 
-		#region Констуркторы
+    #region Констуркторы
 
-		/// <summary>
-		/// Создает список скилов.
-		/// </summary>
-		public Skills()
+    /// <summary>
+    /// Создает список скилов.
+    /// </summary>
+    public Skills()
 		{
 			Skills = new List<EnumSkills>();
 		}

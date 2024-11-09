@@ -19,7 +19,7 @@ namespace D_DCharLists
 		/// Уровень.
 		/// </summary>
 		[JsonProperty("Level")]
-		public int Level {  get; protected set; }
+		public int Level {  get;  set; }
 
 		#endregion
 

@@ -22,11 +22,18 @@ namespace D_DCharLists
 		#region Методы
 
 		/// <summary>
-		/// Получить модификатор характеристик.
+		/// Изменить значение характеристики.
 		/// </summary>
-		/// <param name="ability">Способность.</param>
-		/// <returns>Значения модификатор</returns>
-		public abstract int GetAbilityModificator(EnumAbilities ability);
+		/// <param name="ability">Изменяемая характеристика.</param>
+		/// <param name="value">Новое значение характеристики.</param>
+		public abstract void ChangeAbilityScore(EnumAbilities ability, int value);
+
+    /// <summary>
+    /// Получить модификатор характеристик.
+    /// </summary>
+    /// <param name="ability">Способность.</param>
+    /// <returns>Значения модификатор</returns>
+    public abstract int GetAbilityModificator(EnumAbilities ability);
 
 		/// <summary>
 		/// Получить значение значения характеристик.

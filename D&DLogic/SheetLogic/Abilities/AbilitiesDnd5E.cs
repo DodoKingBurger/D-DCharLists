@@ -5,8 +5,17 @@ namespace D_DCharLists
 	/// </summary>
 	public class AbilitiesDnd5E : SheetAbilities
 	{
-		#region Базовый класс
-		public override int GetAbilityModificator(EnumAbilities ability)
+    #region Базовый класс
+
+    public override void ChangeAbilityScore(EnumAbilities ability, int value)
+    {
+      if (value > 0)
+        Abilities[ability] = value;
+      else
+        throw new ArgumentException("Характеристика должна иметь значения 1-30");
+    }
+
+    public override int GetAbilityModificator(EnumAbilities ability)
 		{
 			return AbilityBonus(GetAbilityScore(ability));
 		}
@@ -16,12 +25,9 @@ namespace D_DCharLists
 			return Abilities[ability];
 		}
 
-		public override int AbilityBonus(int score)
+    public override int AbilityBonus(int score)
 		{
-			if(score>0)
 				return score / 2 - 5;
-			else
-				return 0;
 		}
 
 		public override void SetAbilities(Dictionary<Enum, int> abilities)
