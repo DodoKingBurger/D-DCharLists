@@ -37,6 +37,25 @@ namespace D_DCharLists
     }
 
     /// <summary>
+    /// Призавершении главной формы.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void StartForms_FormClosing(object sender, FormClosingEventArgs e)
+    {
+      if (MessageBox.Show("Закрыть?\nВы уверенны что хотите завершить работу программы?", "WHY DO YOU CALL?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
+      {
+        if (CurrentHeroSheet.HeroSheet != null && !string.IsNullOrEmpty(CurrentHeroSheet.HeroSheet.Name))
+          CurrentHeroSheet.SaveSheet();
+        e.Cancel = false;
+      }
+      else
+      {
+        e.Cancel = true;
+      }
+    }
+
+    /// <summary>
     /// Вызывает окно создания персонажа
     /// </summary>
     /// <param name="sender"></param>
@@ -56,6 +75,27 @@ namespace D_DCharLists
     {
       comboBox_Loading_Char.Items.Clear();
       comboBox_Loading_Char.Items.AddRange(HeroDataBase.CharactersAvailableForDownload());
+    }
+
+    /// <summary>
+    /// Сохранить персонажа .json.
+    /// </summary>
+    /// <param name="sender">Кнопка.</param>
+    /// <param name="e">Клик.</param>
+    /// <exception cref="ArgumentNullException">Персонаж не был создан или загружен.</exception>
+    private void bt_SaveChar_Click(object sender, EventArgs e)
+    {
+      try
+      {
+        if (CurrentHeroSheet.HeroSheet != null && !string.IsNullOrEmpty(CurrentHeroSheet.HeroSheet.Name))
+          CurrentHeroSheet.SaveSheet();
+        else
+          throw new ArgumentNullException("Персонаж не выбран!");
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(ex.Message);
+      }
     }
 
     /// <summary>
@@ -112,7 +152,28 @@ namespace D_DCharLists
     /// <param name="e">Изменение Value у numericUpDown</param>
     private void numericUpDown_Char_Level_ValueChanged(object sender, EventArgs e)
     {
+      NumericUpDown numeric = (NumericUpDown)sender;
+      CurrentHeroSheet.HeroSheet.SheetProgression.Level = (int)numeric.Value;
+      ShowHeroSheet();
+    }
 
+    /// <summary>
+    /// Добавить опыт персонажу.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void bt_Add_Exp_Click(object sender, EventArgs e)
+    {
+      if (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience >= 0 && (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience - (int)numericUpDown_Char_Exp_Calculations.Value) >= 0)
+      {
+        CurrentHeroSheet.HeroSheet.SheetProgression.GainExpirience((int)numericUpDown_Char_Exp_Calculations.Value);
+      }
+      else
+      {
+        CurrentHeroSheet.HeroSheet.SheetProgression.Expirience = 0;
+        CurrentHeroSheet.HeroSheet.SheetProgression.Level = 1;
+      }
+      ShowHeroSheet();
     }
 
     /// <summary>
@@ -487,20 +548,6 @@ namespace D_DCharLists
       }
       else
         throw new ArgumentException("Список Abilities пуст. Модификаторы получить не удалось.");
-    }
-
-    /// <summary>
-    /// Сохранить персонажа .json.
-    /// </summary>
-    /// <param name="sender">Кнопка.</param>
-    /// <param name="e">Клик.</param>
-    /// <exception cref="ArgumentNullException">Персонаж не был создан или загружен.</exception>
-    private void bt_SaveChar_Click(object sender, EventArgs e)
-    {
-      if (CurrentHeroSheet.HeroSheet != null)
-        CurrentHeroSheet.SaveSheet();
-      else
-        throw new ArgumentNullException("Персонаж не выбран!");
     }
 
     #endregion

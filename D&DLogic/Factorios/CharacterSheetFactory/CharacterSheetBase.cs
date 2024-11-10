@@ -113,6 +113,5 @@ namespace D_DCharLists
 		public abstract void ChangeInspiration();
 
 		#endregion
-
 	}
 }

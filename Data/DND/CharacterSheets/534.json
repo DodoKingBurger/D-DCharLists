@@ -10,6 +10,14 @@
     "HitDice": 8,
     "SaveThrows": [
       1,
+      5,
+      1,
+      5,
+      1,
+      5,
+      1,
+      5,
+      1,
       5
     ]
   },
@@ -25,7 +33,9 @@
   },
   "SheetSkills": {
     "Skills": [
-      0
+      0,
+      1,
+      2
     ]
   },
   "SheetProgression": {

@@ -37,6 +37,7 @@
       bt_Create_Char = new Button();
       groupBox_CharList = new GroupBox();
       groupBox_List_SkillsPossession = new GroupBox();
+      bt_Add_SkillsProssesion = new Button();
       comboBox_Char_SkillsPossession = new ComboBox();
       button_Char_Add_SkillsPossession = new Button();
       listBox_Char_SkillsPossession = new ListBox();
@@ -45,6 +46,7 @@
       groupBox_Name_List = new GroupBox();
       label_List_Alignment = new Label();
       groupBox_List_inventory = new GroupBox();
+      bt_Add_Item = new Button();
       button_Char_Add_Item = new Button();
       listView_Char_inventory = new ListView();
       panel_BoneOfHit = new Panel();
@@ -53,6 +55,7 @@
       label_Char_HitDice = new Label();
       label_List_HitDice = new Label();
       groupBox_List_AttacksAndSpells = new GroupBox();
+      bt_Add_Spell = new Button();
       button_Char_Add_AttacksAndSpells = new Button();
       listView_Char_AttacksAndSpells = new ListView();
       label_Char_Alignment = new Label();
@@ -120,7 +123,7 @@
       label_Char_ProficiencyBonus = new Label();
       label_Char_Exp = new Label();
       numericUpDown_Char_Level = new NumericUpDown();
-      button1 = new Button();
+      bt_Add_Exp = new Button();
       label_List_Lavel = new Label();
       label_List_Exp = new Label();
       numericUpDown_Char_Exp_Calculations = new NumericUpDown();
@@ -242,6 +245,7 @@
       // 
       // groupBox_List_SkillsPossession
       // 
+      groupBox_List_SkillsPossession.Controls.Add(bt_Add_SkillsProssesion);
       groupBox_List_SkillsPossession.Controls.Add(comboBox_Char_SkillsPossession);
       groupBox_List_SkillsPossession.Controls.Add(button_Char_Add_SkillsPossession);
       groupBox_List_SkillsPossession.Controls.Add(listBox_Char_SkillsPossession);
@@ -252,6 +256,15 @@
       groupBox_List_SkillsPossession.TabIndex = 20;
       groupBox_List_SkillsPossession.TabStop = false;
       groupBox_List_SkillsPossession.Text = "Навыки владения";
+      // 
+      // bt_Add_SkillsProssesion
+      // 
+      bt_Add_SkillsProssesion.Location = new Point(6, 924);
+      bt_Add_SkillsProssesion.Name = "bt_Add_SkillsProssesion";
+      bt_Add_SkillsProssesion.Size = new Size(400, 49);
+      bt_Add_SkillsProssesion.TabIndex = 4;
+      bt_Add_SkillsProssesion.Text = "Добавить навык";
+      bt_Add_SkillsProssesion.UseVisualStyleBackColor = true;
       // 
       // comboBox_Char_SkillsPossession
       // 
@@ -276,7 +289,7 @@
       listBox_Char_SkillsPossession.ItemHeight = 34;
       listBox_Char_SkillsPossession.Location = new Point(6, 30);
       listBox_Char_SkillsPossession.Name = "listBox_Char_SkillsPossession";
-      listBox_Char_SkillsPossession.Size = new Size(400, 956);
+      listBox_Char_SkillsPossession.Size = new Size(400, 888);
       listBox_Char_SkillsPossession.TabIndex = 0;
       // 
       // groupBox_List_Personality
@@ -342,6 +355,7 @@
       // 
       // groupBox_List_inventory
       // 
+      groupBox_List_inventory.Controls.Add(bt_Add_Item);
       groupBox_List_inventory.Controls.Add(button_Char_Add_Item);
       groupBox_List_inventory.Controls.Add(listView_Char_inventory);
       groupBox_List_inventory.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
@@ -351,6 +365,15 @@
       groupBox_List_inventory.TabIndex = 20;
       groupBox_List_inventory.TabStop = false;
       groupBox_List_inventory.Text = "Инвентарь";
+      // 
+      // bt_Add_Item
+      // 
+      bt_Add_Item.Location = new Point(0, 211);
+      bt_Add_Item.Name = "bt_Add_Item";
+      bt_Add_Item.Size = new Size(561, 49);
+      bt_Add_Item.TabIndex = 4;
+      bt_Add_Item.Text = "Добавить предмет";
+      bt_Add_Item.UseVisualStyleBackColor = true;
       // 
       // button_Char_Add_Item
       // 
@@ -365,7 +388,7 @@
       // 
       listView_Char_inventory.Location = new Point(3, 39);
       listView_Char_inventory.Name = "listView_Char_inventory";
-      listView_Char_inventory.Size = new Size(558, 234);
+      listView_Char_inventory.Size = new Size(558, 169);
       listView_Char_inventory.TabIndex = 0;
       listView_Char_inventory.UseCompatibleStateImageBehavior = false;
       // 
@@ -423,6 +446,7 @@
       // 
       // groupBox_List_AttacksAndSpells
       // 
+      groupBox_List_AttacksAndSpells.Controls.Add(bt_Add_Spell);
       groupBox_List_AttacksAndSpells.Controls.Add(button_Char_Add_AttacksAndSpells);
       groupBox_List_AttacksAndSpells.Controls.Add(listView_Char_AttacksAndSpells);
       groupBox_List_AttacksAndSpells.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
@@ -432,6 +456,15 @@
       groupBox_List_AttacksAndSpells.TabIndex = 2;
       groupBox_List_AttacksAndSpells.TabStop = false;
       groupBox_List_AttacksAndSpells.Text = "Атаки и заклинания";
+      // 
+      // bt_Add_Spell
+      // 
+      bt_Add_Spell.Location = new Point(6, 214);
+      bt_Add_Spell.Name = "bt_Add_Spell";
+      bt_Add_Spell.Size = new Size(550, 49);
+      bt_Add_Spell.TabIndex = 3;
+      bt_Add_Spell.Text = "Добавить атаку или заклинание";
+      bt_Add_Spell.UseVisualStyleBackColor = true;
       // 
       // button_Char_Add_AttacksAndSpells
       // 
@@ -444,9 +477,9 @@
       // 
       // listView_Char_AttacksAndSpells
       // 
-      listView_Char_AttacksAndSpells.Location = new Point(3, 39);
+      listView_Char_AttacksAndSpells.Location = new Point(6, 39);
       listView_Char_AttacksAndSpells.Name = "listView_Char_AttacksAndSpells";
-      listView_Char_AttacksAndSpells.Size = new Size(550, 231);
+      listView_Char_AttacksAndSpells.Size = new Size(550, 169);
       listView_Char_AttacksAndSpells.TabIndex = 0;
       listView_Char_AttacksAndSpells.UseCompatibleStateImageBehavior = false;
       // 
@@ -1104,7 +1137,7 @@
       groupBox_Progression.Controls.Add(label_Char_ProficiencyBonus);
       groupBox_Progression.Controls.Add(label_Char_Exp);
       groupBox_Progression.Controls.Add(numericUpDown_Char_Level);
-      groupBox_Progression.Controls.Add(button1);
+      groupBox_Progression.Controls.Add(bt_Add_Exp);
       groupBox_Progression.Controls.Add(label_List_Lavel);
       groupBox_Progression.Controls.Add(label_List_Exp);
       groupBox_Progression.Controls.Add(numericUpDown_Char_Exp_Calculations);
@@ -1169,15 +1202,16 @@
       numericUpDown_Char_Level.TabIndex = 12;
       numericUpDown_Char_Level.ValueChanged += numericUpDown_Char_Level_ValueChanged;
       // 
-      // button1
+      // bt_Add_Exp
       // 
-      button1.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
-      button1.Location = new Point(581, 187);
-      button1.Name = "button1";
-      button1.Size = new Size(156, 37);
-      button1.TabIndex = 15;
-      button1.Text = "Добавить";
-      button1.UseVisualStyleBackColor = true;
+      bt_Add_Exp.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
+      bt_Add_Exp.Location = new Point(581, 187);
+      bt_Add_Exp.Name = "bt_Add_Exp";
+      bt_Add_Exp.Size = new Size(156, 37);
+      bt_Add_Exp.TabIndex = 15;
+      bt_Add_Exp.Text = "Добавить";
+      bt_Add_Exp.UseVisualStyleBackColor = true;
+      bt_Add_Exp.Click += bt_Add_Exp_Click;
       // 
       // label_List_Lavel
       // 
@@ -1280,6 +1314,7 @@
       Icon = (Icon)resources.GetObject("$this.Icon");
       Name = "StartForms";
       Text = "D&DCharList";
+      FormClosing += StartForms_FormClosing;
       Load += StartForms_Load;
       groupBox_Menu.ResumeLayout(false);
       groupBox_Menu.PerformLayout();
@@ -1344,7 +1379,7 @@
 		private GroupBox groupBox_Progression;
 		private Label label_List_Exp;
 		private Label label_Char_Exp;
-		private Button button1;
+		private Button bt_Add_Exp;
 		private Label label_List_ProficiencyBonus;
 		private Label label_Char_ProficiencyBonus;
 		private GroupBox groupBox_List_Characteristics;
@@ -1423,5 +1458,8 @@
 		private Label label_List_DeathSucces;
 		private Button button_Char_Add_Item;
 		private Button button_Char_Add_AttacksAndSpells;
-	}
+    private Button bt_Add_SkillsProssesion;
+    private Button bt_Add_Item;
+    private Button bt_Add_Spell;
+  }
 }
