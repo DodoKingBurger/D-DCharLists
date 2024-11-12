@@ -2,6 +2,7 @@ using D_DCharLists;
 using D_DCharLists.Modules;
 using D_DCharLists.Screens.CreateItem;
 using D_DCharLists.Screens.ScreenMain;
+using System.Windows.Forms;
 using static System.Windows.Forms.CheckedListBox;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -40,6 +41,7 @@ namespace D_DCharLists
 			HeroDataBase.ShowHero += ShowHeroSheet;
 			initialize = new Initialize();
 			initialize.Start();
+			ShowDBItems();
 		}
 
 		/// <summary>
@@ -69,6 +71,7 @@ namespace D_DCharLists
 		private void btCreateChar_Click(object sender, EventArgs e)
 		{
 			createChar = new CreateCharForm();
+			createItem.Notify += ShowDBItems;
 			createChar.ShowDialog();
 		}
 
@@ -567,9 +570,32 @@ namespace D_DCharLists
 				throw new ArgumentException("Список Abilities пуст. Модификаторы получить не удалось.");
 		}
 
-		public void ShowDBItems()
+		/// <summary>
+		/// Выводит инвентарь перснонажа.
+		/// </summary>
+		public void ShowHeroInventory()
 		{
 
+		}
+
+
+		/// <summary>
+		/// Выводит базу данных предметов.
+		/// </summary>
+		public void ShowDBItems()
+		{
+			listView_DB_inventory.Items.Clear();
+			listView_DB_inventory.Items.Add(new ListViewItem(""));
+			foreach (ItemBase item in ItemsDataBase.ItemsDB.Values) 
+			{
+				string[] row = 
+				{
+					item.ItemId.ToString(),
+					item.Name.ToString(),
+					item.ItemType.ToString()
+				};
+				listView_DB_inventory.Items.Add(new ListViewItem(row));
+			}
 		}
 
 		#endregion

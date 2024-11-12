@@ -398,10 +398,10 @@
 			tabPage_Create_Weapon.Controls.Add(groupBox_Base_Weapon_Info);
 			tabPage_Create_Weapon.Controls.Add(groupBox_Adding_Weapon_Info);
 			tabPage_Create_Weapon.Controls.Add(numericUpDown2);
-			tabPage_Create_Weapon.Location = new Point(4, 48);
+			tabPage_Create_Weapon.Location = new Point(4, 34);
 			tabPage_Create_Weapon.Name = "tabPage_Create_Weapon";
 			tabPage_Create_Weapon.Padding = new Padding(3);
-			tabPage_Create_Weapon.Size = new Size(1498, 847);
+			tabPage_Create_Weapon.Size = new Size(1498, 861);
 			tabPage_Create_Weapon.TabIndex = 1;
 			tabPage_Create_Weapon.Text = "Weapon";
 			tabPage_Create_Weapon.UseVisualStyleBackColor = true;
@@ -424,7 +424,7 @@
 			groupBox_Base_Weapon_Info.Dock = DockStyle.Left;
 			groupBox_Base_Weapon_Info.Location = new Point(3, 3);
 			groupBox_Base_Weapon_Info.Name = "groupBox_Base_Weapon_Info";
-			groupBox_Base_Weapon_Info.Size = new Size(725, 841);
+			groupBox_Base_Weapon_Info.Size = new Size(725, 855);
 			groupBox_Base_Weapon_Info.TabIndex = 15;
 			groupBox_Base_Weapon_Info.TabStop = false;
 			groupBox_Base_Weapon_Info.Text = "Базовые свойства";
@@ -565,7 +565,7 @@
 			groupBox_Adding_Weapon_Info.Dock = DockStyle.Right;
 			groupBox_Adding_Weapon_Info.Location = new Point(734, 3);
 			groupBox_Adding_Weapon_Info.Name = "groupBox_Adding_Weapon_Info";
-			groupBox_Adding_Weapon_Info.Size = new Size(761, 841);
+			groupBox_Adding_Weapon_Info.Size = new Size(761, 855);
 			groupBox_Adding_Weapon_Info.TabIndex = 14;
 			groupBox_Adding_Weapon_Info.TabStop = false;
 			groupBox_Adding_Weapon_Info.Text = "Свойства оружия";
@@ -710,9 +710,9 @@
 			// tabPage_Create_Item
 			// 
 			tabPage_Create_Item.Controls.Add(groupBox_Base_Item_Info);
-			tabPage_Create_Item.Location = new Point(4, 48);
+			tabPage_Create_Item.Location = new Point(4, 34);
 			tabPage_Create_Item.Name = "tabPage_Create_Item";
-			tabPage_Create_Item.Size = new Size(1498, 847);
+			tabPage_Create_Item.Size = new Size(1498, 861);
 			tabPage_Create_Item.TabIndex = 2;
 			tabPage_Create_Item.Text = "Item";
 			tabPage_Create_Item.UseVisualStyleBackColor = true;
@@ -735,7 +735,7 @@
 			groupBox_Base_Item_Info.Dock = DockStyle.Left;
 			groupBox_Base_Item_Info.Location = new Point(0, 0);
 			groupBox_Base_Item_Info.Name = "groupBox_Base_Item_Info";
-			groupBox_Base_Item_Info.Size = new Size(725, 847);
+			groupBox_Base_Item_Info.Size = new Size(725, 861);
 			groupBox_Base_Item_Info.TabIndex = 12;
 			groupBox_Base_Item_Info.TabStop = false;
 			groupBox_Base_Item_Info.Text = "Базовые свойства";
@@ -866,6 +866,7 @@
 			Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(5);
+			MinimumSize = new Size(1538, 1001);
 			Name = "CreateItemForm";
 			Text = "CreateItemForm";
 			Load += CreateItemForm_Load;

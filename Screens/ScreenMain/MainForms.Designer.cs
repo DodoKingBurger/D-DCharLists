@@ -137,6 +137,9 @@
 			label_Char_Name = new Label();
 			groupBox_List_itemBase = new GroupBox();
 			listView_DB_inventory = new ListView();
+			columnHeader_Item_ID = new ColumnHeader();
+			columnHeader_Item_Name = new ColumnHeader();
+			columnHeader_Item_TypeItem = new ColumnHeader();
 			button_Create_Item = new Button();
 			label_List_NameForSearch = new Label();
 			label_list_TypeItem = new Label();
@@ -186,7 +189,7 @@
 			groupBox_Menu.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			groupBox_Menu.Location = new Point(0, 0);
 			groupBox_Menu.Name = "groupBox_Menu";
-			groupBox_Menu.Size = new Size(369, 364);
+			groupBox_Menu.Size = new Size(369, 320);
 			groupBox_Menu.TabIndex = 0;
 			groupBox_Menu.TabStop = false;
 			groupBox_Menu.Text = "Главное меню";
@@ -194,7 +197,7 @@
 			// label_List_Loading_Char
 			// 
 			label_List_Loading_Char.AutoSize = true;
-			label_List_Loading_Char.Location = new Point(21, 280);
+			label_List_Loading_Char.Location = new Point(21, 246);
 			label_List_Loading_Char.Name = "label_List_Loading_Char";
 			label_List_Loading_Char.Size = new Size(246, 34);
 			label_List_Loading_Char.TabIndex = 4;
@@ -204,7 +207,7 @@
 			// 
 			comboBox_Loading_Char.DropDownStyle = ComboBoxStyle.DropDownList;
 			comboBox_Loading_Char.FormattingEnabled = true;
-			comboBox_Loading_Char.Location = new Point(21, 314);
+			comboBox_Loading_Char.Location = new Point(21, 276);
 			comboBox_Loading_Char.Name = "comboBox_Loading_Char";
 			comboBox_Loading_Char.Size = new Size(302, 42);
 			comboBox_Loading_Char.TabIndex = 3;
@@ -212,9 +215,9 @@
 			// 
 			// bt_Load_Char
 			// 
-			bt_Load_Char.Location = new Point(21, 196);
+			bt_Load_Char.Location = new Point(21, 172);
 			bt_Load_Char.Name = "bt_Load_Char";
-			bt_Load_Char.Size = new Size(302, 64);
+			bt_Load_Char.Size = new Size(302, 56);
 			bt_Load_Char.TabIndex = 2;
 			bt_Load_Char.Text = "Загрузить выбранного пресонажа";
 			bt_Load_Char.UseVisualStyleBackColor = true;
@@ -223,9 +226,9 @@
 			// bt_Save_Char
 			// 
 			bt_Save_Char.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			bt_Save_Char.Location = new Point(21, 99);
+			bt_Save_Char.Location = new Point(21, 87);
 			bt_Save_Char.Name = "bt_Save_Char";
-			bt_Save_Char.Size = new Size(302, 56);
+			bt_Save_Char.Size = new Size(302, 49);
 			bt_Save_Char.TabIndex = 1;
 			bt_Save_Char.Text = "Сохранить текущий лист";
 			bt_Save_Char.UseVisualStyleBackColor = true;
@@ -234,9 +237,9 @@
 			// bt_Create_Char
 			// 
 			bt_Create_Char.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			bt_Create_Char.Location = new Point(21, 34);
+			bt_Create_Char.Location = new Point(21, 30);
 			bt_Create_Char.Name = "bt_Create_Char";
-			bt_Create_Char.Size = new Size(302, 53);
+			bt_Create_Char.Size = new Size(302, 47);
 			bt_Create_Char.TabIndex = 0;
 			bt_Create_Char.Text = "Создать персонажа";
 			bt_Create_Char.UseVisualStyleBackColor = true;
@@ -249,7 +252,7 @@
 			groupBox_CharList.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			groupBox_CharList.Location = new Point(375, 0);
 			groupBox_CharList.Name = "groupBox_CharList";
-			groupBox_CharList.Size = new Size(2140, 1569);
+			groupBox_CharList.Size = new Size(2140, 1381);
 			groupBox_CharList.TabIndex = 1;
 			groupBox_CharList.TabStop = false;
 			groupBox_CharList.Text = "Лист персонажа";
@@ -278,10 +281,10 @@
 			groupBox_Name_List.Controls.Add(label_Char_Name);
 			groupBox_Name_List.Dock = DockStyle.Left;
 			groupBox_Name_List.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_Name_List.Location = new Point(3, 35);
+			groupBox_Name_List.Location = new Point(3, 31);
 			groupBox_Name_List.Name = "groupBox_Name_List";
 			groupBox_Name_List.RightToLeft = RightToLeft.No;
-			groupBox_Name_List.Size = new Size(2131, 1531);
+			groupBox_Name_List.Size = new Size(2131, 1347);
 			groupBox_Name_List.TabIndex = 1;
 			groupBox_Name_List.TabStop = false;
 			groupBox_Name_List.Text = "Персонаж:";
@@ -291,18 +294,18 @@
 			groupBox_List_SkillsPossession.Controls.Add(bt_Add_SkillsProssesion);
 			groupBox_List_SkillsPossession.Controls.Add(listBox_Char_SkillsPossession);
 			groupBox_List_SkillsPossession.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_List_SkillsPossession.Location = new Point(1133, 673);
+			groupBox_List_SkillsPossession.Location = new Point(1133, 592);
 			groupBox_List_SkillsPossession.Name = "groupBox_List_SkillsPossession";
-			groupBox_List_SkillsPossession.Size = new Size(424, 849);
+			groupBox_List_SkillsPossession.Size = new Size(424, 747);
 			groupBox_List_SkillsPossession.TabIndex = 20;
 			groupBox_List_SkillsPossession.TabStop = false;
 			groupBox_List_SkillsPossession.Text = "Навыки владения";
 			// 
 			// bt_Add_SkillsProssesion
 			// 
-			bt_Add_SkillsProssesion.Location = new Point(6, 791);
+			bt_Add_SkillsProssesion.Location = new Point(6, 696);
 			bt_Add_SkillsProssesion.Name = "bt_Add_SkillsProssesion";
-			bt_Add_SkillsProssesion.Size = new Size(400, 49);
+			bt_Add_SkillsProssesion.Size = new Size(400, 43);
 			bt_Add_SkillsProssesion.TabIndex = 4;
 			bt_Add_SkillsProssesion.Text = "Добавить навык";
 			bt_Add_SkillsProssesion.UseVisualStyleBackColor = true;
@@ -311,9 +314,9 @@
 			// 
 			listBox_Char_SkillsPossession.FormattingEnabled = true;
 			listBox_Char_SkillsPossession.ItemHeight = 34;
-			listBox_Char_SkillsPossession.Location = new Point(6, 30);
+			listBox_Char_SkillsPossession.Location = new Point(6, 26);
 			listBox_Char_SkillsPossession.Name = "listBox_Char_SkillsPossession";
-			listBox_Char_SkillsPossession.Size = new Size(400, 752);
+			listBox_Char_SkillsPossession.Size = new Size(400, 650);
 			listBox_Char_SkillsPossession.TabIndex = 0;
 			// 
 			// groupBox_List_inventory
@@ -323,9 +326,9 @@
 			groupBox_List_inventory.Controls.Add(groupBox_List_Item_Weapon);
 			groupBox_List_inventory.Controls.Add(button_Char_Add_Item);
 			groupBox_List_inventory.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_List_inventory.Location = new Point(1563, 23);
+			groupBox_List_inventory.Location = new Point(1563, 20);
 			groupBox_List_inventory.Name = "groupBox_List_inventory";
-			groupBox_List_inventory.Size = new Size(562, 1499);
+			groupBox_List_inventory.Size = new Size(562, 1319);
 			groupBox_List_inventory.TabIndex = 20;
 			groupBox_List_inventory.TabStop = false;
 			groupBox_List_inventory.Text = "Инвентарь";
@@ -333,9 +336,9 @@
 			// groupBox_List_Item_item
 			// 
 			groupBox_List_Item_item.Controls.Add(listView_Char_inventory_item);
-			groupBox_List_Item_item.Location = new Point(6, 903);
+			groupBox_List_Item_item.Location = new Point(6, 795);
 			groupBox_List_Item_item.Name = "groupBox_List_Item_item";
-			groupBox_List_Item_item.Size = new Size(550, 346);
+			groupBox_List_Item_item.Size = new Size(550, 304);
 			groupBox_List_Item_item.TabIndex = 6;
 			groupBox_List_Item_item.TabStop = false;
 			groupBox_List_Item_item.Text = "Предметы";
@@ -343,18 +346,18 @@
 			// listView_Char_inventory_item
 			// 
 			listView_Char_inventory_item.Dock = DockStyle.Fill;
-			listView_Char_inventory_item.Location = new Point(3, 39);
+			listView_Char_inventory_item.Location = new Point(3, 34);
 			listView_Char_inventory_item.Name = "listView_Char_inventory_item";
-			listView_Char_inventory_item.Size = new Size(544, 304);
+			listView_Char_inventory_item.Size = new Size(544, 268);
 			listView_Char_inventory_item.TabIndex = 0;
 			listView_Char_inventory_item.UseCompatibleStateImageBehavior = false;
 			// 
 			// groupBox_List_Item_Armor
 			// 
 			groupBox_List_Item_Armor.Controls.Add(listView_Char_inventory_Armor);
-			groupBox_List_Item_Armor.Location = new Point(6, 497);
+			groupBox_List_Item_Armor.Location = new Point(6, 437);
 			groupBox_List_Item_Armor.Name = "groupBox_List_Item_Armor";
-			groupBox_List_Item_Armor.Size = new Size(550, 403);
+			groupBox_List_Item_Armor.Size = new Size(550, 355);
 			groupBox_List_Item_Armor.TabIndex = 5;
 			groupBox_List_Item_Armor.TabStop = false;
 			groupBox_List_Item_Armor.Text = "Доспехи";
@@ -362,18 +365,18 @@
 			// listView_Char_inventory_Armor
 			// 
 			listView_Char_inventory_Armor.Dock = DockStyle.Fill;
-			listView_Char_inventory_Armor.Location = new Point(3, 39);
+			listView_Char_inventory_Armor.Location = new Point(3, 34);
 			listView_Char_inventory_Armor.Name = "listView_Char_inventory_Armor";
-			listView_Char_inventory_Armor.Size = new Size(544, 361);
+			listView_Char_inventory_Armor.Size = new Size(544, 318);
 			listView_Char_inventory_Armor.TabIndex = 0;
 			listView_Char_inventory_Armor.UseCompatibleStateImageBehavior = false;
 			// 
 			// groupBox_List_Item_Weapon
 			// 
 			groupBox_List_Item_Weapon.Controls.Add(listView_Char_inventory_Weapon);
-			groupBox_List_Item_Weapon.Location = new Point(6, 42);
+			groupBox_List_Item_Weapon.Location = new Point(6, 37);
 			groupBox_List_Item_Weapon.Name = "groupBox_List_Item_Weapon";
-			groupBox_List_Item_Weapon.Size = new Size(550, 456);
+			groupBox_List_Item_Weapon.Size = new Size(550, 401);
 			groupBox_List_Item_Weapon.TabIndex = 4;
 			groupBox_List_Item_Weapon.TabStop = false;
 			groupBox_List_Item_Weapon.Text = "Оружие";
@@ -381,17 +384,17 @@
 			// listView_Char_inventory_Weapon
 			// 
 			listView_Char_inventory_Weapon.Dock = DockStyle.Fill;
-			listView_Char_inventory_Weapon.Location = new Point(3, 39);
+			listView_Char_inventory_Weapon.Location = new Point(3, 34);
 			listView_Char_inventory_Weapon.Name = "listView_Char_inventory_Weapon";
-			listView_Char_inventory_Weapon.Size = new Size(544, 414);
+			listView_Char_inventory_Weapon.Size = new Size(544, 365);
 			listView_Char_inventory_Weapon.TabIndex = 0;
 			listView_Char_inventory_Weapon.UseCompatibleStateImageBehavior = false;
 			// 
 			// button_Char_Add_Item
 			// 
-			button_Char_Add_Item.Location = new Point(259, 1429);
+			button_Char_Add_Item.Location = new Point(259, 1258);
 			button_Char_Add_Item.Name = "button_Char_Add_Item";
-			button_Char_Add_Item.Size = new Size(297, 45);
+			button_Char_Add_Item.Size = new Size(297, 40);
 			button_Char_Add_Item.TabIndex = 3;
 			button_Char_Add_Item.Text = "Добавить предмет";
 			button_Char_Add_Item.UseVisualStyleBackColor = true;
@@ -401,18 +404,18 @@
 			groupBox_List_Personality.Controls.Add(button_Edit_Personality);
 			groupBox_List_Personality.Controls.Add(listBox_List_Personality);
 			groupBox_List_Personality.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_List_Personality.Location = new Point(1130, 23);
+			groupBox_List_Personality.Location = new Point(1130, 20);
 			groupBox_List_Personality.Name = "groupBox_List_Personality";
-			groupBox_List_Personality.Size = new Size(427, 644);
+			groupBox_List_Personality.Size = new Size(427, 567);
 			groupBox_List_Personality.TabIndex = 19;
 			groupBox_List_Personality.TabStop = false;
 			groupBox_List_Personality.Text = "Личные качества";
 			// 
 			// button_Edit_Personality
 			// 
-			button_Edit_Personality.Location = new Point(159, 586);
+			button_Edit_Personality.Location = new Point(159, 516);
 			button_Edit_Personality.Name = "button_Edit_Personality";
-			button_Edit_Personality.Size = new Size(250, 52);
+			button_Edit_Personality.Size = new Size(250, 46);
 			button_Edit_Personality.TabIndex = 1;
 			button_Edit_Personality.Text = "Редактировать";
 			button_Edit_Personality.UseVisualStyleBackColor = true;
@@ -422,16 +425,16 @@
 			listBox_List_Personality.Dock = DockStyle.Top;
 			listBox_List_Personality.FormattingEnabled = true;
 			listBox_List_Personality.ItemHeight = 44;
-			listBox_List_Personality.Location = new Point(3, 44);
+			listBox_List_Personality.Location = new Point(3, 39);
 			listBox_List_Personality.Name = "listBox_List_Personality";
-			listBox_List_Personality.Size = new Size(421, 532);
+			listBox_List_Personality.Size = new Size(421, 444);
 			listBox_List_Personality.TabIndex = 0;
 			// 
 			// label_List_Alignment
 			// 
 			label_List_Alignment.AutoSize = true;
 			label_List_Alignment.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			label_List_Alignment.Location = new Point(867, 226);
+			label_List_Alignment.Location = new Point(867, 199);
 			label_List_Alignment.Name = "label_List_Alignment";
 			label_List_Alignment.Size = new Size(209, 88);
 			label_List_Alignment.TabIndex = 9;
@@ -443,16 +446,16 @@
 			panel_BoneOfHit.Controls.Add(numericUpDown_Char_HowHitDice);
 			panel_BoneOfHit.Controls.Add(label_Char_HitDice);
 			panel_BoneOfHit.Controls.Add(label_List_HitDice);
-			panel_BoneOfHit.Location = new Point(19, 826);
+			panel_BoneOfHit.Location = new Point(19, 727);
 			panel_BoneOfHit.Name = "panel_BoneOfHit";
-			panel_BoneOfHit.Size = new Size(369, 271);
+			panel_BoneOfHit.Size = new Size(369, 238);
 			panel_BoneOfHit.TabIndex = 18;
 			// 
 			// label_List_HowHitDice
 			// 
 			label_List_HowHitDice.AutoSize = true;
 			label_List_HowHitDice.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			label_List_HowHitDice.Location = new Point(17, 39);
+			label_List_HowHitDice.Location = new Point(17, 34);
 			label_List_HowHitDice.Name = "label_List_HowHitDice";
 			label_List_HowHitDice.Size = new Size(181, 78);
 			label_List_HowHitDice.TabIndex = 13;
@@ -473,7 +476,7 @@
 			// label_Char_HitDice
 			// 
 			label_Char_HitDice.AutoSize = true;
-			label_Char_HitDice.Location = new Point(246, 177);
+			label_Char_HitDice.Location = new Point(246, 156);
 			label_Char_HitDice.Name = "label_Char_HitDice";
 			label_Char_HitDice.Size = new Size(27, 34);
 			label_Char_HitDice.TabIndex = 11;
@@ -483,7 +486,7 @@
 			// 
 			label_List_HitDice.AutoSize = true;
 			label_List_HitDice.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_HitDice.Location = new Point(24, 177);
+			label_List_HitDice.Location = new Point(24, 156);
 			label_List_HitDice.Name = "label_List_HitDice";
 			label_List_HitDice.Size = new Size(175, 39);
 			label_List_HitDice.TabIndex = 10;
@@ -494,27 +497,27 @@
 			groupBox_List_AttacksAndSpells.Controls.Add(button_Char_Add_AttacksAndSpells);
 			groupBox_List_AttacksAndSpells.Controls.Add(listView_Char_AttacksAndSpells);
 			groupBox_List_AttacksAndSpells.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_List_AttacksAndSpells.Location = new Point(19, 1100);
+			groupBox_List_AttacksAndSpells.Location = new Point(19, 968);
 			groupBox_List_AttacksAndSpells.Name = "groupBox_List_AttacksAndSpells";
-			groupBox_List_AttacksAndSpells.Size = new Size(1105, 422);
+			groupBox_List_AttacksAndSpells.Size = new Size(1105, 371);
 			groupBox_List_AttacksAndSpells.TabIndex = 2;
 			groupBox_List_AttacksAndSpells.TabStop = false;
 			groupBox_List_AttacksAndSpells.Text = "Атаки и заклинания";
 			// 
 			// button_Char_Add_AttacksAndSpells
 			// 
-			button_Char_Add_AttacksAndSpells.Location = new Point(640, 371);
+			button_Char_Add_AttacksAndSpells.Location = new Point(640, 326);
 			button_Char_Add_AttacksAndSpells.Name = "button_Char_Add_AttacksAndSpells";
-			button_Char_Add_AttacksAndSpells.Size = new Size(441, 45);
+			button_Char_Add_AttacksAndSpells.Size = new Size(441, 40);
 			button_Char_Add_AttacksAndSpells.TabIndex = 2;
 			button_Char_Add_AttacksAndSpells.Text = "Добавить атаку или заклинание";
 			button_Char_Add_AttacksAndSpells.UseVisualStyleBackColor = true;
 			// 
 			// listView_Char_AttacksAndSpells
 			// 
-			listView_Char_AttacksAndSpells.Location = new Point(6, 39);
+			listView_Char_AttacksAndSpells.Location = new Point(6, 34);
 			listView_Char_AttacksAndSpells.Name = "listView_Char_AttacksAndSpells";
-			listView_Char_AttacksAndSpells.Size = new Size(1075, 326);
+			listView_Char_AttacksAndSpells.Size = new Size(1075, 287);
 			listView_Char_AttacksAndSpells.TabIndex = 0;
 			listView_Char_AttacksAndSpells.UseCompatibleStateImageBehavior = false;
 			// 
@@ -522,7 +525,7 @@
 			// 
 			label_Char_Alignment.AutoSize = true;
 			label_Char_Alignment.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_Char_Alignment.Location = new Point(867, 182);
+			label_Char_Alignment.Location = new Point(867, 160);
 			label_Char_Alignment.Name = "label_Char_Alignment";
 			label_Char_Alignment.Size = new Size(253, 44);
 			label_Char_Alignment.TabIndex = 8;
@@ -534,9 +537,9 @@
 			groupBox_SavingThrows.Controls.Add(trackBar_Char_DeathFailure);
 			groupBox_SavingThrows.Controls.Add(label_List_DeathSucces);
 			groupBox_SavingThrows.Controls.Add(trackBar_Char_DeathSucces);
-			groupBox_SavingThrows.Location = new Point(398, 410);
+			groupBox_SavingThrows.Location = new Point(398, 361);
 			groupBox_SavingThrows.Name = "groupBox_SavingThrows";
-			groupBox_SavingThrows.Size = new Size(402, 287);
+			groupBox_SavingThrows.Size = new Size(402, 253);
 			groupBox_SavingThrows.TabIndex = 19;
 			groupBox_SavingThrows.TabStop = false;
 			groupBox_SavingThrows.Text = "Спасброски";
@@ -544,7 +547,7 @@
 			// label_List_DeathFailure
 			// 
 			label_List_DeathFailure.AutoSize = true;
-			label_List_DeathFailure.Location = new Point(51, 142);
+			label_List_DeathFailure.Location = new Point(51, 125);
 			label_List_DeathFailure.Name = "label_List_DeathFailure";
 			label_List_DeathFailure.Size = new Size(108, 34);
 			label_List_DeathFailure.TabIndex = 3;
@@ -553,7 +556,7 @@
 			// trackBar_Char_DeathFailure
 			// 
 			trackBar_Char_DeathFailure.LargeChange = 1;
-			trackBar_Char_DeathFailure.Location = new Point(202, 142);
+			trackBar_Char_DeathFailure.Location = new Point(202, 125);
 			trackBar_Char_DeathFailure.Maximum = 3;
 			trackBar_Char_DeathFailure.Name = "trackBar_Char_DeathFailure";
 			trackBar_Char_DeathFailure.Size = new Size(156, 69);
@@ -563,7 +566,7 @@
 			// label_List_DeathSucces
 			// 
 			label_List_DeathSucces.AutoSize = true;
-			label_List_DeathSucces.Location = new Point(51, 58);
+			label_List_DeathSucces.Location = new Point(51, 51);
 			label_List_DeathSucces.Name = "label_List_DeathSucces";
 			label_List_DeathSucces.Size = new Size(93, 34);
 			label_List_DeathSucces.TabIndex = 1;
@@ -572,7 +575,7 @@
 			// trackBar_Char_DeathSucces
 			// 
 			trackBar_Char_DeathSucces.LargeChange = 1;
-			trackBar_Char_DeathSucces.Location = new Point(202, 58);
+			trackBar_Char_DeathSucces.Location = new Point(202, 51);
 			trackBar_Char_DeathSucces.Maximum = 3;
 			trackBar_Char_DeathSucces.Name = "trackBar_Char_DeathSucces";
 			trackBar_Char_DeathSucces.Size = new Size(156, 69);
@@ -583,7 +586,7 @@
 			// 
 			label_List_Background.AutoSize = true;
 			label_List_Background.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_List_Background.Location = new Point(863, 83);
+			label_List_Background.Location = new Point(863, 73);
 			label_List_Background.Name = "label_List_Background";
 			label_List_Background.Size = new Size(205, 88);
 			label_List_Background.TabIndex = 7;
@@ -593,7 +596,7 @@
 			// 
 			label_Char_Background.AutoSize = true;
 			label_Char_Background.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_Char_Background.Location = new Point(871, 39);
+			label_Char_Background.Location = new Point(871, 34);
 			label_Char_Background.Name = "label_Char_Background";
 			label_Char_Background.Size = new Size(253, 44);
 			label_Char_Background.TabIndex = 6;
@@ -621,9 +624,9 @@
 			groupBox_List_Skillls.Controls.Add(label_Char_Skills_Athletics);
 			groupBox_List_Skillls.Controls.Add(checkedListBox_Skills);
 			groupBox_List_Skillls.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			groupBox_List_Skillls.Location = new Point(806, 322);
+			groupBox_List_Skillls.Location = new Point(806, 283);
 			groupBox_List_Skillls.Name = "groupBox_List_Skillls";
-			groupBox_List_Skillls.Size = new Size(318, 775);
+			groupBox_List_Skillls.Size = new Size(318, 682);
 			groupBox_List_Skillls.TabIndex = 16;
 			groupBox_List_Skillls.TabStop = false;
 			groupBox_List_Skillls.Text = "Умения";
@@ -632,7 +635,7 @@
 			// 
 			label_Char_Skills_Persuasion.AutoSize = true;
 			label_Char_Skills_Persuasion.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Persuasion.Location = new Point(220, 718);
+			label_Char_Skills_Persuasion.Location = new Point(220, 632);
 			label_Char_Skills_Persuasion.Name = "label_Char_Skills_Persuasion";
 			label_Char_Skills_Persuasion.Size = new Size(31, 39);
 			label_Char_Skills_Persuasion.TabIndex = 19;
@@ -642,7 +645,7 @@
 			// 
 			label_Char_Skills_Perfomance.AutoSize = true;
 			label_Char_Skills_Perfomance.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Perfomance.Location = new Point(220, 679);
+			label_Char_Skills_Perfomance.Location = new Point(220, 598);
 			label_Char_Skills_Perfomance.Name = "label_Char_Skills_Perfomance";
 			label_Char_Skills_Perfomance.Size = new Size(31, 39);
 			label_Char_Skills_Perfomance.TabIndex = 18;
@@ -652,7 +655,7 @@
 			// 
 			label_Char_Skills_Intimidation.AutoSize = true;
 			label_Char_Skills_Intimidation.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Intimidation.Location = new Point(220, 640);
+			label_Char_Skills_Intimidation.Location = new Point(220, 563);
 			label_Char_Skills_Intimidation.Name = "label_Char_Skills_Intimidation";
 			label_Char_Skills_Intimidation.Size = new Size(31, 39);
 			label_Char_Skills_Intimidation.TabIndex = 17;
@@ -662,7 +665,7 @@
 			// 
 			label_Char_Skills_Deception.AutoSize = true;
 			label_Char_Skills_Deception.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Deception.Location = new Point(220, 599);
+			label_Char_Skills_Deception.Location = new Point(220, 527);
 			label_Char_Skills_Deception.Name = "label_Char_Skills_Deception";
 			label_Char_Skills_Deception.Size = new Size(31, 39);
 			label_Char_Skills_Deception.TabIndex = 16;
@@ -672,7 +675,7 @@
 			// 
 			label_Char_Skills_Surival.AutoSize = true;
 			label_Char_Skills_Surival.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Surival.Location = new Point(220, 562);
+			label_Char_Skills_Surival.Location = new Point(220, 495);
 			label_Char_Skills_Surival.Name = "label_Char_Skills_Surival";
 			label_Char_Skills_Surival.Size = new Size(31, 39);
 			label_Char_Skills_Surival.TabIndex = 15;
@@ -682,7 +685,7 @@
 			// 
 			label_Char_Skills_Perception.AutoSize = true;
 			label_Char_Skills_Perception.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Perception.Location = new Point(220, 516);
+			label_Char_Skills_Perception.Location = new Point(220, 454);
 			label_Char_Skills_Perception.Name = "label_Char_Skills_Perception";
 			label_Char_Skills_Perception.Size = new Size(31, 39);
 			label_Char_Skills_Perception.TabIndex = 14;
@@ -692,7 +695,7 @@
 			// 
 			label_Char_Skills_Medicine.AutoSize = true;
 			label_Char_Skills_Medicine.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Medicine.Location = new Point(220, 479);
+			label_Char_Skills_Medicine.Location = new Point(220, 422);
 			label_Char_Skills_Medicine.Name = "label_Char_Skills_Medicine";
 			label_Char_Skills_Medicine.Size = new Size(31, 39);
 			label_Char_Skills_Medicine.TabIndex = 13;
@@ -702,7 +705,7 @@
 			// 
 			label_Char_Skills_Insight.AutoSize = true;
 			label_Char_Skills_Insight.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Insight.Location = new Point(220, 441);
+			label_Char_Skills_Insight.Location = new Point(220, 388);
 			label_Char_Skills_Insight.Name = "label_Char_Skills_Insight";
 			label_Char_Skills_Insight.Size = new Size(31, 39);
 			label_Char_Skills_Insight.TabIndex = 12;
@@ -712,7 +715,7 @@
 			// 
 			label_Char_Skills_Animal.AutoSize = true;
 			label_Char_Skills_Animal.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Animal.Location = new Point(220, 402);
+			label_Char_Skills_Animal.Location = new Point(220, 354);
 			label_Char_Skills_Animal.Name = "label_Char_Skills_Animal";
 			label_Char_Skills_Animal.Size = new Size(31, 39);
 			label_Char_Skills_Animal.TabIndex = 11;
@@ -722,7 +725,7 @@
 			// 
 			label_Char_Skills_Religion.AutoSize = true;
 			label_Char_Skills_Religion.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Religion.Location = new Point(220, 363);
+			label_Char_Skills_Religion.Location = new Point(220, 319);
 			label_Char_Skills_Religion.Name = "label_Char_Skills_Religion";
 			label_Char_Skills_Religion.Size = new Size(31, 39);
 			label_Char_Skills_Religion.TabIndex = 10;
@@ -732,7 +735,7 @@
 			// 
 			label_Char_Skills_Nature.AutoSize = true;
 			label_Char_Skills_Nature.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Nature.Location = new Point(220, 324);
+			label_Char_Skills_Nature.Location = new Point(220, 285);
 			label_Char_Skills_Nature.Name = "label_Char_Skills_Nature";
 			label_Char_Skills_Nature.Size = new Size(31, 39);
 			label_Char_Skills_Nature.TabIndex = 9;
@@ -742,7 +745,7 @@
 			// 
 			label_Char_Skills_Investigation.AutoSize = true;
 			label_Char_Skills_Investigation.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Investigation.Location = new Point(220, 282);
+			label_Char_Skills_Investigation.Location = new Point(220, 248);
 			label_Char_Skills_Investigation.Name = "label_Char_Skills_Investigation";
 			label_Char_Skills_Investigation.Size = new Size(31, 39);
 			label_Char_Skills_Investigation.TabIndex = 8;
@@ -752,7 +755,7 @@
 			// 
 			label_Char_Skills_History.AutoSize = true;
 			label_Char_Skills_History.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_History.Location = new Point(220, 240);
+			label_Char_Skills_History.Location = new Point(220, 211);
 			label_Char_Skills_History.Name = "label_Char_Skills_History";
 			label_Char_Skills_History.Size = new Size(31, 39);
 			label_Char_Skills_History.TabIndex = 7;
@@ -762,7 +765,7 @@
 			// 
 			label_Char_Skills_Arcana.AutoSize = true;
 			label_Char_Skills_Arcana.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Arcana.Location = new Point(220, 201);
+			label_Char_Skills_Arcana.Location = new Point(220, 177);
 			label_Char_Skills_Arcana.Name = "label_Char_Skills_Arcana";
 			label_Char_Skills_Arcana.Size = new Size(31, 39);
 			label_Char_Skills_Arcana.TabIndex = 6;
@@ -772,7 +775,7 @@
 			// 
 			label_Char_Skills_Stealth.AutoSize = true;
 			label_Char_Skills_Stealth.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Stealth.Location = new Point(220, 160);
+			label_Char_Skills_Stealth.Location = new Point(220, 141);
 			label_Char_Skills_Stealth.Name = "label_Char_Skills_Stealth";
 			label_Char_Skills_Stealth.Size = new Size(31, 39);
 			label_Char_Skills_Stealth.TabIndex = 5;
@@ -782,7 +785,7 @@
 			// 
 			label_Char_Skills_Agulity.AutoSize = true;
 			label_Char_Skills_Agulity.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Agulity.Location = new Point(220, 121);
+			label_Char_Skills_Agulity.Location = new Point(220, 106);
 			label_Char_Skills_Agulity.Name = "label_Char_Skills_Agulity";
 			label_Char_Skills_Agulity.Size = new Size(31, 39);
 			label_Char_Skills_Agulity.TabIndex = 4;
@@ -792,7 +795,7 @@
 			// 
 			label_Char_Skills_Acrobatics.AutoSize = true;
 			label_Char_Skills_Acrobatics.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Acrobatics.Location = new Point(220, 78);
+			label_Char_Skills_Acrobatics.Location = new Point(220, 69);
 			label_Char_Skills_Acrobatics.Name = "label_Char_Skills_Acrobatics";
 			label_Char_Skills_Acrobatics.Size = new Size(31, 39);
 			label_Char_Skills_Acrobatics.TabIndex = 3;
@@ -802,7 +805,7 @@
 			// 
 			label_Char_Skills_Athletics.AutoSize = true;
 			label_Char_Skills_Athletics.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Skills_Athletics.Location = new Point(220, 39);
+			label_Char_Skills_Athletics.Location = new Point(220, 34);
 			label_Char_Skills_Athletics.Name = "label_Char_Skills_Athletics";
 			label_Char_Skills_Athletics.Size = new Size(31, 39);
 			label_Char_Skills_Athletics.TabIndex = 2;
@@ -815,9 +818,9 @@
 			checkedListBox_Skills.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
 			checkedListBox_Skills.FormattingEnabled = true;
 			checkedListBox_Skills.Items.AddRange(new object[] { "Athletics", "Acrobatics", "Agulity", "Stealth", "Arcana", "History", "Investigation", "Nature", "Religion", "Animal", "Insight", "Medicine", "Perception", "Surival", "Deception", "Intimidation", "Perfomance", "Persuasion" });
-			checkedListBox_Skills.Location = new Point(3, 39);
+			checkedListBox_Skills.Location = new Point(3, 34);
 			checkedListBox_Skills.Name = "checkedListBox_Skills";
-			checkedListBox_Skills.Size = new Size(211, 733);
+			checkedListBox_Skills.Size = new Size(211, 646);
 			checkedListBox_Skills.TabIndex = 1;
 			checkedListBox_Skills.SelectedIndexChanged += checkedListBox_Skills_SelectedIndexChanged;
 			// 
@@ -833,9 +836,9 @@
 			groupBox_CombatAbilities.Controls.Add(label_List_TempHP);
 			groupBox_CombatAbilities.Controls.Add(label_List_NowHP);
 			groupBox_CombatAbilities.Controls.Add(label_List_MaxHP);
-			groupBox_CombatAbilities.Location = new Point(19, 417);
+			groupBox_CombatAbilities.Location = new Point(19, 367);
 			groupBox_CombatAbilities.Name = "groupBox_CombatAbilities";
-			groupBox_CombatAbilities.Size = new Size(369, 403);
+			groupBox_CombatAbilities.Size = new Size(369, 355);
 			groupBox_CombatAbilities.TabIndex = 17;
 			groupBox_CombatAbilities.TabStop = false;
 			groupBox_CombatAbilities.Text = "Боевые характеристики";
@@ -885,7 +888,7 @@
 			// 
 			label_List_ArmorClass.AutoSize = true;
 			label_List_ArmorClass.Font = new Font("Monotype Corsiva", 22F, FontStyle.Italic);
-			label_List_ArmorClass.Location = new Point(57, 272);
+			label_List_ArmorClass.Location = new Point(57, 239);
 			label_List_ArmorClass.Name = "label_List_ArmorClass";
 			label_List_ArmorClass.Size = new Size(75, 53);
 			label_List_ArmorClass.TabIndex = 8;
@@ -894,7 +897,7 @@
 			// label_Char_Speed
 			// 
 			label_Char_Speed.AutoSize = true;
-			label_Char_Speed.Location = new Point(287, 181);
+			label_Char_Speed.Location = new Point(287, 159);
 			label_Char_Speed.Name = "label_Char_Speed";
 			label_Char_Speed.Size = new Size(27, 34);
 			label_Char_Speed.TabIndex = 7;
@@ -903,7 +906,7 @@
 			// label_List_Speed
 			// 
 			label_List_Speed.AutoSize = true;
-			label_List_Speed.Location = new Point(24, 181);
+			label_List_Speed.Location = new Point(24, 159);
 			label_List_Speed.Name = "label_List_Speed";
 			label_List_Speed.Size = new Size(114, 34);
 			label_List_Speed.TabIndex = 6;
@@ -912,7 +915,7 @@
 			// label_List_TempHP
 			// 
 			label_List_TempHP.AutoSize = true;
-			label_List_TempHP.Location = new Point(24, 135);
+			label_List_TempHP.Location = new Point(24, 119);
 			label_List_TempHP.Name = "label_List_TempHP";
 			label_List_TempHP.Size = new Size(174, 34);
 			label_List_TempHP.TabIndex = 4;
@@ -921,7 +924,7 @@
 			// label_List_NowHP
 			// 
 			label_List_NowHP.AutoSize = true;
-			label_List_NowHP.Location = new Point(24, 93);
+			label_List_NowHP.Location = new Point(24, 82);
 			label_List_NowHP.Name = "label_List_NowHP";
 			label_List_NowHP.Size = new Size(155, 34);
 			label_List_NowHP.TabIndex = 2;
@@ -930,7 +933,7 @@
 			// label_List_MaxHP
 			// 
 			label_List_MaxHP.AutoSize = true;
-			label_List_MaxHP.Location = new Point(24, 47);
+			label_List_MaxHP.Location = new Point(24, 41);
 			label_List_MaxHP.Name = "label_List_MaxHP";
 			label_List_MaxHP.Size = new Size(218, 34);
 			label_List_MaxHP.TabIndex = 0;
@@ -956,9 +959,9 @@
 			groupBox_List_Characteristics.Controls.Add(label_List_Strength);
 			groupBox_List_Characteristics.Controls.Add(label_Char_Strength_Master);
 			groupBox_List_Characteristics.Controls.Add(numericUpDown_Char_Strength);
-			groupBox_List_Characteristics.Location = new Point(398, 694);
+			groupBox_List_Characteristics.Location = new Point(398, 611);
 			groupBox_List_Characteristics.Name = "groupBox_List_Characteristics";
-			groupBox_List_Characteristics.Size = new Size(405, 403);
+			groupBox_List_Characteristics.Size = new Size(405, 355);
 			groupBox_List_Characteristics.TabIndex = 15;
 			groupBox_List_Characteristics.TabStop = false;
 			groupBox_List_Characteristics.Text = "Характеристики";
@@ -967,7 +970,7 @@
 			// 
 			label_List_Charisma.AutoSize = true;
 			label_List_Charisma.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Charisma.Location = new Point(101, 342);
+			label_List_Charisma.Location = new Point(101, 301);
 			label_List_Charisma.Name = "label_List_Charisma";
 			label_List_Charisma.Size = new Size(122, 39);
 			label_List_Charisma.TabIndex = 35;
@@ -977,7 +980,7 @@
 			// 
 			label_Char_Charisma_Master.AutoSize = true;
 			label_Char_Charisma_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Charisma_Master.Location = new Point(40, 342);
+			label_Char_Charisma_Master.Location = new Point(40, 301);
 			label_Char_Charisma_Master.Name = "label_Char_Charisma_Master";
 			label_Char_Charisma_Master.Size = new Size(31, 39);
 			label_Char_Charisma_Master.TabIndex = 34;
@@ -999,7 +1002,7 @@
 			// 
 			label_List_Wisdom.AutoSize = true;
 			label_List_Wisdom.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Wisdom.Location = new Point(101, 285);
+			label_List_Wisdom.Location = new Point(101, 251);
 			label_List_Wisdom.Name = "label_List_Wisdom";
 			label_List_Wisdom.Size = new Size(141, 39);
 			label_List_Wisdom.TabIndex = 32;
@@ -1009,7 +1012,7 @@
 			// 
 			label_Char_Wisdom_Master.AutoSize = true;
 			label_Char_Wisdom_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Wisdom_Master.Location = new Point(40, 285);
+			label_Char_Wisdom_Master.Location = new Point(40, 251);
 			label_Char_Wisdom_Master.Name = "label_Char_Wisdom_Master";
 			label_Char_Wisdom_Master.Size = new Size(31, 39);
 			label_Char_Wisdom_Master.TabIndex = 31;
@@ -1031,7 +1034,7 @@
 			// 
 			label_List_Intelligence.AutoSize = true;
 			label_List_Intelligence.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Intelligence.Location = new Point(101, 223);
+			label_List_Intelligence.Location = new Point(101, 196);
 			label_List_Intelligence.Name = "label_List_Intelligence";
 			label_List_Intelligence.Size = new Size(158, 39);
 			label_List_Intelligence.TabIndex = 29;
@@ -1041,7 +1044,7 @@
 			// 
 			label_Char_Intelligence_Master.AutoSize = true;
 			label_Char_Intelligence_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Intelligence_Master.Location = new Point(40, 223);
+			label_Char_Intelligence_Master.Location = new Point(40, 196);
 			label_Char_Intelligence_Master.Name = "label_Char_Intelligence_Master";
 			label_Char_Intelligence_Master.Size = new Size(31, 39);
 			label_Char_Intelligence_Master.TabIndex = 28;
@@ -1063,7 +1066,7 @@
 			// 
 			label_List_Physique.AutoSize = true;
 			label_List_Physique.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Physique.Location = new Point(101, 163);
+			label_List_Physique.Location = new Point(101, 143);
 			label_List_Physique.Name = "label_List_Physique";
 			label_List_Physique.Size = new Size(196, 39);
 			label_List_Physique.TabIndex = 26;
@@ -1073,7 +1076,7 @@
 			// 
 			label_Char_Physique_Master.AutoSize = true;
 			label_Char_Physique_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Physique_Master.Location = new Point(40, 163);
+			label_Char_Physique_Master.Location = new Point(40, 143);
 			label_Char_Physique_Master.Name = "label_Char_Physique_Master";
 			label_Char_Physique_Master.Size = new Size(31, 39);
 			label_Char_Physique_Master.TabIndex = 25;
@@ -1095,7 +1098,7 @@
 			// 
 			label_List_Agility.AutoSize = true;
 			label_List_Agility.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Agility.Location = new Point(101, 103);
+			label_List_Agility.Location = new Point(101, 91);
 			label_List_Agility.Name = "label_List_Agility";
 			label_List_Agility.Size = new Size(133, 39);
 			label_List_Agility.TabIndex = 23;
@@ -1105,7 +1108,7 @@
 			// 
 			label_Char_Agility_Master.AutoSize = true;
 			label_Char_Agility_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Agility_Master.Location = new Point(40, 103);
+			label_Char_Agility_Master.Location = new Point(40, 91);
 			label_Char_Agility_Master.Name = "label_Char_Agility_Master";
 			label_Char_Agility_Master.Size = new Size(31, 39);
 			label_Char_Agility_Master.TabIndex = 22;
@@ -1127,7 +1130,7 @@
 			// 
 			label_List_Strength.AutoSize = true;
 			label_List_Strength.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_List_Strength.Location = new Point(101, 40);
+			label_List_Strength.Location = new Point(101, 35);
 			label_List_Strength.Name = "label_List_Strength";
 			label_List_Strength.Size = new Size(76, 39);
 			label_List_Strength.TabIndex = 20;
@@ -1137,7 +1140,7 @@
 			// 
 			label_Char_Strength_Master.AutoSize = true;
 			label_Char_Strength_Master.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			label_Char_Strength_Master.Location = new Point(40, 40);
+			label_Char_Strength_Master.Location = new Point(40, 35);
 			label_Char_Strength_Master.Name = "label_Char_Strength_Master";
 			label_Char_Strength_Master.Size = new Size(31, 39);
 			label_Char_Strength_Master.TabIndex = 19;
@@ -1159,7 +1162,7 @@
 			// 
 			label_List_Race.AutoSize = true;
 			label_List_Race.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_List_Race.Location = new Point(313, 83);
+			label_List_Race.Location = new Point(313, 73);
 			label_List_Race.Name = "label_List_Race";
 			label_List_Race.Size = new Size(179, 88);
 			label_List_Race.TabIndex = 5;
@@ -1177,9 +1180,9 @@
 			groupBox_Progression.Controls.Add(label_List_Exp);
 			groupBox_Progression.Controls.Add(numericUpDown_Char_Exp_Calculations);
 			groupBox_Progression.Controls.Add(label_List_Exp_Calculations);
-			groupBox_Progression.Location = new Point(19, 169);
+			groupBox_Progression.Location = new Point(19, 149);
 			groupBox_Progression.Name = "groupBox_Progression";
-			groupBox_Progression.Size = new Size(781, 235);
+			groupBox_Progression.Size = new Size(781, 207);
 			groupBox_Progression.TabIndex = 14;
 			groupBox_Progression.TabStop = false;
 			groupBox_Progression.Text = "Прогрессия";
@@ -1188,10 +1191,10 @@
 			// 
 			checkBox_Inspiration.AutoSize = true;
 			checkBox_Inspiration.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			checkBox_Inspiration.Location = new Point(30, 176);
+			checkBox_Inspiration.Location = new Point(30, 155);
 			checkBox_Inspiration.Name = "checkBox_Inspiration";
 			checkBox_Inspiration.RightToLeft = RightToLeft.No;
-			checkBox_Inspiration.Size = new Size(212, 48);
+			checkBox_Inspiration.Size = new Size(212, 42);
 			checkBox_Inspiration.TabIndex = 15;
 			checkBox_Inspiration.Text = "Вдохновение";
 			checkBox_Inspiration.UseVisualStyleBackColor = true;
@@ -1201,7 +1204,7 @@
 			// 
 			label_List_ProficiencyBonus.AutoSize = true;
 			label_List_ProficiencyBonus.Font = new Font("Monotype Corsiva", 20F, FontStyle.Italic);
-			label_List_ProficiencyBonus.Location = new Point(122, 68);
+			label_List_ProficiencyBonus.Location = new Point(122, 60);
 			label_List_ProficiencyBonus.Name = "label_List_ProficiencyBonus";
 			label_List_ProficiencyBonus.Size = new Size(301, 49);
 			label_List_ProficiencyBonus.TabIndex = 18;
@@ -1211,7 +1214,7 @@
 			// 
 			label_Char_ProficiencyBonus.AutoSize = true;
 			label_Char_ProficiencyBonus.Font = new Font("Monotype Corsiva", 20F, FontStyle.Italic);
-			label_Char_ProficiencyBonus.Location = new Point(40, 57);
+			label_Char_ProficiencyBonus.Location = new Point(40, 50);
 			label_Char_ProficiencyBonus.Name = "label_Char_ProficiencyBonus";
 			label_Char_ProficiencyBonus.Size = new Size(40, 49);
 			label_Char_ProficiencyBonus.TabIndex = 17;
@@ -1221,7 +1224,7 @@
 			// 
 			label_Char_Exp.AutoSize = true;
 			label_Char_Exp.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			label_Char_Exp.Location = new Point(438, 135);
+			label_Char_Exp.Location = new Point(438, 119);
 			label_Char_Exp.Name = "label_Char_Exp";
 			label_Char_Exp.Size = new Size(35, 44);
 			label_Char_Exp.TabIndex = 16;
@@ -1240,9 +1243,9 @@
 			// bt_Add_Exp
 			// 
 			bt_Add_Exp.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
-			bt_Add_Exp.Location = new Point(581, 187);
+			bt_Add_Exp.Location = new Point(581, 165);
 			bt_Add_Exp.Name = "bt_Add_Exp";
-			bt_Add_Exp.Size = new Size(156, 37);
+			bt_Add_Exp.Size = new Size(156, 33);
 			bt_Add_Exp.TabIndex = 15;
 			bt_Add_Exp.Text = "Добавить";
 			bt_Add_Exp.UseVisualStyleBackColor = true;
@@ -1252,7 +1255,7 @@
 			// 
 			label_List_Lavel.AutoSize = true;
 			label_List_Lavel.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_List_Lavel.Location = new Point(564, 65);
+			label_List_Lavel.Location = new Point(564, 57);
 			label_List_Lavel.Name = "label_List_Lavel";
 			label_List_Lavel.Size = new Size(131, 44);
 			label_List_Lavel.TabIndex = 10;
@@ -1262,7 +1265,7 @@
 			// 
 			label_List_Exp.AutoSize = true;
 			label_List_Exp.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_List_Exp.Location = new Point(528, 135);
+			label_List_Exp.Location = new Point(528, 119);
 			label_List_Exp.Name = "label_List_Exp";
 			label_List_Exp.Size = new Size(251, 44);
 			label_List_Exp.TabIndex = 14;
@@ -1282,7 +1285,7 @@
 			// 
 			label_List_Exp_Calculations.AutoSize = true;
 			label_List_Exp_Calculations.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
-			label_List_Exp_Calculations.Location = new Point(313, 191);
+			label_List_Exp_Calculations.Location = new Point(313, 168);
 			label_List_Exp_Calculations.Name = "label_List_Exp_Calculations";
 			label_List_Exp_Calculations.Size = new Size(98, 34);
 			label_List_Exp_Calculations.TabIndex = 11;
@@ -1292,7 +1295,7 @@
 			// 
 			label_Char_Race.AutoSize = true;
 			label_Char_Race.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_Char_Race.Location = new Point(313, 39);
+			label_Char_Race.Location = new Point(313, 34);
 			label_Char_Race.Name = "label_Char_Race";
 			label_Char_Race.Size = new Size(253, 44);
 			label_Char_Race.TabIndex = 4;
@@ -1302,7 +1305,7 @@
 			// 
 			label_List_Class.AutoSize = true;
 			label_List_Class.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			label_List_Class.Location = new Point(600, 83);
+			label_List_Class.Location = new Point(600, 73);
 			label_List_Class.Name = "label_List_Class";
 			label_List_Class.Size = new Size(179, 88);
 			label_List_Class.TabIndex = 3;
@@ -1312,7 +1315,7 @@
 			// 
 			label_Char_Class.AutoSize = true;
 			label_Char_Class.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
-			label_Char_Class.Location = new Point(600, 39);
+			label_Char_Class.Location = new Point(600, 34);
 			label_Char_Class.Name = "label_Char_Class";
 			label_Char_Class.Size = new Size(253, 44);
 			label_Char_Class.TabIndex = 2;
@@ -1322,7 +1325,7 @@
 			// 
 			label_List_Name.AutoSize = true;
 			label_List_Name.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_List_Name.Location = new Point(19, 83);
+			label_List_Name.Location = new Point(19, 73);
 			label_List_Name.Name = "label_List_Name";
 			label_List_Name.Size = new Size(232, 88);
 			label_List_Name.TabIndex = 1;
@@ -1332,7 +1335,7 @@
 			// 
 			label_Char_Name.AutoSize = true;
 			label_Char_Name.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic);
-			label_Char_Name.Location = new Point(22, 39);
+			label_Char_Name.Location = new Point(22, 34);
 			label_Char_Name.Name = "label_Char_Name";
 			label_Char_Name.Size = new Size(253, 44);
 			label_Char_Name.TabIndex = 0;
@@ -1347,27 +1350,48 @@
 			groupBox_List_itemBase.Controls.Add(comboBox_TypeItemForSearch);
 			groupBox_List_itemBase.Controls.Add(textBox_Name_ItemForSearch);
 			groupBox_List_itemBase.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
-			groupBox_List_itemBase.Location = new Point(0, 370);
+			groupBox_List_itemBase.Location = new Point(0, 326);
 			groupBox_List_itemBase.Name = "groupBox_List_itemBase";
-			groupBox_List_itemBase.Size = new Size(369, 1199);
+			groupBox_List_itemBase.Size = new Size(369, 1055);
 			groupBox_List_itemBase.TabIndex = 2;
 			groupBox_List_itemBase.TabStop = false;
 			groupBox_List_itemBase.Text = "База знаний предметов";
 			// 
 			// listView_DB_inventory
 			// 
-			listView_DB_inventory.Location = new Point(6, 113);
+			listView_DB_inventory.AllowColumnReorder = true;
+			listView_DB_inventory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			listView_DB_inventory.Columns.AddRange(new ColumnHeader[] { columnHeader_Item_ID, columnHeader_Item_Name, columnHeader_Item_TypeItem });
+			listView_DB_inventory.FullRowSelect = true;
+			listView_DB_inventory.GridLines = true;
+			listView_DB_inventory.Location = new Point(3, 31);
 			listView_DB_inventory.Name = "listView_DB_inventory";
-			listView_DB_inventory.Size = new Size(357, 1017);
+			listView_DB_inventory.Size = new Size(363, 964);
 			listView_DB_inventory.TabIndex = 5;
 			listView_DB_inventory.UseCompatibleStateImageBehavior = false;
+			listView_DB_inventory.View = View.Details;
+			// 
+			// columnHeader_Item_ID
+			// 
+			columnHeader_Item_ID.Text = "ID";
+			columnHeader_Item_ID.Width = 100;
+			// 
+			// columnHeader_Item_Name
+			// 
+			columnHeader_Item_Name.Text = "Name";
+			columnHeader_Item_Name.Width = 130;
+			// 
+			// columnHeader_Item_TypeItem
+			// 
+			columnHeader_Item_TypeItem.Text = "TypeItem";
+			columnHeader_Item_TypeItem.Width = 130;
 			// 
 			// button_Create_Item
 			// 
 			button_Create_Item.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			button_Create_Item.Location = new Point(6, 1136);
+			button_Create_Item.Location = new Point(6, 1000);
 			button_Create_Item.Name = "button_Create_Item";
-			button_Create_Item.Size = new Size(357, 45);
+			button_Create_Item.Size = new Size(357, 40);
 			button_Create_Item.TabIndex = 4;
 			button_Create_Item.Text = "Создать предмет";
 			button_Create_Item.UseVisualStyleBackColor = true;
@@ -1376,7 +1400,7 @@
 			// label_List_NameForSearch
 			// 
 			label_List_NameForSearch.AutoSize = true;
-			label_List_NameForSearch.Location = new Point(192, 31);
+			label_List_NameForSearch.Location = new Point(192, 27);
 			label_List_NameForSearch.Name = "label_List_NameForSearch";
 			label_List_NameForSearch.Size = new Size(114, 34);
 			label_List_NameForSearch.TabIndex = 3;
@@ -1385,7 +1409,7 @@
 			// label_list_TypeItem
 			// 
 			label_list_TypeItem.AutoSize = true;
-			label_list_TypeItem.Location = new Point(6, 28);
+			label_list_TypeItem.Location = new Point(6, 25);
 			label_list_TypeItem.Name = "label_list_TypeItem";
 			label_list_TypeItem.Size = new Size(175, 34);
 			label_list_TypeItem.TabIndex = 2;
@@ -1396,26 +1420,27 @@
 			comboBox_TypeItemForSearch.DropDownStyle = ComboBoxStyle.DropDownList;
 			comboBox_TypeItemForSearch.FormattingEnabled = true;
 			comboBox_TypeItemForSearch.Items.AddRange(new object[] { "Armor", "Weapon", "Item", "Coin" });
-			comboBox_TypeItemForSearch.Location = new Point(6, 65);
+			comboBox_TypeItemForSearch.Location = new Point(6, 57);
 			comboBox_TypeItemForSearch.Name = "comboBox_TypeItemForSearch";
 			comboBox_TypeItemForSearch.Size = new Size(168, 42);
 			comboBox_TypeItemForSearch.TabIndex = 1;
 			// 
 			// textBox_Name_ItemForSearch
 			// 
-			textBox_Name_ItemForSearch.Location = new Point(180, 65);
+			textBox_Name_ItemForSearch.Location = new Point(180, 57);
 			textBox_Name_ItemForSearch.Name = "textBox_Name_ItemForSearch";
 			textBox_Name_ItemForSearch.Size = new Size(183, 39);
 			textBox_Name_ItemForSearch.TabIndex = 0;
 			// 
 			// StartForms
 			// 
-			AutoScaleDimensions = new SizeF(10F, 25F);
+			AutoScaleDimensions = new SizeF(10F, 22F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(2515, 1569);
+			ClientSize = new Size(2515, 1381);
 			Controls.Add(groupBox_List_itemBase);
 			Controls.Add(groupBox_CharList);
 			Controls.Add(groupBox_Menu);
+			Font = new Font("Microsoft Sans Serif", 9F);
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			Icon = (Icon)resources.GetObject("$this.Icon");
 			Name = "StartForms";
@@ -1581,5 +1606,8 @@
 		private GroupBox groupBox_List_Item_Weapon;
 		private ListView listView_Char_inventory_item;
 		private ListView listView_Char_inventory_Weapon;
+		private ColumnHeader columnHeader_Item_ID;
+		private ColumnHeader columnHeader_Item_Name;
+		private ColumnHeader columnHeader_Item_TypeItem;
 	}
 }
