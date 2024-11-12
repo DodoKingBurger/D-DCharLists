@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Владение боевыми параметрами.
+	/// Владение тип боевой группы.
 	/// </summary>
 	public enum EnumWeaponsGroups
 	{

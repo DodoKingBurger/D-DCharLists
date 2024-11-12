@@ -1,4 +1,4 @@
-﻿using D_DCharList.Modules;
+﻿using D_DCharLists.Modules;
 using D_DCharLists;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace D_DCharList
+namespace D_DCharLists
 {
 	/// <summary>
 	/// Класс для инициализации приложения.

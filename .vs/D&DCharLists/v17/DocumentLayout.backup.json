@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\",
+  "WorkspaceRootPath": "E:\\Project DataBase\\D-DCharLists\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|c:\\users\\sarki\\source\\repos\\d-dcharlists\\screens\\screenmain\\startforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\startforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\itemsdatabase\\itemsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\applicationdb\\itemsdatabase\\itemsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,20 +33,45 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 341,
+          "DockedHeight": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StartForms.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAswKkAAABFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
+              "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T08:23:29.509Z",
+              "WhenOpened": "2024-11-12T06:41:40.504Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemWeapon.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:54:27.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemsDataBase.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
+              "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
+              "RelativeToolTip": "Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:33:21.151Z",
               "EditorCaption": ""
             },
             {
@@ -44,6 +81,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -59,57 +100,95 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemArmor.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:53:42.12Z",
+              "EditorCaption": ""
             }
           ]
         }
       ]
     },
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "ce4afa41-6aea-4154-8eb2-5d67e5ad291f",
+        "Id": "92c19a1c-d0a8-43c5-80b4-5dea2f4088e7",
         "Display": 0,
-        "X": 385,
-        "Y": 252,
-        "Width": 721,
-        "Height": 631,
+        "X": 1418,
+        "Y": 257,
+        "Width": 1087,
+        "Height": 927,
         "WindowState": 0
       },
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateItemForm.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
+              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs*",
+              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T05:20:23.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "f6be81fc-95c5-434e-ab0d-25aa4927f92d",
+        "Display": 0,
+        "X": 207,
+        "Y": 277,
+        "Width": 1087,
+        "Height": 926,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
+              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
+              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:49:01.562Z",
+              "WhenOpened": "2024-11-12T05:26:27.663Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StartForms.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.Designer.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\StartForms.Designer.cs",
-              "ToolTip": "C:\\Users\\sarki\\source\\repos\\D-DCharLists\\Screens\\ScreenMain\\StartForms.Designer.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\StartForms.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:47:33.226Z",
-              "EditorCaption": ""
             }
           ]
         }

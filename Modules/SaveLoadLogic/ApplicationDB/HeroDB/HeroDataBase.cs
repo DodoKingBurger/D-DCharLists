@@ -1,4 +1,4 @@
-﻿using D_DCharList.Modules;
+﻿using D_DCharLists.Modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;

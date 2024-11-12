@@ -1,7 +1,7 @@
 namespace D_DCharLists
 {
 	/// <summary>
-	/// Навыки связанные с броней.
+	/// Навыки связанные с броней / типы доспехов.
 	/// </summary>
 	public enum EnumArmorProficiencies
 	{
