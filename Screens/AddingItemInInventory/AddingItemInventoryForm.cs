@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using D_DCharLists;
+using D_DCharLists.Enums.DNDEnums;
 
 namespace D_DCharLists.Screens.AddingItemInInventory
 {
 	public partial class AddingItemInventoryForm : Form
 	{
-		public AddingItemInventoryForm()
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void comboBox_Item_TypeItem_Click(object sender, EventArgs e)
 		{
-			InitializeComponent();
+			ComboBox comboBox = (ComboBox)sender;
+			comboBox.DataSource = Enum.GetNames(typeof(EnumItems));
 		}
+	
+	
 	}
 }
