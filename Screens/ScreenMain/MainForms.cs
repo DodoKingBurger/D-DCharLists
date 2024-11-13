@@ -2,6 +2,7 @@ using D_DCharLists;
 using D_DCharLists.Modules;
 using D_DCharLists.Screens.CreateItem;
 using D_DCharLists.Screens.ScreenMain;
+using System.Reflection.PortableExecutable;
 using System.Windows.Forms;
 using static System.Windows.Forms.CheckedListBox;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -15,17 +16,17 @@ namespace D_DCharLists
 		/// <summary>
 		/// Ининициализатор.
 		/// </summary>
-		Initialize initialize;
+		private Initialize initialize;
 
 		/// <summary>
 		/// Форма для создания персонажа.
 		/// </summary>
-		CreateCharForm createChar;
+		private CreateCharForm createChar;
 
 		/// <summary>
 		/// Форма для создания предмета.
 		/// </summary>
-		CreateItemForm createItem;
+		private CreateItemForm createItem;
 
 		#endregion
 
@@ -41,6 +42,7 @@ namespace D_DCharLists
 			HeroDataBase.ShowHero += ShowHeroSheet;
 			initialize = new Initialize();
 			initialize.Start();
+			comboBox_TypeItemForSearch.Text = comboBox_TypeItemForSearch.Items[0].ToString();
 			ShowDBItems();
 		}
 
@@ -73,17 +75,6 @@ namespace D_DCharLists
 			createChar = new CreateCharForm();
 			createItem.Notify += ShowDBItems;
 			createChar.ShowDialog();
-		}
-
-		/// <summary>
-		/// Выводит окно создания пероснажа.
-		/// </summary>
-		/// <param name="sender">button_Create_Item.</param>
-		/// <param name="e">Click.</param>
-		private void button_Create_Item_Click(object sender, EventArgs e)
-		{
-			createItem = new CreateItemForm();
-			createItem.ShowDialog();
 		}
 
 		/// <summary>
@@ -131,6 +122,82 @@ namespace D_DCharLists
 			else
 				MessageBox.Show("Выберите или создайте персонажа!");
 		}
+
+		#region Методы работы с предметами
+
+		/// <summary>
+		/// Выводит окно создания пероснажа.
+		/// </summary>
+		/// <param name="sender">button_Create_Item.</param>
+		/// <param name="e">Click.</param>
+		private void button_Create_Item_Click(object sender, EventArgs e)
+		{
+			createItem = new CreateItemForm();
+			createItem.ShowDialog();
+		}
+
+		/// <summary>
+		/// Добавляет по ID предмет в инвентарь.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void button_Char_Add_Item_Click(object sender, EventArgs e)
+		{
+			int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
+			if (IDitem > 0 &&
+				ItemsDataBase.ItemsDB.ContainsKey(IDitem))
+			{
+				if (CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
+				{
+					CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem);
+				}
+				else
+				{
+					CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.Add(IDitem, 1);
+				}
+				PrintHeroInventory();
+			}
+			else
+				MessageBox.Show("Педмет не найден!");
+		}
+
+		/// <summary>
+		/// Удаляет предмет.
+		/// </summary>
+		/// <param name="sender">button_Inventary_Item_Remove.</param>
+		/// <param name="e">Click.</param>
+		private void button_Inventary_Item_Remove_Click(object sender, EventArgs e)
+		{
+			int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
+			if (IDitem > 0 && ItemsDataBase.ItemsDB.ContainsKey(IDitem) &&
+				CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
+			{
+				if (CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.TryGetValue(IDitem, out int CountItem) &&
+				CountItem-- > 0)
+				{
+					CurrentHeroSheet.HeroSheet.SheetInventory.DecreaseItem(IDitem);
+				}
+				else
+				{
+					CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.Remove(IDitem);
+				}
+				PrintHeroInventory();
+			}
+			else
+				MessageBox.Show("Педмет не найден!");
+		}
+
+		/// <summary>
+		/// Пойсковик предметов
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void Search_DBItem(object sender, EventArgs e)
+		{
+			ShowDBItems();
+		}
+
+		#endregion
 
 		#region Методы связанные с изменениями параметровов персонажа
 
@@ -229,6 +296,33 @@ namespace D_DCharLists
 				}
 			}
 			ShowHeroSheet();
+		}
+
+		/// <summary>
+		/// Событие на изменения статуса у checkedBox входящего в checkedListBox_Char_SkillsPossession
+		/// </summary>
+		/// <param name="sender">checkedListBox_Char_SkillsPossession.</param>
+		/// <param name="e">SelectedItem.</param>
+		private void checkedListBox_Char_SkillsPossession_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			CheckedListBox checkedListBox = (CheckedListBox)sender;
+			//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
+			if (Enum.TryParse<EnumAllProficiencies>(checkedListBox.SelectedItem.ToString(), out EnumAllProficiencies skill))
+			{
+				if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+				{
+					CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(skill);
+				}
+				else
+				{
+					CurrentHeroSheet.HeroSheet.SheetProficiencies.RemoveProficiency(skill);
+				}
+				ShowHeroSheet();
+			}
+			else
+			{
+				MessageBox.Show("Неизвестный навык владения!");
+			}
 		}
 
 		#endregion
@@ -386,17 +480,18 @@ namespace D_DCharLists
 			{
 				if (CurrentHeroSheet.HeroSheet != null)
 				{
-					PrintInfoHero();
-					PrintProgression();
-					PrintCombatAbilities();
-					PrintHitDace();
-					PrintDeathDice();
-					PrintPersonality();
-					PrintCheckSkills();
-					PrintCharacteristics();
-					PrintAbilityModificator();
-					//Навыки владения
-					//Атаки и заклинания
+					PrintHeroInfo();
+					PrintHeroProgression();
+					PrintHeroCombatAbilities();
+					PrintHeroHitDace();
+					PrintHeroDeathDice();
+					PrintHeroPersonality();
+					PrintHeroCheckSkills();
+					PrintHeroCharacteristics();
+					PrintHeroAbilityModificator();
+					PrintHeroSkillsPossession();
+					PrintHeroSpell();
+					PrintHeroInventory();
 				}
 				else
 				{
@@ -412,7 +507,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит общую информацию о персонаже.
 		/// </summary>
-		private void PrintInfoHero()
+		private void PrintHeroInfo()
 		{
 			if (CurrentHeroSheet.HeroSheet != null)
 			{
@@ -429,7 +524,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит информацию о прогрессии текущего персонажа.
 		/// </summary>
-		private void PrintProgression()
+		private void PrintHeroProgression()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetProgression != null)
 			{
@@ -445,7 +540,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит боевые характеристики текущего персонажа.
 		/// </summary>
-		private void PrintCombatAbilities()
+		private void PrintHeroCombatAbilities()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats.Count != 0)
 			{
@@ -463,7 +558,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит информацию о кости хитов. 
 		/// </summary>
-		private void PrintHitDace()
+		private void PrintHeroHitDace()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetClass != null)
 			{
@@ -477,7 +572,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит информацию о спасбросках. 
 		/// </summary>
-		private void PrintDeathDice()
+		private void PrintHeroDeathDice()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetCombatAbilities.CombatStats.Count != 0)
 			{
@@ -491,7 +586,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит личные качества текущего персонажа.
 		/// </summary>
-		private void PrintPersonality()
+		private void PrintHeroPersonality()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList.Count != 0)
 			{
@@ -512,7 +607,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит умения текущего персонажа.
 		/// </summary>
-		private void PrintCheckSkills()
+		private void PrintHeroCheckSkills()
 		{
 			for (int i = 0; i < checkedListBox_Skills.Items.Count; i++)
 			{
@@ -537,7 +632,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит характеристики текущего персонажа на UI.
 		/// </summary>
-		private void PrintCharacteristics()
+		private void PrintHeroCharacteristics()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.Count != 0)
 			{
@@ -555,7 +650,7 @@ namespace D_DCharLists
 		/// <summary>
 		/// Выводит модификаторы текущего персонажа.
 		/// </summary>
-		private void PrintAbilityModificator()
+		private void PrintHeroAbilityModificator()
 		{
 			if (CurrentHeroSheet.HeroSheet.SheetAbilities.Abilities.Count != 0)
 			{
@@ -571,30 +666,193 @@ namespace D_DCharLists
 		}
 
 		/// <summary>
-		/// Выводит инвентарь перснонажа.
+		/// Заполняет список навыками владения загруженного персонажа.
 		/// </summary>
-		public void ShowHeroInventory()
+		private void PrintHeroSkillsPossession()
 		{
-
+			for (int i = 0; i < checkedListBox_Char_SkillsPossession.Items.Count; i++)
+			{
+				checkedListBox_Char_SkillsPossession.SetItemChecked(i, false);
+			}
+			checkedListBox_Char_SkillsPossession.DataSource = Enum.GetNames(typeof(EnumAllProficiencies));
+			for (int i = 0; i < checkedListBox_Char_SkillsPossession.Items.Count; i++)
+			{
+				if (Enum.TryParse<EnumAllProficiencies>(checkedListBox_Char_SkillsPossession.Items[i].ToString(), out EnumAllProficiencies skill) &&
+					CurrentHeroSheet.HeroSheet.SheetProficiencies.CheckProficiency(skill))
+				{
+					checkedListBox_Char_SkillsPossession.SetItemChecked(i, true);
+				}
+			}
 		}
 
+		/// <summary>
+		/// Выводит инвентарь перснонажа.
+		/// </summary>
+		private void PrintHeroInventory()
+		{
+			listView_Char_inventory_Weapon.Items.Clear();
+			listView_Char_inventory_Armor.Items.Clear();
+			listView_Char_inventory_item.Items.Clear();
+			foreach (var item in CurrentHeroSheet.HeroSheet.SheetInventory.Inventory)
+			{
+				string[] row;
+				if (ItemsDataBase.ItemsDB.ContainsKey(item.Key) && ItemsDataBase.ItemsDB.TryGetValue(item.Key, out ItemBase Item))
+				{
+					if (EnumItemTypes.Weapon.Equals(Item.ItemType))
+					{
+						ItemWeapon weapon = (ItemWeapon)Item;
+						row = new string[]
+						{
+							weapon.Name,
+							Enum.GetName(weapon.Rarity),
+							weapon.DamageType.ToString(),
+							weapon.DamageDiceCount.ToString() + Enum.GetName(weapon.DamageDiceValue)
+							+ "+" + weapon.DamageModificator.ToString(),
+							weapon.BaseCost.ToString(),
+							weapon.IsMagic.ToString()
+						};
+						listView_Char_inventory_Weapon.Items.Add(new ListViewItem(row));
+					}
+					if (EnumItemTypes.Armor.Equals(Item.ItemType))
+					{
+						ItemArmor armor = (ItemArmor)Item;
+						row = new string[]
+						{
+							armor.Name,
+							Enum.GetName(armor.Rarity),
+							Enum.GetName(armor.ArmorType),
+							armor.ArmorClass.ToString(),
+							armor.StrengthRequirement.ToString(),
+							armor.MaxAgilityBonus.ToString(),
+							armor.BaseCost.ToString(),
+							armor.IsMagic.ToString()
+						};
+						listView_Char_inventory_Armor.Items.Add(new ListViewItem(row));
+					}
+					if (EnumItemTypes.Item.Equals(Item.ItemType))
+					{
+						ItemRegular regular = (ItemRegular)Item;
+						row = new string[]
+						{
+							regular.Name,
+							Enum.GetName(regular.Rarity),
+							regular.BaseCost.ToString(),
+							regular.IsMagic.ToString()
+						};
+						listView_Char_inventory_item.Items.Add(new ListViewItem(row));
+					}
+				}
+				else
+				{
+					MessageBox.Show("В инвенторе найден не существующий предмет, он будет удален");
+					CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.Remove(item.Key);
+				}
+			}
+		}
 
 		/// <summary>
 		/// Выводит базу данных предметов.
 		/// </summary>
-		public void ShowDBItems()
+		private void ShowDBItems()
+		{
+			List<ItemBase> list = new List<ItemBase>();
+			if(comboBox_TypeItemForSearch.Text != "All" || textBox_Name_ItemForSearch.Text.Length>0)
+			{
+				if (Enum.TryParse<EnumItemTypes>(comboBox_TypeItemForSearch.Text, out EnumItemTypes type1) && textBox_Name_ItemForSearch.Text.Length > 0)
+				{
+					list = ItemsDataBase.ItemsDB.Values.Where((row) =>
+					row.ItemType == type1 &&
+					row.Name.ToLower().Contains((textBox_Name_ItemForSearch.Text).ToLower()))
+						.ToList();
+				}
+				else if (Enum.TryParse<EnumItemTypes>(comboBox_TypeItemForSearch.Text, out EnumItemTypes type2))
+				{
+					list = ItemsDataBase.ItemsDB.Values.Where((row) =>
+						row.ItemType == type1)
+							.ToList();
+				}
+				else if (textBox_Name_ItemForSearch.Text.Length > 0)
+				{
+					list = ItemsDataBase.ItemsDB.Values.Where((row) =>
+						row.Name.ToLower().Contains((textBox_Name_ItemForSearch.Text).ToLower()))
+							.ToList();
+				}
+				PrintDBItems(list);
+			}
+			else
+			{
+				list = ItemsDataBase.ItemsDB.Values.ToList();
+				PrintDBItems(list);
+			}
+		}
+
+		/// <summary>
+		/// Выводит переданный список предметов.
+		/// </summary>
+		/// <param name="items">Списиок предметов.</param>
+		private void PrintDBItems(List<ItemBase> items)
 		{
 			listView_DB_inventory.Items.Clear();
 			listView_DB_inventory.Items.Add(new ListViewItem(""));
-			foreach (ItemBase item in ItemsDataBase.ItemsDB.Values) 
+			foreach (ItemBase item in items)
 			{
-				string[] row = 
+				string[] row =
 				{
 					item.ItemId.ToString(),
 					item.Name.ToString(),
 					item.ItemType.ToString()
 				};
 				listView_DB_inventory.Items.Add(new ListViewItem(row));
+			}
+		}
+
+		/// <summary>
+		/// Выводит список атак и заклинаний.
+		/// </summary>
+		/// <exception cref="ArgumentException"></exception>
+		private void PrintHeroSpell()
+		{
+			listView_Char_AttacksAndSpells.Clear();
+			listView_Char_AttacksAndSpells.Items.Add(new ListViewItem(""));
+			string[] row;
+			try
+			{
+				foreach (var spellID in CurrentHeroSheet.HeroSheet.SheetSpells.SheetSpells.Keys)
+				{
+					if (SpellsDataBase.SpellsDB.ContainsKey(spellID))
+					{
+						if (SpellsDataBase.SpellsDB.TryGetValue(spellID, out SpellBase spell))
+						{
+							int BonusAtack;
+							if (Enum.TryParse<EnumAbilities>(spell.FromСharacteristic, out EnumAbilities abiliti))
+								BonusAtack = CurrentHeroSheet.HeroSheet.SheetAbilities.GetAbilityModificator(abiliti);
+							else
+								BonusAtack = 0;
+							if (spell.UseMasterBonus)
+								BonusAtack += CurrentHeroSheet.HeroSheet.SheetProgression.GetProficiencyBonus();
+							row =
+							[
+								spell.Id.ToString(),
+								spell.Name,
+								$"{spell.AdditionalModifiers + BonusAtack}",
+								spell.DamageType
+							];
+							listView_Char_AttacksAndSpells.Items.Add(new ListViewItem(row));
+						}
+						else
+						{
+							throw new ArgumentException("С заклинанием что то не так!");
+						}
+					}
+					else
+					{
+						throw new ArgumentException("Такого заклинание еще нету в БД");
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -610,5 +868,6 @@ namespace D_DCharLists
 		}
 
 		#endregion
+
 	}
 }

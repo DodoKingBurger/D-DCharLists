@@ -66,7 +66,7 @@ namespace D_DCharLists
 		/// </summary>
 		public void SetItemId()
 		{
-			ItemId = RollRandom.LetsRoll.Next(1000, 10000);
+			ItemId = RollRandom.LetsRoll.Next(1, 10000);
 		}
 
 		/// <summary>

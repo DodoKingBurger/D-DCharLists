@@ -19,6 +19,19 @@ namespace D_DCharLists
 			}
 		}
 
+		public override void AddItem(int item, int HowMany)
+		{
+			if (Inventory.ContainsKey(item))
+			{
+				Inventory[item]+= HowMany;
+			}
+			else
+			{
+				Inventory[item] = 1;
+			}
+		}
+
+
 		public override void DecreaseItem(int item)
 		{
 			if (Inventory.ContainsKey(item))

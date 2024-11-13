@@ -68,6 +68,8 @@ namespace D_DCharLists.Screens.CreateItem
 					WeaponProperty = WeaponPropertyList
 				};
 				item.SetItemId();
+				while (ItemsDataBase.ItemsDB.ContainsKey(item.ItemId))
+					item.SetItemId();
 				ItemsDataBase.AddItem(item);
 				Notify();
 			}

@@ -27,7 +27,8 @@ namespace D_DCharLists
   {
     #region Базовый класс
 
-    static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter() };
+    static JsonSerializerSettings SpecifiedSubclassConversion = new JsonSerializerSettings() { ContractResolver = new SpellsSpecifiedConcreteClassConverter(),
+			NullValueHandling = NullValueHandling.Ignore};
 
     public override bool CanConvert(Type objectType)
     {

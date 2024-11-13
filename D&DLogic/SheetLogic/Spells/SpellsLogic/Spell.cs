@@ -7,9 +7,13 @@ namespace D_DCharLists
 	{
 		public Spell()
 		{
-			Name = string.Empty;
-			Level = 0;
-			Id = 1001;
+			this.Name = string.Empty;
+			this.Level = 0;
+			this.Id = 1001;
+			this.FromСharacteristic = " ";
+			this.UseMasterBonus = false;
+			this.DamageType = "";
+			this.AdditionalModifiers = 0;
 		}
 	}
 }

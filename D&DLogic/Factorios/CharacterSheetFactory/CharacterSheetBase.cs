@@ -26,7 +26,7 @@ namespace D_DCharLists
 		public SheetClassBase SheetClass { get; set; }
 
 		/// <summary>
-		/// Способности.
+		/// Характеристик.
 		/// </summary>
 		public SheetAbilities SheetAbilities { get; set; }
 

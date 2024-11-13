@@ -25,7 +25,14 @@ namespace D_DCharLists
 		/// </summary>
 		/// <param name="item">ID предмета.</param>
 		public abstract void AddItem(int item);
-		
+
+		/// <summary>
+		/// Добавить предметов несколько штук .
+		/// </summary>
+		/// <param name="item">ID предмета.</param>
+		/// <param name="HowMany">Сколько предметов.</param>
+		public abstract void AddItem(int item, int HowMany);
+
 		/// <summary>
 		/// Удалить предмет.
 		/// </summary>

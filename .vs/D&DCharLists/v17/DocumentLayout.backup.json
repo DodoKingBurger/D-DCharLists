@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "E:\\Project DataBase\\D-DCharLists\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\spells\\spellslogic\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\spells\\spellslogic\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\modules\\saveloadlogic\\spellsconvertorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\spellsconvertorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\spells\\spellslogic\\spellbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\spells\\spellslogic\\spellbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\itemsdatabase\\itemsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\applicationdb\\itemsdatabase\\itemsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:d\u0026dlogic\\sheetlogic\\inventory\\iteamlogic\\itemarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,147 +86,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddingItemInventoryForm.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA6AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SpellsConvertorJson.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\SpellsConvertorJson.cs",
+              "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\SpellsConvertorJson.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\SpellsConvertorJson.cs",
+              "RelativeToolTip": "Modules\\SaveLoadLogic\\SpellsConvertorJson.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADgvycAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:22:31.198Z",
+              "WhenOpened": "2024-11-13T11:37:52.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "Spell.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\Spell.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\Spell.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\Spell.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\Spell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T08:59:49.811Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-11-13T11:25:32.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "AddingItemInventoryForm.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:09:06.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainForms.cs",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
               "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs",
-              "ViewState": "AgIAABwCAAAAAAAAAAAAwEMCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAlwO0BAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:28:57.551Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemWeapon.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
-              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
-              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T03:54:27.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ItemsDataBase.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
-              "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
-              "RelativeToolTip": "Modules\\SaveLoadLogic\\ApplicationDB\\ItemsDataBase\\ItemsDataBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T03:33:21.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ItemArmor.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
-              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
-              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Inventory\\IteamLogic\\ItemArmor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T03:53:42.12Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "92c19a1c-d0a8-43c5-80b4-5dea2f4088e7",
-        "Display": 0,
-        "X": 1418,
-        "Y": 257,
-        "Width": 1087,
-        "Height": 927,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateItemForm.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
-              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
-              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T05:20:23.565Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "f6be81fc-95c5-434e-ab0d-25aa4927f92d",
-        "Display": 0,
-        "X": 207,
-        "Y": 277,
-        "Width": 1087,
-        "Height": 926,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
-              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T05:26:27.663Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]
         }
@@ -238,10 +146,56 @@
       "FloatingWindowState": {
         "Id": "b186b199-ba67-4c23-af0e-edc4ab90e0d2",
         "Display": 0,
-        "X": 463,
-        "Y": 317,
-        "Width": 695,
-        "Height": 913,
+        "X": 791,
+        "Y": 19,
+        "Width": 1291,
+        "Height": 705,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainForms.Designer.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.Designer.cs",
+              "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.Designer.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.Designer.cs",
+              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.Designer.cs",
+              "ViewState": "AgIAAB4GAAAAAAAAAAAkwDkGAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T05:04:59.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
+              "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T05:05:07.729Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5376cb7a-ec2b-45be-8118-7522f551465e",
+        "Display": 0,
+        "X": 132,
+        "Y": 489,
+        "Width": 681,
+        "Height": 1197,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -252,13 +206,60 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
-              "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "DNDSpellsDB.json",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Data\\DND\\DataBases\\DNDSpellsDB.json",
+              "RelativeDocumentMoniker": "Data\\DND\\DataBases\\DNDSpellsDB.json",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Data\\DND\\DataBases\\DNDSpellsDB.json",
+              "RelativeToolTip": "Data\\DND\\DataBases\\DNDSpellsDB.json",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T11:21:19.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpellBase.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\SpellBase.cs",
+              "RelativeDocumentMoniker": "D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\SpellBase.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\SpellBase.cs",
+              "RelativeToolTip": "D\u0026DLogic\\SheetLogic\\Spells\\SpellsLogic\\SpellBase.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:41:40.504Z",
+              "WhenOpened": "2024-11-13T10:47:26.85Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "97dd2279-9b0c-444e-a9a1-9b11a1743167",
+        "Display": 0,
+        "X": 687,
+        "Y": 116,
+        "Width": 681,
+        "Height": 1197,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:08:54.378Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]

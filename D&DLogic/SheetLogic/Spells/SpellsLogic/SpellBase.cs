@@ -32,15 +32,49 @@ namespace D_DCharLists
 		[JsonProperty("Id")]
 		public int Id { get { return this.id; } protected set { this.id = value; } }
 
-    #endregion
+		private string? fromСharacteristic;
 
-    #region Методы
+		/// <summary>
+		/// От какой характеристики заклинание зависит, если пустое, то без характеристки.
+		/// </summary>
+		[JsonProperty("FromСharacteristic")]
+		public string? FromСharacteristic { get { return this.fromСharacteristic; } 
+			protected set 
+			{
+				if (!string.IsNullOrEmpty(value))
+					this.fromСharacteristic = " ";
+				else
+					this.fromСharacteristic = $"{value}";
+			} 
+		}
 
-    /// <summary>
-    /// Установить названия заклинания.
-    /// </summary>
-    /// <param name="name">Новое названия.</param>
-    public void SetName(string name)
+		/// <summary>
+		/// Влияет ли на заклинание бонус владения.
+		/// </summary>
+		[JsonProperty("UseMasterBonus")]
+		public bool UseMasterBonus { get; protected set; }
+
+		/// <summary>
+		/// Вид/урон заклинание.
+		/// </summary>
+		[JsonProperty("DamageType")]
+		public string? DamageType { get; protected set; }
+
+		/// <summary>
+		/// Дополнительный модификатор.
+		/// </summary>
+		[JsonProperty("AdditionalModifiers")]
+		public int AdditionalModifiers { get; protected set; }
+
+		#endregion
+
+		#region Методы
+
+		/// <summary>
+		/// Установить названия заклинания.
+		/// </summary>
+		/// <param name="name">Новое названия.</param>
+		public void SetName(string name)
 		{
 			this.name = name;
 		}
@@ -59,7 +93,7 @@ namespace D_DCharLists
 		/// </summary>
 		public void SetID()
 		{
-			this.id = RollRandom.LetsRoll.Next(1000, 10000);
+			this.id = RollRandom.LetsRoll.Next(1, 10000);
 		}
 
 		#endregion
