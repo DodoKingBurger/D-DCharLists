@@ -30,7 +30,7 @@ namespace D_DCharLists
       }
       else
       {
-        throw new ArgumentException("Неизвестное заклинание");
+        throw new ArgumentException("Уже известное заклинание!");
       }
     }
 
@@ -47,7 +47,7 @@ namespace D_DCharLists
       }
       else
       {
-        throw new ArgumentException("Попытка удалении несуществующего заклинания.");
+        throw new ArgumentException("Попытка удалении заклинания которого не знает персонаж.");
       }
     }
 

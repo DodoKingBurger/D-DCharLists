@@ -15,14 +15,14 @@ namespace D_DCharLists
 		/// Названия заклинания.
 		/// </summary>
 		[JsonProperty("Name")]
-		public string Name { get { return this.name; } protected set { this.name = value; } }
+		public string Name { get { return this.name; }  set { this.name = value; } }
 
 		private int level;
 		/// <summary>
 		/// Уровень заклинания.
 		/// </summary>
 		[JsonProperty("Level")]
-		public int Level { get { return this.level; } protected set { this.level = value; } }
+		public int Level { get { return this.level; }  set { this.level = value; } }
 
 		private int id;
 
@@ -30,7 +30,7 @@ namespace D_DCharLists
 		/// ID заклинания.
 		/// </summary>
 		[JsonProperty("Id")]
-		public int Id { get { return this.id; } protected set { this.id = value; } }
+		public int Id { get { return this.id; }  set { this.id = value; } }
 
 		private string? fromСharacteristic;
 
@@ -39,7 +39,7 @@ namespace D_DCharLists
 		/// </summary>
 		[JsonProperty("FromСharacteristic")]
 		public string? FromСharacteristic { get { return this.fromСharacteristic; } 
-			protected set 
+			 set 
 			{
 				if (!string.IsNullOrEmpty(value))
 					this.fromСharacteristic = " ";
@@ -52,19 +52,19 @@ namespace D_DCharLists
 		/// Влияет ли на заклинание бонус владения.
 		/// </summary>
 		[JsonProperty("UseMasterBonus")]
-		public bool UseMasterBonus { get; protected set; }
+		public bool UseMasterBonus { get;  set; }
 
 		/// <summary>
 		/// Вид/урон заклинание.
 		/// </summary>
 		[JsonProperty("DamageType")]
-		public string? DamageType { get; protected set; }
+		public string? DamageType { get;  set; }
 
 		/// <summary>
 		/// Дополнительный модификатор.
 		/// </summary>
 		[JsonProperty("AdditionalModifiers")]
-		public int AdditionalModifiers { get; protected set; }
+		public int AdditionalModifiers { get;  set; }
 
 		#endregion
 

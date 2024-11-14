@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "E:\\Project DataBase\\D-DCharLists\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -66,13 +74,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddingSpellDBForm.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "RelativeToolTip": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:23:57.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainForms.cs",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
               "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAEwDEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:28:57.551Z",
               "EditorCaption": ""
@@ -87,8 +108,8 @@
       "FloatingWindowState": {
         "Id": "b186b199-ba67-4c23-af0e-edc4ab90e0d2",
         "Display": 0,
-        "X": -409,
-        "Y": 253,
+        "X": -185,
+        "Y": 129,
         "Width": 1291,
         "Height": 705,
         "WindowState": 0
@@ -100,7 +121,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
@@ -112,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainForms.Designer.cs",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.Designer.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.Designer.cs",
@@ -146,16 +167,49 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DNDSpellsDB.json",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Data\\DND\\DataBases\\DNDSpellsDB.json",
               "RelativeDocumentMoniker": "Data\\DND\\DataBases\\DNDSpellsDB.json",
               "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Data\\DND\\DataBases\\DNDSpellsDB.json",
               "RelativeToolTip": "Data\\DND\\DataBases\\DNDSpellsDB.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-14T04:05:04.808Z",
               "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5c4c5a1d-5109-47e0-a1e5-34d6fe3f2911",
+        "Display": 0,
+        "X": 329,
+        "Y": 232,
+        "Width": 853,
+        "Height": 910,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:53:04.998Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]
         }

@@ -1,8 +1,10 @@
 using D_DCharLists;
 using D_DCharLists.Modules;
+using D_DCharLists.Screens;
 using D_DCharLists.Screens.AddingItemInInventory;
 using D_DCharLists.Screens.CreateItem;
 using D_DCharLists.Screens.ScreenMain;
+using System.Linq;
 using System.Reflection.PortableExecutable;
 using System.Windows.Forms;
 using static System.Windows.Forms.CheckedListBox;
@@ -10,6 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace D_DCharLists
 {
+	/// <summary>
+	/// Главный экран.
+	/// </summary>
 	public partial class StartForms : Form
 	{
 		#region Поля и свойства
@@ -34,12 +39,17 @@ namespace D_DCharLists
 		/// </summary>
 		private AddingItemInventoryForm addingItem;
 
+		/// <summary>
+		/// Форма для создания заклинаний.
+		/// </summary>
+		private AddingSpellDBForm addingSpellDB;
+		
 		#endregion
 
 		#region Методы
 
 		/// <summary>
-		/// Момент загрузки формы.
+		/// Момент загрузки главной формы.
 		/// </summary>
 		/// <param name="sender">Форма.</param>
 		/// <param name="e">Событие загрузки.</param>
@@ -48,13 +58,15 @@ namespace D_DCharLists
 			HeroDataBase.ShowHero += ShowHeroSheet;
 			initialize = new Initialize();
 			addingItem = new AddingItemInventoryForm();
+			addingSpellDB = new AddingSpellDBForm();
 			initialize.Start();
 			comboBox_TypeItemForSearch.SelectedIndex = 0;
 			ShowDBItems();
+			PrintDBSpell(SpellsDataBase.SpellsDB.Values.ToList());
 		}
 
 		/// <summary>
-		/// Призавершении главной формы.
+		/// Момент закрытие главной формы.
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -64,6 +76,8 @@ namespace D_DCharLists
 			{
 				if (CurrentHeroSheet.HeroSheet != null && !string.IsNullOrEmpty(CurrentHeroSheet.HeroSheet.Name))
 					CurrentHeroSheet.SaveSheet();
+				ItemsDataBase.SaveDB();
+				SpellsDataBase.SaveDB();
 				addingItem.Close();
 				e.Cancel = false;
 			}
@@ -131,8 +145,6 @@ namespace D_DCharLists
 				MessageBox.Show("Выберите или создайте персонажа!");
 		}
 
-		#region Методы работы с предметами
-
 		/// <summary>
 		/// Выводит окно создания пероснажа.
 		/// </summary>
@@ -144,6 +156,88 @@ namespace D_DCharLists
 			createItem.ShowDialog();
 		}
 
+		#region Методы работы с заклинаниями
+
+		/// <summary>
+		/// Добавляет заклинание в список заклинаний пероснажа.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void button_Char_Add_AttacksAndSpells_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				if (CurrentHeroSheet.HeroSheet.SheetSpells != null)
+				{
+					int IDSpell = (int)numericUpDown_Spell_ID.Value;
+					if (SpellsDataBase.SpellsDB.ContainsKey(IDSpell))
+					{
+						CurrentHeroSheet.HeroSheet.SheetSpells.AddSpell(IDSpell);
+					}
+					else
+						throw new Exception("неизвестное заклинание!");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Удаление заклинания
+		/// </summary>
+		/// <param name="sender"> button_Remove_Spell.</param>
+		/// <param name="e">Click</param>
+		private void button_Remove_Spell_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				if (CurrentHeroSheet.HeroSheet.SheetSpells != null)
+				{
+					int IDSpell = (int)numericUpDown_Spell_ID.Value;
+					if (SpellsDataBase.SpellsDB.ContainsKey(IDSpell) && 
+						CurrentHeroSheet.HeroSheet.SheetSpells.SheetSpells.ContainsKey(IDSpell))
+					{
+						CurrentHeroSheet.HeroSheet.SheetSpells.RemoveSpell(IDSpell);
+					}
+					else
+						throw new Exception("неизвестное заклинание!");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Пойсковик для базы данных заклинаний
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void textBox_Name_Spell_TextChanged(object sender, EventArgs e)
+		{
+			List<SpellBase> list = SpellsDataBase.SpellsDB.Values.Where((row) =>
+			row.Name.ToLower().Contains(textBox_Name_Spell.Text.ToLower())).ToList();
+			PrintDBSpell(list);
+		}
+
+		/// <summary>
+		/// Вызов окна где создаються заклинания для базы данных.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void button_Create_Spell_Click(object sender, EventArgs e)
+		{
+			addingSpellDB.OnReloadSpellDB += PrintDBSpell;
+			addingSpellDB.Show();
+		}
+
+		#endregion
+
+		#region Методы работы с предметами
+
 		/// <summary>
 		/// Добавляет по ID предмет в инвентарь.
 		/// </summary>
@@ -151,22 +245,25 @@ namespace D_DCharLists
 		/// <param name="e"></param>
 		private void button_Char_Add_Item_Click(object sender, EventArgs e)
 		{
-			int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
-			if (IDitem > 0 &&
-				ItemsDataBase.ItemsDB.ContainsKey(IDitem))
+			try
 			{
-				if (CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
+				int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
+				if (CurrentHeroSheet.HeroSheet.SheetInventory != null)
 				{
-					CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem);
+					if (IDitem > 0 &&
+						ItemsDataBase.ItemsDB.ContainsKey(IDitem))
+					{
+						CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem);
+						PrintHeroInventory();
+					}
+					else
+						MessageBox.Show("Педмет не найден!");
 				}
-				else
-				{
-					CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.Add(IDitem, 1);
-				}
-				PrintHeroInventory();
 			}
-			else
-				MessageBox.Show("Педмет не найден!");
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}	
 		}
 
 		/// <summary>
@@ -176,23 +273,25 @@ namespace D_DCharLists
 		/// <param name="e">Click.</param>
 		private void button_Inventary_Item_Remove_Click(object sender, EventArgs e)
 		{
-			int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
-			if (IDitem > 0 && ItemsDataBase.ItemsDB.ContainsKey(IDitem) &&
-				CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
+			try
 			{
-				if (CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.TryGetValue(IDitem, out int CountItem) &&
-				CountItem-- > 0)
+				int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
+				if (CurrentHeroSheet.HeroSheet.SheetInventory != null)
 				{
-					CurrentHeroSheet.HeroSheet.SheetInventory.DecreaseItem(IDitem);
+					if (IDitem > 0 && ItemsDataBase.ItemsDB.ContainsKey(IDitem) &&
+				CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
+					{
+						CurrentHeroSheet.HeroSheet.SheetInventory.DecreaseItem(IDitem);
+						PrintHeroInventory();
+					}
+					else
+						MessageBox.Show("Педмет не найден!");
 				}
-				else
-				{
-					CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.Remove(IDitem);
-				}
-				PrintHeroInventory();
 			}
-			else
-				MessageBox.Show("Педмет не найден!");
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
 		}
 
 		/// <summary>
@@ -885,6 +984,29 @@ namespace D_DCharLists
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Выводит базу с заклинаниями.
+		/// </summary>
+		private void PrintDBSpell(List<SpellBase> spells)
+		{
+			if (spells.Any())
+			{
+				listView_SpellDB.Items.Clear();
+				listView_SpellDB.Items.Add(new ListViewItem(""));
+				foreach (var spell in spells)
+				{
+					string[] row =
+						[
+						spell.Id.ToString(),
+						spell.Name,
+						spell.Level.ToString(),
+						spell.DamageType
+						];
+					listView_SpellDB.Items.Add(new ListViewItem(row));
+				}
 			}
 		}
 

@@ -1,119 +1,119 @@
 {
-	"1001": {
-		"Name": "Мистический снаряд",
-		"Level": 0,
-		"Id": 1001,
-		"FromСharacteristic": "Intelligence",
-		"UseMasterBonus": true,
-		"DamageType": "Урон силовым полем/1к10.",
-		"AdditionalModifiers": 0
-	},
-	"1002": {
-		"Name": "Огненный снаряд",
-		"Level": 0,
-		"Id": 1002,
-		"FromСharacteristic": "Intelligence",
-		"UseMasterBonus": true,
-		"DamageType": "Урон огнём/1к10.",
-		"AdditionalModifiers": 0
-	},
-	"1003": {
-		"Name": "Кислотные брызги",
-		"Level": 0,
-		"Id": 1003,
-		"FromСharacteristic": "Intelligence",
-		"UseMasterBonus": true,
-		"DamageType": "Урона кислотой/1к6.",
-		"AdditionalModifiers": 0
-	},
-	"1004": {
-		"Name": "Власть над огнём",
-		"Level": 0,
-		"Id": 1004,
-		"FromСharacteristic": "Wisdom",
-		"UseMasterBonus": false,
-		"DamageType": "Вы можете мгновенно распространить огонь/.",
-		"AdditionalModifiers": 0
-	},
-	"1005": {
-		"Name": "Волшебная рука",
-		"Level": 0,
-		"Id": 1005,
-		"FromСharacteristic": "Wisdom",
-		"UseMasterBonus": false,
-		"DamageType": "Появляется призрачная парящая рука.",
-		"AdditionalModifiers": 0
-	},
-	"1006": {
-		"Name": "Волшебный камень",
-		"Level": 0,
-		"Id": 1006,
-		"FromСharacteristic": "Wisdom",
-		"UseMasterBonus": true,
-		"DamageType": "Вы касаетесь от 1 до 3 камней, урон 1к6",
-		"AdditionalModifiers": 0
-	},
-	"1007": {
-		"Name": "Вспышка мечей",
-		"Level": 0,
-		"Id": 1007,
-		"FromСharacteristic": "Intelligence",
-		"UseMasterBonus": false,
-		"DamageType": "урон силовым полем 1к6",
-		"AdditionalModifiers": 0
-	},
-	"1008": {
-		"Name": "Громовой клинок",
-		"Level": 0,
-		"Id": 1008,
-		"FromСharacteristic": "Agility",
-		"UseMasterBonus": true,
-		"DamageType": "Урона звуком/1к8",
-		"AdditionalModifiers": 0
-	},
-	"1009": {
-		"Name": "Дружба",
-		"Level": 0,
-		"Id": 1009,
-		"FromСharacteristic": "Charisma",
-		"UseMasterBonus": false,
-		"DamageType": "",
-		"AdditionalModifiers": 0
-	},
-	"1010": {
-		"Name": "Дубинка",
-		"Level": 0,
-		"Id": 1010,
-		"FromСharacteristic": "Strength",
-		"UseMasterBonus": true,
-		"DamageType": "/1к8",
-		"AdditionalModifiers": 0
-	},
-	"1011": {
-		"Name": "Защита от оружия",
-		"Level": 0,
-		"Id": 1011,
-		"FromСharacteristic": "Wisdom",
-		"UseMasterBonus": false,
-		"DamageType": "Вы получаете до конца своего следующего хода сопротивление дробящему, колющему и рубящему урону.",
-		"AdditionalModifiers": 0
-	},
-	"1012": {
-		"Name": "Злая насмешка",
-		"Level": 0,
-		"Id": 1012,
-		"FromСharacteristic": "Charisma",
-		"UseMasterBonus": false,
-		"DamageType": "урон силовым полем 1к10",
-		"AdditionalModifiers": 0
-	},
-	"1013": {
-		"Name": "Искусство друидов",
-		"Level": 0,
-		"Id": 1013,
-		"FromСharacteristic": "",
-		"UseMasterBonus": false,
-		"DamageType": "",
-		"AdditionalModifiers": 0
-	}
+  "1001": {
+    "Name": "Мистический снаряд",
+    "Level": 0,
+    "Id": 1001,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "Урон силовым полем/1к10.",
+    "AdditionalModifiers": 0
+  },
+  "1002": {
+    "Name": "Огненный снаряд",
+    "Level": 0,
+    "Id": 1002,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "Урон огнём/1к10.",
+    "AdditionalModifiers": 0
+  },
+  "1003": {
+    "Name": "Кислотные брызги",
+    "Level": 0,
+    "Id": 1003,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "Урона кислотой/1к6.",
+    "AdditionalModifiers": 0
+  },
+  "1004": {
+    "Name": "Власть над огнём",
+    "Level": 0,
+    "Id": 1004,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "Вы можете мгновенно распространить огонь/.",
+    "AdditionalModifiers": 0
+  },
+  "1005": {
+    "Name": "Волшебная рука",
+    "Level": 0,
+    "Id": 1005,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "Появляется призрачная парящая рука.",
+    "AdditionalModifiers": 0
+  },
+  "1006": {
+    "Name": "Волшебный камень",
+    "Level": 0,
+    "Id": 1006,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "Вы касаетесь от 1 до 3 камней, урон 1к6",
+    "AdditionalModifiers": 0
+  },
+  "1007": {
+    "Name": "Вспышка мечей",
+    "Level": 0,
+    "Id": 1007,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "урон силовым полем 1к6",
+    "AdditionalModifiers": 0
+  },
+  "1008": {
+    "Name": "Громовой клинок",
+    "Level": 0,
+    "Id": 1008,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "Урона звуком/1к8",
+    "AdditionalModifiers": 0
+  },
+  "1009": {
+    "Name": "Дружба",
+    "Level": 0,
+    "Id": 1009,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "",
+    "AdditionalModifiers": 0
+  },
+  "1010": {
+    "Name": "Дубинка",
+    "Level": 0,
+    "Id": 1010,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": true,
+    "DamageType": "/1к8",
+    "AdditionalModifiers": 0
+  },
+  "1011": {
+    "Name": "Защита от оружия",
+    "Level": 0,
+    "Id": 1011,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "Вы получаете до конца своего следующего хода сопротивление дробящему, колющему и рубящему урону.",
+    "AdditionalModifiers": 0
+  },
+  "1012": {
+    "Name": "Злая насмешка",
+    "Level": 0,
+    "Id": 1012,
+    "FromСharacteristic": " ",
+    "UseMasterBonus": false,
+    "DamageType": "урон силовым полем 1к10",
+    "AdditionalModifiers": 0
+  },
+  "1013": {
+    "Name": "Искусство друидов",
+    "Level": 0,
+    "Id": 1013,
+    "FromСharacteristic": "",
+    "UseMasterBonus": false,
+    "DamageType": "",
+    "AdditionalModifiers": 0
+  }
 }

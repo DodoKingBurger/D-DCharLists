@@ -39,7 +39,6 @@
 			groupBox_Name_List = new GroupBox();
 			groupBox_List_SkillsPossession = new GroupBox();
 			checkedListBox_Char_SkillsPossession = new CheckedListBox();
-			bt_Add_SkillsProssesion = new Button();
 			groupBox_List_inventory = new GroupBox();
 			button_Inventary_Item_Remove = new Button();
 			label_List_ID_Adding = new Label();
@@ -70,7 +69,6 @@
 			columnHeader_Weapon_IsMagic = new ColumnHeader();
 			button_Char_Add_Item = new Button();
 			groupBox_List_Personality = new GroupBox();
-			button_Edit_Personality = new Button();
 			listBox_List_Personality = new ListBox();
 			label_List_Alignment = new Label();
 			panel_BoneOfHit = new Panel();
@@ -79,6 +77,8 @@
 			label_Char_HitDice = new Label();
 			label_List_HitDice = new Label();
 			groupBox_List_AttacksAndSpells = new GroupBox();
+			label_List_Id_Spell = new Label();
+			numericUpDown_Spell_ID = new NumericUpDown();
 			button_Char_Add_AttacksAndSpells = new Button();
 			listView_Char_AttacksAndSpells = new ListView();
 			label_Char_Alignment = new Label();
@@ -172,14 +172,14 @@
 			tabPage_Spell = new TabPage();
 			groupBox_List_SpellDB = new GroupBox();
 			listView_SpellDB = new ListView();
-			columnHeader1 = new ColumnHeader();
-			columnHeader2 = new ColumnHeader();
-			columnHeader3 = new ColumnHeader();
+			columnHeader_ID_SpellDB = new ColumnHeader();
+			columnHeader_Name_SpellDB = new ColumnHeader();
+			columnHeader_Level_SpellDB = new ColumnHeader();
+			columnHeader_DamageType = new ColumnHeader();
 			button_Create_Spell = new Button();
 			label1 = new Label();
-			label2 = new Label();
-			comboBox1 = new ComboBox();
 			textBox_Name_Spell = new TextBox();
+			button_Remove_Spell = new Button();
 			groupBox_Menu.SuspendLayout();
 			groupBox_CharList.SuspendLayout();
 			groupBox_Name_List.SuspendLayout();
@@ -193,6 +193,7 @@
 			panel_BoneOfHit.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Char_HowHitDice).BeginInit();
 			groupBox_List_AttacksAndSpells.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)numericUpDown_Spell_ID).BeginInit();
 			groupBox_SavingThrows.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)trackBar_Char_DeathFailure).BeginInit();
 			((System.ComponentModel.ISupportInitialize)trackBar_Char_DeathSucces).BeginInit();
@@ -333,7 +334,6 @@
 			// groupBox_List_SkillsPossession
 			// 
 			groupBox_List_SkillsPossession.Controls.Add(checkedListBox_Char_SkillsPossession);
-			groupBox_List_SkillsPossession.Controls.Add(bt_Add_SkillsProssesion);
 			groupBox_List_SkillsPossession.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			groupBox_List_SkillsPossession.Location = new Point(1133, 592);
 			groupBox_List_SkillsPossession.Name = "groupBox_List_SkillsPossession";
@@ -344,22 +344,13 @@
 			// 
 			// checkedListBox_Char_SkillsPossession
 			// 
-			checkedListBox_Char_SkillsPossession.Dock = DockStyle.Top;
+			checkedListBox_Char_SkillsPossession.Dock = DockStyle.Fill;
 			checkedListBox_Char_SkillsPossession.FormattingEnabled = true;
 			checkedListBox_Char_SkillsPossession.Location = new Point(3, 35);
 			checkedListBox_Char_SkillsPossession.Name = "checkedListBox_Char_SkillsPossession";
-			checkedListBox_Char_SkillsPossession.Size = new Size(418, 652);
+			checkedListBox_Char_SkillsPossession.Size = new Size(418, 709);
 			checkedListBox_Char_SkillsPossession.TabIndex = 5;
 			checkedListBox_Char_SkillsPossession.SelectedIndexChanged += checkedListBox_Char_SkillsPossession_SelectedIndexChanged;
-			// 
-			// bt_Add_SkillsProssesion
-			// 
-			bt_Add_SkillsProssesion.Location = new Point(3, 696);
-			bt_Add_SkillsProssesion.Name = "bt_Add_SkillsProssesion";
-			bt_Add_SkillsProssesion.Size = new Size(418, 43);
-			bt_Add_SkillsProssesion.TabIndex = 4;
-			bt_Add_SkillsProssesion.Text = "Добавить навык";
-			bt_Add_SkillsProssesion.UseVisualStyleBackColor = true;
 			// 
 			// groupBox_List_inventory
 			// 
@@ -411,6 +402,7 @@
 			// numericUpDown_ID_For_Adding_Item
 			// 
 			numericUpDown_ID_For_Adding_Item.Location = new Point(96, 1218);
+			numericUpDown_ID_For_Adding_Item.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
 			numericUpDown_ID_For_Adding_Item.Name = "numericUpDown_ID_For_Adding_Item";
 			numericUpDown_ID_For_Adding_Item.Size = new Size(154, 43);
 			numericUpDown_ID_For_Adding_Item.TabIndex = 7;
@@ -578,7 +570,6 @@
 			// 
 			// groupBox_List_Personality
 			// 
-			groupBox_List_Personality.Controls.Add(button_Edit_Personality);
 			groupBox_List_Personality.Controls.Add(listBox_List_Personality);
 			groupBox_List_Personality.Font = new Font("Monotype Corsiva", 18F, FontStyle.Italic, GraphicsUnit.Point, 204);
 			groupBox_List_Personality.Location = new Point(1130, 20);
@@ -588,23 +579,14 @@
 			groupBox_List_Personality.TabStop = false;
 			groupBox_List_Personality.Text = "Личные качества";
 			// 
-			// button_Edit_Personality
-			// 
-			button_Edit_Personality.Location = new Point(159, 516);
-			button_Edit_Personality.Name = "button_Edit_Personality";
-			button_Edit_Personality.Size = new Size(250, 46);
-			button_Edit_Personality.TabIndex = 1;
-			button_Edit_Personality.Text = "Редактировать";
-			button_Edit_Personality.UseVisualStyleBackColor = true;
-			// 
 			// listBox_List_Personality
 			// 
-			listBox_List_Personality.Dock = DockStyle.Top;
+			listBox_List_Personality.Dock = DockStyle.Fill;
 			listBox_List_Personality.FormattingEnabled = true;
 			listBox_List_Personality.ItemHeight = 44;
 			listBox_List_Personality.Location = new Point(3, 44);
 			listBox_List_Personality.Name = "listBox_List_Personality";
-			listBox_List_Personality.Size = new Size(421, 444);
+			listBox_List_Personality.Size = new Size(421, 520);
 			listBox_List_Personality.TabIndex = 0;
 			// 
 			// label_List_Alignment
@@ -671,6 +653,9 @@
 			// 
 			// groupBox_List_AttacksAndSpells
 			// 
+			groupBox_List_AttacksAndSpells.Controls.Add(button_Remove_Spell);
+			groupBox_List_AttacksAndSpells.Controls.Add(label_List_Id_Spell);
+			groupBox_List_AttacksAndSpells.Controls.Add(numericUpDown_Spell_ID);
 			groupBox_List_AttacksAndSpells.Controls.Add(button_Char_Add_AttacksAndSpells);
 			groupBox_List_AttacksAndSpells.Controls.Add(listView_Char_AttacksAndSpells);
 			groupBox_List_AttacksAndSpells.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic, GraphicsUnit.Point, 204);
@@ -681,20 +666,37 @@
 			groupBox_List_AttacksAndSpells.TabStop = false;
 			groupBox_List_AttacksAndSpells.Text = "Атаки и заклинания";
 			// 
+			// label_List_Id_Spell
+			// 
+			label_List_Id_Spell.AutoSize = true;
+			label_List_Id_Spell.Location = new Point(893, 39);
+			label_List_Id_Spell.Name = "label_List_Id_Spell";
+			label_List_Id_Spell.Size = new Size(199, 39);
+			label_List_Id_Spell.TabIndex = 4;
+			label_List_Id_Spell.Text = "ID заклинания";
+			// 
+			// numericUpDown_Spell_ID
+			// 
+			numericUpDown_Spell_ID.Location = new Point(912, 81);
+			numericUpDown_Spell_ID.Name = "numericUpDown_Spell_ID";
+			numericUpDown_Spell_ID.Size = new Size(180, 43);
+			numericUpDown_Spell_ID.TabIndex = 3;
+			// 
 			// button_Char_Add_AttacksAndSpells
 			// 
-			button_Char_Add_AttacksAndSpells.Location = new Point(651, 245);
+			button_Char_Add_AttacksAndSpells.Location = new Point(800, 130);
 			button_Char_Add_AttacksAndSpells.Name = "button_Char_Add_AttacksAndSpells";
-			button_Char_Add_AttacksAndSpells.Size = new Size(441, 40);
+			button_Char_Add_AttacksAndSpells.Size = new Size(292, 86);
 			button_Char_Add_AttacksAndSpells.TabIndex = 2;
-			button_Char_Add_AttacksAndSpells.Text = "Добавить атаку или заклинание";
+			button_Char_Add_AttacksAndSpells.Text = "Добавить атаку \r\nили заклинание";
 			button_Char_Add_AttacksAndSpells.UseVisualStyleBackColor = true;
+			button_Char_Add_AttacksAndSpells.Click += button_Char_Add_AttacksAndSpells_Click;
 			// 
 			// listView_Char_AttacksAndSpells
 			// 
 			listView_Char_AttacksAndSpells.Location = new Point(17, 42);
 			listView_Char_AttacksAndSpells.Name = "listView_Char_AttacksAndSpells";
-			listView_Char_AttacksAndSpells.Size = new Size(1075, 183);
+			listView_Char_AttacksAndSpells.Size = new Size(777, 243);
 			listView_Char_AttacksAndSpells.TabIndex = 0;
 			listView_Char_AttacksAndSpells.UseCompatibleStateImageBehavior = false;
 			// 
@@ -1663,8 +1665,6 @@
 			groupBox_List_SpellDB.Controls.Add(listView_SpellDB);
 			groupBox_List_SpellDB.Controls.Add(button_Create_Spell);
 			groupBox_List_SpellDB.Controls.Add(label1);
-			groupBox_List_SpellDB.Controls.Add(label2);
-			groupBox_List_SpellDB.Controls.Add(comboBox1);
 			groupBox_List_SpellDB.Controls.Add(textBox_Name_Spell);
 			groupBox_List_SpellDB.Dock = DockStyle.Fill;
 			groupBox_List_SpellDB.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
@@ -1678,8 +1678,9 @@
 			// listView_SpellDB
 			// 
 			listView_SpellDB.AllowColumnReorder = true;
+			listView_SpellDB.AllowDrop = true;
 			listView_SpellDB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-			listView_SpellDB.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+			listView_SpellDB.Columns.AddRange(new ColumnHeader[] { columnHeader_ID_SpellDB, columnHeader_Name_SpellDB, columnHeader_Level_SpellDB, columnHeader_DamageType });
 			listView_SpellDB.FullRowSelect = true;
 			listView_SpellDB.GridLines = true;
 			listView_SpellDB.Location = new Point(0, 124);
@@ -1689,20 +1690,23 @@
 			listView_SpellDB.UseCompatibleStateImageBehavior = false;
 			listView_SpellDB.View = View.Details;
 			// 
-			// columnHeader1
+			// columnHeader_ID_SpellDB
 			// 
-			columnHeader1.Text = "ID";
-			columnHeader1.Width = 100;
+			columnHeader_ID_SpellDB.Text = "ID";
 			// 
-			// columnHeader2
+			// columnHeader_Name_SpellDB
 			// 
-			columnHeader2.Text = "Name";
-			columnHeader2.Width = 130;
+			columnHeader_Name_SpellDB.Text = "Name";
+			columnHeader_Name_SpellDB.Width = 80;
 			// 
-			// columnHeader3
+			// columnHeader_Level_SpellDB
 			// 
-			columnHeader3.Text = "TypeItem";
-			columnHeader3.Width = 130;
+			columnHeader_Level_SpellDB.Text = "Level";
+			// 
+			// columnHeader_DamageType
+			// 
+			columnHeader_DamageType.Text = "DamageType";
+			columnHeader_DamageType.Width = 145;
 			// 
 			// button_Create_Spell
 			// 
@@ -1714,41 +1718,34 @@
 			button_Create_Spell.TabIndex = 4;
 			button_Create_Spell.Text = "Создать заклиание";
 			button_Create_Spell.UseVisualStyleBackColor = true;
+			button_Create_Spell.Click += button_Create_Spell_Click;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(209, 30);
+			label1.Location = new Point(11, 33);
 			label1.Name = "label1";
 			label1.Size = new Size(114, 34);
 			label1.TabIndex = 3;
 			label1.Text = "Название";
 			// 
-			// label2
-			// 
-			label2.AutoSize = true;
-			label2.Location = new Point(6, 30);
-			label2.Name = "label2";
-			label2.Size = new Size(175, 34);
-			label2.TabIndex = 2;
-			label2.Text = "Тип предмета";
-			// 
-			// comboBox1
-			// 
-			comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-			comboBox1.FormattingEnabled = true;
-			comboBox1.Items.AddRange(new object[] { "All", "Armor", "Weapon", "Item", "Coin" });
-			comboBox1.Location = new Point(6, 70);
-			comboBox1.Name = "comboBox1";
-			comboBox1.Size = new Size(168, 42);
-			comboBox1.TabIndex = 1;
-			// 
 			// textBox_Name_Spell
 			// 
-			textBox_Name_Spell.Location = new Point(183, 70);
+			textBox_Name_Spell.Location = new Point(3, 70);
 			textBox_Name_Spell.Name = "textBox_Name_Spell";
-			textBox_Name_Spell.Size = new Size(166, 39);
+			textBox_Name_Spell.Size = new Size(346, 39);
 			textBox_Name_Spell.TabIndex = 0;
+			textBox_Name_Spell.TextChanged += textBox_Name_Spell_TextChanged;
+			// 
+			// button_Remove_Spell
+			// 
+			button_Remove_Spell.Location = new Point(800, 222);
+			button_Remove_Spell.Name = "button_Remove_Spell";
+			button_Remove_Spell.Size = new Size(292, 49);
+			button_Remove_Spell.TabIndex = 5;
+			button_Remove_Spell.Text = "Удалить ";
+			button_Remove_Spell.UseVisualStyleBackColor = true;
+			button_Remove_Spell.Click += button_Remove_Spell_Click;
 			// 
 			// StartForms
 			// 
@@ -1782,6 +1779,8 @@
 			panel_BoneOfHit.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Char_HowHitDice).EndInit();
 			groupBox_List_AttacksAndSpells.ResumeLayout(false);
+			groupBox_List_AttacksAndSpells.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)numericUpDown_Spell_ID).EndInit();
 			groupBox_SavingThrows.ResumeLayout(false);
 			groupBox_SavingThrows.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)trackBar_Char_DeathFailure).EndInit();
@@ -1917,7 +1916,6 @@
 		private Label label_List_DeathSucces;
 		private Button button_Char_Add_Item;
 		private Button button_Char_Add_AttacksAndSpells;
-    private Button bt_Add_SkillsProssesion;
 		private GroupBox groupBox_List_itemBase;
 		private Label label_List_NameForSearch;
 		private Label label_list_TypeItem;
@@ -1925,7 +1923,6 @@
 		private TextBox textBox_Name_ItemForSearch;
 		private ListView listView_DB_inventory;
 		private Button button_Create_Item;
-		private Button button_Edit_Personality;
 		private GroupBox groupBox_List_Item_item;
 		private GroupBox groupBox_List_Item_Armor;
 		private GroupBox groupBox_List_Item_Weapon;
@@ -1962,13 +1959,15 @@
 		private TabPage tabPage_Spell;
 		private GroupBox groupBox_List_SpellDB;
 		private ListView listView_SpellDB;
-		private ColumnHeader columnHeader1;
-		private ColumnHeader columnHeader2;
-		private ColumnHeader columnHeader3;
+		private ColumnHeader columnHeader_ID_SpellDB;
+		private ColumnHeader columnHeader_Name_SpellDB;
+		private ColumnHeader columnHeader_Level_SpellDB;
 		private Button button_Create_Spell;
 		private Label label1;
-		private Label label2;
-		private ComboBox comboBox1;
 		private TextBox textBox_Name_Spell;
+		private ColumnHeader columnHeader_DamageType;
+		private Label label_List_Id_Spell;
+		private NumericUpDown numericUpDown_Spell_ID;
+		private Button button_Remove_Spell;
 	}
 }
