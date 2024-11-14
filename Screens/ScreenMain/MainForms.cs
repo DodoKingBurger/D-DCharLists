@@ -95,7 +95,6 @@ namespace D_DCharLists
 		private void btCreateChar_Click(object sender, EventArgs e)
 		{
 			createChar = new CreateCharForm();
-			createItem.Notify += ShowDBItems;
 			createChar.ShowDialog();
 		}
 
@@ -153,7 +152,8 @@ namespace D_DCharLists
 		private void button_Create_Item_Click(object sender, EventArgs e)
 		{
 			createItem = new CreateItemForm();
-			createItem.ShowDialog();
+      createItem.Notify += ShowDBItems;
+      createItem.ShowDialog();
 		}
 
 		#region Методы работы с заклинаниями
@@ -724,11 +724,14 @@ namespace D_DCharLists
 				listBox_List_Personality.Items.Clear();
 				foreach (EnumPersonalities qualities in Enum.GetValues(typeof(EnumPersonalities)))
 				{
-					string info = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[qualities];
-					if (!string.IsNullOrEmpty(info))
-						listBox_List_Personality.Items.Add($"{qualities}: {CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[qualities]}" + Environment.NewLine);
-					else
-						listBox_List_Personality.Items.Add($"{qualities}: Неизвестно" + Environment.NewLine);
+					if (qualities!= EnumPersonalities.Background && qualities != EnumPersonalities.Alignment)
+					{
+            string info = CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[qualities];
+            if (!string.IsNullOrEmpty(info))
+              listBox_List_Personality.Items.Add($"{qualities}: {CurrentHeroSheet.HeroSheet.SheetPersonality.PersonalityList[qualities]}" + Environment.NewLine);
+            else
+              listBox_List_Personality.Items.Add($"{qualities}: Неизвестно" + Environment.NewLine);
+          }
 				}
 			}
 			else

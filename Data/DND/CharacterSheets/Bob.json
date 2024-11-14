@@ -1,49 +1,25 @@
 {
-  "Name": "534",
+  "Name": "Bob",
   "SheetRace": {
-    "Name": 0,
-    "Speed": 25,
-    "Size": 1
+    "Name": 7,
+    "Speed": 30,
+    "Size": 2
   },
   "SheetClass": {
-    "Name": 0,
-    "HitDice": 8,
+    "Name": 8,
+    "HitDice": 10,
     "SaveThrows": [
-      1,
+      4,
       5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
-      5,
-      1,
+      4,
       5
     ]
   },
   "SheetAbilities": {
     "Abilities": {
-      "Strength": 1,
+      "Strength": 10,
       "Agility": 1,
-      "Physique": 1,
+      "Physique": 10,
       "Intelligence": 1,
       "Wisdom": 1,
       "Charisma": 1
@@ -53,7 +29,7 @@
     "Skills": [
       0,
       1,
-      2
+      5
     ]
   },
   "SheetProgression": {
@@ -62,46 +38,45 @@
   },
   "SheetSaveThrows": {
     "SaveThrows": [
-      1,
+      4,
       5
     ]
   },
   "SheetPersonality": {
     "PersonalityList": {
-      "Background": "34",
-      "Alignment": "34",
-      "PersonalityTraits": "34",
-      "Ideals": "43",
-      "Bonds": "43",
-      "Flaws": "34",
-      "Age": "34",
-      "Height": "34",
-      "Weight": "34",
-      "Eyes": "34",
-      "Skin": "34",
-      "Hair": "34"
+      "Background": "Игроман",
+      "Alignment": "Миролюбивый",
+      "PersonalityTraits": "Шеф-повар\r\nАдепт белых одежд",
+      "Ideals": "Если я позорю себя, я позорю весь мой клан",
+      "Bonds": "Большие",
+      "Flaws": "Сладкое",
+      "Age": "54",
+      "Height": "154",
+      "Weight": "145",
+      "Eyes": "Голубые",
+      "Skin": "Белая",
+      "Hair": "Русые"
     }
   },
   "SheetCombatAbilities": {
     "CombatStats": {
       "ArmorClass": 5,
       "CurrentHitDices": 1,
-      "CurrentHP": 3,
+      "CurrentHP": 10,
       "DeathFailure": 0,
       "DeathSucces": 0,
-      "MaximumHP": 3,
+      "MaximumHP": 10,
       "TemporaryHP": 0,
       "Round": 1
     }
   },
   "SheetProficiencies": {
     "Proficiencies": [
-      0,
-      47,
+      45,
       41,
-      34,
-      6,
-      9
+      31,
+      5,
+      8
     ]
   },
   "SheetInventory": {
