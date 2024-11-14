@@ -54,6 +54,7 @@ namespace D_DCharLists.Screens.ScreenMain
 			RadioButton radioButton = (RadioButton)sender;
 			CurrentHeroSheet.HeroSheet.SetUpRace(
 			sheetRaceFactory.CreateSheetRace(radioButton.Text));
+
 		}
 
 		/// <summary>

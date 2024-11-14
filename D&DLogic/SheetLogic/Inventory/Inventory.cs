@@ -27,7 +27,7 @@ namespace D_DCharLists
 			}
 			else
 			{
-				Inventory[item] = 1;
+				Inventory[item] = HowMany;
 			}
 		}
 

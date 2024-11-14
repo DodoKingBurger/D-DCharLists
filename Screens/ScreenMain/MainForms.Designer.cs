@@ -43,7 +43,7 @@
 			groupBox_List_inventory = new GroupBox();
 			button_Inventary_Item_Remove = new Button();
 			label_List_ID_Adding = new Label();
-			button1 = new Button();
+			button_Summon_AddingItemInventoryForm = new Button();
 			numericUpDown_ID_For_Adding_Item = new NumericUpDown();
 			groupBox_List_Item_item = new GroupBox();
 			listView_Char_inventory_item = new ListView();
@@ -166,6 +166,20 @@
 			label_list_TypeItem = new Label();
 			comboBox_TypeItemForSearch = new ComboBox();
 			textBox_Name_ItemForSearch = new TextBox();
+			groupBox_List_Bestiary = new GroupBox();
+			tabControl_bestiary = new TabControl();
+			tabPage_Item = new TabPage();
+			tabPage_Spell = new TabPage();
+			groupBox_List_SpellDB = new GroupBox();
+			listView_SpellDB = new ListView();
+			columnHeader1 = new ColumnHeader();
+			columnHeader2 = new ColumnHeader();
+			columnHeader3 = new ColumnHeader();
+			button_Create_Spell = new Button();
+			label1 = new Label();
+			label2 = new Label();
+			comboBox1 = new ComboBox();
+			textBox_Name_Spell = new TextBox();
 			groupBox_Menu.SuspendLayout();
 			groupBox_CharList.SuspendLayout();
 			groupBox_Name_List.SuspendLayout();
@@ -199,6 +213,11 @@
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Char_Level).BeginInit();
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Char_Exp_Calculations).BeginInit();
 			groupBox_List_itemBase.SuspendLayout();
+			groupBox_List_Bestiary.SuspendLayout();
+			tabControl_bestiary.SuspendLayout();
+			tabPage_Item.SuspendLayout();
+			tabPage_Spell.SuspendLayout();
+			groupBox_List_SpellDB.SuspendLayout();
 			SuspendLayout();
 			// 
 			// groupBox_Menu
@@ -346,7 +365,7 @@
 			// 
 			groupBox_List_inventory.Controls.Add(button_Inventary_Item_Remove);
 			groupBox_List_inventory.Controls.Add(label_List_ID_Adding);
-			groupBox_List_inventory.Controls.Add(button1);
+			groupBox_List_inventory.Controls.Add(button_Summon_AddingItemInventoryForm);
 			groupBox_List_inventory.Controls.Add(numericUpDown_ID_For_Adding_Item);
 			groupBox_List_inventory.Controls.Add(groupBox_List_Item_item);
 			groupBox_List_inventory.Controls.Add(groupBox_List_Item_Armor);
@@ -379,14 +398,15 @@
 			label_List_ID_Adding.TabIndex = 9;
 			label_List_ID_Adding.Text = "ID";
 			// 
-			// button1
+			// button_Summon_AddingItemInventoryForm
 			// 
-			button1.Location = new Point(227, 1138);
-			button1.Name = "button1";
-			button1.Size = new Size(326, 43);
-			button1.TabIndex = 8;
-			button1.Text = "Справочник предметов";
-			button1.UseVisualStyleBackColor = true;
+			button_Summon_AddingItemInventoryForm.Location = new Point(227, 1138);
+			button_Summon_AddingItemInventoryForm.Name = "button_Summon_AddingItemInventoryForm";
+			button_Summon_AddingItemInventoryForm.Size = new Size(326, 43);
+			button_Summon_AddingItemInventoryForm.TabIndex = 8;
+			button_Summon_AddingItemInventoryForm.Text = "Справочник предметов";
+			button_Summon_AddingItemInventoryForm.UseVisualStyleBackColor = true;
+			button_Summon_AddingItemInventoryForm.Click += button_Summon_AddingItemInventoryForm_Click;
 			// 
 			// numericUpDown_ID_For_Adding_Item
 			// 
@@ -1506,13 +1526,14 @@
 			groupBox_List_itemBase.Controls.Add(label_list_TypeItem);
 			groupBox_List_itemBase.Controls.Add(comboBox_TypeItemForSearch);
 			groupBox_List_itemBase.Controls.Add(textBox_Name_ItemForSearch);
+			groupBox_List_itemBase.Dock = DockStyle.Fill;
 			groupBox_List_itemBase.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
-			groupBox_List_itemBase.Location = new Point(0, 326);
+			groupBox_List_itemBase.Location = new Point(3, 3);
 			groupBox_List_itemBase.Name = "groupBox_List_itemBase";
-			groupBox_List_itemBase.Size = new Size(369, 1055);
+			groupBox_List_itemBase.Size = new Size(355, 964);
 			groupBox_List_itemBase.TabIndex = 2;
 			groupBox_List_itemBase.TabStop = false;
-			groupBox_List_itemBase.Text = "База знаний предметов";
+			groupBox_List_itemBase.Text = "Предметы";
 			// 
 			// listView_DB_inventory
 			// 
@@ -1523,7 +1544,7 @@
 			listView_DB_inventory.GridLines = true;
 			listView_DB_inventory.Location = new Point(3, 121);
 			listView_DB_inventory.Name = "listView_DB_inventory";
-			listView_DB_inventory.Size = new Size(363, 874);
+			listView_DB_inventory.Size = new Size(346, 786);
 			listView_DB_inventory.TabIndex = 5;
 			listView_DB_inventory.UseCompatibleStateImageBehavior = false;
 			listView_DB_inventory.View = View.Details;
@@ -1545,10 +1566,11 @@
 			// 
 			// button_Create_Item
 			// 
+			button_Create_Item.Dock = DockStyle.Bottom;
 			button_Create_Item.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
-			button_Create_Item.Location = new Point(6, 1000);
+			button_Create_Item.Location = new Point(3, 909);
 			button_Create_Item.Name = "button_Create_Item";
-			button_Create_Item.Size = new Size(357, 52);
+			button_Create_Item.Size = new Size(349, 52);
 			button_Create_Item.TabIndex = 4;
 			button_Create_Item.Text = "Создать предмет";
 			button_Create_Item.UseVisualStyleBackColor = true;
@@ -1587,16 +1609,153 @@
 			// 
 			textBox_Name_ItemForSearch.Location = new Point(183, 70);
 			textBox_Name_ItemForSearch.Name = "textBox_Name_ItemForSearch";
-			textBox_Name_ItemForSearch.Size = new Size(183, 39);
+			textBox_Name_ItemForSearch.Size = new Size(166, 39);
 			textBox_Name_ItemForSearch.TabIndex = 0;
 			textBox_Name_ItemForSearch.TextChanged += Search_DBItem;
+			// 
+			// groupBox_List_Bestiary
+			// 
+			groupBox_List_Bestiary.Controls.Add(tabControl_bestiary);
+			groupBox_List_Bestiary.Dock = DockStyle.Bottom;
+			groupBox_List_Bestiary.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic, GraphicsUnit.Point, 204);
+			groupBox_List_Bestiary.Location = new Point(0, 326);
+			groupBox_List_Bestiary.Name = "groupBox_List_Bestiary";
+			groupBox_List_Bestiary.Size = new Size(375, 1055);
+			groupBox_List_Bestiary.TabIndex = 2;
+			groupBox_List_Bestiary.TabStop = false;
+			groupBox_List_Bestiary.Text = "Бестиарий";
+			// 
+			// tabControl_bestiary
+			// 
+			tabControl_bestiary.Controls.Add(tabPage_Item);
+			tabControl_bestiary.Controls.Add(tabPage_Spell);
+			tabControl_bestiary.Dock = DockStyle.Fill;
+			tabControl_bestiary.Location = new Point(3, 35);
+			tabControl_bestiary.Name = "tabControl_bestiary";
+			tabControl_bestiary.SelectedIndex = 0;
+			tabControl_bestiary.Size = new Size(369, 1017);
+			tabControl_bestiary.TabIndex = 0;
+			// 
+			// tabPage_Item
+			// 
+			tabPage_Item.Controls.Add(groupBox_List_itemBase);
+			tabPage_Item.Location = new Point(4, 43);
+			tabPage_Item.Name = "tabPage_Item";
+			tabPage_Item.Padding = new Padding(3);
+			tabPage_Item.Size = new Size(361, 970);
+			tabPage_Item.TabIndex = 0;
+			tabPage_Item.Text = "Предметы";
+			tabPage_Item.UseVisualStyleBackColor = true;
+			// 
+			// tabPage_Spell
+			// 
+			tabPage_Spell.Controls.Add(groupBox_List_SpellDB);
+			tabPage_Spell.Location = new Point(4, 43);
+			tabPage_Spell.Name = "tabPage_Spell";
+			tabPage_Spell.Padding = new Padding(3);
+			tabPage_Spell.Size = new Size(361, 970);
+			tabPage_Spell.TabIndex = 1;
+			tabPage_Spell.Text = "Заклинания";
+			tabPage_Spell.UseVisualStyleBackColor = true;
+			// 
+			// groupBox_List_SpellDB
+			// 
+			groupBox_List_SpellDB.Controls.Add(listView_SpellDB);
+			groupBox_List_SpellDB.Controls.Add(button_Create_Spell);
+			groupBox_List_SpellDB.Controls.Add(label1);
+			groupBox_List_SpellDB.Controls.Add(label2);
+			groupBox_List_SpellDB.Controls.Add(comboBox1);
+			groupBox_List_SpellDB.Controls.Add(textBox_Name_Spell);
+			groupBox_List_SpellDB.Dock = DockStyle.Fill;
+			groupBox_List_SpellDB.Font = new Font("Monotype Corsiva", 14F, FontStyle.Italic);
+			groupBox_List_SpellDB.Location = new Point(3, 3);
+			groupBox_List_SpellDB.Name = "groupBox_List_SpellDB";
+			groupBox_List_SpellDB.Size = new Size(355, 964);
+			groupBox_List_SpellDB.TabIndex = 3;
+			groupBox_List_SpellDB.TabStop = false;
+			groupBox_List_SpellDB.Text = "Заклинания";
+			// 
+			// listView_SpellDB
+			// 
+			listView_SpellDB.AllowColumnReorder = true;
+			listView_SpellDB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			listView_SpellDB.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+			listView_SpellDB.FullRowSelect = true;
+			listView_SpellDB.GridLines = true;
+			listView_SpellDB.Location = new Point(0, 124);
+			listView_SpellDB.Name = "listView_SpellDB";
+			listView_SpellDB.Size = new Size(349, 774);
+			listView_SpellDB.TabIndex = 5;
+			listView_SpellDB.UseCompatibleStateImageBehavior = false;
+			listView_SpellDB.View = View.Details;
+			// 
+			// columnHeader1
+			// 
+			columnHeader1.Text = "ID";
+			columnHeader1.Width = 100;
+			// 
+			// columnHeader2
+			// 
+			columnHeader2.Text = "Name";
+			columnHeader2.Width = 130;
+			// 
+			// columnHeader3
+			// 
+			columnHeader3.Text = "TypeItem";
+			columnHeader3.Width = 130;
+			// 
+			// button_Create_Spell
+			// 
+			button_Create_Spell.Dock = DockStyle.Bottom;
+			button_Create_Spell.Font = new Font("Monotype Corsiva", 16F, FontStyle.Italic);
+			button_Create_Spell.Location = new Point(3, 909);
+			button_Create_Spell.Name = "button_Create_Spell";
+			button_Create_Spell.Size = new Size(349, 52);
+			button_Create_Spell.TabIndex = 4;
+			button_Create_Spell.Text = "Создать заклиание";
+			button_Create_Spell.UseVisualStyleBackColor = true;
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.Location = new Point(209, 30);
+			label1.Name = "label1";
+			label1.Size = new Size(114, 34);
+			label1.TabIndex = 3;
+			label1.Text = "Название";
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Location = new Point(6, 30);
+			label2.Name = "label2";
+			label2.Size = new Size(175, 34);
+			label2.TabIndex = 2;
+			label2.Text = "Тип предмета";
+			// 
+			// comboBox1
+			// 
+			comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBox1.FormattingEnabled = true;
+			comboBox1.Items.AddRange(new object[] { "All", "Armor", "Weapon", "Item", "Coin" });
+			comboBox1.Location = new Point(6, 70);
+			comboBox1.Name = "comboBox1";
+			comboBox1.Size = new Size(168, 42);
+			comboBox1.TabIndex = 1;
+			// 
+			// textBox_Name_Spell
+			// 
+			textBox_Name_Spell.Location = new Point(183, 70);
+			textBox_Name_Spell.Name = "textBox_Name_Spell";
+			textBox_Name_Spell.Size = new Size(166, 39);
+			textBox_Name_Spell.TabIndex = 0;
 			// 
 			// StartForms
 			// 
 			AutoScaleDimensions = new SizeF(10F, 22F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(2515, 1381);
-			Controls.Add(groupBox_List_itemBase);
+			Controls.Add(groupBox_List_Bestiary);
 			Controls.Add(groupBox_CharList);
 			Controls.Add(groupBox_Menu);
 			Font = new Font("Microsoft Sans Serif", 9F);
@@ -1649,6 +1808,12 @@
 			((System.ComponentModel.ISupportInitialize)numericUpDown_Char_Exp_Calculations).EndInit();
 			groupBox_List_itemBase.ResumeLayout(false);
 			groupBox_List_itemBase.PerformLayout();
+			groupBox_List_Bestiary.ResumeLayout(false);
+			tabControl_bestiary.ResumeLayout(false);
+			tabPage_Item.ResumeLayout(false);
+			tabPage_Spell.ResumeLayout(false);
+			groupBox_List_SpellDB.ResumeLayout(false);
+			groupBox_List_SpellDB.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -1772,7 +1937,7 @@
 		private CheckedListBox checkedListBox_Char_SkillsPossession;
 		private NumericUpDown numericUpDown_ID_For_Adding_Item;
 		private Label label_List_ID_Adding;
-		private Button button1;
+		private Button button_Summon_AddingItemInventoryForm;
 		private Button button_Inventary_Item_Remove;
 		private ColumnHeader columnHeader_Weapon_Name;
 		private ColumnHeader columnHeader_Weapon_Rarity;
@@ -1791,5 +1956,19 @@
 		private ColumnHeader columnHeader_Weapon_IsMagic;
 		private ColumnHeader columnHeader_Armor_BaseCost;
 		private ColumnHeader columnHeader_Armor_IsMagic;
+		private GroupBox groupBox_List_Bestiary;
+		private TabControl tabControl_bestiary;
+		private TabPage tabPage_Item;
+		private TabPage tabPage_Spell;
+		private GroupBox groupBox_List_SpellDB;
+		private ListView listView_SpellDB;
+		private ColumnHeader columnHeader1;
+		private ColumnHeader columnHeader2;
+		private ColumnHeader columnHeader3;
+		private Button button_Create_Spell;
+		private Label label1;
+		private Label label2;
+		private ComboBox comboBox1;
+		private TextBox textBox_Name_Spell;
 	}
 }

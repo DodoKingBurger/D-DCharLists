@@ -1,5 +1,6 @@
 using D_DCharLists;
 using D_DCharLists.Modules;
+using D_DCharLists.Screens.AddingItemInInventory;
 using D_DCharLists.Screens.CreateItem;
 using D_DCharLists.Screens.ScreenMain;
 using System.Reflection.PortableExecutable;
@@ -28,6 +29,11 @@ namespace D_DCharLists
 		/// </summary>
 		private CreateItemForm createItem;
 
+		/// <summary>
+		/// Форма для подробного пойска и добавленнии нескольких одинаковых предметов.
+		/// </summary>
+		private AddingItemInventoryForm addingItem;
+
 		#endregion
 
 		#region Методы
@@ -41,8 +47,9 @@ namespace D_DCharLists
 		{
 			HeroDataBase.ShowHero += ShowHeroSheet;
 			initialize = new Initialize();
+			addingItem = new AddingItemInventoryForm();
 			initialize.Start();
-			comboBox_TypeItemForSearch.Text = comboBox_TypeItemForSearch.Items[0].ToString();
+			comboBox_TypeItemForSearch.SelectedIndex = 0;
 			ShowDBItems();
 		}
 
@@ -57,6 +64,7 @@ namespace D_DCharLists
 			{
 				if (CurrentHeroSheet.HeroSheet != null && !string.IsNullOrEmpty(CurrentHeroSheet.HeroSheet.Name))
 					CurrentHeroSheet.SaveSheet();
+				addingItem.Close();
 				e.Cancel = false;
 			}
 			else
@@ -197,6 +205,17 @@ namespace D_DCharLists
 			ShowDBItems();
 		}
 
+		/// <summary>
+		/// Призывает окно справочника для добавления и пойска предмета со всеми характеристиками.
+		/// </summary>
+		/// <param name="sender">button_Summon_AddingItemInventoryForm.</param>
+		/// <param name="e">Click.</param>
+		private void button_Summon_AddingItemInventoryForm_Click(object sender, EventArgs e)
+		{
+			addingItem.InventoryHeroReload += PrintHeroInventory;
+			addingItem.Show();
+		}
+
 		#endregion
 
 		#region Методы связанные с изменениями параметровов персонажа
@@ -218,18 +237,21 @@ namespace D_DCharLists
 		/// <param name="e">ValueChanged.</param>
 		private void Changed_Char_CombatAbilities_ValueChanged(object sender, EventArgs e)
 		{
-			switch (sender.GetType().Name)
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 			{
-				case "TrackBar":
-					System.Windows.Forms.TrackBar trackBar = (System.Windows.Forms.TrackBar)sender;
-					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(trackBar), trackBar.Value);
-					break;
-				case "NumericUpDown":
-					NumericUpDown numeric = (NumericUpDown)sender;
-					CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(numeric), (int)numeric.Value);
-					break;
+				switch (sender.GetType().Name)
+				{
+					case "TrackBar":
+						System.Windows.Forms.TrackBar trackBar = (System.Windows.Forms.TrackBar)sender;
+						CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(trackBar), trackBar.Value);
+						break;
+					case "NumericUpDown":
+						NumericUpDown numeric = (NumericUpDown)sender;
+						CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(numeric), (int)numeric.Value);
+						break;
+				}
+				ShowHeroSheet();
 			}
-			ShowHeroSheet();
 		}
 
 		/// <summary>
@@ -239,9 +261,12 @@ namespace D_DCharLists
 		/// <param name="e">Изменение Value у numericUpDown</param>
 		private void numericUpDown_Char_Level_ValueChanged(object sender, EventArgs e)
 		{
-			NumericUpDown numeric = (NumericUpDown)sender;
-			CurrentHeroSheet.HeroSheet.SheetProgression.Level = (int)numeric.Value;
-			ShowHeroSheet();
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			{
+				NumericUpDown numeric = (NumericUpDown)sender;
+				CurrentHeroSheet.HeroSheet.SheetProgression.Level = (int)numeric.Value;
+				ShowHeroSheet();
+			}
 		}
 
 		/// <summary>
@@ -251,16 +276,19 @@ namespace D_DCharLists
 		/// <param name="e"></param>
 		private void bt_Add_Exp_Click(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience >= 0 && (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience - (int)numericUpDown_Char_Exp_Calculations.Value) >= 0)
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 			{
-				CurrentHeroSheet.HeroSheet.SheetProgression.GainExpirience((int)numericUpDown_Char_Exp_Calculations.Value);
+				if (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience >= 0 && (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience - (int)numericUpDown_Char_Exp_Calculations.Value) >= 0)
+				{
+					CurrentHeroSheet.HeroSheet.SheetProgression.GainExpirience((int)numericUpDown_Char_Exp_Calculations.Value);
+				}
+				else
+				{
+					CurrentHeroSheet.HeroSheet.SheetProgression.Expirience = 0;
+					CurrentHeroSheet.HeroSheet.SheetProgression.Level = 1;
+				}
+				ShowHeroSheet();
 			}
-			else
-			{
-				CurrentHeroSheet.HeroSheet.SheetProgression.Expirience = 0;
-				CurrentHeroSheet.HeroSheet.SheetProgression.Level = 1;
-			}
-			ShowHeroSheet();
 		}
 
 		/// <summary>
@@ -270,9 +298,12 @@ namespace D_DCharLists
 		/// <param name="e">Событие по изменению параметра.</param>
 		private void numericUpDown_Char_Characteristics_ValueChanged(object sender, EventArgs e)
 		{
-			NumericUpDown numericUpDown = (NumericUpDown)sender;
-			CurrentHeroSheet.HeroSheet.SheetAbilities.ChangeAbilityScore(FabricEnumAbilities(numericUpDown), (int)numericUpDown.Value);
-			ShowHeroSheet();
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			{
+				NumericUpDown numericUpDown = (NumericUpDown)sender;
+				CurrentHeroSheet.HeroSheet.SheetAbilities.ChangeAbilityScore(FabricEnumAbilities(numericUpDown), (int)numericUpDown.Value);
+				ShowHeroSheet();
+			}
 		}
 
 		/// <summary>
@@ -282,20 +313,23 @@ namespace D_DCharLists
 		/// <param name="e">SelectedItem.</param>
 		private void checkedListBox_Skills_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			CheckedListBox checkedListBox = (CheckedListBox)sender;
-			//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
-			if (Enum.TryParse<EnumSkills>(checkedListBox.SelectedItem.ToString(), out EnumSkills skill))
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 			{
-				if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+				CheckedListBox checkedListBox = (CheckedListBox)sender;
+				//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
+				if (Enum.TryParse<EnumSkills>(checkedListBox.SelectedItem.ToString(), out EnumSkills skill))
 				{
-					CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+					if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+					{
+						CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+					}
+					else
+					{
+						CurrentHeroSheet.HeroSheet.SheetSkills.RemoveSkill(skill);
+					}
 				}
-				else
-				{
-					CurrentHeroSheet.HeroSheet.SheetSkills.RemoveSkill(skill);
-				}
+				ShowHeroSheet();
 			}
-			ShowHeroSheet();
 		}
 
 		/// <summary>
@@ -305,23 +339,26 @@ namespace D_DCharLists
 		/// <param name="e">SelectedItem.</param>
 		private void checkedListBox_Char_SkillsPossession_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			CheckedListBox checkedListBox = (CheckedListBox)sender;
-			//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
-			if (Enum.TryParse<EnumAllProficiencies>(checkedListBox.SelectedItem.ToString(), out EnumAllProficiencies skill))
+			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 			{
-				if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+				CheckedListBox checkedListBox = (CheckedListBox)sender;
+				//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
+				if (Enum.TryParse<EnumAllProficiencies>(checkedListBox.SelectedItem.ToString(), out EnumAllProficiencies skill))
 				{
-					CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(skill);
+					if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+					{
+						CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(skill);
+					}
+					else
+					{
+						CurrentHeroSheet.HeroSheet.SheetProficiencies.RemoveProficiency(skill);
+					}
+					ShowHeroSheet();
 				}
 				else
 				{
-					CurrentHeroSheet.HeroSheet.SheetProficiencies.RemoveProficiency(skill);
+					MessageBox.Show("Неизвестный навык владения!");
 				}
-				ShowHeroSheet();
-			}
-			else
-			{
-				MessageBox.Show("Неизвестный навык владения!");
 			}
 		}
 
@@ -372,7 +409,6 @@ namespace D_DCharLists
 					throw new NotImplementedException("Такой CombatStats не указано!");
 			}
 		}
-
 
 		/// <summary>
 		/// По названию NumericUpDown возвращает за какую характеристику он отвечает.
@@ -478,7 +514,7 @@ namespace D_DCharLists
 		{
 			try
 			{
-				if (CurrentHeroSheet.HeroSheet != null)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null || CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
 					PrintHeroInfo();
 					PrintHeroProgression();
@@ -492,10 +528,6 @@ namespace D_DCharLists
 					PrintHeroSkillsPossession();
 					PrintHeroSpell();
 					PrintHeroInventory();
-				}
-				else
-				{
-					throw new ArgumentNullException("Персонаж не был создан ил загружен!");
 				}
 			}
 			catch (Exception ex)
@@ -756,7 +788,7 @@ namespace D_DCharLists
 		private void ShowDBItems()
 		{
 			List<ItemBase> list = new List<ItemBase>();
-			if(comboBox_TypeItemForSearch.Text != "All" || textBox_Name_ItemForSearch.Text.Length>0)
+			if (comboBox_TypeItemForSearch.Text != "All" || textBox_Name_ItemForSearch.Text.Length > 0)
 			{
 				if (Enum.TryParse<EnumItemTypes>(comboBox_TypeItemForSearch.Text, out EnumItemTypes type1) && textBox_Name_ItemForSearch.Text.Length > 0)
 				{
@@ -790,7 +822,7 @@ namespace D_DCharLists
 		/// Выводит переданный список предметов.
 		/// </summary>
 		/// <param name="items">Списиок предметов.</param>
-		private void PrintDBItems(List<ItemBase> items)
+		public void PrintDBItems(List<ItemBase> items)
 		{
 			listView_DB_inventory.Items.Clear();
 			listView_DB_inventory.Items.Add(new ListViewItem(""));
@@ -868,6 +900,5 @@ namespace D_DCharLists
 		}
 
 		#endregion
-
 	}
 }

@@ -172,6 +172,7 @@
 			comboBox_Item_TypeItem.Name = "comboBox_Item_TypeItem";
 			comboBox_Item_TypeItem.Size = new Size(349, 42);
 			comboBox_Item_TypeItem.TabIndex = 2;
+			comboBox_Item_TypeItem.SelectedIndexChanged += SearchItem;
 			// 
 			// textBox_Item_Name
 			// 
@@ -179,15 +180,18 @@
 			textBox_Item_Name.Name = "textBox_Item_Name";
 			textBox_Item_Name.Size = new Size(349, 39);
 			textBox_Item_Name.TabIndex = 0;
+			textBox_Item_Name.TextChanged += SearchItem;
 			// 
 			// listView_Item_DB
 			// 
 			listView_Item_DB.Dock = DockStyle.Top;
+			listView_Item_DB.GridLines = true;
 			listView_Item_DB.Location = new Point(5, 37);
 			listView_Item_DB.Name = "listView_Item_DB";
 			listView_Item_DB.Size = new Size(990, 381);
 			listView_Item_DB.TabIndex = 0;
 			listView_Item_DB.UseCompatibleStateImageBehavior = false;
+			listView_Item_DB.View = View.Details;
 			// 
 			// AddingItemInventoryForm
 			// 

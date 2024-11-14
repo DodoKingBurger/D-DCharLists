@@ -2,6 +2,9 @@
 
 namespace D_DCharLists.Screens.CreateItem
 {
+	/// <summary>
+	/// Форма для создания предмета.
+	/// </summary>
 	public partial class CreateItemForm : Form
 	{
 
