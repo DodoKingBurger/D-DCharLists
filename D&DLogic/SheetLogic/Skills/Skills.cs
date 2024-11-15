@@ -9,14 +9,14 @@ namespace D_DCharLists
 
 		public override bool CheckSkill(EnumSkills skill)
 		{
-			return Skills.Contains(skill);
+			return this.Skills.Contains(skill);
 		}
 
 		public override void AddSkill(EnumSkills skill)
 		{
-			if (!Skills.Contains(skill))
+			if (!this.Skills.Contains(skill))
 			{
-				Skills.Add(skill);
+				this.Skills.Add(skill);
 			}
 		}
 
@@ -59,9 +59,9 @@ namespace D_DCharLists
 
 		public override void RemoveSkill(EnumSkills skill)
 		{
-			if (Skills.Contains(skill))
+			if (this.Skills.Contains(skill))
 			{
-				Skills.Remove(skill);
+				this.Skills.Remove(skill);
 			}
 			else
 			{
@@ -78,7 +78,7 @@ namespace D_DCharLists
     /// </summary>
     public Skills()
 		{
-			Skills = new List<EnumSkills>();
+			this.Skills = new List<EnumSkills>();
 		}
 
 		#endregion

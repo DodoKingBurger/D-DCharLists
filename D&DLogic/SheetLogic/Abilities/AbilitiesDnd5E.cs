@@ -66,7 +66,7 @@ namespace D_DCharLists
 		/// </summary>
 		public AbilitiesDnd5E()
 		{
-			Abilities = new Dictionary<EnumAbilities, int>()
+			this.Abilities = new Dictionary<EnumAbilities, int>()
 			{
 				[EnumAbilities.Strength] = 1,
 				[EnumAbilities.Agility] = 1,

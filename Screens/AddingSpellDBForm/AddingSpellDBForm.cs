@@ -61,7 +61,7 @@ namespace D_DCharLists.Screens
 						DamageType = textBox_DamageType_Spell.Text
 					}; 
 					SpellsDataBase.AddSpell(spell);
-					OnReloadSpellDB(SpellsDataBase.SpellsDB.Values.ToList());
+					this.OnReloadSpellDB(SpellsDataBase.SpellsDB.Values.ToList());
 				}
 				else
 				{

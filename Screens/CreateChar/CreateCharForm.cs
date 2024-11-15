@@ -53,7 +53,7 @@ namespace D_DCharLists.Screens.ScreenMain
 		{
 			RadioButton radioButton = (RadioButton)sender;
 			CurrentHeroSheet.HeroSheet.SetUpRace(
-			sheetRaceFactory.CreateSheetRace(radioButton.Text));
+			this.sheetRaceFactory.CreateSheetRace(radioButton.Text));
 
 		}
 
@@ -66,7 +66,7 @@ namespace D_DCharLists.Screens.ScreenMain
 		{
 			RadioButton radioButton = (RadioButton)sender;
 			CurrentHeroSheet.HeroSheet.SetUpClass(
-			sheetClassFactory.CreateSheetClass(radioButton.Text));
+			this.sheetClassFactory.CreateSheetClass(radioButton.Text));
 		}
 
 		/// <summary>
@@ -95,9 +95,7 @@ namespace D_DCharLists.Screens.ScreenMain
 		/// <param name="e">Событие.</param>
 		private void numericUpDown_ValueChanged(object sender, EventArgs e)
 		{
-			if (sender.GetType() == typeof(NumericUpDown))
-			{
-				Dictionary<Enum, int> ListAbilities = new Dictionary<Enum, int>()
+			Dictionary<Enum, int> ListAbilities = new Dictionary<Enum, int>()
 				{
 					{ EnumAbilities.Strength, (int)numericUpDown_Strength.Value },
 					{ EnumAbilities.Agility, (int)numericUpDown_Agility.Value  },
@@ -106,12 +104,7 @@ namespace D_DCharLists.Screens.ScreenMain
 					{ EnumAbilities.Wisdom, (int)numericUpDown_Wisdom.Value },
 					{ EnumAbilities.Charisma, (int)numericUpDown_Charisma.Value  },
 				};
-				CurrentHeroSheet.HeroSheet.SheetAbilities.SetAbilities(ListAbilities);
-			}
-			else
-			{
-				throw new Exception("Событие вызвано не тем контроллером.");
-			}
+			CurrentHeroSheet.HeroSheet.SheetAbilities.SetAbilities(ListAbilities);
 		}
 
 		/// <summary>
@@ -276,8 +269,8 @@ namespace D_DCharLists.Screens.ScreenMain
 		/// <param name="e">Событие.</param>
 		private void CreateChar_Load(object sender, EventArgs e)
 		{
-			sheetRaceFactory = new SheetRaceFactory();
-			sheetClassFactory = new SheetClassFactory();
+			this.sheetRaceFactory = new SheetRaceFactory();
+			this.sheetClassFactory = new SheetClassFactory();
 		}
 
 		#endregion

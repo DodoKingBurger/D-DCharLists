@@ -56,10 +56,10 @@ namespace D_DCharLists
 		private void StartForms_Load(object sender, EventArgs e)
 		{
 			HeroDataBase.ShowHero += ShowHeroSheet;
-			initialize = new Initialize();
-			addingItem = new AddingItemInventoryForm();
-			addingSpellDB = new AddingSpellDBForm();
-			initialize.Start();
+			this.initialize = new Initialize();
+			this.addingItem = new AddingItemInventoryForm();
+			this.addingSpellDB = new AddingSpellDBForm();
+			this.initialize.Start();
 			comboBox_TypeItemForSearch.SelectedIndex = 0;
 			ShowDBItems();
 			PrintDBSpell(SpellsDataBase.SpellsDB.Values.ToList());
@@ -78,7 +78,7 @@ namespace D_DCharLists
 					CurrentHeroSheet.SaveSheet();
 				ItemsDataBase.SaveDB();
 				SpellsDataBase.SaveDB();
-				addingItem.Close();
+				this.addingItem.Close();
 				e.Cancel = false;
 			}
 			else
@@ -94,8 +94,8 @@ namespace D_DCharLists
 		/// <param name="e"></param>
 		private void btCreateChar_Click(object sender, EventArgs e)
 		{
-			createChar = new CreateCharForm();
-			createChar.ShowDialog();
+			this.createChar = new CreateCharForm();
+			this.createChar.ShowDialog();
 		}
 
 		/// <summary>
@@ -119,10 +119,7 @@ namespace D_DCharLists
 		{
 			try
 			{
-				if (CurrentHeroSheet.HeroSheet != null && !string.IsNullOrEmpty(CurrentHeroSheet.HeroSheet.Name))
-					CurrentHeroSheet.SaveSheet();
-				else
-					throw new ArgumentNullException("Персонаж не выбран!");
+				CurrentHeroSheet.SaveSheet();
 			}
 			catch (Exception ex)
 			{
@@ -144,19 +141,18 @@ namespace D_DCharLists
 				MessageBox.Show("Выберите или создайте персонажа!");
 		}
 
-		/// <summary>
-		/// Выводит окно создания пероснажа.
-		/// </summary>
-		/// <param name="sender">button_Create_Item.</param>
-		/// <param name="e">Click.</param>
-		private void button_Create_Item_Click(object sender, EventArgs e)
-		{
-			createItem = new CreateItemForm();
-      createItem.Notify += ShowDBItems;
-      createItem.ShowDialog();
-		}
-
 		#region Методы работы с заклинаниями
+
+		/// <summary>
+		/// Вызов окна где создаються заклинания для базы данных.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void button_Create_Spell_Click(object sender, EventArgs e)
+		{
+			addingSpellDB.OnReloadSpellDB += PrintDBSpell;
+			addingSpellDB.Show();
+		}
 
 		/// <summary>
 		/// Добавляет заклинание в список заклинаний пероснажа.
@@ -167,7 +163,7 @@ namespace D_DCharLists
 		{
 			try
 			{
-				if (CurrentHeroSheet.HeroSheet.SheetSpells != null)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
 					int IDSpell = (int)numericUpDown_Spell_ID.Value;
 					if (SpellsDataBase.SpellsDB.ContainsKey(IDSpell))
@@ -177,6 +173,8 @@ namespace D_DCharLists
 					else
 						throw new Exception("неизвестное заклинание!");
 				}
+				else
+					throw new Exception("Создайте или загрузите персонажа!");
 			}
 			catch (Exception ex)
 			{
@@ -193,10 +191,10 @@ namespace D_DCharLists
 		{
 			try
 			{
-				if (CurrentHeroSheet.HeroSheet.SheetSpells != null)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
 					int IDSpell = (int)numericUpDown_Spell_ID.Value;
-					if (SpellsDataBase.SpellsDB.ContainsKey(IDSpell) && 
+					if (SpellsDataBase.SpellsDB.ContainsKey(IDSpell) &&
 						CurrentHeroSheet.HeroSheet.SheetSpells.SheetSpells.ContainsKey(IDSpell))
 					{
 						CurrentHeroSheet.HeroSheet.SheetSpells.RemoveSpell(IDSpell);
@@ -204,6 +202,8 @@ namespace D_DCharLists
 					else
 						throw new Exception("неизвестное заклинание!");
 				}
+				else
+					throw new Exception("Создайте или загрузите персонажа!");
 			}
 			catch (Exception ex)
 			{
@@ -223,20 +223,21 @@ namespace D_DCharLists
 			PrintDBSpell(list);
 		}
 
-		/// <summary>
-		/// Вызов окна где создаються заклинания для базы данных.
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-		private void button_Create_Spell_Click(object sender, EventArgs e)
-		{
-			addingSpellDB.OnReloadSpellDB += PrintDBSpell;
-			addingSpellDB.Show();
-		}
-
 		#endregion
 
 		#region Методы работы с предметами
+
+		/// <summary>
+		/// Выводит окно создания пероснажа.
+		/// </summary>
+		/// <param name="sender">button_Create_Item.</param>
+		/// <param name="e">Click.</param>
+		private void button_Create_Item_Click(object sender, EventArgs e)
+		{
+			this.createItem = new CreateItemForm();
+			this.createItem.Notify += ShowDBItems;
+			this.createItem.ShowDialog();
+		}
 
 		/// <summary>
 		/// Добавляет по ID предмет в инвентарь.
@@ -248,7 +249,7 @@ namespace D_DCharLists
 			try
 			{
 				int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
-				if (CurrentHeroSheet.HeroSheet.SheetInventory != null)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
 					if (IDitem > 0 &&
 						ItemsDataBase.ItemsDB.ContainsKey(IDitem))
@@ -258,6 +259,10 @@ namespace D_DCharLists
 					}
 					else
 						MessageBox.Show("Педмет не найден!");
+				}
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
 				}
 			}
 			catch (Exception ex)
@@ -276,7 +281,7 @@ namespace D_DCharLists
 			try
 			{
 				int IDitem = (int)numericUpDown_ID_For_Adding_Item.Value;
-				if (CurrentHeroSheet.HeroSheet.SheetInventory != null)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
 					if (IDitem > 0 && ItemsDataBase.ItemsDB.ContainsKey(IDitem) &&
 				CurrentHeroSheet.HeroSheet.SheetInventory.Inventory.ContainsKey(IDitem))
@@ -286,6 +291,10 @@ namespace D_DCharLists
 					}
 					else
 						MessageBox.Show("Педмет не найден!");
+				}
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
 				}
 			}
 			catch (Exception ex)
@@ -336,20 +345,31 @@ namespace D_DCharLists
 		/// <param name="e">ValueChanged.</param>
 		private void Changed_Char_CombatAbilities_ValueChanged(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				switch (sender.GetType().Name)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
-					case "TrackBar":
-						System.Windows.Forms.TrackBar trackBar = (System.Windows.Forms.TrackBar)sender;
-						CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(trackBar), trackBar.Value);
-						break;
-					case "NumericUpDown":
-						NumericUpDown numeric = (NumericUpDown)sender;
-						CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(numeric), (int)numeric.Value);
-						break;
+					switch (sender.GetType().Name)
+					{
+						case "TrackBar":
+							System.Windows.Forms.TrackBar trackBar = (System.Windows.Forms.TrackBar)sender;
+							CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(trackBar), trackBar.Value);
+							break;
+						case "NumericUpDown":
+							NumericUpDown numeric = (NumericUpDown)sender;
+							CurrentHeroSheet.HeroSheet.SheetCombatAbilities.ChangeStat(FabricCombatStats(numeric), (int)numeric.Value);
+							break;
+					}
+					ShowHeroSheet();
 				}
-				ShowHeroSheet();
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
+				}
+			}
+			catch (Exception ex) 
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -360,11 +380,22 @@ namespace D_DCharLists
 		/// <param name="e">Изменение Value у numericUpDown</param>
 		private void numericUpDown_Char_Level_ValueChanged(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				NumericUpDown numeric = (NumericUpDown)sender;
-				CurrentHeroSheet.HeroSheet.SheetProgression.Level = (int)numeric.Value;
-				ShowHeroSheet();
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+				{
+					NumericUpDown numeric = (NumericUpDown)sender;
+					CurrentHeroSheet.HeroSheet.SheetProgression.Level = (int)numeric.Value;
+					ShowHeroSheet();
+				}
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -375,18 +406,29 @@ namespace D_DCharLists
 		/// <param name="e"></param>
 		private void bt_Add_Exp_Click(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				if (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience >= 0 && (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience - (int)numericUpDown_Char_Exp_Calculations.Value) >= 0)
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
-					CurrentHeroSheet.HeroSheet.SheetProgression.GainExpirience((int)numericUpDown_Char_Exp_Calculations.Value);
+					if (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience >= 0 && (CurrentHeroSheet.HeroSheet.SheetProgression.Expirience - (int)numericUpDown_Char_Exp_Calculations.Value) >= 0)
+					{
+						CurrentHeroSheet.HeroSheet.SheetProgression.GainExpirience((int)numericUpDown_Char_Exp_Calculations.Value);
+					}
+					else
+					{
+						CurrentHeroSheet.HeroSheet.SheetProgression.Expirience = 0;
+						CurrentHeroSheet.HeroSheet.SheetProgression.Level = 1;
+					}
+					ShowHeroSheet();
 				}
 				else
 				{
-					CurrentHeroSheet.HeroSheet.SheetProgression.Expirience = 0;
-					CurrentHeroSheet.HeroSheet.SheetProgression.Level = 1;
+					throw new Exception("Создайте или загрузите персонажа!");
 				}
-				ShowHeroSheet();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -397,11 +439,22 @@ namespace D_DCharLists
 		/// <param name="e">Событие по изменению параметра.</param>
 		private void numericUpDown_Char_Characteristics_ValueChanged(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				NumericUpDown numericUpDown = (NumericUpDown)sender;
-				CurrentHeroSheet.HeroSheet.SheetAbilities.ChangeAbilityScore(FabricEnumAbilities(numericUpDown), (int)numericUpDown.Value);
-				ShowHeroSheet();
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+				{
+					NumericUpDown numericUpDown = (NumericUpDown)sender;
+					CurrentHeroSheet.HeroSheet.SheetAbilities.ChangeAbilityScore(FabricEnumAbilities(numericUpDown), (int)numericUpDown.Value);
+					ShowHeroSheet();
+				}
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -412,22 +465,33 @@ namespace D_DCharLists
 		/// <param name="e">SelectedItem.</param>
 		private void checkedListBox_Skills_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				CheckedListBox checkedListBox = (CheckedListBox)sender;
-				//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
-				if (Enum.TryParse<EnumSkills>(checkedListBox.SelectedItem.ToString(), out EnumSkills skill))
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
-					if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+					CheckedListBox checkedListBox = (CheckedListBox)sender;
+					//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
+					if (Enum.TryParse<EnumSkills>(checkedListBox.SelectedItem.ToString(), out EnumSkills skill))
 					{
-						CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+						if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+						{
+							CurrentHeroSheet.HeroSheet.SheetSkills.AddSkill(skill);
+						}
+						else
+						{
+							CurrentHeroSheet.HeroSheet.SheetSkills.RemoveSkill(skill);
+						}
 					}
-					else
-					{
-						CurrentHeroSheet.HeroSheet.SheetSkills.RemoveSkill(skill);
-					}
+					ShowHeroSheet();
 				}
-				ShowHeroSheet();
+				else
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -438,26 +502,37 @@ namespace D_DCharLists
 		/// <param name="e">SelectedItem.</param>
 		private void checkedListBox_Char_SkillsPossession_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (CurrentHeroSheet.HeroSheet.SheetRace != null)
+			try
 			{
-				CheckedListBox checkedListBox = (CheckedListBox)sender;
-				//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
-				if (Enum.TryParse<EnumAllProficiencies>(checkedListBox.SelectedItem.ToString(), out EnumAllProficiencies skill))
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
-					if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+					CheckedListBox checkedListBox = (CheckedListBox)sender;
+					//ItemCheckedEventArgs args = (ItemCheckedEventArgs)e;
+					if (Enum.TryParse<EnumAllProficiencies>(checkedListBox.SelectedItem.ToString(), out EnumAllProficiencies skill))
 					{
-						CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(skill);
+						if (checkedListBox.CheckedItems.Contains(checkedListBox.SelectedItem))
+						{
+							CurrentHeroSheet.HeroSheet.SheetProficiencies.AddProficiency(skill);
+						}
+						else
+						{
+							CurrentHeroSheet.HeroSheet.SheetProficiencies.RemoveProficiency(skill);
+						}
+						ShowHeroSheet();
 					}
 					else
 					{
-						CurrentHeroSheet.HeroSheet.SheetProficiencies.RemoveProficiency(skill);
+						MessageBox.Show("Неизвестный навык владения!");
 					}
-					ShowHeroSheet();
 				}
 				else
 				{
-					MessageBox.Show("Неизвестный навык владения!");
+					throw new Exception("Создайте или загрузите персонажа!");
 				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -473,20 +548,27 @@ namespace D_DCharLists
 		/// <exception cref="NotImplementedException">Такой боевой характеристики не представлено в списке.</exception>
 		private EnumCombatStats FabricCombatStats(NumericUpDown numericUpDown)
 		{
-			switch (numericUpDown.Name)
+			if(numericUpDown != null)
 			{
-				case "numericUpDown_Char_ArmorClass":
-					return EnumCombatStats.ArmorClass;
-				case "numericUpDown_Char_NowHP":
-					return EnumCombatStats.CurrentHP;
-				case "numericUpDown_Char_MaxHP":
-					return EnumCombatStats.MaximumHP;
-				case "numericUpDown_Char_TempHP":
-					return EnumCombatStats.TemporaryHP;
-				case "numericUpDown_Char_HowHitDice":
-					return EnumCombatStats.CurrentHitDices;
-				default:
-					throw new NotImplementedException("Такой CombatStats не указано!");
+				switch (numericUpDown.Name)
+				{
+					case "numericUpDown_Char_ArmorClass":
+						return EnumCombatStats.ArmorClass;
+					case "numericUpDown_Char_NowHP":
+						return EnumCombatStats.CurrentHP;
+					case "numericUpDown_Char_MaxHP":
+						return EnumCombatStats.MaximumHP;
+					case "numericUpDown_Char_TempHP":
+						return EnumCombatStats.TemporaryHP;
+					case "numericUpDown_Char_HowHitDice":
+						return EnumCombatStats.CurrentHitDices;
+					default:
+						throw new NotImplementedException("Такой CombatStats не указано!");
+				}
+			}
+			else
+			{
+				throw new ArgumentNullException("NumericUpDown был равен null");
 			}
 		}
 
@@ -498,14 +580,21 @@ namespace D_DCharLists
 		/// <exception cref="NotImplementedException">Такой боевой характеристики не представлено в списке.</exception>
 		private EnumCombatStats FabricCombatStats(System.Windows.Forms.TrackBar TrackBar)
 		{
-			switch (TrackBar.Name)
+			if(TrackBar != null)
 			{
-				case "trackBar_Char_DeathSucces":
-					return EnumCombatStats.DeathSucces;
-				case "trackBar_Char_DeathFailure":
-					return EnumCombatStats.DeathFailure;
-				default:
-					throw new NotImplementedException("Такой CombatStats не указано!");
+				switch (TrackBar.Name)
+				{
+					case "trackBar_Char_DeathSucces":
+						return EnumCombatStats.DeathSucces;
+					case "trackBar_Char_DeathFailure":
+						return EnumCombatStats.DeathFailure;
+					default:
+						throw new NotImplementedException("Такой CombatStats не указано!");
+				}
+			}
+			else
+			{
+				throw new ArgumentNullException("TrackBar был равен null");
 			}
 		}
 
@@ -517,22 +606,29 @@ namespace D_DCharLists
 		/// <exception cref="NotImplementedException"></exception>
 		private EnumAbilities FabricEnumAbilities(NumericUpDown nameNumericUpDown)
 		{
-			switch (nameNumericUpDown.Name)
+			if(nameNumericUpDown != null)
 			{
-				case "numericUpDown_Char_Strength":
-					return EnumAbilities.Strength;
-				case "numericUpDown_Char_Agility":
-					return EnumAbilities.Agility;
-				case "numericUpDown_Char_Physique":
-					return EnumAbilities.Physique;
-				case "numericUpDown_Char_Intelligence":
-					return EnumAbilities.Intelligence;
-				case "numericUpDown_Char_Wisdom":
-					return EnumAbilities.Wisdom;
-				case "numericUpDown_Char_Charisma":
-					return EnumAbilities.Charisma;
-				default:
-					throw new NotImplementedException("Такой Abilities не указано!");
+				switch (nameNumericUpDown.Name)
+				{
+					case "numericUpDown_Char_Strength":
+						return EnumAbilities.Strength;
+					case "numericUpDown_Char_Agility":
+						return EnumAbilities.Agility;
+					case "numericUpDown_Char_Physique":
+						return EnumAbilities.Physique;
+					case "numericUpDown_Char_Intelligence":
+						return EnumAbilities.Intelligence;
+					case "numericUpDown_Char_Wisdom":
+						return EnumAbilities.Wisdom;
+					case "numericUpDown_Char_Charisma":
+						return EnumAbilities.Charisma;
+					default:
+						throw new NotImplementedException("Такой Abilities не указано!");
+				}
+			}
+			else
+			{
+				throw new ArgumentNullException("NumericUpDown был равен null");
 			}
 		}
 

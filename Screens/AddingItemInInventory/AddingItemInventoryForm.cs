@@ -57,7 +57,7 @@ namespace D_DCharLists.Screens.AddingItemInInventory
 		/// <summary>
 		/// Выводит список предметов по требуемым параметрам из comboBox_Item_TypeItem и textBox_Item_Name.
 		/// </summary>
-		public void PrintDBItems()
+		private void PrintDBItems()
 		{
 			listView_Item_DB.Items.Clear();
 			listView_Item_DB.Items.Add(new ListViewItem(""));
@@ -255,7 +255,7 @@ namespace D_DCharLists.Screens.AddingItemInInventory
 				if (ItemsDataBase.ItemsDB.ContainsKey(IDitem))
 				{
 					CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem, HowMany);
-					InventoryHeroReload();
+					this.InventoryHeroReload();
 				}
 				else
 					throw new ArgumentException("ID предмета не найден");

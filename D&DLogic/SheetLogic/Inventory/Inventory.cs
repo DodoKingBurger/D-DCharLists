@@ -5,53 +5,53 @@ namespace D_DCharLists
 	/// </summary>
 	public class Inventory : SheetInventory
 	{
-		#region Поля и свойства
+		#region Базовый класс
 
 		public override void AddItem(int item)
 		{
-			if (Inventory.ContainsKey(item))
+			if (this.Inventory.ContainsKey(item))
 			{
-				Inventory[item]++;
+				this.Inventory[item]++;
 			}
 			else
 			{
-				Inventory[item] = 1;
+				this.Inventory[item] = 1;
 			}
 		}
 
 		public override void AddItem(int item, int HowMany)
 		{
-			if (Inventory.ContainsKey(item))
+			if (this.Inventory.ContainsKey(item))
 			{
-				Inventory[item]+= HowMany;
+				this.Inventory[item]+= HowMany;
 			}
 			else
 			{
-				Inventory[item] = HowMany;
+				this.Inventory[item] = HowMany;
 			}
 		}
 
 
 		public override void DecreaseItem(int item)
 		{
-			if (Inventory.ContainsKey(item))
+			if (this.Inventory.ContainsKey(item))
 			{
-				if (Inventory[item] == 1)
+				if (this.Inventory[item] == 1)
 				{
-					Inventory.Remove(item);
+					this.Inventory.Remove(item);
 				}
 				else
 				{
-					Inventory[item]--;
+					this.Inventory[item]--;
 				}
 			}
 		}
 
 		public override void RemoveItem(int item)
 		{
-			if (Inventory.ContainsKey(item))
+			if (this.Inventory.ContainsKey(item))
 			{
-				Inventory.Remove(item);
+				this.Inventory.Remove(item);
 			}
 		}
 
@@ -64,7 +64,7 @@ namespace D_DCharLists
 		/// </summary>
 		public Inventory()
 		{
-			Inventory = new Dictionary<int, int>();
+			this.Inventory = new Dictionary<int, int>();
 		}
 
 		#endregion

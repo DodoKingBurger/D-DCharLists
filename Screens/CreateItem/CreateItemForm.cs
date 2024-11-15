@@ -74,7 +74,7 @@ namespace D_DCharLists.Screens.CreateItem
 				while (ItemsDataBase.ItemsDB.ContainsKey(item.ItemId))
 					item.SetItemId();
 				ItemsDataBase.AddItem(item);
-				Notify();
+				this.Notify();
 			}
 			catch (Exception ex)
 			{
@@ -107,7 +107,7 @@ namespace D_DCharLists.Screens.CreateItem
 				};
 				item.SetItemId();
 				ItemsDataBase.AddItem(item);
-				Notify();
+				this.Notify();
 			}
 			catch (Exception ex)
 			{
@@ -135,7 +135,7 @@ namespace D_DCharLists.Screens.CreateItem
 				};
 				item.SetItemId();
 				ItemsDataBase.AddItem(item);
-				Notify();
+				this.Notify();
 			}
 			catch (Exception ex)
 			{

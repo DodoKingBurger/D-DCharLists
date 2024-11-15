@@ -10,7 +10,7 @@ namespace D_DCharLists
     /// </summary>
     public TraitsList()
 		{
-			TraitsList = new Dictionary<int, int>();
+			this.TraitsList = new Dictionary<int, int>();
 		}
 	}
 }

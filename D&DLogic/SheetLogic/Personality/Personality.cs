@@ -7,7 +7,7 @@ namespace D_DCharLists
 	{
 		public override void AddPersonality(EnumPersonalities personality, string value)
 		{
-			PersonalityList[personality] = value;
+			this.PersonalityList[personality] = value;
 		}
 
 		/// <summary>
@@ -15,7 +15,7 @@ namespace D_DCharLists
 		/// </summary>
 		public Personality()
 		{
-			PersonalityList = new Dictionary<EnumPersonalities, string>();
+			this.PersonalityList = new Dictionary<EnumPersonalities, string>();
 		}
 	}
 }

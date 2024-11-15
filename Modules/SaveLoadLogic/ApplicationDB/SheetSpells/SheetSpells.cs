@@ -10,7 +10,7 @@ namespace D_DCharLists
     /// </summary>
     public SheetSpells()
     {
-      SheetSpells = new Dictionary<int, int>();
+			this.SheetSpells = new Dictionary<int, int>();
     }
   }
 }

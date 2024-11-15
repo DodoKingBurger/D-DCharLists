@@ -51,9 +51,13 @@ namespace D_DCharLists
 
 					case EnumClasses.Wizard:
 						return new WizardClass();
+
+					default:
+						throw new NotImplementedException("Неизвестная раса");	
 				}
 			}
-			return new BarbarianClass();
+			else
+				throw new NotImplementedException("Неивестный список рас");
 		}
 
 		/// <summary>
@@ -102,9 +106,13 @@ namespace D_DCharLists
 
 					case EnumClasses.Wizard:
 						return new WizardClass();
+
+					default:
+						throw new NotImplementedException("Неизвестная раса");
 				}
 			}
-			return new BarbarianClass();
+			else
+				throw new NotImplementedException("Неивестный список рас");
 		}
 	}
 }

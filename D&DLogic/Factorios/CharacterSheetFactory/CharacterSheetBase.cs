@@ -95,7 +95,7 @@ namespace D_DCharLists
 		/// <param name="sheetRace">Присваемымывая расса.</param>
 		public void SetUpRace(SheetRaceBase sheetRace)
 		{
-			SheetRace = sheetRace;
+			this.SheetRace = sheetRace;
 		}
 
 		/// <summary>
@@ -104,7 +104,7 @@ namespace D_DCharLists
 		/// <param name="sheetClass">Присваемымывый класс.</param>
 		public void SetUpClass(SheetClassBase sheetClass)
 		{
-			SheetClass = sheetClass;
+			this.SheetClass = sheetClass;
 		}
 
 		/// <summary>

@@ -23,7 +23,14 @@ namespace D_DCharLists.Modules
 		/// </summary>
 		public static void SaveSheet()
 		{
-			JsonSaveLoad.JsonSave(HeroSheet.Name, HeroSheet, $@"Data\DND\CharacterSheets\");
+			if (HeroSheet.SheetRace != null&& HeroSheet.SheetClass != null) 
+			{
+				JsonSaveLoad.JsonSave(HeroSheet.Name, HeroSheet, $@"Data\DND\CharacterSheets\");
+			}
+			else
+			{
+				throw new ArgumentNullException("Не выбран персонаж для сохранения!");
+			}
 		}
 	}
 }

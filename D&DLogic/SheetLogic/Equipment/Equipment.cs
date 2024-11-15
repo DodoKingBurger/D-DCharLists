@@ -10,7 +10,7 @@ namespace D_DCharLists
 		/// </summary>
 		public Equipment()
 		{
-			EquipmentSlots = new Dictionary<EnumEquipmentSlots, ItemBase>();
+			this.EquipmentSlots = new Dictionary<EnumEquipmentSlots, ItemBase>();
 		}
 	}
 }

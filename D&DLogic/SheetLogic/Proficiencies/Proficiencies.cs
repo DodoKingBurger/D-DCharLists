@@ -5,7 +5,7 @@ namespace D_DCharLists
 	/// </summary>
 	public class Proficiencies : SheetProficiencies
 	{
-		#region Поля и свойства
+		#region Базовыый класс
 
 		public override void AddProficiency(Enum prof)
 		{
@@ -52,7 +52,7 @@ namespace D_DCharLists
 		/// </summary>
 		public Proficiencies()
 		{
-			Proficiencies = new List<EnumAllProficiencies>();
+			this.Proficiencies = new List<EnumAllProficiencies>();
 		}
 
 		#endregion

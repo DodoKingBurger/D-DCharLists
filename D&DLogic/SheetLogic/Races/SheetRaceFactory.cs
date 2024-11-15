@@ -42,10 +42,13 @@ namespace D_DCharLists
 
 					case EnumRaces.Tiefling:
 						return new TieflingRace();
+
+					default:
+						throw new NotImplementedException("Данная раса не представлена в списке.");
 				}
 			}
-
-			return new DragonbornRace();
+			else
+				throw new ArgumentException("Неизвестная расса");
 		}
 
     /// <summary>
