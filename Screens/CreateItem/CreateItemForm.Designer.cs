@@ -710,9 +710,9 @@
 			// tabPage_Create_Item
 			// 
 			tabPage_Create_Item.Controls.Add(groupBox_Base_Item_Info);
-			tabPage_Create_Item.Location = new Point(4, 34);
+			tabPage_Create_Item.Location = new Point(4, 48);
 			tabPage_Create_Item.Name = "tabPage_Create_Item";
-			tabPage_Create_Item.Size = new Size(1498, 861);
+			tabPage_Create_Item.Size = new Size(1498, 847);
 			tabPage_Create_Item.TabIndex = 2;
 			tabPage_Create_Item.Text = "Item";
 			tabPage_Create_Item.UseVisualStyleBackColor = true;
@@ -735,7 +735,7 @@
 			groupBox_Base_Item_Info.Dock = DockStyle.Left;
 			groupBox_Base_Item_Info.Location = new Point(0, 0);
 			groupBox_Base_Item_Info.Name = "groupBox_Base_Item_Info";
-			groupBox_Base_Item_Info.Size = new Size(725, 861);
+			groupBox_Base_Item_Info.Size = new Size(725, 847);
 			groupBox_Base_Item_Info.TabIndex = 12;
 			groupBox_Base_Item_Info.TabStop = false;
 			groupBox_Base_Item_Info.Text = "Базовые свойства";

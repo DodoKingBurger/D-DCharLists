@@ -121,9 +121,12 @@
 			// numericUpDown_Item_How
 			// 
 			numericUpDown_Item_How.Location = new Point(204, 83);
+			numericUpDown_Item_How.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+			numericUpDown_Item_How.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDown_Item_How.Name = "numericUpDown_Item_How";
 			numericUpDown_Item_How.Size = new Size(180, 39);
 			numericUpDown_Item_How.TabIndex = 1;
+			numericUpDown_Item_How.Value = new decimal(new int[] { 1, 0, 0, 0 });
 			// 
 			// numericUpDown_Item_Id
 			// 

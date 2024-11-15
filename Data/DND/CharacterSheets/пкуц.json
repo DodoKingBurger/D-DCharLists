@@ -1,0 +1,93 @@
+{
+  "Name": "пкуц",
+  "SheetRace": {
+    "Name": 0,
+    "Speed": 25,
+    "Size": 1
+  },
+  "SheetClass": {
+    "Name": 1,
+    "HitDice": 12,
+    "SaveThrows": [
+      2,
+      0,
+      2,
+      0
+    ]
+  },
+  "SheetAbilities": {
+    "Abilities": {
+      "Strength": 2,
+      "Agility": 1,
+      "Physique": 1,
+      "Intelligence": 1,
+      "Wisdom": 1,
+      "Charisma": 1
+    }
+  },
+  "SheetSkills": {
+    "Skills": [
+      3,
+      6
+    ]
+  },
+  "SheetProgression": {
+    "Expirience": 0,
+    "Level": 1
+  },
+  "SheetSaveThrows": {
+    "SaveThrows": [
+      0,
+      2
+    ]
+  },
+  "SheetPersonality": {
+    "PersonalityList": {
+      "Background": "ыва",
+      "Alignment": "апы",
+      "PersonalityTraits": "фпыв",
+      "Ideals": "ыва",
+      "Bonds": "ыфпв",
+      "Flaws": "ывапфыв",
+      "Age": "34",
+      "Height": "34",
+      "Weight": "34",
+      "Eyes": "ываыва",
+      "Skin": "ывап",
+      "Hair": "ывап"
+    }
+  },
+  "SheetCombatAbilities": {
+    "CombatStats": {
+      "ArmorClass": 5,
+      "CurrentHitDices": 1,
+      "CurrentHP": 7,
+      "DeathFailure": 0,
+      "DeathSucces": 0,
+      "MaximumHP": 7,
+      "TemporaryHP": 0,
+      "Round": 1
+    }
+  },
+  "SheetProficiencies": {
+    "Proficiencies": [
+      48,
+      32,
+      4,
+      10
+    ]
+  },
+  "SheetInventory": {
+    "Inventory": {}
+  },
+  "TraitsList": {
+    "TraitsList": {}
+  },
+  "SheetSpells": {
+    "SheetSpells": {}
+  },
+  "SheetEquipmentSlots": {
+    "EquipmentSlots": {}
+  },
+  "Inspiration": false
+}

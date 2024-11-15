@@ -64,6 +64,8 @@ namespace D_DCharLists
     /// </summary>
     public static void LoadHerosBase(string nameHero)
 		{
+			if (string.IsNullOrEmpty(nameHero)) 
+				throw new ArgumentNullException("name");
 			if ((folderInfo.GetFiles().Length == 0))
 				throw new ArgumentException("Каталог с персонажами пуст!");
 			foreach (var item in folderInfo.GetFiles())

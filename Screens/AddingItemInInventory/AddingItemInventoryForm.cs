@@ -248,23 +248,31 @@ namespace D_DCharLists.Screens.AddingItemInInventory
 		/// <param name="e">Click.</param>
 		private void button_Char_Adding_Item_Click(object sender, EventArgs e)
 		{
-			int IDitem = (int)numericUpDown_Item_Id.Value;
-			int HowMany = (int)numericUpDown_Item_How.Value;
 			try
 			{
-				if (ItemsDataBase.ItemsDB.ContainsKey(IDitem))
+				if (CurrentHeroSheet.HeroSheet.SheetRace != null)
 				{
-					CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem, HowMany);
-					this.InventoryHeroReload();
+					int IDitem = (int)numericUpDown_Item_Id.Value;
+					int HowMany = (int)numericUpDown_Item_How.Value;
+					if (ItemsDataBase.ItemsDB.ContainsKey(IDitem))
+					{
+						CurrentHeroSheet.HeroSheet.SheetInventory.AddItem(IDitem, HowMany);
+						this.InventoryHeroReload();
+					}
+					else
+						throw new ArgumentException("ID предмета не найден");
 				}
 				else
-					throw new ArgumentException("ID предмета не найден");
+				{
+					throw new Exception("Создайте или загрузите персонажа!");
+				}
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
 		}
+
 		#endregion
 
 		#region Конструкторы

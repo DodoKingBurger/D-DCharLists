@@ -23,7 +23,7 @@ namespace D_DCharLists.Modules
 		/// </summary>
 		public static void SaveSheet()
 		{
-			if (HeroSheet.SheetRace != null&& HeroSheet.SheetClass != null) 
+			if (HeroSheet.SheetRace != null) 
 			{
 				JsonSaveLoad.JsonSave(HeroSheet.Name, HeroSheet, $@"Data\DND\CharacterSheets\");
 			}

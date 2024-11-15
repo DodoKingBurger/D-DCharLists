@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "E:\\Project DataBase\\D-DCharLists\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createchar\\createcharform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createchar\\createcharform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:modules\\saveloadlogic\\applicationdb\\herodb\\herodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingitemininventory\\addingiteminventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\createitem\\createitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\addingspelldbform\\addingspelldbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:data\\dnd\\databases\\dndspellsdb.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|e:\\project database\\d-dcharlists\\screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{68BEBF76-23A0-442B-A5C6-1348D2F72023}|D\u0026DCharLists.csproj|solutionrelative:screens\\screenmain\\mainforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,42 +86,86 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddingSpellDBForm.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "RelativeDocumentMoniker": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "RelativeToolTip": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAKAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T08:50:45.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T11:12:35.004Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateCharForm.cs",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateChar\\CreateCharForm.cs",
-              "RelativeDocumentMoniker": "Screens\\CreateChar\\CreateCharForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateChar\\CreateCharForm.cs",
-              "RelativeToolTip": "Screens\\CreateChar\\CreateCharForm.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEEAAAADAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AddingItemInventoryForm.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "RelativeToolTip": "Screens\\AddingItemInInventory\\AddingItemInventoryForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAAwBAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T08:18:30.952Z",
+              "WhenOpened": "2024-11-15T11:01:22.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
+              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:58:46.605Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainForms.cs",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
-              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAACAAAAAAAAAA==",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs*",
+              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs*",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwIsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T07:28:57.551Z",
               "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5c4c5a1d-5109-47e0-a1e5-34d6fe3f2911",
+        "Display": 0,
+        "X": 86,
+        "Y": 231,
+        "Width": 853,
+        "Height": 910,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "RelativeDocumentMoniker": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T09:53:04.998Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]
         }
@@ -134,7 +190,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DNDSpellsDB.json",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Data\\DND\\DataBases\\DNDSpellsDB.json",
               "RelativeDocumentMoniker": "Data\\DND\\DataBases\\DNDSpellsDB.json",
@@ -153,43 +209,10 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "5c4c5a1d-5109-47e0-a1e5-34d6fe3f2911",
-        "Display": 0,
-        "X": 329,
-        "Y": 232,
-        "Width": 853,
-        "Height": 910,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "RelativeDocumentMoniker": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\AddingSpellDBForm\\AddingSpellDBForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T09:53:04.998Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
         "Id": "c48da3e6-aaf1-4d64-a327-52c264bed830",
         "Display": 0,
-        "X": -114,
-        "Y": 495,
+        "X": 971,
+        "Y": 175,
         "Width": 877,
         "Height": 1122,
         "WindowState": 0
@@ -197,16 +220,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "CreateItemForm.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
+              "RelativeDocumentMoniker": "Screens\\CreateItem\\CreateItemForm.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\CreateItem\\CreateItemForm.cs",
+              "RelativeToolTip": "Screens\\CreateItem\\CreateItemForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwC4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:55:40.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeroDataBase.cs",
+              "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "RelativeDocumentMoniker": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "RelativeToolTip": "Modules\\SaveLoadLogic\\ApplicationDB\\HeroDB\\HeroDataBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:55:25.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs",
               "RelativeDocumentMoniker": "Screens\\ScreenMain\\MainForms.cs",
-              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "E:\\Project DataBase\\D-DCharLists\\Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
+              "RelativeToolTip": "Screens\\ScreenMain\\MainForms.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T04:51:48.952Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
